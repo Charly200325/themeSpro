@@ -340,7 +340,7 @@
             "filled_icon": false,
             "collapse_icon": "carret",
             "display_top_border": true,
-            "content": "<p>Engineered with premium compression, reinforced fabric, and long-lasting elasticity, they provide all-day comfort and performance. Breathable and built to endure, these socks offer the perfect balance of support and flexibility. </p>",
+            "content": "<h6>SUITABLE FOR:</h6><p>All skin types, especially those with acne scars, hyperpigmentation and uneven skin tone.</p><h6>FEELS LIKE:</h6><p>Lightweight and breathable - never heavy, cakey or greasy.</p><h6>LOOKS LIKE:</h6><p>Your skin, but smoother. Blurs imperfections while keeping a natural finish.</p><h6>COVERAGE:</h6><p>Sheer-to-light, buildable coverage that evens out skin tone instantly.</p><h6>FREE FROM:</h6><p>Parabens, sulfates, fragrance and pore-clogging ingredients.</p>",
             "page": "",
             "margin_top": 0,
             "margin_bottom": 0
@@ -363,7 +363,6 @@
         },
         "collapsible_tab_R3xtLW": {
           "type": "collapsible_tab",
-          "disabled": true,
           "settings": {
             "heading": "Shipping Times",
             "heading_size": "medium",
@@ -427,45 +426,6 @@
         "desktop_padding_bottom": 36
       }
     },
-    "image_with_text_RJ6ybn": {
-      "type": "image-with-text",
-      "blocks": {
-        "heading_NeqAe9": {
-          "type": "heading",
-          "settings": {
-            "heading": "Thick, Breathable & Superior Elasticity",
-            "heading_size": "h2"
-          }
-        },
-        "text_fpmbeE": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Stay <strong>comfortable all day</strong> with a thick, breathable knit that keeps your feet cozy without feeling too hot. Designed with superior elasticity, these adapt to your movement, offering a snug yet flexible fit that won’t slide down. Whether you're on the go or kicking back, the premium blend delivers durability and softness, making every step feel soft & supported. </p>",
-            "text_style": "body"
-          }
-        }
-      },
-      "block_order": [
-        "heading_NeqAe9",
-        "text_fpmbeE"
-      ],
-      "settings": {
-        "display_id": false,
-        "visibility": "always-display",
-        "height": "adapt",
-        "content_layout": "no-overlap",
-        "color_scheme": "background-1",
-        "section_color_scheme": "background-1",
-        "desktop_image_width": "medium",
-        "layout": "image_first",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "mobile_full_media_width": false,
-        "mobile_content_alignment": "left",
-        "padding_top": 36,
-        "padding_bottom": 12
-      }
-    },
     "related-products": {
       "type": "related-products",
       "disabled": true,
@@ -483,73 +443,6 @@
         "columns_mobile": "2",
         "padding_top": 36,
         "padding_bottom": 24
-      }
-    },
-    "featured_collection_AkRWT3": {
-      "type": "featured-collection",
-      "disabled": true,
-      "settings": {
-        "display_id": false,
-        "visibility": "always-display",
-        "title": "Complete the set",
-        "heading_size": "h1",
-        "description": "",
-        "show_description": false,
-        "description_style": "body",
-        "collection": "",
-        "products_to_show": 4,
-        "columns_desktop": 4,
-        "full_width": false,
-        "show_view_all": true,
-        "view_all_style": "solid",
-        "enable_desktop_slider": false,
-        "color_scheme": "background-1",
-        "image_ratio": "adapt",
-        "show_secondary_image": false,
-        "show_vendor": false,
-        "show_rating": false,
-        "enable_quick_add": false,
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "rich_text_fGXNgN": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_gAMMBC": {
-          "type": "heading",
-          "settings": {
-            "heading": "<p>Worn by Olympians & World Champs</p>",
-            "heading_size": "h1"
-          }
-        }
-      },
-      "block_order": [
-        "heading_gAMMBC"
-      ],
-      "settings": {
-        "display_id": false,
-        "visibility": "always-display",
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "background-1",
-        "full_width": true,
-        "padding_top": 12,
-        "padding_bottom": 16
-      }
-    },
-    "421b5ad9-18b2-4b2a-8205-8700f2cd0d94": {
-      "type": "section-divider",
-      "settings": {
-        "shape": "waves_3",
-        "flip_horizontal": false,
-        "flip_vertical": false,
-        "shape_color": "accent-1",
-        "background_color": "background-1",
-        "padding_top": 0,
-        "padding_bottom": 0
       }
     },
     "ss_gallery_7_NCnqy6": {
@@ -682,11 +575,7 @@
   },
   "order": [
     "main",
-    "image_with_text_RJ6ybn",
     "related-products",
-    "featured_collection_AkRWT3",
-    "rich_text_fGXNgN",
-    "421b5ad9-18b2-4b2a-8205-8700f2cd0d94",
     "ss_gallery_7_NCnqy6",
     "section_divider_zAJcej",
     "1738959489f6fce048",
