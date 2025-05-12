@@ -1,0 +1,99 @@
+{% schema %}
+{
+  "name": "Skin Tone Guide",
+  "settings": [
+    {
+      "type": "textarea",
+      "id": "description_1",
+      "label": "Description 1",
+      "default": "For fair skin tones with cool or pink undertones."
+    },
+    {
+      "type": "textarea",
+      "id": "description_2",
+      "label": "Description 2",
+      "default": "For deep skin tones with warm or neutral undertones."
+    },
+    {
+      "type": "textarea", 
+      "id": "description_3",
+      "label": "Description 3",
+      "default": "For deep skin tones with warm or neutral undertones."
+    },
+    {
+      "type": "textarea",
+      "id": "description_4",
+      "label": "Description 4",
+      "default": "For medium-deep skin with golden or warm undertones."
+    }
+  ],
+  "blocks": [
+    {
+      "type": "shade",
+      "name": "Shade Item",
+      "settings": [
+        {
+          "type": "text",
+          "id": "number",
+          "label": "Since Number"
+        },
+        {
+          "type": "text", 
+          "id": "name",
+          "label": "Shade Name"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Skin Tone Guide",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}
+
+{% stylesheet %}
+<style>
+  .tone-guide {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+  }
+  .descriptions {
+    margin-bottom: 30px;
+  }
+  .shade-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  .shade-item {
+    text-align: center;
+    padding: 15px;
+    border: 1px solid #e1e1e1;
+  }
+</style>
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}
+
+<div class="tone-guide">
+  <div class="descriptions">
+    <p>{{ section.settings.description_1 }}</p>
+    <p>{{ section.settings.description_2 }}</p>
+    <p>{{ section.settings.description_3 }}</p>
+    <p>{{ section.settings.description_4 }}</p>
+  </div>
+
+  <div class="shade-grid">
+    {% for block in section.blocks %}
+      <div class="shade-item" {{ block.shopify_attributes }}>
+        <h4>SINCE {{ block.settings.number }}</h4>
+        <p>{{ block.settings.name }}</p>
+      </div>
+    {% endfor %}
+  </div>
+</div>
