@@ -176,17 +176,16 @@
         "padding_bottom": 20
       }
     },
-    "customhtml_PnfhQU": {
-      "type": "customhtml",
-      "name": "Custom HTML",
+    "custom_liquid_kUQJmr": {
+      "type": "custom-liquid",
+      "name": "t:sections.custom-liquid.presets.name",
       "settings": {
-        "subheading": "Your subheading",
-        "title": "Your title",
-        "html": "<p style=\"text-align: center\">Write or copy/paste HTML code</p>",
-        "add_vertical_spacing": true,
-        "background_type": "full_width",
-        "background": "rgba(0,0,0,0)",
-        "text_color": "rgba(0,0,0,0)"
+        "display_id": false,
+        "visibility": "always-display",
+        "custom_liquid": "",
+        "color_scheme": "background-1",
+        "padding_top": 40,
+        "padding_bottom": 52
       }
     },
     "horizontal_ticker_RkNUQT": {
@@ -534,7 +533,7 @@
     "cfca4268-6358-426c-98ab-d292aeef11e5",
     "rich_text_XtjWT6",
     "featured_collection_mdBbHh",
-    "customhtml_PnfhQU",
+    "custom_liquid_kUQJmr",
     "horizontal_ticker_RkNUQT",
     "ss_instafeed_3_9wHbNz",
     "featured_product_GVtfNK",
