@@ -260,11 +260,11 @@
         },
         "custom_add_to_cart_button_VmcQki": {
           "type": "custom_add_to_cart_button",
+          "disabled": true,
           "settings": {}
         },
         "buy_buttons": {
           "type": "buy_buttons",
-          "disabled": true,
           "settings": {
             "show_dynamic_checkout": false,
             "skip_cart": false,
@@ -272,39 +272,6 @@
             "display_price": false,
             "enable_custom_color": false,
             "custom_color": "#53af01",
-            "margin_top": 24,
-            "margin_bottom": 24
-          }
-        },
-        "e0a0b690-50df-4ca4-acfd-ce2980696cce": {
-          "type": "shipping_checkpoints",
-          "settings": {
-            "icon_1": "add_shopping_cart",
-            "filled_icon_1": false,
-            "top_text_1": "<strong>[start_date]</strong>",
-            "bottom_text_1": "Ordered",
-            "min_days_1": 0,
-            "max_days_1": 0,
-            "icon_2": "local_shipping",
-            "filled_icon_2": false,
-            "top_text_2": "<strong>[start_date] - [end_date]</strong>",
-            "bottom_text_2": "Order Processed",
-            "min_days_2": 1,
-            "max_days_2": 2,
-            "icon_3": "redeem",
-            "filled_icon_3": false,
-            "top_text_3": "<strong>[start_date] - [end_date]</strong>",
-            "bottom_text_3": "Delivered",
-            "min_days_3": 5,
-            "max_days_3": 8,
-            "icon_4": "",
-            "filled_icon_4": false,
-            "top_text_4": "",
-            "bottom_text_4": "",
-            "date_format": "mm_dd",
-            "days_labels": "Mon, Tue, Wed, Thu, Fri, Sat, Sun",
-            "months_labels": "Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec",
-            "color_scheme": "inverse",
             "margin_top": 24,
             "margin_bottom": 24
           }
@@ -351,14 +318,15 @@
           "type": "reviews",
           "settings": {
             "display_stars": true,
-            "star_color": "#ffcc00",
+            "star_color": "#c39f83",
             "avatar_alignment": "top",
-            "author_1": "<em>Zack K.</em>",
+            "author_1": "Emily J - London, UK",
             "text_1": "<p>\"I used to get blisters on my feet ALL the time when running. These socks make it feel like i'm walking on CLOUDS now!\"</p>",
-            "author_2": "@3n1trilogy (IG)",
-            "text_2": "<p>\"They are super nice and we can’t wait to wear them for our Regional and State tournaments coming in the next 2 weeks!!\"</p>",
-            "author_3": "<em>@bo.bassett (IG)</em>",
-            "text_3": "<p>\"There isn’t a single day where I don’t wear my Pathos socks. Excited to represent with them on at the Pan Am Games and The World Championships\"</p>",
+            "image_1": "shopify://shop_images/gempages_534627086933951483-3ee063a4-4b50-41d9-9db5-aad39cd3e48b.webp",
+            "author_2": "",
+            "text_2": "",
+            "author_3": "",
+            "text_3": "",
             "margin_top": 24,
             "margin_bottom": 24
           }
@@ -423,7 +391,6 @@
         "04ba004e-2f54-4936-8b1c-8bcadf6573f6",
         "custom_add_to_cart_button_VmcQki",
         "buy_buttons",
-        "e0a0b690-50df-4ca4-acfd-ce2980696cce",
         "e7a28cbe-03cb-4c9d-a2c4-0e3e76ffb3e5",
         "description",
         "c43b9f54-e00a-4f9e-b42c-2914dde008a8",
