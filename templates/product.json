@@ -15,12 +15,12 @@
         "a6eb81db-40e4-43e0-972f-32db010a4a56": {
           "type": "rating_stars",
           "settings": {
-            "rating": 4.8,
+            "rating": 5,
             "star_color": "#c39f83",
             "bg_stars_style": "full",
             "bg_star_color": "#ececec",
-            "label": "<strong>(56,936)</strong>",
-            "size": 10,
+            "label": "<strong>(56,923)</strong>",
+            "size": 12,
             "alignment": "flex-start",
             "scroll_id": "",
             "margin_top": 0,
