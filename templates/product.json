@@ -12,16 +12,6 @@
     "main": {
       "type": "main-product",
       "blocks": {
-        "title": {
-          "type": "title",
-          "settings": {
-            "text_size": "h2",
-            "title_alignment": "center",
-            "uppercase_title": false,
-            "margin_top": 0,
-            "margin_bottom": 0
-          }
-        },
         "a6eb81db-40e4-43e0-972f-32db010a4a56": {
           "type": "rating_stars",
           "settings": {
@@ -29,12 +19,22 @@
             "star_color": "#c39f83",
             "bg_stars_style": "full",
             "bg_star_color": "#ececec",
-            "label": "<strong>Over 100,000+ Happy Customers</strong>",
+            "label": "<strong>(56,936)</strong>",
             "size": 10,
-            "alignment": "center",
+            "alignment": "flex-start",
             "scroll_id": "",
             "margin_top": 0,
             "margin_bottom": 9
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+            "text_size": "h2",
+            "title_alignment": "left",
+            "uppercase_title": false,
+            "margin_top": 0,
+            "margin_bottom": 0
           }
         },
         "price": {
@@ -319,8 +319,8 @@
         }
       },
       "block_order": [
-        "title",
         "a6eb81db-40e4-43e0-972f-32db010a4a56",
+        "title",
         "price",
         "text_k7jx8d",
         "5fcc0428-e768-4cb7-bea3-eb0274198dd1",
