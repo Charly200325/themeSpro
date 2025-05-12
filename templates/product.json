@@ -15,8 +15,8 @@
         "title": {
           "type": "title",
           "settings": {
-            "text_size": "h1",
-            "title_alignment": "left",
+            "text_size": "h2",
+            "title_alignment": "center",
             "uppercase_title": false,
             "margin_top": 0,
             "margin_bottom": 0
@@ -26,12 +26,12 @@
           "type": "rating_stars",
           "settings": {
             "rating": 4.8,
-            "star_color": "#ffcc00",
+            "star_color": "#c39f83",
             "bg_stars_style": "full",
             "bg_star_color": "#ececec",
-            "label": "(6 Reviews)",
-            "size": 16,
-            "alignment": "flex-start",
+            "label": "<strong>Over 100,000+ Happy Customers</strong>",
+            "size": 10,
+            "alignment": "center",
             "scroll_id": "",
             "margin_top": 0,
             "margin_bottom": 9
@@ -39,12 +39,47 @@
         },
         "price": {
           "type": "price",
+          "disabled": true,
           "settings": {
             "layout": "price_first",
             "price_color": "accent-1",
             "compare_price_color": "text",
             "hide_sale_badge": false,
             "margin_top": 9,
+            "margin_bottom": 15
+          }
+        },
+        "text_k7jx8d": {
+          "type": "text",
+          "settings": {
+            "mobile_text_size": 14,
+            "desktop_text_size": 16,
+            "alignment": "left",
+            "text_color": "#121212",
+            "text_1": "Smooths Fine Lines & Wrinkles",
+            "text_2": "Hides Dark Spots & Hyperpigmentation",
+            "text_3": "Skincare + Makeup All in One",
+            "icon_scale": 120,
+            "icon_color": "#c39f83",
+            "icon_1": "check_circle",
+            "filled_icon_1": false,
+            "custom_icon_1": "shopify://shop_images/check_circle_24dp_C39F83_FILL1_wght400_GRAD0_opsz24.svg",
+            "icon_2": "check_circle",
+            "filled_icon_2": false,
+            "custom_icon_2": "shopify://shop_images/check_circle_24dp_C39F83_FILL1_wght400_GRAD0_opsz24_1efe5149-ed4a-48bc-ab01-789a9ea86684.svg",
+            "icon_3": "check_circle",
+            "filled_icon_3": false,
+            "custom_icon_3": "shopify://shop_images/check_circle_24dp_C39F83_FILL1_wght400_GRAD0_opsz24_1576ce8c-bede-4bce-a5cd-9a2b56cb024d.svg",
+            "width": "fit-content",
+            "direction": "vertical",
+            "column_gap": 3,
+            "enable_bg": false,
+            "bg_color": "#f3f3f3",
+            "corner_radius": 40,
+            "padding": 3,
+            "border_size": 0,
+            "border_color": "#b7b7b7",
+            "margin_top": 15,
             "margin_bottom": 15
           }
         },
@@ -287,6 +322,7 @@
         "title",
         "a6eb81db-40e4-43e0-972f-32db010a4a56",
         "price",
+        "text_k7jx8d",
         "5fcc0428-e768-4cb7-bea3-eb0274198dd1",
         "04ba004e-2f54-4936-8b1c-8bcadf6573f6",
         "custom_add_to_cart_button_VmcQki",
@@ -353,7 +389,6 @@
       "settings": {
         "display_id": false,
         "visibility": "always-display",
-        "image": "shopify://shop_images/updated3.webp",
         "height": "adapt",
         "content_layout": "no-overlap",
         "color_scheme": "background-1",
@@ -460,7 +495,6 @@
         "card_PhpdWb": {
           "type": "card",
           "settings": {
-            "image": "shopify://shop_images/1.png",
             "title": "@alliegrantphotography",
             "text": "<p>\"bigger than wrestling\"</p>",
             "url": "",
@@ -470,7 +504,6 @@
         "card_L77LJq": {
           "type": "card",
           "settings": {
-            "image": "shopify://shop_images/4.png",
             "title": "@natethegreatjackson",
             "text": "<p>Champion Mode🥇</p>",
             "url": "",
@@ -480,7 +513,6 @@
         "card_zTp73U": {
           "type": "card",
           "settings": {
-            "image": "shopify://shop_images/Pathos_Socks_5.png",
             "title": "Phil 4:13",
             "text": "<p>I can do all things through Christ who strengthens me 💪🥇</p>",
             "url": "",
@@ -568,15 +600,6 @@
     },
     "1738959489f6fce048": {
       "type": "apps",
-      "blocks": {
-        "judge_me_reviews_review_widget_dGNpVt": {
-          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {}
-        }
-      },
-      "block_order": [
-        "judge_me_reviews_review_widget_dGNpVt"
-      ],
       "settings": {
         "include_margins": true
       }
