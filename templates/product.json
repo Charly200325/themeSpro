@@ -68,6 +68,37 @@
             "margin_bottom": 15
           }
         },
+        "text_Efp7EU": {
+          "type": "text",
+          "settings": {
+            "mobile_text_size": 14,
+            "desktop_text_size": 16,
+            "alignment": "left",
+            "text_color": "#121212",
+            "text_1": "Made to be your beauty shortcut, combining hydration, coverage, and glow in one swipe.",
+            "text_2": "",
+            "text_3": "",
+            "icon_scale": 120,
+            "icon_color": "#121212",
+            "icon_1": "",
+            "filled_icon_1": false,
+            "icon_2": "check_circle",
+            "filled_icon_2": false,
+            "icon_3": "check_circle",
+            "filled_icon_3": false,
+            "width": "100%",
+            "direction": "horizontal",
+            "column_gap": 3,
+            "enable_bg": false,
+            "bg_color": "#f3f3f3",
+            "corner_radius": 40,
+            "padding": 3,
+            "border_size": 0,
+            "border_color": "#b7b7b7",
+            "margin_top": 15,
+            "margin_bottom": 15
+          }
+        },
         "price": {
           "type": "price",
           "disabled": true,
@@ -115,6 +146,28 @@
             "margin_bottom": 15
           }
         },
+        "icon_with_text_Ge44A9": {
+          "type": "icon_with_text",
+          "settings": {
+            "layout": "horizontal",
+            "icon_size": "large",
+            "icon_color": "accent-1",
+            "icon_1": "favorite",
+            "icon_1_fill": false,
+            "image_1": "shopify://shop_images/gempages_534627086933951483-043139a2-dcb8-4f87-984f-95545c927095.webp",
+            "heading_1": "COVERS ACNE & DARK SPOTS",
+            "icon_2": "",
+            "icon_2_fill": false,
+            "image_2": "shopify://shop_images/gempages_534627086933951483-e9570975-4c65-459f-bd4c-877fa62805e2.svg",
+            "heading_2": "SMOOTHS  FINE LINES & WRINKLES",
+            "icon_3": "local_shipping",
+            "icon_3_fill": false,
+            "image_3": "shopify://shop_images/gempages_534627086933951483-e2505e90-5ed4-4f3b-8cb0-5396453fb02e_1024x_7b672a11-ece5-423a-8ca4-492d405c6bf1.svg",
+            "heading_3": "LIGHTWEIGHT & BREATHABLE",
+            "margin_top": 24,
+            "margin_bottom": 24
+          }
+        },
         "5fcc0428-e768-4cb7-bea3-eb0274198dd1": {
           "type": "variant_picker",
           "settings": {
@@ -137,37 +190,6 @@
             "breaks_captions": "Variant 1 caption, Variant 2 caption, Variant 3 caption",
             "breaks_price_texts": "[price], [price], [price]",
             "breaks_compare_price_texts": "[compare_price], [compare_price], [compare_price]",
-            "margin_top": 15,
-            "margin_bottom": 15
-          }
-        },
-        "text_Efp7EU": {
-          "type": "text",
-          "settings": {
-            "mobile_text_size": 14,
-            "desktop_text_size": 16,
-            "alignment": "left",
-            "text_color": "#121212",
-            "text_1": "Made to be your beauty shortcut, combining hydration, coverage, and glow in one swipe.",
-            "text_2": "",
-            "text_3": "",
-            "icon_scale": 120,
-            "icon_color": "#121212",
-            "icon_1": "",
-            "filled_icon_1": false,
-            "icon_2": "check_circle",
-            "filled_icon_2": false,
-            "icon_3": "check_circle",
-            "filled_icon_3": false,
-            "width": "100%",
-            "direction": "horizontal",
-            "column_gap": 3,
-            "enable_bg": false,
-            "bg_color": "#f3f3f3",
-            "corner_radius": 40,
-            "padding": 3,
-            "border_size": 0,
-            "border_color": "#b7b7b7",
             "margin_top": 15,
             "margin_bottom": 15
           }
@@ -385,10 +407,11 @@
         "a6eb81db-40e4-43e0-972f-32db010a4a56",
         "title",
         "text_iGah3K",
+        "text_Efp7EU",
         "price",
         "text_k7jx8d",
+        "icon_with_text_Ge44A9",
         "5fcc0428-e768-4cb7-bea3-eb0274198dd1",
-        "text_Efp7EU",
         "04ba004e-2f54-4936-8b1c-8bcadf6573f6",
         "custom_add_to_cart_button_VmcQki",
         "buy_buttons",
