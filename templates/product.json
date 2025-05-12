@@ -426,6 +426,19 @@
         "desktop_padding_bottom": 36
       }
     },
+    "customhtml_JkFBDH": {
+      "type": "customhtml",
+      "name": "Custom HTML",
+      "settings": {
+        "subheading": "",
+        "title": "",
+        "html": "<section id=\"shopify-section-template--25193247506762__custom_liquid_8gVzJd\" class=\"shopify-section section\"><style data-shopify=\"\">.section-template--25193247506762__custom_liquid_8gVzJd-padding {\n    padding-top: calc(0px * 0.75);\n    padding-bottom: calc(0px  * 0.75);\n  }\n\n  @media screen and (min-width: 750px) {\n    .section-template--25193247506762__custom_liquid_8gVzJd-padding {\n      padding-top: 0px;\n      padding-bottom: 0px;\n    }\n  }</style>\n<div class=\"color-background-1 gradient content-for-grouping always-display\">\n  \n  <div class=\"section-template--25193247506762__custom_liquid_8gVzJd-padding\">\n    <style>\n  .custom-static-section {\n    background-color: #F6ECE3;\n    padding-top: 80.1px;\n    padding-bottom: 20.1px;\n    text-align: center;\n    margin-top: 30px;\n  }\n\n  .custom-static-section h1 {\n    color: #27201A;\n    font-size: 3.2rem;\n    margin: 0 50.1px;\n  }\n\n  .custom-buttons {\n    display: flex;\n    justify-content: center;\n    gap: 20.1px;\n    margin-top: 20px;\n    flex-wrap: wrap;\n  }\n\n  .custom-button {\n    background-color: #fff;\n    border: none;\n    border-radius: 30px;\n    padding: 6px 16px;\n    font-size: 11px;\n    text-transform: uppercase;\n    color: #000;\n    text-align: center;\n    font-weight: normal;\n    cursor: default;\n    pointer-events: none;\n    opacity: 0.8;\n  }\n</style>\n\n<div class=\"custom-static-section\">\n  <h1>Discover Your Best Match</h1>\n\n  <div class=\"custom-buttons\">\n    <button class=\"custom-button\">Seamless\n</button>\n    <button class=\"custom-button\">effortless</button>\n    <button class=\"custom-button\">flawless\n\n</button>\n  </div>\n</div>\n  </div>\n</div>\n\n\n</section>",
+        "add_vertical_spacing": true,
+        "background_type": "full_width",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)"
+      }
+    },
     "related-products": {
       "type": "related-products",
       "disabled": true,
@@ -575,6 +588,7 @@
   },
   "order": [
     "main",
+    "customhtml_JkFBDH",
     "related-products",
     "ss_gallery_7_NCnqy6",
     "section_divider_zAJcej",
