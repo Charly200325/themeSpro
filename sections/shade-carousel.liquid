@@ -1,0 +1,99 @@
+{% schema %}
+{
+  "name": "Shade Carousel",
+  "settings": [],
+  "blocks": [
+    {
+      "type": "shade",
+      "name": "Shade Card",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Model Image"
+        },
+        {
+          "type": "text",
+          "id": "description",
+          "label": "Description",
+          "default": "For medium skin tones with neutral undertones."
+        },
+        {
+          "type": "text",
+          "id": "shade_label",
+          "label": "Shade Label",
+          "default": "SHADE 3 — MEDIUM"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Shade Carousel",
+      "category": "Custom",
+      "blocks": []
+    }
+  ]
+}
+{% endschema %}
+
+<style>
+.shade-carousel-wrapper {
+  overflow: hidden;
+  position: relative;
+  padding: 2rem 0;
+  background-color: #f8ede8;
+}
+.shade-carousel {
+  display: flex;
+  gap: 1.5rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding: 1rem;
+  scroll-behavior: smooth;
+}
+.shade-card {
+  flex: 0 0 auto;
+  width: 280px;
+  background-color: #fff8f2;
+  border-radius: 16px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.05);
+  scroll-snap-align: start;
+  overflow: hidden;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.shade-card img {
+  width: 100%;
+  height: auto;
+}
+.shade-description {
+  padding: 1rem;
+  font-size: 0.95rem;
+  color: #333;
+}
+.shade-label {
+  background-color: #cfa78f;
+  color: white;
+  padding: 0.5rem 1rem;
+  margin: 0 auto 1rem auto;
+  border-radius: 999px;
+  font-weight: bold;
+  width: fit-content;
+}
+</style>
+
+<div class="shade-carousel-wrapper">
+  <div class="shade-carousel">
+    {% for block in section.blocks %}
+      <div class="shade-card">
+        {% if block.settings.image %}
+          <img src="{{ block.settings.image | image_url: width: 400 }}" alt="Model shade">
+        {% endif %}
+        <div class="shade-description">{{ block.settings.description }}</div>
+        <div class="shade-label">{{ block.settings.shade_label }}</div>
+      </div>
+    {% endfor %}
+  </div>
+</div>
