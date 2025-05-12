@@ -34,11 +34,18 @@
             "title_alignment": "left",
             "uppercase_title": false,
             "margin_top": 0,
-            "margin_bottom": 0
+            "margin_bottom": 6
+          }
+        },
+        "custom_liquid_M78cwX": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<span style=\"display:inline-block;background-color:#f6f0eb;color:#000;padding:6px 12px;border-radius:6px;margin-right:6px;font-size:13px;font-weight:500;\">\n  HA+ TECHNOLOGY\n</span>\n<span style=\"display:inline-block;background-color:#f6f0eb;color:#000;padding:6px 12px;border-radius:6px;margin-right:6px;font-size:13px;font-weight:500;\">\n  FOR ALL SKIN TYPES\n</span>\n<span style=\"display:inline-block;background-color:#f6f0eb;color:#000;padding:6px 12px;border-radius:6px;font-size:13px;font-weight:500;\">\n  VEGAN\n</span>"
           }
         },
         "text_iGah3K": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "mobile_text_size": 14,
             "desktop_text_size": 16,
@@ -406,6 +413,7 @@
       "block_order": [
         "a6eb81db-40e4-43e0-972f-32db010a4a56",
         "title",
+        "custom_liquid_M78cwX",
         "text_iGah3K",
         "text_Efp7EU",
         "price",
