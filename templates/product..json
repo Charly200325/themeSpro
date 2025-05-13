@@ -96,6 +96,12 @@
         "checksum": ""
       }
     },
+    "gp_shopify_original_section_566394114455634882": {
+      "type": "gp-section-566394114455634882",
+      "settings": {
+        "checksum": ""
+      }
+    },
     "main": {
       "type": "main-product",
       "blocks": {
@@ -559,6 +565,7 @@
   },
   "order": [
     "gp_shopify_original_section_566393094367347650",
+    "gp_shopify_original_section_566394114455634882",
     "main",
     "customhtml_JkFBDH",
     "customhtml_zX9azM",
