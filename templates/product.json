@@ -9,114 +9,277 @@
  */
 {
   "sections": {
-    "1738959489f6fce048": {
-      "type": "apps",
-      "settings": {
-        "include_margins": true
-      }
-    },
-    "customhtml_JkFBDH": {
-      "type": "customhtml",
-      "name": "Custom HTML",
-      "settings": {
-        "subheading": "",
-        "title": "",
-        "html": "<section id=\"shopify-section-template--25193247506762__custom_liquid_8gVzJd\" class=\"shopify-section section\"><style data-shopify=\"\">.section-template--25193247506762__custom_liquid_8gVzJd-padding {\n    padding-top: calc(0px * 0.75);\n    padding-bottom: calc(0px  * 0.75);\n  }\n\n  @media screen and (min-width: 750px) {\n    .section-template--25193247506762__custom_liquid_8gVzJd-padding {\n      padding-top: 0px;\n      padding-bottom: 0px;\n    }\n  }</style>\n<div class=\"color-background-1 gradient content-for-grouping always-display\">\n  \n  <div class=\"section-template--25193247506762__custom_liquid_8gVzJd-padding\">\n    <style>\n  .custom-static-section {\n    background-color: #F6ECE3;\n    padding-top: 80.1px;\n    padding-bottom: 20.1px;\n    text-align: center;\n    margin-top: 30px;\n  }\n\n  .custom-static-section h1 {\n    color: #27201A;\n    font-size: 3.2rem;\n    margin: 0 50.1px;\n  }\n\n  .custom-buttons {\n    display: flex;\n    justify-content: center;\n    gap: 20.1px;\n    margin-top: 20px;\n    flex-wrap: wrap;\n  }\n\n  .custom-button {\n    background-color: #fff;\n    border: none;\n    border-radius: 30px;\n    padding: 6px 16px;\n    font-size: 11px;\n    text-transform: uppercase;\n    color: #000;\n    text-align: center;\n    font-weight: normal;\n    cursor: default;\n    pointer-events: none;\n    opacity: 0.8;\n  }\n</style>\n\n<div class=\"custom-static-section\">\n  <h1>Discover Your Best Match</h1>\n\n  <div class=\"custom-buttons\">\n    <button class=\"custom-button\">Seamless\n</button>\n    <button class=\"custom-button\">effortless</button>\n    <button class=\"custom-button\">flawless\n\n</button>\n  </div>\n</div>\n  </div>\n</div>\n\n\n</section>",
-        "add_vertical_spacing": true,
-        "background_type": "full_width",
-        "background": "rgba(0,0,0,0)",
-        "text_color": "rgba(0,0,0,0)"
-      }
-    },
-    "customhtml_zX9azM": {
-      "type": "customhtml",
-      "name": "Custom HTML",
-      "settings": {
-        "subheading": "",
-        "title": "",
-        "html": "<div id=\"shopify-section-template--25193247506762__skin_care_slide_zy_NLN9jM\" class=\"shopify-section\">\n\n<div class=\"skin-care-slide-wrapper\">\n  <div id=\"skin-care-slider\" class=\"splide splide--loop splide--ltr splide--draggable is-active is-overflow is-initialized\" role=\"region\" aria-roledescription=\"carousel\">\n    <div class=\"splide__track splide__track--loop splide__track--ltr splide__track--draggable\" id=\"skin-care-slider-track\" style=\"padding-left: 10%; padding-right: 10%;\" aria-live=\"polite\" aria-atomic=\"true\">\n      <ul class=\"splide__list\" id=\"skin-care-slider-list\" role=\"presentation\" style=\"transform: translateX(-2190px);\">\n        \n          <li class=\"splide__slide splide__slide--clone\" style=\"--overlay-bottom: 15px; --overlay-right: 1.5px; --overlay-width: 80%; --overlay-text-color: #1b1b1b; margin-right: 1.5rem; width: calc(25% - 1.125rem);\" id=\"skin-care-slider-clone01\" role=\"tabpanel\" aria-roledescription=\"slide\" aria-label=\"5 of 6\" aria-hidden=\"true\">\n            <div class=\"skin-slide-block\" style=\"\n              --bg-text-color: #e2b59e;\n              --text-padding: 20px;\n              --text-fixed-height: 130px;\n              --text-main-color: #1b1b1b;\n            \">\n              \n                <img src=\"//wombea.com/cdn/shop/files/gempages_534627086933951483-cecbbe6a-2a34-4f56-b075-88b6c4ebfc7f.webp?v=1745152138&amp;width=600\" alt=\"Image principale\" class=\"skin-slide-image\">\n              \n\n              <div class=\"skin-slide-text\">\n                <div>Für sehr helle Hauttöne mit kühlen oder rosafarbenen Untertönen.</div>\n                \n                  <div class=\"skin-slide-subtext\"></div>\n                \n              </div>\n            </div>\n\n            \n              <div class=\"skin-decorative-wrapper\">\n                <img src=\"//wombea.com/cdn/shop/files/gempages_534627086933951483-da618916-88f7-4b4c-a2e4-ed4c21e7f279.webp?v=1745170253&amp;width=300\" alt=\"Produit décoratif\">\n                <div class=\"overlay-text-normal\">FARBTON 5</div>\n                <div class=\"overlay-text-bold\">SEHR HELL</div>\n              </div>\n            \n          </li>\n<li class=\"splide__slide splide__slide--clone\" style=\"--overlay-bottom: 15px; --overlay-right: 1.5px; --overlay-width: 80%; --overlay-text-color: #ffffff; margin-right: 1.5rem; width: calc(25% - 1.125rem);\" id=\"skin-care-slider-clone02\" role=\"tabpanel\" aria-roledescription=\"slide\" aria-label=\"6 of 6\" aria-hidden=\"true\">\n            <div class=\"skin-slide-block\" style=\"\n              --bg-text-color: #ac775e;\n              --text-padding: 20px;\n              --text-fixed-height: 130px;\n              --text-main-color: #ffffff;\n            \">\n              \n                <img src=\"//wombea.com/cdn/shop/files/gempages_534627086933951483-f9f7af4d-7498-485e-9d10-aeb9b92eed1e.webp?v=1745152138&amp;width=600\" alt=\"Image principale\" class=\"skin-slide-image\">\n              \n\n              <div class=\"skin-slide-text\">\n                <div>Für dunkle Hauttöne mit warmen oder neutralen Untertönen.</div>\n                \n                  <div class=\"skin-slide-subtext\"></div>\n                \n              </div>\n            </div>\n\n            \n              <div class=\"skin-decorative-wrapper\">\n                <img src=\"//wombea.com/cdn/shop/files/gempages_534627086933951483-438c482a-ab4f-4edd-b5d8-5e45f07accf3.webp?v=1745170361&amp;width=300\" alt=\"Produit décoratif\">\n                <div class=\"overlay-text-normal\">FARBTON 6</div>\n                <div class=\"overlay-text-bold\">HELL-MITTEL</div>\n              </div>\n            \n          </li>\n<li class=\"splide__slide splide__slide--clone is-active\" style=\"--overlay-bottom: 15px; --overlay-right: 1.5px; --overlay-width: 80%; --overlay-text-color: #ffffff; margin-right: 1.5rem; width: calc(25% - 1.125rem);\" id=\"skin-care-slider-clone03\" role=\"tabpanel\" aria-roledescription=\"slide\" aria-label=\"1 of 6\" aria-hidden=\"true\">\n            <div class=\"skin-slide-block\" style=\"\n              --bg-text-color: #60362c;\n              --text-padding: 20px;\n              --text-fixed-height: 130px;\n              --text-main-color: #ffffff;\n            \">\n              \n                <img src=\"//wombea.com/cdn/shop/files/gempages_534627086933951483-3f65fc50-a31e-4185-a005-f2d1bcd35c6b_768x_9710da1b-085f-4c02-b624-b1479d73886f.webp?v=1745152311&amp;width=600\" alt=\"Image principale\" class=\"skin-slide-image\">\n              \n\n              <div class=\"skin-slide-text\">\n                <div>Für dunkle Hauttöne mit warmen oder neutralen Untertönen.</div>\n                \n                  <div class=\"skin-slide-subtext\"></div>\n                \n              </div>\n            </div>\n\n            \n              <div class=\"skin-decorative-wrapper\">\n                <img src=\"//wombea.com/cdn/shop/files/gempages_534627086933951483-0c811d17-308d-42ef-92cb-dce7e14924d9.webp?v=1745156653&amp;width=300\" alt=\"Produit décoratif\">\n                <div class=\"overlay-text-normal\">FARBTON 1</div>\n                <div class=\"overlay-text-bold\">DUNKEL</div>\n              </div>\n            \n          </li>\n<li class=\"splide__slide splide__slide--clone\" style=\"--overlay-bottom: 15px; --overlay-right: 1.5px; --overlay-width: 80%; --overlay-text-color: #ffffff; margin-right: 1.5rem; width: calc(25% - 1.125rem);\" id=\"skin-care-slider-clone04\" role=\"tabpanel\" aria-roledescription=\"slide\" aria-label=\"2 of 6\" aria-hidden=\"true\">\n            <div class=\"skin-slide-block\" style=\"\n              --bg-text-color: #764534;\n              --text-padding: 20px;\n              --text-fixed-height: 130px;\n              --text-main-color: #ffffff;\n            \">\n              \n                <img src=\"//wombea.com/cdn/shop/files/gempages_534627086933951483-0a8f5143-6012-413b-9c99-ec880c353e2c.webp?v=1745140434&amp;width=600\" alt=\"Image principale\" class=\"skin-slide-image\">\n              \n\n              <div class=\"skin-slide-text\">\n                <div>Für mittel-dunkle Haut mit goldenen oder warmen Untertönen.</div>\n                \n                  <div class=\"skin-slide-subtext\"></div>\n                \n              </div>\n            </div>\n\n            \n              <div class=\"skin-decorative-wrapper\">\n                <img src=\"//wombea.com/cdn/shop/files/gempages_534627086933951483-0c811d17-308d-42ef-92cb-dce7e14924d9.webp?v=1745156653&amp;width=300\" alt=\"Produit décoratif\">\n                <div class=\"overlay-text-normal\">FARBTON 3</div>\n                <div class=\"overlay-text-bold\">MITTEL</div>\n              </div>\n            \n          </li>\n<li class=\"splide__slide splide__slide--clone\" style=\"--overlay-bottom: 15px; --overlay-right: 1.5px; --overlay-width: 80%; --overlay-text-color: #ffffff; margin-right: 1.5rem; width: calc(25% - 1.125rem);\" id=\"skin-care-slider-clone05\" role=\"tabpanel\" aria-roledescription=\"slide\" aria-label=\"3 of 6\" aria-hidden=\"true\">\n            <div class=\"skin-slide-block\" style=\"\n              --bg-text-color: #965a3b;\n              --text-padding: 20px;\n              --text-fixed-height: 130px;\n              --text-main-color: #ffffff;\n            \">\n              \n                <img src=\"//wombea.com/cdn/shop/files/gempages_534627086933951483-d831cb1b-4e76-40b9-baf1-02b3a6be700f.webp?v=1745140434&amp;width=600\" alt=\"Image principale\" class=\"skin-slide-image\">\n              \n\n              <div class=\"skin-slide-text\">\n                <div>Für mittlere Hauttöne mit neutralen Untertönen.</div>\n                \n                  <div class=\"skin-slide-subtext\"></div>\n                \n              </div>\n            </div>\n\n            \n              <div class=\"skin-decorative-wrapper\">\n                <img src=\"//wombea.com/cdn/shop/files/gempages_534627086933951483-402a051e-531a-495f-af39-f887ae02f96a.webp?v=1745169885&amp;width=300\" alt=\"Produit décoratif\">\n                <div class=\"overlay-text-normal\">FARBTON 3</div>\n                <div class=\"overlay-text-bold\">MITTEL DUNKEL</div>\n              </div>\n            \n          </li>\n<li class=\"splide__slide splide__slide--clone\" style=\"--overlay-bottom: 15px; --overlay-right: 1.5px; --overlay-width: 80%; --overlay-text-color: #1b1b1b; margin-right: 1.5rem; width: calc(25% - 1.125rem);\" id=\"skin-care-slider-clone06\" role=\"tabpanel\" aria-roledescription=\"slide\" aria-label=\"4 of 6\" aria-hidden=\"true\">\n            <div class=\"skin-slide-block\" style=\"\n              --bg-text-color: #e8bc9c;\n              --text-padding: 20px;\n              --text-fixed-height: 130px;\n              --text-main-color: #1b1b1b;\n            \">\n              \n                <img src=\"//wombea.com/cdn/shop/files/gempages_534627086933951483-0eff0a11-b29b-46f0-af7c-f2427621df7c_23a9ab46-8a41-4191-be92-674e8b939e4a.webp?v=1745152138&amp;width=600\" alt=\"Image principale\" class=\"skin-slide-image\">\n              \n\n              <div class=\"skin-slide-text\">\n                <div>Für helle Hauttöne mit pfirsichfarbenen oder neutralen Untertönen.</div>\n                \n                  <div class=\"skin-slide-subtext\"></div>\n                \n              </div>\n            </div>\n\n            \n              <div class=\"skin-decorative-wrapper\">\n                <img src=\"//wombea.com/cdn/shop/files/gempages_534627086933951483-a6f15167-c587-44e7-9324-a072c31d4a95.webp?v=1745170103&amp;width=300\" alt=\"Produit décoratif\">\n                <div class=\"overlay-text-normal\">FARBTON 4</div>\n                <div class=\"overlay-text-bold\">HELL</div>\n              </div>\n            \n          </li>\n<li class=\"splide__slide splide__slide--clone\" style=\"--overlay-bottom: 15px; --overlay-right: 1.5px; --overlay-width: 80%; --overlay-text-color: #1b1b1b; margin-right: 1.5rem; width: calc(25% - 1.125rem);\" id=\"skin-care-slider-clone07\" role=\"tabpanel\" aria-roledescription=\"slide\" aria-label=\"5 of 6\" aria-hidden=\"true\">\n            <div class=\"skin-slide-block\" style=\"\n              --bg-text-color: #e2b59e;\n              --text-padding: 20px;\n              --text-fixed-height: 130px;\n              --text-main-color: #1b1b1b;\n            \">\n              \n                <img src=\"//wombea.com/cdn/shop/files/gempages_534627086933951483-cecbbe6a-2a34-4f56-b075-88b6c4ebfc7f.webp?v=1745152138&amp;width=600\" alt=\"Image principale\" class=\"skin-slide-image\">\n              \n\n              <div class=\"skin-slide-text\">\n                <div>Für sehr helle Hauttöne mit kühlen oder rosafarbenen Untertönen.</div>\n                \n                  <div class=\"skin-slide-subtext\"></div>\n                \n              </div>\n            </div>\n\n            \n              <div class=\"skin-decorative-wrapper\">\n                <img src=\"//wombea.com/cdn/shop/files/gempages_534627086933951483-da618916-88f7-4b4c-a2e4-ed4c21e7f279.webp?v=1745170253&amp;width=300\" alt=\"Produit décoratif\">\n                <div class=\"overlay-text-normal\">FARBTON 5</div>\n                <div class=\"overlay-text-bold\">SEHR HELL</div>\n              </div>\n            \n          </li>\n<li class=\"splide__slide splide__slide--clone is-prev\" style=\"--overlay-bottom: 15px; --overlay-right: 1.5px; --overlay-width: 80%; --overlay-text-color: #ffffff; margin-right: 1.5rem; width: calc(25% - 1.125rem);\" id=\"skin-care-slider-clone08\" role=\"tabpanel\" aria-roledescription=\"slide\" aria-label=\"6 of 6\" aria-hidden=\"true\">\n            <div class=\"skin-slide-block\" style=\"\n              --bg-text-color: #ac775e;\n              --text-padding: 20px;\n              --text-fixed-height: 130px;\n              --text-main-color: #ffffff;\n            \">\n              \n                <img src=\"//wombea.com/cdn/shop/files/gempages_534627086933951483-f9f7af4d-7498-485e-9d10-aeb9b92eed1e.webp?v=1745152138&amp;width=600\" alt=\"Image principale\" class=\"skin-slide-image\">\n              \n\n              <div class=\"skin-slide-text\">\n                <div>Für dunkle Hauttöne mit warmen oder neutralen Untertönen.</div>\n                \n                  <div class=\"skin-slide-subtext\"></div>\n                \n              </div>\n            </div>\n\n            \n              <div class=\"skin-decorative-wrapper\">\n                <img src=\"//wombea.com/cdn/shop/files/gempages_534627086933951483-438c482a-ab4f-4edd-b5d8-5e45f07accf3.webp?v=1745170361&amp;width=300\" alt=\"Produit décoratif\">\n                <div class=\"overlay-text-normal\">FARBTON 6</div>\n                <div class=\"overlay-text-bold\">HELL-MITTEL</div>\n              </div>\n            \n          </li>\n<li class=\"splide__slide is-active is-visible\" style=\"--overlay-bottom: 15px; --overlay-right: 1.5px; --overlay-width: 80%; --overlay-text-color: #ffffff; margin-right: 1.5rem; width: calc(25% - 1.125rem);\" id=\"skin-care-slider-slide01\" role=\"tabpanel\" aria-roledescription=\"slide\" aria-label=\"1 of 6\">\n            <div class=\"skin-slide-block\" style=\"\n              --bg-text-color: #60362c;\n              --text-padding: 20px;\n              --text-fixed-height: 130px;\n              --text-main-color: #ffffff;\n            \">\n              \n                <img src=\"//wombea.com/cdn/shop/files/gempages_534627086933951483-3f65fc50-a31e-4185-a005-f2d1bcd35c6b_768x_9710da1b-085f-4c02-b624-b1479d73886f.webp?v=1745152311&amp;width=600\" alt=\"Image principale\" class=\"skin-slide-image\">\n              \n\n              <div class=\"skin-slide-text\">\n                <div>Für dunkle Hauttöne mit warmen oder neutralen Untertönen.</div>\n                \n                  <div class=\"skin-slide-subtext\"></div>\n                \n              </div>\n            </div>\n\n            \n              <div class=\"skin-decorative-wrapper\">\n                <img src=\"//wombea.com/cdn/shop/files/gempages_534627086933951483-0c811d17-308d-42ef-92cb-dce7e14924d9.webp?v=1745156653&amp;width=300\" alt=\"Produit décoratif\">\n                <div class=\"overlay-text-normal\">FARBTON 1</div>\n                <div class=\"overlay-text-bold\">DUNKEL</div>\n              </div>\n            \n          </li>\n        \n          <li class=\"splide__slide is-visible is-next\" style=\"--overlay-bottom: 15px; --overlay-right: 1.5px; --overlay-width: 80%; --overlay-text-color: #ffffff; margin-right: 1.5rem; width: calc(25% - 1.125rem);\" id=\"skin-care-slider-slide02\" role=\"tabpanel\" aria-roledescription=\"slide\" aria-label=\"2 of 6\">\n            <div class=\"skin-slide-block\" style=\"\n              --bg-text-color: #764534;\n              --text-padding: 20px;\n              --text-fixed-height: 130px;\n              --text-main-color: #ffffff;\n            \">\n              \n                <img src=\"//wombea.com/cdn/shop/files/gempages_534627086933951483-0a8f5143-6012-413b-9c99-ec880c353e2c.webp?v=1745140434&amp;width=600\" alt=\"Image principale\" class=\"skin-slide-image\">\n              \n\n              <div class=\"skin-slide-text\">\n                <div>Für mittel-dunkle Haut mit goldenen oder warmen Untertönen.</div>\n                \n                  <div class=\"skin-slide-subtext\"></div>\n                \n              </div>\n            </div>\n\n            \n              <div class=\"skin-decorative-wrapper\">\n                <img src=\"//wombea.com/cdn/shop/files/gempages_534627086933951483-0c811d17-308d-42ef-92cb-dce7e14924d9.webp?v=1745156653&amp;width=300\" alt=\"Produit décoratif\">\n                <div class=\"overlay-text-normal\">FARBTON 3</div>\n                <div class=\"overlay-text-bold\">MITTEL</div>\n              </div>\n            \n          </li>\n        \n          <li class=\"splide__slide is-visible\" style=\"--overlay-bottom: 15px; --overlay-right: 1.5px; --overlay-width: 80%; --overlay-text-color: #ffffff; margin-right: 1.5rem; width: calc(25% - 1.125rem);\" id=\"skin-care-slider-slide03\" role=\"tabpanel\" aria-roledescription=\"slide\" aria-label=\"3 of 6\">\n            <div class=\"skin-slide-block\" style=\"\n              --bg-text-color: #965a3b;\n              --text-padding: 20px;\n              --text-fixed-height: 130px;\n              --text-main-color: #ffffff;\n            \">\n              \n                <img src=\"//wombea.com/cdn/shop/files/gempages_534627086933951483-d831cb1b-4e76-40b9-baf1-02b3a6be700f.webp?v=1745140434&amp;width=600\" alt=\"Image principale\" class=\"skin-slide-image\">\n              \n\n              <div class=\"skin-slide-text\">\n                <div>Für mittlere Hauttöne mit neutralen Untertönen.</div>\n                \n                  <div class=\"skin-slide-subtext\"></div>\n                \n              </div>\n            </div>\n\n            \n              <div class=\"skin-decorative-wrapper\">\n                <img src=\"//wombea.com/cdn/shop/files/gempages_534627086933951483-402a051e-531a-495f-af39-f887ae02f96a.webp?v=1745169885&amp;width=300\" alt=\"Produit décoratif\">\n                <div class=\"overlay-text-normal\">FARBTON 3</div>\n                <div class=\"overlay-text-bold\">MITTEL DUNKEL</div>\n              </div>\n            \n          </li>\n        \n          <li class=\"splide__slide is-visible\" style=\"--overlay-bottom: 15px; --overlay-right: 1.5px; --overlay-width: 80%; --overlay-text-color: #1b1b1b; margin-right: 1.5rem; width: calc(25% - 1.125rem);\" id=\"skin-care-slider-slide04\" role=\"tabpanel\" aria-roledescription=\"slide\" aria-label=\"4 of 6\">\n            <div class=\"skin-slide-block\" style=\"\n              --bg-text-color: #e8bc9c;\n              --text-padding: 20px;\n              --text-fixed-height: 130px;\n              --text-main-color: #1b1b1b;\n            \">\n              \n                <img src=\"//wombea.com/cdn/shop/files/gempages_534627086933951483-0eff0a11-b29b-46f0-af7c-f2427621df7c_23a9ab46-8a41-4191-be92-674e8b939e4a.webp?v=1745152138&amp;width=600\" alt=\"Image principale\" class=\"skin-slide-image\">\n              \n\n              <div class=\"skin-slide-text\">\n                <div>Für helle Hauttöne mit pfirsichfarbenen oder neutralen Untertönen.</div>\n                \n                  <div class=\"skin-slide-subtext\"></div>\n                \n              </div>\n            </div>\n\n            \n              <div class=\"skin-decorative-wrapper\">\n                <img src=\"//wombea.com/cdn/shop/files/gempages_534627086933951483-a6f15167-c587-44e7-9324-a072c31d4a95.webp?v=1745170103&amp;width=300\" alt=\"Produit décoratif\">\n                <div class=\"overlay-text-normal\">FARBTON 4</div>\n                <div class=\"overlay-text-bold\">HELL</div>\n              </div>\n            \n          </li>\n        \n          <li class=\"splide__slide\" style=\"--overlay-bottom: 15px; --overlay-right: 1.5px; --overlay-width: 80%; --overlay-text-color: #1b1b1b; margin-right: 1.5rem; width: calc(25% - 1.125rem);\" id=\"skin-care-slider-slide05\" role=\"tabpanel\" aria-roledescription=\"slide\" aria-label=\"5 of 6\" aria-hidden=\"true\">\n            <div class=\"skin-slide-block\" style=\"\n              --bg-text-color: #e2b59e;\n              --text-padding: 20px;\n              --text-fixed-height: 130px;\n              --text-main-color: #1b1b1b;\n            \">\n              \n                <img src=\"//wombea.com/cdn/shop/files/gempages_534627086933951483-cecbbe6a-2a34-4f56-b075-88b6c4ebfc7f.webp?v=1745152138&amp;width=600\" alt=\"Image principale\" class=\"skin-slide-image\">\n              \n\n              <div class=\"skin-slide-text\">\n                <div>Für sehr helle Hauttöne mit kühlen oder rosafarbenen Untertönen.</div>\n                \n                  <div class=\"skin-slide-subtext\"></div>\n                \n              </div>\n            </div>\n\n            \n              <div class=\"skin-decorative-wrapper\">\n                <img src=\"//wombea.com/cdn/shop/files/gempages_534627086933951483-da618916-88f7-4b4c-a2e4-ed4c21e7f279.webp?v=1745170253&amp;width=300\" alt=\"Produit décoratif\">\n                <div class=\"overlay-text-normal\">FARBTON 5</div>\n                <div class=\"overlay-text-bold\">SEHR HELL</div>\n              </div>\n            \n          </li>\n        \n          <li class=\"splide__slide\" style=\"--overlay-bottom: 15px; --overlay-right: 1.5px; --overlay-width: 80%; --overlay-text-color: #ffffff; margin-right: 1.5rem; width: calc(25% - 1.125rem);\" id=\"skin-care-slider-slide06\" role=\"tabpanel\" aria-roledescription=\"slide\" aria-label=\"6 of 6\" aria-hidden=\"true\">\n            <div class=\"skin-slide-block\" style=\"\n              --bg-text-color: #ac775e;\n              --text-padding: 20px;\n              --text-fixed-height: 130px;\n              --text-main-color: #ffffff;\n            \">\n              \n                <img src=\"//wombea.com/cdn/shop/files/gempages_534627086933951483-f9f7af4d-7498-485e-9d10-aeb9b92eed1e.webp?v=1745152138&amp;width=600\" alt=\"Image principale\" class=\"skin-slide-image\">\n              \n\n              <div class=\"skin-slide-text\">\n                <div>Für dunkle Hauttöne mit warmen oder neutralen Untertönen.</div>\n                \n                  <div class=\"skin-slide-subtext\"></div>\n                \n              </div>\n            </div>\n\n            \n              <div class=\"skin-decorative-wrapper\">\n                <img src=\"//wombea.com/cdn/shop/files/gempages_534627086933951483-438c482a-ab4f-4edd-b5d8-5e45f07accf3.webp?v=1745170361&amp;width=300\" alt=\"Produit décoratif\">\n                <div class=\"overlay-text-normal\">FARBTON 6</div>\n                <div class=\"overlay-text-bold\">HELL-MITTEL</div>\n              </div>\n            \n          </li>\n        \n      <li class=\"splide__slide splide__slide--clone is-active\" style=\"--overlay-bottom: 15px; --overlay-right: 1.5px; --overlay-width: 80%; --overlay-text-color: #ffffff; margin-right: 1.5rem; width: calc(25% - 1.125rem);\" id=\"skin-care-slider-clone09\" role=\"tabpanel\" aria-roledescription=\"slide\" aria-label=\"1 of 6\" aria-hidden=\"true\">\n            <div class=\"skin-slide-block\" style=\"\n              --bg-text-color: #60362c;\n              --text-padding: 20px;\n              --text-fixed-height: 130px;\n              --text-main-color: #ffffff;\n            \">\n              \n                <img src=\"//wombea.com/cdn/shop/files/gempages_534627086933951483-3f65fc50-a31e-4185-a005-f2d1bcd35c6b_768x_9710da1b-085f-4c02-b624-b1479d73886f.webp?v=1745152311&amp;width=600\" alt=\"Image principale\" class=\"skin-slide-image\">\n              \n\n              <div class=\"skin-slide-text\">\n                <div>Für dunkle Hauttöne mit warmen oder neutralen Untertönen.</div>\n                \n                  <div class=\"skin-slide-subtext\"></div>\n                \n              </div>\n            </div>\n\n            \n              <div class=\"skin-decorative-wrapper\">\n                <img src=\"//wombea.com/cdn/shop/files/gempages_534627086933951483-0c811d17-308d-42ef-92cb-dce7e14924d9.webp?v=1745156653&amp;width=300\" alt=\"Produit décoratif\">\n                <div class=\"overlay-text-normal\">FARBTON 1</div>\n                <div class=\"overlay-text-bold\">DUNKEL</div>\n              </div>\n            \n          </li>\n<li class=\"splide__slide splide__slide--clone\" style=\"--overlay-bottom: 15px; --overlay-right: 1.5px; --overlay-width: 80%; --overlay-text-color: #ffffff; margin-right: 1.5rem; width: calc(25% - 1.125rem);\" id=\"skin-care-slider-clone10\" role=\"tabpanel\" aria-roledescription=\"slide\" aria-label=\"2 of 6\" aria-hidden=\"true\">\n            <div class=\"skin-slide-block\" style=\"\n              --bg-text-color: #764534;\n              --text-padding: 20px;\n              --text-fixed-height: 130px;\n              --text-main-color: #ffffff;\n            \">\n              \n                <img src=\"//wombea.com/cdn/shop/files/gempages_534627086933951483-0a8f5143-6012-413b-9c99-ec880c353e2c.webp?v=1745140434&amp;width=600\" alt=\"Image principale\" class=\"skin-slide-image\">\n              \n\n              <div class=\"skin-slide-text\">\n                <div>Für mittel-dunkle Haut mit goldenen oder warmen Untertönen.</div>\n                \n                  <div class=\"skin-slide-subtext\"></div>\n                \n              </div>\n            </div>\n\n            \n              <div class=\"skin-decorative-wrapper\">\n                <img src=\"//wombea.com/cdn/shop/files/gempages_534627086933951483-0c811d17-308d-42ef-92cb-dce7e14924d9.webp?v=1745156653&amp;width=300\" alt=\"Produit décoratif\">\n                <div class=\"overlay-text-normal\">FARBTON 3</div>\n                <div class=\"overlay-text-bold\">MITTEL</div>\n              </div>\n            \n          </li>\n<li class=\"splide__slide splide__slide--clone\" style=\"--overlay-bottom: 15px; --overlay-right: 1.5px; --overlay-width: 80%; --overlay-text-color: #ffffff; margin-right: 1.5rem; width: calc(25% - 1.125rem);\" id=\"skin-care-slider-clone11\" role=\"tabpanel\" aria-roledescription=\"slide\" aria-label=\"3 of 6\" aria-hidden=\"true\">\n            <div class=\"skin-slide-block\" style=\"\n              --bg-text-color: #965a3b;\n              --text-padding: 20px;\n              --text-fixed-height: 130px;\n              --text-main-color: #ffffff;\n            \">\n              \n                <img src=\"//wombea.com/cdn/shop/files/gempages_534627086933951483-d831cb1b-4e76-40b9-baf1-02b3a6be700f.webp?v=1745140434&amp;width=600\" alt=\"Image principale\" class=\"skin-slide-image\">\n              \n\n              <div class=\"skin-slide-text\">\n                <div>Für mittlere Hauttöne mit neutralen Untertönen.</div>\n                \n                  <div class=\"skin-slide-subtext\"></div>\n                \n              </div>\n            </div>\n\n            \n              <div class=\"skin-decorative-wrapper\">\n                <img src=\"//wombea.com/cdn/shop/files/gempages_534627086933951483-402a051e-531a-495f-af39-f887ae02f96a.webp?v=1745169885&amp;width=300\" alt=\"Produit décoratif\">\n                <div class=\"overlay-text-normal\">FARBTON 3</div>\n                <div class=\"overlay-text-bold\">MITTEL DUNKEL</div>\n              </div>\n            \n          </li>\n<li class=\"splide__slide splide__slide--clone\" style=\"--overlay-bottom: 15px; --overlay-right: 1.5px; --overlay-width: 80%; --overlay-text-color: #1b1b1b; margin-right: 1.5rem; width: calc(25% - 1.125rem);\" id=\"skin-care-slider-clone12\" role=\"tabpanel\" aria-roledescription=\"slide\" aria-label=\"4 of 6\" aria-hidden=\"true\">\n            <div class=\"skin-slide-block\" style=\"\n              --bg-text-color: #e8bc9c;\n              --text-padding: 20px;\n              --text-fixed-height: 130px;\n              --text-main-color: #1b1b1b;\n            \">\n              \n                <img src=\"//wombea.com/cdn/shop/files/gempages_534627086933951483-0eff0a11-b29b-46f0-af7c-f2427621df7c_23a9ab46-8a41-4191-be92-674e8b939e4a.webp?v=1745152138&amp;width=600\" alt=\"Image principale\" class=\"skin-slide-image\">\n              \n\n              <div class=\"skin-slide-text\">\n                <div>Für helle Hauttöne mit pfirsichfarbenen oder neutralen Untertönen.</div>\n                \n                  <div class=\"skin-slide-subtext\"></div>\n                \n              </div>\n            </div>\n\n            \n              <div class=\"skin-decorative-wrapper\">\n                <img src=\"//wombea.com/cdn/shop/files/gempages_534627086933951483-a6f15167-c587-44e7-9324-a072c31d4a95.webp?v=1745170103&amp;width=300\" alt=\"Produit décoratif\">\n                <div class=\"overlay-text-normal\">FARBTON 4</div>\n                <div class=\"overlay-text-bold\">HELL</div>\n              </div>\n            \n          </li>\n<li class=\"splide__slide splide__slide--clone\" style=\"--overlay-bottom: 15px; --overlay-right: 1.5px; --overlay-width: 80%; --overlay-text-color: #1b1b1b; margin-right: 1.5rem; width: calc(25% - 1.125rem);\" id=\"skin-care-slider-clone13\" role=\"tabpanel\" aria-roledescription=\"slide\" aria-label=\"5 of 6\" aria-hidden=\"true\">\n            <div class=\"skin-slide-block\" style=\"\n              --bg-text-color: #e2b59e;\n              --text-padding: 20px;\n              --text-fixed-height: 130px;\n              --text-main-color: #1b1b1b;\n            \">\n              \n                <img src=\"//wombea.com/cdn/shop/files/gempages_534627086933951483-cecbbe6a-2a34-4f56-b075-88b6c4ebfc7f.webp?v=1745152138&amp;width=600\" alt=\"Image principale\" class=\"skin-slide-image\">\n              \n\n              <div class=\"skin-slide-text\">\n                <div>Für sehr helle Hauttöne mit kühlen oder rosafarbenen Untertönen.</div>\n                \n                  <div class=\"skin-slide-subtext\"></div>\n                \n              </div>\n            </div>\n\n            \n              <div class=\"skin-decorative-wrapper\">\n                <img src=\"//wombea.com/cdn/shop/files/gempages_534627086933951483-da618916-88f7-4b4c-a2e4-ed4c21e7f279.webp?v=1745170253&amp;width=300\" alt=\"Produit décoratif\">\n                <div class=\"overlay-text-normal\">FARBTON 5</div>\n                <div class=\"overlay-text-bold\">SEHR HELL</div>\n              </div>\n            \n          </li>\n<li class=\"splide__slide splide__slide--clone\" style=\"--overlay-bottom: 15px; --overlay-right: 1.5px; --overlay-width: 80%; --overlay-text-color: #ffffff; margin-right: 1.5rem; width: calc(25% - 1.125rem);\" id=\"skin-care-slider-clone14\" role=\"tabpanel\" aria-roledescription=\"slide\" aria-label=\"6 of 6\" aria-hidden=\"true\">\n            <div class=\"skin-slide-block\" style=\"\n              --bg-text-color: #ac775e;\n              --text-padding: 20px;\n              --text-fixed-height: 130px;\n              --text-main-color: #ffffff;\n            \">\n              \n                <img src=\"//wombea.com/cdn/shop/files/gempages_534627086933951483-f9f7af4d-7498-485e-9d10-aeb9b92eed1e.webp?v=1745152138&amp;width=600\" alt=\"Image principale\" class=\"skin-slide-image\">\n              \n\n              <div class=\"skin-slide-text\">\n                <div>Für dunkle Hauttöne mit warmen oder neutralen Untertönen.</div>\n                \n                  <div class=\"skin-slide-subtext\"></div>\n                \n              </div>\n            </div>\n\n            \n              <div class=\"skin-decorative-wrapper\">\n                <img src=\"//wombea.com/cdn/shop/files/gempages_534627086933951483-438c482a-ab4f-4edd-b5d8-5e45f07accf3.webp?v=1745170361&amp;width=300\" alt=\"Produit décoratif\">\n                <div class=\"overlay-text-normal\">FARBTON 6</div>\n                <div class=\"overlay-text-bold\">HELL-MITTEL</div>\n              </div>\n            \n          </li>\n<li class=\"splide__slide splide__slide--clone is-active\" style=\"--overlay-bottom: 15px; --overlay-right: 1.5px; --overlay-width: 80%; --overlay-text-color: #ffffff; margin-right: 1.5rem; width: calc(25% - 1.125rem);\" id=\"skin-care-slider-clone15\" role=\"tabpanel\" aria-roledescription=\"slide\" aria-label=\"1 of 6\" aria-hidden=\"true\">\n            <div class=\"skin-slide-block\" style=\"\n              --bg-text-color: #60362c;\n              --text-padding: 20px;\n              --text-fixed-height: 130px;\n              --text-main-color: #ffffff;\n            \">\n              \n                <img src=\"//wombea.com/cdn/shop/files/gempages_534627086933951483-3f65fc50-a31e-4185-a005-f2d1bcd35c6b_768x_9710da1b-085f-4c02-b624-b1479d73886f.webp?v=1745152311&amp;width=600\" alt=\"Image principale\" class=\"skin-slide-image\">\n              \n\n              <div class=\"skin-slide-text\">\n                <div>Für dunkle Hauttöne mit warmen oder neutralen Untertönen.</div>\n                \n                  <div class=\"skin-slide-subtext\"></div>\n                \n              </div>\n            </div>\n\n            \n              <div class=\"skin-decorative-wrapper\">\n                <img src=\"//wombea.com/cdn/shop/files/gempages_534627086933951483-0c811d17-308d-42ef-92cb-dce7e14924d9.webp?v=1745156653&amp;width=300\" alt=\"Produit décoratif\">\n                <div class=\"overlay-text-normal\">FARBTON 1</div>\n                <div class=\"overlay-text-bold\">DUNKEL</div>\n              </div>\n            \n          </li>\n<li class=\"splide__slide splide__slide--clone\" style=\"--overlay-bottom: 15px; --overlay-right: 1.5px; --overlay-width: 80%; --overlay-text-color: #ffffff; margin-right: 1.5rem; width: calc(25% - 1.125rem);\" id=\"skin-care-slider-clone16\" role=\"tabpanel\" aria-roledescription=\"slide\" aria-label=\"2 of 6\" aria-hidden=\"true\">\n            <div class=\"skin-slide-block\" style=\"\n              --bg-text-color: #764534;\n              --text-padding: 20px;\n              --text-fixed-height: 130px;\n              --text-main-color: #ffffff;\n            \">\n              \n                <img src=\"//wombea.com/cdn/shop/files/gempages_534627086933951483-0a8f5143-6012-413b-9c99-ec880c353e2c.webp?v=1745140434&amp;width=600\" alt=\"Image principale\" class=\"skin-slide-image\">\n              \n\n              <div class=\"skin-slide-text\">\n                <div>Für mittel-dunkle Haut mit goldenen oder warmen Untertönen.</div>\n                \n                  <div class=\"skin-slide-subtext\"></div>\n                \n              </div>\n            </div>\n\n            \n              <div class=\"skin-decorative-wrapper\">\n                <img src=\"//wombea.com/cdn/shop/files/gempages_534627086933951483-0c811d17-308d-42ef-92cb-dce7e14924d9.webp?v=1745156653&amp;width=300\" alt=\"Produit décoratif\">\n                <div class=\"overlay-text-normal\">FARBTON 3</div>\n                <div class=\"overlay-text-bold\">MITTEL</div>\n              </div>\n            \n          </li>\n</ul>\n    </div>\n\n    <div class=\"splide__arrows splide__arrows--ltr\">\n      <button class=\"splide__arrow splide__arrow--prev\" aria-label=\"Go to last slide\" aria-controls=\"skin-care-slider-track\">‹</button>\n      <button class=\"splide__arrow splide__arrow--next\" aria-label=\"Next slide\" aria-controls=\"skin-care-slider-track\">›</button>\n    </div>\n  <ul class=\"splide__pagination splide__pagination--ltr\" role=\"tablist\" aria-label=\"Select a slide to show\">\n<li role=\"presentation\"><button class=\"splide__pagination__page is-active\" type=\"button\" role=\"tab\" aria-controls=\"skin-care-slider-slide01 skin-care-slider-slide02 skin-care-slider-slide03 skin-care-slider-slide04\" aria-label=\"Go to page 1\" aria-selected=\"true\"></button></li>\n<li role=\"presentation\"><button class=\"splide__pagination__page\" type=\"button\" role=\"tab\" aria-controls=\"skin-care-slider-slide03 skin-care-slider-slide04 skin-care-slider-slide05 skin-care-slider-slide06\" aria-label=\"Go to page 2\" tabindex=\"-1\"></button></li>\n</ul>\n</div>\n</div>\n\n\n\n\n</div>",
-        "add_vertical_spacing": true,
-        "background_type": "full_width",
-        "background": "rgba(0,0,0,0)",
-        "text_color": "rgba(0,0,0,0)"
-      }
-    },
-    "gp_shopify_original_section_566328612714710041": {
-      "type": "gp-section-566328612714710041",
-      "settings": {
-        "checksum": ""
-      }
-    },
     "gp_shopify_original_section_566393094367347650": {
       "type": "gp-section-566393094367347650",
       "settings": {
         "section_preload": "true",
-        "checksum": ""
-      }
-    },
-    "gp_shopify_original_section_566394114455634882": {
-      "type": "gp-section-566394114455634882",
-      "settings": {
-        "checksum": ""
-      }
-    },
-    "gp_shopify_original_section_566394241358496692": {
-      "type": "gp-section-566394241358496692",
-      "settings": {
-        "checksum": ""
-      }
-    },
-    "gp_shopify_original_section_566394482161878031": {
-      "type": "gp-section-566394482161878031",
-      "settings": {
-        "checksum": ""
-      }
-    },
-    "gp_shopify_original_section_566394482178655156": {
-      "type": "gp-section-566394482178655156",
-      "settings": {
-        "checksum": ""
+        "checksum": "",
+        "ggaUACeOCG2_childItem_0": "<p>100% Money-Back Guarantee</p>",
+        "gg3dZd4VXjO_childItem_0": "<p>60-Day Easy Returns</p>"
       }
     },
     "gp_shopify_original_section_566394595324199951": {
       "type": "gp-section-566394595324199951",
       "settings": {
+        "section_preload": "false",
         "checksum": ""
       }
     },
     "gp_shopify_original_section_566395066545865666": {
       "type": "gp-section-566395066545865666",
       "settings": {
+        "section_preload": "false",
+        "checksum": ""
+      }
+    },
+    "gp_shopify_original_section_566394482161878031": {
+      "type": "gp-section-566394482161878031",
+      "settings": {
+        "section_preload": "false",
+        "checksum": ""
+      }
+    },
+    "gp_shopify_original_section_566394482178655156": {
+      "type": "gp-section-566394482178655156",
+      "settings": {
+        "section_preload": "false",
+        "checksum": ""
+      }
+    },
+    "gp_shopify_original_section_566394241358496692": {
+      "type": "gp-section-566394241358496692",
+      "settings": {
+        "section_preload": "false",
+        "checksum": ""
+      }
+    },
+    "gp_shopify_original_section_566394114455634882": {
+      "type": "gp-section-566394114455634882",
+      "settings": {
+        "section_preload": "false",
         "checksum": ""
       }
     },
     "gp_shopify_original_section_566395847122617268": {
       "type": "gp-section-566395847122617268",
       "settings": {
+        "section_preload": "false",
         "checksum": ""
       }
     },
     "gp_shopify_original_section_566396014760559654": {
       "type": "gp-section-566396014760559654",
       "settings": {
+        "section_preload": "false",
         "checksum": ""
       }
     },
     "gp_shopify_original_section_566396113679025190": {
       "type": "gp-section-566396113679025190",
       "settings": {
+        "section_preload": "false",
         "checksum": ""
       }
     },
     "gp_shopify_original_section_566396216473027508": {
       "type": "gp-section-566396216473027508",
       "settings": {
+        "section_preload": "false",
         "checksum": ""
       }
     },
     "main": {
       "type": "main-product",
       "blocks": {
+        "a6eb81db-40e4-43e0-972f-32db010a4a56": {
+          "type": "rating_stars",
+          "settings": {
+            "rating": 5,
+            "star_color": "#c39f83",
+            "bg_stars_style": "full",
+            "bg_star_color": "#ececec",
+            "label": "<strong>(56,923)</strong>",
+            "size": 12,
+            "alignment": "flex-start",
+            "scroll_id": "",
+            "margin_top": 0,
+            "margin_bottom": 9
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+            "text_size": "h2",
+            "title_alignment": "left",
+            "uppercase_title": false,
+            "margin_top": 0,
+            "margin_bottom": 6
+          }
+        },
+        "custom_liquid_M78cwX": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<span style=\"display:inline-block;background-color:#f6f0eb;color:#000;padding:6px 12px;border-radius:6px;margin-right:6px;font-size:13px;font-weight:500;\">\n  HA+ TECHNOLOGY\n</span>\n<span style=\"display:inline-block;background-color:#f6f0eb;color:#000;padding:6px 12px;border-radius:6px;margin-right:6px;font-size:13px;font-weight:500;\">\n  FOR ALL SKIN TYPES\n</span>\n<span style=\"display:inline-block;background-color:#f6f0eb;color:#000;padding:6px 12px;border-radius:6px;font-size:13px;font-weight:500;\">\n  VEGAN\n</span>"
+          }
+        },
+        "text_iGah3K": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "mobile_text_size": 14,
+            "desktop_text_size": 16,
+            "alignment": "center",
+            "text_color": "#121212",
+            "text_1": "HA+ TECHNOLOGY",
+            "text_2": "FOR ALL SKIN TYPES",
+            "text_3": "VEGAN",
+            "icon_scale": 120,
+            "icon_color": "#121212",
+            "icon_1": "",
+            "filled_icon_1": false,
+            "icon_2": "",
+            "filled_icon_2": false,
+            "icon_3": "",
+            "filled_icon_3": false,
+            "width": "fit-content",
+            "direction": "horizontal",
+            "column_gap": 1,
+            "enable_bg": true,
+            "bg_color": "#f5eee8",
+            "corner_radius": 40,
+            "padding": 3,
+            "border_size": 0,
+            "border_color": "#f5eee8",
+            "margin_top": 15,
+            "margin_bottom": 15
+          }
+        },
+        "text_Efp7EU": {
+          "type": "text",
+          "settings": {
+            "mobile_text_size": 14,
+            "desktop_text_size": 16,
+            "alignment": "left",
+            "text_color": "#121212",
+            "text_1": "Made to be your beauty shortcut, combining hydration, coverage, and glow in one swipe.",
+            "text_2": "",
+            "text_3": "",
+            "icon_scale": 120,
+            "icon_color": "#121212",
+            "icon_1": "",
+            "filled_icon_1": false,
+            "icon_2": "check_circle",
+            "filled_icon_2": false,
+            "icon_3": "check_circle",
+            "filled_icon_3": false,
+            "width": "100%",
+            "direction": "horizontal",
+            "column_gap": 3,
+            "enable_bg": false,
+            "bg_color": "#f3f3f3",
+            "corner_radius": 40,
+            "padding": 3,
+            "border_size": 0,
+            "border_color": "#b7b7b7",
+            "margin_top": 15,
+            "margin_bottom": 15
+          }
+        },
+        "price": {
+          "type": "price",
+          "disabled": true,
+          "settings": {
+            "layout": "price_first",
+            "price_color": "accent-1",
+            "compare_price_color": "text",
+            "hide_sale_badge": false,
+            "margin_top": 9,
+            "margin_bottom": 15
+          }
+        },
+        "text_k7jx8d": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "mobile_text_size": 14,
+            "desktop_text_size": 16,
+            "alignment": "left",
+            "text_color": "#121212",
+            "text_1": "Smooths Fine Lines & Wrinkles",
+            "text_2": "Hides Dark Spots & Hyperpigmentation",
+            "text_3": "Skincare + Makeup All in One",
+            "icon_scale": 120,
+            "icon_color": "#c39f83",
+            "icon_1": "check_circle",
+            "filled_icon_1": false,
+            "custom_icon_1": "shopify://shop_images/check_circle_24dp_C39F83_FILL1_wght400_GRAD0_opsz24.svg",
+            "icon_2": "check_circle",
+            "filled_icon_2": false,
+            "custom_icon_2": "shopify://shop_images/check_circle_24dp_C39F83_FILL1_wght400_GRAD0_opsz24_1efe5149-ed4a-48bc-ab01-789a9ea86684.svg",
+            "icon_3": "check_circle",
+            "filled_icon_3": false,
+            "custom_icon_3": "shopify://shop_images/check_circle_24dp_C39F83_FILL1_wght400_GRAD0_opsz24_1576ce8c-bede-4bce-a5cd-9a2b56cb024d.svg",
+            "width": "fit-content",
+            "direction": "vertical",
+            "column_gap": 3,
+            "enable_bg": false,
+            "bg_color": "#f3f3f3",
+            "corner_radius": 40,
+            "padding": 3,
+            "border_size": 0,
+            "border_color": "#b7b7b7",
+            "margin_top": 15,
+            "margin_bottom": 15
+          }
+        },
+        "icon_with_text_Ge44A9": {
+          "type": "icon_with_text",
+          "settings": {
+            "layout": "horizontal",
+            "icon_size": "large",
+            "icon_color": "accent-1",
+            "icon_1": "favorite",
+            "icon_1_fill": false,
+            "image_1": "shopify://shop_images/gempages_534627086933951483-043139a2-dcb8-4f87-984f-95545c927095.webp",
+            "heading_1": "COVERS ACNE & DARK SPOTS",
+            "icon_2": "",
+            "icon_2_fill": false,
+            "image_2": "shopify://shop_images/gempages_534627086933951483-e9570975-4c65-459f-bd4c-877fa62805e2.svg",
+            "heading_2": "SMOOTHS  FINE LINES & WRINKLES",
+            "icon_3": "local_shipping",
+            "icon_3_fill": false,
+            "image_3": "shopify://shop_images/gempages_534627086933951483-e2505e90-5ed4-4f3b-8cb0-5396453fb02e_1024x_7b672a11-ece5-423a-8ca4-492d405c6bf1.svg",
+            "heading_3": "LIGHTWEIGHT & BREATHABLE",
+            "margin_top": 24,
+            "margin_bottom": 24
+          }
+        },
+        "5fcc0428-e768-4cb7-bea3-eb0274198dd1": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_types": "swatches, pills,",
+            "custom_labels": "",
+            "swatches_size": "medium",
+            "swatches_custom_colors": "disabled",
+            "swatches_custom_colors_list": "#000000, #FFFFFF",
+            "full_width_dropdowns": false,
+            "breaks_style": "normal",
+            "breaks_headline": "BUNDLE & SAVE",
+            "breaks_color_scheme": "accent-1",
+            "breaks_badges": "[empty], Most popular, [empty]",
+            "breaks_displayed_images": "variant_images",
+            "breaks_custom_images": "",
+            "breaks_image_width": 70,
+            "breaks_space_images": true,
+            "breaks_labels": "[name], [name], [name]",
+            "breaks_benefits": "[empty], Free Shipping, Free Shipping",
+            "breaks_captions": "Variant 1 caption, Variant 2 caption, Variant 3 caption",
+            "breaks_price_texts": "[price], [price], [price]",
+            "breaks_compare_price_texts": "[compare_price], [compare_price], [compare_price]",
+            "margin_top": 15,
+            "margin_bottom": 15
+          }
+        },
         "04ba004e-2f54-4936-8b1c-8bcadf6573f6": {
           "type": "quantity_selector",
           "settings": {
@@ -174,46 +337,10 @@
             "margin_bottom": 15
           }
         },
-        "5fcc0428-e768-4cb7-bea3-eb0274198dd1": {
-          "type": "variant_picker",
-          "settings": {
-            "picker_types": "swatches, pills,",
-            "custom_labels": "",
-            "swatches_size": "medium",
-            "swatches_custom_colors": "disabled",
-            "swatches_custom_colors_list": "#000000, #FFFFFF",
-            "full_width_dropdowns": false,
-            "breaks_style": "normal",
-            "breaks_headline": "BUNDLE & SAVE",
-            "breaks_color_scheme": "accent-1",
-            "breaks_badges": "[empty], Most popular, [empty]",
-            "breaks_displayed_images": "variant_images",
-            "breaks_custom_images": "",
-            "breaks_image_width": 70,
-            "breaks_space_images": true,
-            "breaks_labels": "[name], [name], [name]",
-            "breaks_benefits": "[empty], Free Shipping, Free Shipping",
-            "breaks_captions": "Variant 1 caption, Variant 2 caption, Variant 3 caption",
-            "breaks_price_texts": "[price], [price], [price]",
-            "breaks_compare_price_texts": "[compare_price], [compare_price], [compare_price]",
-            "margin_top": 15,
-            "margin_bottom": 15
-          }
-        },
-        "a6eb81db-40e4-43e0-972f-32db010a4a56": {
-          "type": "rating_stars",
-          "settings": {
-            "rating": 5,
-            "star_color": "#c39f83",
-            "bg_stars_style": "full",
-            "bg_star_color": "#ececec",
-            "label": "<strong>(56,923)</strong>",
-            "size": 12,
-            "alignment": "flex-start",
-            "scroll_id": "",
-            "margin_top": 0,
-            "margin_bottom": 9
-          }
+        "custom_add_to_cart_button_VmcQki": {
+          "type": "custom_add_to_cart_button",
+          "disabled": true,
+          "settings": {}
         },
         "buy_buttons": {
           "type": "buy_buttons",
@@ -224,87 +351,6 @@
             "display_price": false,
             "enable_custom_color": false,
             "custom_color": "#53af01",
-            "margin_top": 24,
-            "margin_bottom": 24
-          }
-        },
-        "c43b9f54-e00a-4f9e-b42c-2914dde008a8": {
-          "type": "reviews",
-          "settings": {
-            "display_stars": true,
-            "star_color": "#c39f83",
-            "avatar_alignment": "top",
-            "author_1": "Emily J - London, UK",
-            "text_1": "<p><em>‘’Most products settle into my dark spots, but Elvynor blends perfectly and gives me an airbrushed finish.’’</em></p>",
-            "image_1": "shopify://shop_images/gempages_534627086933951483-3ee063a4-4b50-41d9-9db5-aad39cd3e48b.webp",
-            "author_2": "",
-            "text_2": "",
-            "author_3": "",
-            "text_3": "",
-            "margin_top": 24,
-            "margin_bottom": 24
-          }
-        },
-        "collapsible_tab_R3xtLW": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "Shipping Times",
-            "heading_size": "medium",
-            "icon": "check_box",
-            "filled_icon": false,
-            "collapse_icon": "carret",
-            "display_top_border": true,
-            "content": "",
-            "page": "",
-            "margin_top": 0,
-            "margin_bottom": 0
-          }
-        },
-        "collapsible_tab_gt88fd": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "Return Policy",
-            "heading_size": "medium",
-            "icon": "check_box",
-            "filled_icon": false,
-            "collapse_icon": "carret",
-            "display_top_border": true,
-            "content": "<p>Pathos Socks offers a <strong>30-day return policy</strong>, giving you 30 days from the date of receipt to request a return. To be eligible, items must be unworn, unused, with tags, and in their original packaging.<br/><br/>To initiate a return, contact us at <a><strong>sales@pathossocks.com</strong></a>. </p>",
-            "page": "",
-            "margin_top": 0,
-            "margin_bottom": 0
-          }
-        },
-        "custom_add_to_cart_button_VmcQki": {
-          "type": "custom_add_to_cart_button",
-          "disabled": true,
-          "settings": {}
-        },
-        "custom_liquid_M78cwX": {
-          "type": "custom_liquid",
-          "settings": {
-            "custom_liquid": "<span style=\"display:inline-block;background-color:#f6f0eb;color:#000;padding:6px 12px;border-radius:6px;margin-right:6px;font-size:13px;font-weight:500;\">\n  HA+ TECHNOLOGY\n</span>\n<span style=\"display:inline-block;background-color:#f6f0eb;color:#000;padding:6px 12px;border-radius:6px;margin-right:6px;font-size:13px;font-weight:500;\">\n  FOR ALL SKIN TYPES\n</span>\n<span style=\"display:inline-block;background-color:#f6f0eb;color:#000;padding:6px 12px;border-radius:6px;font-size:13px;font-weight:500;\">\n  VEGAN\n</span>"
-          }
-        },
-        "de158e68-5d0d-4819-a625-e2dabdff87d1": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "Product Description",
-            "heading_size": "medium",
-            "icon": "check_box",
-            "filled_icon": false,
-            "collapse_icon": "carret",
-            "display_top_border": true,
-            "content": "<h6>SUITABLE FOR:</h6><p>All skin types, especially those with acne scars, hyperpigmentation and uneven skin tone.</p><h6>FEELS LIKE:</h6><p>Lightweight and breathable - never heavy, cakey or greasy.</p><h6>LOOKS LIKE:</h6><p>Your skin, but smoother. Blurs imperfections while keeping a natural finish.</p><h6>COVERAGE:</h6><p>Sheer-to-light, buildable coverage that evens out skin tone instantly.</p><h6>FREE FROM:</h6><p>Parabens, sulfates, fragrance and pore-clogging ingredients.</p>",
-            "page": "",
-            "margin_top": 0,
-            "margin_bottom": 0
-          }
-        },
-        "description": {
-          "type": "description",
-          "disabled": true,
-          "settings": {
             "margin_top": 24,
             "margin_bottom": 24
           }
@@ -339,146 +385,74 @@
             "mobile_transparent_bg": false
           }
         },
-        "icon_with_text_Ge44A9": {
-          "type": "icon_with_text",
+        "description": {
+          "type": "description",
+          "disabled": true,
           "settings": {
-            "layout": "horizontal",
-            "icon_size": "large",
-            "icon_color": "accent-1",
-            "icon_1": "favorite",
-            "icon_1_fill": false,
-            "image_1": "shopify://shop_images/gempages_534627086933951483-043139a2-dcb8-4f87-984f-95545c927095.webp",
-            "heading_1": "COVERS ACNE & DARK SPOTS",
-            "icon_2": "",
-            "icon_2_fill": false,
-            "image_2": "shopify://shop_images/gempages_534627086933951483-e9570975-4c65-459f-bd4c-877fa62805e2.svg",
-            "heading_2": "SMOOTHS  FINE LINES & WRINKLES",
-            "icon_3": "local_shipping",
-            "icon_3_fill": false,
-            "image_3": "shopify://shop_images/gempages_534627086933951483-e2505e90-5ed4-4f3b-8cb0-5396453fb02e_1024x_7b672a11-ece5-423a-8ca4-492d405c6bf1.svg",
-            "heading_3": "LIGHTWEIGHT & BREATHABLE",
             "margin_top": 24,
             "margin_bottom": 24
           }
         },
-        "price": {
-          "type": "price",
-          "disabled": true,
+        "c43b9f54-e00a-4f9e-b42c-2914dde008a8": {
+          "type": "reviews",
           "settings": {
-            "layout": "price_first",
-            "price_color": "accent-1",
-            "compare_price_color": "text",
-            "hide_sale_badge": false,
-            "margin_top": 9,
-            "margin_bottom": 15
-          }
-        },
-        "text_Efp7EU": {
-          "type": "text",
-          "settings": {
-            "mobile_text_size": 14,
-            "desktop_text_size": 16,
-            "alignment": "left",
-            "text_color": "#121212",
-            "text_1": "Made to be your beauty shortcut, combining hydration, coverage, and glow in one swipe.",
+            "display_stars": true,
+            "star_color": "#c39f83",
+            "avatar_alignment": "top",
+            "author_1": "Emily J - London, UK",
+            "text_1": "<p><em>‘’Most products settle into my dark spots, but Elvynor blends perfectly and gives me an airbrushed finish.’’</em></p>",
+            "image_1": "shopify://shop_images/gempages_534627086933951483-3ee063a4-4b50-41d9-9db5-aad39cd3e48b.webp",
+            "author_2": "",
             "text_2": "",
+            "author_3": "",
             "text_3": "",
-            "icon_scale": 120,
-            "icon_color": "#121212",
-            "icon_1": "",
-            "filled_icon_1": false,
-            "icon_2": "check_circle",
-            "filled_icon_2": false,
-            "icon_3": "check_circle",
-            "filled_icon_3": false,
-            "width": "100%",
-            "direction": "horizontal",
-            "column_gap": 3,
-            "enable_bg": false,
-            "bg_color": "#f3f3f3",
-            "corner_radius": 40,
-            "padding": 3,
-            "border_size": 0,
-            "border_color": "#b7b7b7",
-            "margin_top": 15,
-            "margin_bottom": 15
+            "margin_top": 24,
+            "margin_bottom": 24
           }
         },
-        "text_iGah3K": {
-          "type": "text",
-          "disabled": true,
+        "de158e68-5d0d-4819-a625-e2dabdff87d1": {
+          "type": "collapsible_tab",
           "settings": {
-            "mobile_text_size": 14,
-            "desktop_text_size": 16,
-            "alignment": "center",
-            "text_color": "#121212",
-            "text_1": "HA+ TECHNOLOGY",
-            "text_2": "FOR ALL SKIN TYPES",
-            "text_3": "VEGAN",
-            "icon_scale": 120,
-            "icon_color": "#121212",
-            "icon_1": "",
-            "filled_icon_1": false,
-            "icon_2": "",
-            "filled_icon_2": false,
-            "icon_3": "",
-            "filled_icon_3": false,
-            "width": "fit-content",
-            "direction": "horizontal",
-            "column_gap": 1,
-            "enable_bg": true,
-            "bg_color": "#f5eee8",
-            "corner_radius": 40,
-            "padding": 3,
-            "border_size": 0,
-            "border_color": "#f5eee8",
-            "margin_top": 15,
-            "margin_bottom": 15
-          }
-        },
-        "text_k7jx8d": {
-          "type": "text",
-          "disabled": true,
-          "settings": {
-            "mobile_text_size": 14,
-            "desktop_text_size": 16,
-            "alignment": "left",
-            "text_color": "#121212",
-            "text_1": "Smooths Fine Lines & Wrinkles",
-            "text_2": "Hides Dark Spots & Hyperpigmentation",
-            "text_3": "Skincare + Makeup All in One",
-            "icon_scale": 120,
-            "icon_color": "#c39f83",
-            "icon_1": "check_circle",
-            "filled_icon_1": false,
-            "custom_icon_1": "shopify://shop_images/check_circle_24dp_C39F83_FILL1_wght400_GRAD0_opsz24.svg",
-            "icon_2": "check_circle",
-            "filled_icon_2": false,
-            "custom_icon_2": "shopify://shop_images/check_circle_24dp_C39F83_FILL1_wght400_GRAD0_opsz24_1efe5149-ed4a-48bc-ab01-789a9ea86684.svg",
-            "icon_3": "check_circle",
-            "filled_icon_3": false,
-            "custom_icon_3": "shopify://shop_images/check_circle_24dp_C39F83_FILL1_wght400_GRAD0_opsz24_1576ce8c-bede-4bce-a5cd-9a2b56cb024d.svg",
-            "width": "fit-content",
-            "direction": "vertical",
-            "column_gap": 3,
-            "enable_bg": false,
-            "bg_color": "#f3f3f3",
-            "corner_radius": 40,
-            "padding": 3,
-            "border_size": 0,
-            "border_color": "#b7b7b7",
-            "margin_top": 15,
-            "margin_bottom": 15
-          }
-        },
-        "title": {
-          "type": "title",
-          "settings": {
-            "text_size": "h2",
-            "title_alignment": "left",
-            "uppercase_title": false,
+            "heading": "Product Description",
+            "heading_size": "medium",
+            "icon": "check_box",
+            "filled_icon": false,
+            "collapse_icon": "carret",
+            "display_top_border": true,
+            "content": "<h6>SUITABLE FOR:</h6><p>All skin types, especially those with acne scars, hyperpigmentation and uneven skin tone.</p><h6>FEELS LIKE:</h6><p>Lightweight and breathable - never heavy, cakey or greasy.</p><h6>LOOKS LIKE:</h6><p>Your skin, but smoother. Blurs imperfections while keeping a natural finish.</p><h6>COVERAGE:</h6><p>Sheer-to-light, buildable coverage that evens out skin tone instantly.</p><h6>FREE FROM:</h6><p>Parabens, sulfates, fragrance and pore-clogging ingredients.</p>",
+            "page": "",
             "margin_top": 0,
-            "margin_bottom": 6
+            "margin_bottom": 0
+          }
+        },
+        "collapsible_tab_gt88fd": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Return Policy",
+            "heading_size": "medium",
+            "icon": "check_box",
+            "filled_icon": false,
+            "collapse_icon": "carret",
+            "display_top_border": true,
+            "content": "<p>Pathos Socks offers a <strong>30-day return policy</strong>, giving you 30 days from the date of receipt to request a return. To be eligible, items must be unworn, unused, with tags, and in their original packaging.<br/><br/>To initiate a return, contact us at <a><strong>sales@pathossocks.com</strong></a>. </p>",
+            "page": "",
+            "margin_top": 0,
+            "margin_bottom": 0
+          }
+        },
+        "collapsible_tab_R3xtLW": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Shipping Times",
+            "heading_size": "medium",
+            "icon": "check_box",
+            "filled_icon": false,
+            "collapse_icon": "carret",
+            "display_top_border": true,
+            "content": "",
+            "page": "",
+            "margin_top": 0,
+            "margin_bottom": 0
           }
         }
       },
@@ -502,6 +476,7 @@
         "collapsible_tab_gt88fd",
         "collapsible_tab_R3xtLW"
       ],
+      "disabled": true,
       "custom_css": [],
       "settings": {
         "enable_sticky_info": false,
@@ -531,6 +506,14 @@
         "desktop_padding_bottom": 36
       }
     },
+    "gp_shopify_original_section_566328612714710041": {
+      "type": "gp-section-566328612714710041",
+      "disabled": true,
+      "settings": {
+        "section_preload": "false",
+        "checksum": ""
+      }
+    },
     "related-products": {
       "type": "related-products",
       "disabled": true,
@@ -550,6 +533,12 @@
         "padding_bottom": 24
       }
     },
+    "1738959489f6fce048": {
+      "type": "apps",
+      "settings": {
+        "include_margins": true
+      }
+    },
     "section_divider_QyBqWr": {
       "type": "section-divider",
       "settings": {
@@ -560,18 +549,6 @@
         "background_color": "background-1",
         "padding_top": 0,
         "padding_bottom": 0
-      }
-    },
-    "section_divider_zAJcej": {
-      "type": "section-divider",
-      "settings": {
-        "shape": "waves_3",
-        "flip_horizontal": false,
-        "flip_vertical": true,
-        "shape_color": "accent-1",
-        "background_color": "background-1",
-        "padding_top": 0,
-        "padding_bottom": 20
       }
     }
   },
@@ -588,11 +565,8 @@
     "gp_shopify_original_section_566396113679025190",
     "gp_shopify_original_section_566396216473027508",
     "main",
-    "customhtml_JkFBDH",
-    "customhtml_zX9azM",
     "gp_shopify_original_section_566328612714710041",
     "related-products",
-    "section_divider_zAJcej",
     "1738959489f6fce048",
     "section_divider_QyBqWr"
   ]
