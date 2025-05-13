@@ -102,6 +102,36 @@
         "checksum": ""
       }
     },
+    "gp_shopify_original_section_566394241358496692": {
+      "type": "gp-section-566394241358496692",
+      "settings": {
+        "checksum": ""
+      }
+    },
+    "gp_shopify_original_section_566394482161878031": {
+      "type": "gp-section-566394482161878031",
+      "settings": {
+        "checksum": ""
+      }
+    },
+    "gp_shopify_original_section_566394482178655156": {
+      "type": "gp-section-566394482178655156",
+      "settings": {
+        "checksum": ""
+      }
+    },
+    "gp_shopify_original_section_566394523182236687": {
+      "type": "gp-section-566394523182236687",
+      "settings": {
+        "checksum": ""
+      }
+    },
+    "gp_shopify_original_section_566394595324199951": {
+      "type": "gp-section-566394595324199951",
+      "settings": {
+        "checksum": ""
+      }
+    },
     "main": {
       "type": "main-product",
       "blocks": {
@@ -565,6 +595,11 @@
   },
   "order": [
     "gp_shopify_original_section_566393094367347650",
+    "gp_shopify_original_section_566394595324199951",
+    "gp_shopify_original_section_566394523182236687",
+    "gp_shopify_original_section_566394482161878031",
+    "gp_shopify_original_section_566394482178655156",
+    "gp_shopify_original_section_566394241358496692",
     "gp_shopify_original_section_566394114455634882",
     "main",
     "customhtml_JkFBDH",
