@@ -8,76 +8,76 @@
  * ------------------------------------------------------------
  */
 {
-  "order": [
-    "image_banner_6gMCeT",
-    "section_divider_P7McPh"
-  ],
   "sections": {
     "image_banner_6gMCeT": {
+      "type": "image-banner",
+      "blocks": {
+        "text_k3zaUb": {
+          "type": "text",
+          "settings": {
+            "text": "+50,000 HAPPY CUSTOMERS",
+            "text_style": "body"
+          }
+        },
+        "heading_Dpah43": {
+          "type": "heading",
+          "settings": {
+            "heading": "A natural, radiant complexion in just one step",
+            "heading_size": "h1"
+          }
+        },
+        "buttons_yDinbr": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "TRY IT NOW",
+            "button_link_1": "shopify://products/stick-foundation-balm-serum-boosted-skin-tint-foundation-stick-smooth-plumper-hight-coverage-travel-bronze-foundation-stick-make-105956475225-7kg55",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
       "block_order": [
         "text_k3zaUb",
         "heading_Dpah43",
         "buttons_yDinbr"
       ],
-      "blocks": {
-        "buttons_yDinbr": {
-          "settings": {
-            "button_label_1": "TRY IT NOW",
-            "button_label_2": "",
-            "button_link_1": "shopify://products/stick-foundation-balm-serum-boosted-skin-tint-foundation-stick-smooth-plumper-hight-coverage-travel-bronze-foundation-stick-make-105956475225-7kg55",
-            "button_link_2": "",
-            "button_style_secondary_1": false,
-            "button_style_secondary_2": false
-          },
-          "type": "buttons"
-        },
-        "heading_Dpah43": {
-          "settings": {
-            "heading": "A natural, radiant complexion in just one step",
-            "heading_size": "h1"
-          },
-          "type": "heading"
-        },
-        "text_k3zaUb": {
-          "settings": {
-            "text": "+50,000 HAPPY CUSTOMERS",
-            "text_style": "body"
-          },
-          "type": "text"
-        }
-      },
       "name": "t:sections.image-banner.presets.name",
       "settings": {
-        "color_scheme": "background-1",
-        "desktop_content_alignment": "center",
-        "desktop_content_position": "bottom-center",
         "display_id": false,
+        "visibility": "mobile-hidden",
         "image": "shopify://shop_images/BAN1_3.webp",
         "image_1_visibility": "always-display",
         "image_2_visibility": "always-display",
-        "image_height": "large",
         "image_overlay_opacity": 0,
-        "mobile_content_alignment": "center",
-        "show_text_below": true,
+        "image_height": "large",
+        "desktop_content_position": "bottom-center",
         "show_text_box": false,
-        "stack_images_on_mobile": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
         "transparent_container_color": "white",
-        "visibility": "mobile-hidden"
-      },
-      "type": "image-banner"
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
     },
     "section_divider_P7McPh": {
+      "type": "section-divider",
       "disabled": true,
       "settings": {
-        "background_color": "background-1",
+        "shape": "waves_1",
         "flip_horizontal": false,
         "flip_vertical": false,
-        "padding_bottom": 0,
+        "shape_color": "accent-2",
+        "background_color": "background-1",
         "padding_top": 0,
-        "shape": "waves_1",
-        "shape_color": "accent-2"
-      },
-      "type": "section-divider"
+        "padding_bottom": 0
+      }
     }
-  }
+  },
+  "order": [
+    "image_banner_6gMCeT",
+    "section_divider_P7McPh"
+  ]
 }
