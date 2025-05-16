@@ -356,6 +356,61 @@
         "desktop_image": "shopify://shop_images/ok_1.png",
         "mobile_image": "shopify://shop_images/gempages_566608300599149477-36854eb6-0eb2-402c-8514-3a9603c42b2a_dcbdd80d-456b-4d11-a6ef-6e63be7f9755.png"
       }
+    },
+    "sectionfinale_PrVkDU": {
+      "type": "sectionfinale",
+      "blocks": {
+        "feature_JBxbnx": {
+          "type": "feature",
+          "settings": {
+            "text": ""
+          }
+        },
+        "feature_34BfPX": {
+          "type": "feature",
+          "settings": {
+            "text": ""
+          }
+        },
+        "feature_QTNxzE": {
+          "type": "feature",
+          "settings": {
+            "text": ""
+          }
+        },
+        "feature_N3bgJX": {
+          "type": "feature",
+          "settings": {
+            "text": ""
+          }
+        },
+        "feature_QtNrbH": {
+          "type": "feature",
+          "settings": {
+            "text": ""
+          }
+        },
+        "feature_BU7fPf": {
+          "type": "feature",
+          "settings": {
+            "icon": "shopify://shop_images/icon1.svg",
+            "text": "Instantly blurs dark spots"
+          }
+        }
+      },
+      "block_order": [
+        "feature_JBxbnx",
+        "feature_34BfPX",
+        "feature_QTNxzE",
+        "feature_N3bgJX",
+        "feature_QtNrbH",
+        "feature_BU7fPf"
+      ],
+      "name": "Goodbye Tags Section",
+      "settings": {
+        "desktop_image": "shopify://shop_images/ok_1.png",
+        "mobile_image": "shopify://shop_images/gempages_566608300599149477-36854eb6-0eb2-402c-8514-3a9603c42b2a_dcbdd80d-456b-4d11-a6ef-6e63be7f9755.png"
+      }
     }
   },
   "order": [
@@ -363,6 +418,7 @@
     "featured_product_RP9LeE",
     "section_divider_P7McPh",
     "ff_GMqJ9B",
-    "skinfeature_f8hjPg"
+    "skinfeature_f8hjPg",
+    "sectionfinale_PrVkDU"
   ]
 }
