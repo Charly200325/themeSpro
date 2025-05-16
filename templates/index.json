@@ -274,11 +274,123 @@
         "desktop_image": "shopify://shop_images/ok_1.png",
         "mobile_image": "shopify://shop_images/gempages_566608300599149477-36854eb6-0eb2-402c-8514-3a9603c42b2a_dcbdd80d-456b-4d11-a6ef-6e63be7f9755.png"
       }
+    },
+    "themed_zdAkFL": {
+      "type": "themed",
+      "name": "See It In Action",
+      "settings": {
+        "title": "See It In Action",
+        "subtitle": "No filters, no heavy layers—just natural coverage that lets your skin shine through."
+      }
+    },
+    "image_slider_fE4pKb": {
+      "type": "image-slider",
+      "blocks": {
+        "video_slide_XTEUNF": {
+          "type": "video_slide",
+          "settings": {
+            "video": "shopify://files/videos/ecoboostify-reel-short-81c963d5-9517-4b29-8503-8379fdbadfd7.mp4",
+            "loop": true,
+            "muted_autoplay": true,
+            "display_play_btn": true,
+            "btn_animation": false,
+            "btn_color_scheme": "accent-1",
+            "display_sound_btn": false,
+            "sound_btn_color_scheme": "inverse",
+            "display_timeline": false,
+            "timeline_color": "accent-1",
+            "description": "<p><em>Finally, a skin tint that truly blends in with my skin!</em></p>",
+            "desc_alignment": "center",
+            "desc_color_scheme": "background-2"
+          }
+        },
+        "video_slide_FqfVVH": {
+          "type": "video_slide",
+          "settings": {
+            "video": "shopify://files/videos/ecoboostify-reel-short-e4f6c1f8-84a6-45e1-bf76-f2194611c2e8.mp4",
+            "loop": true,
+            "muted_autoplay": true,
+            "display_play_btn": true,
+            "btn_animation": false,
+            "btn_color_scheme": "accent-1",
+            "display_sound_btn": false,
+            "sound_btn_color_scheme": "inverse",
+            "display_timeline": false,
+            "timeline_color": "accent-1",
+            "description": "<p><em>Gives me that no-makeup makeup look!</em></p>",
+            "desc_alignment": "center",
+            "desc_color_scheme": "background-2"
+          }
+        },
+        "video_slide_HRNemN": {
+          "type": "video_slide",
+          "settings": {
+            "video": "shopify://files/videos/ecoboostify-reel-short-9de7ac34-476a-418c-8d78-6df6a1831afa.mp4",
+            "loop": true,
+            "muted_autoplay": true,
+            "display_play_btn": true,
+            "btn_animation": false,
+            "btn_color_scheme": "accent-1",
+            "display_sound_btn": false,
+            "sound_btn_color_scheme": "inverse",
+            "display_timeline": false,
+            "timeline_color": "accent-1",
+            "description": "<p>So lightweight that I forget I’m even wearing makeup.</p>",
+            "desc_alignment": "center",
+            "desc_color_scheme": "background-2"
+          }
+        }
+      },
+      "block_order": [
+        "video_slide_XTEUNF",
+        "video_slide_FqfVVH",
+        "video_slide_HRNemN"
+      ],
+      "name": "Image/Video Slider",
+      "settings": {
+        "display_id": false,
+        "visibility": "always-display",
+        "title": "",
+        "heading_size": "h2",
+        "color_scheme": "accent-1",
+        "type": "loop",
+        "drag": "enabled",
+        "autoplay": false,
+        "autoplay_speed": 5,
+        "center_mode": false,
+        "arrows_color_scheme": "inverse",
+        "transparent_arrows": false,
+        "dots_color_scheme": "inverse",
+        "desktop_full_page": false,
+        "desktop_border_radius": 0,
+        "slides_desktop": 3,
+        "per_move_desktop": 1,
+        "desktop_spacing": 28,
+        "desktop_side_padding": 0,
+        "desktop_padding_calc": true,
+        "desktop_adaptive_height": false,
+        "desktop_dots_position": "under",
+        "desktop_arrows_position": "sides",
+        "mobile_full_page": false,
+        "mobile_border_radius": 0,
+        "slides_mobile": 2,
+        "per_move_mobile": 1,
+        "mobile_spacing": 12,
+        "mobile_side_padding": 0,
+        "mobile_padding_calc": true,
+        "mobile_adaptive_height": false,
+        "mobile_dots_position": "under",
+        "mobile_arrows_position": "sides",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
     "image_banner_6gMCeT",
     "featured_product_RP9LeE",
-    "sectionfinale_7NAU7K"
+    "sectionfinale_7NAU7K",
+    "themed_zdAkFL",
+    "image_slider_fE4pKb"
   ]
 }
