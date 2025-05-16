@@ -1,6 +1,82 @@
 {% schema %}
-  {
-    "name": "Section name",
-    "settings": []
-  }
+{
+  "name": "Goodbye Skin Issues",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "background_image",
+      "label": "Background Image"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Tired of Makeup That Doesn’t Work With Your Skin?"
+    },
+    {
+      "type": "textarea",
+      "id": "subheading",
+      "label": "Subheading",
+      "default": "We’ve all been there—foundation that feels heavy, shades that don’t match, and coverage that fades too fast."
+    },
+    {
+      "type": "text",
+      "id": "tag_intro",
+      "label": "Tag Intro Text",
+      "default": "IT’S TIME TO SAY GOODBYE TO:"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "tag",
+      "name": "Issue Tag",
+      "settings": [
+        {
+          "type": "text",
+          "id": "label",
+          "label": "Tag Label"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Goodbye Skin Issues",
+      "category": "Custom"
+    }
+  ]
+}
 {% endschema %}
+
+<section class="goodbye-skin-section" style="position: relative; padding: 80px 20px; text-align: center; background-color: #f9eee7;">
+  {% if section.settings.background_image %}
+    <div style="background-image: url('{{ section.settings.background_image | image_url }}'); background-size: cover; background-position: center; position: absolute; inset: 0; z-index: 0;"></div>
+  {% endif %}
+
+  <div style="position: relative; z-index: 1; max-width: 900px; margin: auto;">
+    <h2 style="font-size: 32px; color: #2d1c13; margin-bottom: 20px;">{{ section.settings.heading }}</h2>
+    <p style="font-size: 16px; color: #000; margin-bottom: 30px;">{{ section.settings.subheading }}</p>
+    <p style="font-weight: bold; text-transform: uppercase; font-size: 14px; color: #796555; margin-bottom: 20px;">{{ section.settings.tag_intro }}</p>
+
+    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 10px;">
+      {% for block in section.blocks %}
+        <span style="background-color: #B3A194; color: white; font-size: 14px; padding: 8px 14px; border-radius: 8px; text-decoration: line-through;">{{ block.settings.label }}</span>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<style>
+  @media (max-width: 768px) {
+    .goodbye-skin-section h2 {
+      font-size: 24px !important;
+    }
+    .goodbye-skin-section p {
+      font-size: 15px !important;
+    }
+    .goodbye-skin-section span {
+      font-size: 13px !important;
+      padding: 6px 10px !important;
+    }
+  }
+</style>
