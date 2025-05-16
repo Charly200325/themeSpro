@@ -11,6 +11,57 @@
   "name": "t:sections.footer.name",
   "type": "footer",
   "sections": {
+    "sectioncarrousselteinte_VT3xtP": {
+      "type": "sectioncarrousselteinte",
+      "blocks": {
+        "shade_HgwGqx": {
+          "type": "shade",
+          "settings": {
+            "image": "shopify://shop_images/gempages_534627086933951483-3f65fc50-a31e-4185-a005-f2d1bcd35c6b.webp",
+            "shade_name": "DEEP",
+            "shade_description": "For deep skin tones with warm or neutral undertones.",
+            "shade_badge": "shopify://shop_images/gempages_534627086933951483-0c811d17-308d-42ef-92cb-dce7e14924d9.webp",
+            "shade_number": "1"
+          }
+        },
+        "shade_LG88rF": {
+          "type": "shade",
+          "settings": {
+            "image": "shopify://shop_images/gempages_534627086933951483-0a8f5143-6012-413b-9c99-ec880c353e2c.webp",
+            "shade_name": "DEEP MEDIUM",
+            "shade_description": "For medium-deep skin with golden or warm undertones.",
+            "shade_badge": "shopify://shop_images/gempages_534627086933951483-fefd2ef6-23a3-4502-8986-419f1a04d79c.webp",
+            "shade_number": "2"
+          }
+        },
+        "shade_wbHJza": {
+          "type": "shade",
+          "settings": {
+            "shade_name": "",
+            "shade_description": "",
+            "shade_number": ""
+          }
+        },
+        "shade_Lw8pNP": {
+          "type": "shade",
+          "settings": {
+            "shade_name": "",
+            "shade_description": "",
+            "shade_number": ""
+          }
+        }
+      },
+      "block_order": [
+        "shade_HgwGqx",
+        "shade_LG88rF",
+        "shade_wbHJza",
+        "shade_Lw8pNP"
+      ],
+      "name": "Full Shade Carousel",
+      "settings": {
+        "title": "Discover Your Best Match"
+      }
+    },
     "footer": {
       "type": "footer",
       "blocks": {
@@ -57,6 +108,7 @@
     }
   },
   "order": [
+    "sectioncarrousselteinte_VT3xtP",
     "footer"
   ]
 }
