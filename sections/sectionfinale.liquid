@@ -68,21 +68,20 @@
     {% endif %}
   </picture>
 
+  <div class="elvynor-caption">
+    <p>With Elvynor</p>
+    <h2>Your Skin Looks Like Skin,<br><span style="font-weight: 600;">But Better</span></h2>
+  </div>
+
   <div class="skin-feature-overlay">
-    <div class="elvynor-caption">
-      <p>With Elvynor</p>
-      <h2>Your Skin Looks Like Skin,<br><span style="font-weight: 600;">But Better</span></h2>
-    </div>
-    <div class="skin-feature-cards">
-      {% for block in section.blocks %}
-        <div class="skin-feature-card">
-          {% if block.settings.icon %}
-            <img src="{{ block.settings.icon | image_url }}" alt="Icon">
-          {% endif %}
-          <div>{{ block.settings.text }}</div>
-        </div>
-      {% endfor %}
-    </div>
+    {% for block in section.blocks %}
+      <div class="skin-feature-card">
+        {% if block.settings.icon %}
+          <img src="{{ block.settings.icon | image_url }}" alt="Icon">
+        {% endif %}
+        <div>{{ block.settings.text }}</div>
+      </div>
+    {% endfor %}
   </div>
 </section>
 
@@ -99,15 +98,13 @@
   display: block;
 }
 .elvynor-caption {
+  position: absolute;
+  top: 9.5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   text-align: center;
   color: #60362C;
   font-family: 'Hanken Grotesk', sans-serif;
-  margin-bottom: 20px;
-  position: absolute;
-  top: 5%;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 2;
 }
 .elvynor-caption p {
   font-size: 18px;
@@ -124,19 +121,13 @@
   left: 50%;
   transform: translateX(-50%);
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
+  flex-wrap: nowrap;
+  gap: 20px;
+  justify-content: center;
   padding: 20px;
   max-width: 1200px;
   width: 100%;
   background-color: transparent;
-}
-.skin-feature-cards {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
 }
 .skin-feature-card {
   background: rgba(255, 255, 255, 0.85);
@@ -158,18 +149,14 @@
     margin-top: 0;
   }
   .skin-feature-overlay {
-    position: relative;
+    position: static;
     transform: none;
     padding: 40px 20px;
     background-color: #907B6E;
-  }
-  .skin-feature-cards {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
+    flex-wrap: wrap;
   }
   .skin-feature-card {
-    width: 100%;
+    width: 45%;
     color: white;
     background: transparent;
     box-shadow: none;
@@ -178,12 +165,11 @@
     filter: brightness(0) invert(1);
   }
   .elvynor-caption {
-    color: white;
-    position: relative;
-    top: auto;
-    left: auto;
+    position: static;
     transform: none;
-    margin-bottom: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #60362C;
   }
   .elvynor-caption h2 {
     font-size: 24px;
