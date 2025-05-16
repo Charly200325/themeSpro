@@ -82,7 +82,7 @@
                 <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.shade_name }}" style="width: 100%; height: auto;">
               {% endif %}
 
-              <div style="background-color: {{ block.settings.shade_background }}; color: white; padding: 20px; text-align: left; border-bottom-left-radius: 12px; border-bottom-right-radius: 12px; position: relative; min-height: 140px;">
+              <div style="background-color: {{ block.settings.shade_background }}; color: white; padding: 24px 20px 40px; text-align: left; border-bottom-left-radius: 12px; border-bottom-right-radius: 12px; position: relative; min-height: 160px;">
                 <p style="font-size: 13px; font-weight: 400; margin: 0; max-width: 80%; word-break: break-word;">
                   {{ block.settings.shade_description }}
                 </p>
@@ -101,15 +101,15 @@
           </div>
         {% endfor %}
       </div>
+    </div>
 
-      <!-- Arrows -->
-      <div class="swiper-controls" style="margin-top: 30px; display: flex; justify-content: center; gap: 20px;">
-        <div class="swiper-button-prev" style="background: white; border: 1px solid #bfb2a3; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
-          <svg width="16" height="16" fill="#7d6d5e" viewBox="0 0 24 24"><path d="M15.41 7.41 14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg>
-        </div>
-        <div class="swiper-button-next" style="background: white; border: 1px solid #bfb2a3; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
-          <svg width="16" height="16" fill="#7d6d5e" viewBox="0 0 24 24"><path d="M8.59 16.59 10 18l6-6-6-6-1.41 1.41L13.17 12z"/></svg>
-        </div>
+    <!-- Arrows BELOW the carousel -->
+    <div class="swiper-controls" style="margin-top: 30px; display: flex; justify-content: center; gap: 20px;">
+      <div class="swiper-button-prev" style="background: white; border: 1px solid #bfb2a3; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+        <svg width="16" height="16" fill="#7d6d5e" viewBox="0 0 24 24"><path d="M15.41 7.41 14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg>
+      </div>
+      <div class="swiper-button-next" style="background: white; border: 1px solid #bfb2a3; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+        <svg width="16" height="16" fill="#7d6d5e" viewBox="0 0 24 24"><path d="M8.59 16.59 10 18l6-6-6-6-1.41 1.41L13.17 12z"/></svg>
       </div>
     </div>
   </div>
@@ -146,7 +146,7 @@
     font-family: 'Hanken Grotesk', sans-serif;
   }
   .swiper {
-    padding-bottom: 40px;
+    padding-bottom: 20px;
   }
   .swiper-wrapper {
     display: flex;
