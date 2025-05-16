@@ -227,11 +227,81 @@
         "padding_top": 0,
         "padding_bottom": 0
       }
+    },
+    "ff_GMqJ9B": {
+      "type": "ff",
+      "blocks": {
+        "tag_MRUG8A": {
+          "type": "tag",
+          "settings": {
+            "label": "Hyperpigmentation"
+          }
+        },
+        "tag_anxi4g": {
+          "type": "tag",
+          "settings": {
+            "label": "Dark Spots"
+          }
+        },
+        "tag_ACK7tt": {
+          "type": "tag",
+          "settings": {
+            "label": "Uneven Skin Tone"
+          }
+        },
+        "tag_n7XdyX": {
+          "type": "tag",
+          "settings": {
+            "label": "Cakey, Heavy Foundation"
+          }
+        },
+        "tag_CywAfB": {
+          "type": "tag",
+          "settings": {
+            "label": "Coverage That Fades Too Fast"
+          }
+        },
+        "tag_XwiJpa": {
+          "type": "tag",
+          "settings": {
+            "label": "Dull Complexion"
+          }
+        },
+        "tag_r4w3TA": {
+          "type": "tag",
+          "settings": {
+            "label": "Patchy, Dry Spots"
+          }
+        },
+        "tag_4fej37": {
+          "type": "tag",
+          "settings": {
+            "label": "Clogged Pores & Breakouts"
+          }
+        }
+      },
+      "block_order": [
+        "tag_MRUG8A",
+        "tag_anxi4g",
+        "tag_ACK7tt",
+        "tag_n7XdyX",
+        "tag_CywAfB",
+        "tag_XwiJpa",
+        "tag_r4w3TA",
+        "tag_4fej37"
+      ],
+      "name": "Goodbye Skin Issues",
+      "settings": {
+        "heading": "Tired of Makeup That Doesn’t Work With Your Skin?",
+        "subheading": "We’ve all been there—foundation that feels heavy, shades that don’t match, and coverage that fades too fast.",
+        "tag_intro": "IT’S TIME TO SAY GOODBYE TO:"
+      }
     }
   },
   "order": [
     "image_banner_6gMCeT",
     "featured_product_RP9LeE",
-    "section_divider_P7McPh"
+    "section_divider_P7McPh",
+    "ff_GMqJ9B"
   ]
 }
