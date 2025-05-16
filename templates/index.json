@@ -217,6 +217,32 @@
     },
     "sectionfinale_PrVkDU": {
       "type": "sectionfinale",
+      "blocks": {
+        "feature_CefMrG": {
+          "type": "feature",
+          "settings": {
+            "text": ""
+          }
+        },
+        "feature_XHAQwX": {
+          "type": "feature",
+          "settings": {
+            "icon": "shopify://shop_images/icon1.svg",
+            "text": ""
+          }
+        },
+        "feature_iTrJ84": {
+          "type": "feature",
+          "settings": {
+            "text": ""
+          }
+        }
+      },
+      "block_order": [
+        "feature_CefMrG",
+        "feature_XHAQwX",
+        "feature_iTrJ84"
+      ],
       "name": "Goodbye Tags Section",
       "settings": {
         "desktop_image": "shopify://shop_images/ok_1.png"
