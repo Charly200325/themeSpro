@@ -245,7 +245,8 @@
       ],
       "name": "Goodbye Tags Section",
       "settings": {
-        "desktop_image": "shopify://shop_images/ok_1.png"
+        "desktop_image": "shopify://shop_images/ok_1.png",
+        "mobile_image": "shopify://shop_images/gempages_566608300599149477-36854eb6-0eb2-402c-8514-3a9603c42b2a_dcbdd80d-456b-4d11-a6ef-6e63be7f9755.png"
       }
     }
   },
