@@ -107,10 +107,11 @@
   font-family: 'Hanken Grotesk', sans-serif;
   margin-bottom: 20px;
   position: absolute;
-  top: 2.2%;
+  top: 7%;
   left: 50%;
   transform: translateX(-50%);
   z-index: 2;
+  max-width: 90%;
 }
 .elvynor-caption p {
   font-size: 18px;
@@ -123,7 +124,7 @@
 }
 .skin-feature-overlay {
   position: absolute;
-  bottom: 40px;
+  bottom: 0;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
@@ -161,17 +162,23 @@
   .skin-feature-section {
     margin-top: 0;
   }
+  .skin-feature-image {
+    display: none;
+  }
   .skin-feature-overlay {
     position: relative;
     transform: none;
     padding: 40px 20px;
     background-color: #907B6E;
     width: 100%;
+    bottom: auto;
+    box-sizing: border-box;
   }
   .skin-feature-cards {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
+    width: 100%;
   }
   .skin-feature-card {
     width: 100%;
