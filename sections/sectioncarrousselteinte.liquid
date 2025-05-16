@@ -38,6 +38,12 @@
           "type": "text",
           "id": "shade_number",
           "label": "Shade Number"
+        },
+        {
+          "type": "color",
+          "id": "shade_background",
+          "label": "Background Color",
+          "default": "#60362C"
         }
       ]
     }
@@ -51,6 +57,9 @@
 }
 {% endschema %}
 
+<!-- Swiper Stylesheet -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
 <section class="shade-carousel-section" style="background-color: #FBF1E8; padding: 100px 0; position: relative; overflow: hidden;">
   <div class="container">
     <h2 style="text-align: center; font-size: 35px; color: #27201A; margin-bottom: 40px;">
@@ -63,50 +72,68 @@
       <span class="tag">Flawless</span>
     </div>
 
-    <div class="shade-carousel-wrapper" id="shade-carousel" style="display: flex; gap: 20px; overflow-x: scroll; scroll-behavior: smooth; padding: 0 40px; scroll-snap-type: x mandatory;">
-      {% for block in section.blocks %}
-        <div class="shade-card" style="scroll-snap-align: start; flex-shrink: 0; width: 280px; background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 0 24px rgba(137, 137, 137, 0.1); position: relative;">
-          {% if block.settings.image %}
-            <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.shade_name }}" style="width: 100%; height: auto;">
-          {% endif %}
+    <!-- Swiper -->
+    <div class="swiper shade-swiper">
+      <div class="swiper-wrapper">
+        {% for block in section.blocks %}
+          <div class="swiper-slide">
+            <div class="shade-card" style="width: 280px; background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 0 24px rgba(137, 137, 137, 0.1); position: relative;">
+              {% if block.settings.image %}
+                <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.shade_name }}" style="width: 100%; height: auto;">
+              {% endif %}
 
-          <div style="background-color: #60362C; color: white; padding: 20px; text-align: left; border-bottom-left-radius: 12px; border-bottom-right-radius: 12px; position: relative; min-height: 140px;">
-            <p style="font-size: 13px; font-weight: 400; margin: 0; max-width: 80%; word-break: break-word;">
-              {{ block.settings.shade_description }}
-            </p>
+              <div style="background-color: {{ block.settings.shade_background }}; color: white; padding: 20px; text-align: left; border-bottom-left-radius: 12px; border-bottom-right-radius: 12px; position: relative; min-height: 140px;">
+                <p style="font-size: 13px; font-weight: 400; margin: 0; max-width: 80%; word-break: break-word;">
+                  {{ block.settings.shade_description }}
+                </p>
 
-            {% if block.settings.shade_badge %}
-              <div style="position: absolute; bottom: -10px; right: 10px; width: 110px; height: auto;">
-                <img src="{{ block.settings.shade_badge | image_url }}" alt="badge" style="width: 100%; height: auto; display: block;">
-                <div style="position: absolute; top: 40%; left: 50%; transform: translate(-50%, -50%); color: white; font-size: 10px; text-align: center; white-space: nowrap;">
-                  <div style="font-weight: 700; text-transform: uppercase;">SHADE {{ block.settings.shade_number }}</div>
-                  <div style="font-weight: 600; font-size: 13px;">{{ block.settings.shade_name }}</div>
-                </div>
+                {% if block.settings.shade_badge %}
+                  <div style="position: absolute; bottom: -10px; right: 10px; width: 110px; height: auto;">
+                    <img src="{{ block.settings.shade_badge | image_url }}" alt="badge" style="width: 100%; height: auto; display: block;">
+                    <div style="position: absolute; top: 40%; left: 50%; transform: translate(-50%, -50%); color: white; font-size: 10px; text-align: center; white-space: nowrap;">
+                      <div style="font-weight: 700; text-transform: uppercase;">SHADE {{ block.settings.shade_number }}</div>
+                      <div style="font-weight: 600; font-size: 13px;">{{ block.settings.shade_name }}</div>
+                    </div>
+                  </div>
+                {% endif %}
               </div>
-            {% endif %}
+            </div>
           </div>
-        </div>
-      {% endfor %}
-    </div>
+        {% endfor %}
+      </div>
 
-    <!-- Arrows repositioned below carousel -->
-    <div style="margin-top: 30px; display: flex; justify-content: center; gap: 20px;">
-      <button onclick="scrollCarousel(-1)" aria-label="Previous" style="background: none; border: none; cursor: pointer;">
-        <svg width="32" height="32" fill="#000"><path d="M15.41 7.41 14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg>
-      </button>
-      <button onclick="scrollCarousel(1)" aria-label="Next" style="background: none; border: none; cursor: pointer;">
-        <svg width="32" height="32" fill="#000"><path d="M8.59 16.59 10 18l6-6-6-6-1.41 1.41L13.17 12z"/></svg>
-      </button>
+      <!-- Arrows -->
+      <div class="swiper-controls" style="margin-top: 30px; display: flex; justify-content: center; gap: 20px;">
+        <div class="swiper-button-prev" style="background: white; border: 1px solid #bfb2a3; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+          <svg width="16" height="16" fill="#7d6d5e" viewBox="0 0 24 24"><path d="M15.41 7.41 14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg>
+        </div>
+        <div class="swiper-button-next" style="background: white; border: 1px solid #bfb2a3; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+          <svg width="16" height="16" fill="#7d6d5e" viewBox="0 0 24 24"><path d="M8.59 16.59 10 18l6-6-6-6-1.41 1.41L13.17 12z"/></svg>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script>
-  const carousel = document.getElementById('shade-carousel');
-  function scrollCarousel(direction) {
-    const cardWidth = carousel.querySelector('.shade-card').offsetWidth + 20; // card + gap
-    carousel.scrollBy({ left: direction * cardWidth, behavior: 'smooth' });
-  }
+  new Swiper('.shade-swiper', {
+    loop: true,
+    slidesPerView: 'auto',
+    spaceBetween: 20,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev'
+    },
+    breakpoints: {
+      768: {
+        slidesPerView: 2,
+      },
+      1024: {
+        slidesPerView: 3,
+      }
+    }
+  });
 </script>
 
 <style>
@@ -118,15 +145,20 @@
     text-transform: uppercase;
     font-family: 'Hanken Grotesk', sans-serif;
   }
-  .shade-carousel-wrapper::-webkit-scrollbar {
-    display: none;
+  .swiper {
+    padding-bottom: 40px;
   }
-  .shade-carousel-wrapper {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
+  .swiper-wrapper {
+    display: flex;
+    align-items: stretch;
+  }
+  .swiper-slide {
+    width: auto !important;
+    display: flex;
+    justify-content: center;
   }
   @media (max-width: 768px) {
-    .shade-card {
+    .swiper-slide .shade-card {
       width: 220px !important;
     }
   }
