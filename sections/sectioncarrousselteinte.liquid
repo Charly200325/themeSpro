@@ -57,28 +57,28 @@
       {{ section.settings.title }}
     </h2>
 
-    <div class="shade-carousel-tags" style="display: flex; justify-content: center; gap: 15px; margin-bottom: 40px;">
+    <div class="shade-carousel-tags" style="display: flex; justify-content: center; gap: 15px; margin-bottom: 40px; flex-wrap: wrap;">
       <span class="tag">Seamless</span>
       <span class="tag">Effortless</span>
       <span class="tag">Flawless</span>
     </div>
 
-    <div class="shade-carousel-wrapper" id="shade-carousel" style="display: flex; gap: 20px; overflow-x: auto; scroll-behavior: smooth; padding: 0 40px;">
+    <div class="shade-carousel-wrapper" id="shade-carousel" style="display: flex; gap: 20px; overflow-x: scroll; scroll-behavior: smooth; padding: 0 40px; scroll-snap-type: x mandatory;">
       {% for block in section.blocks %}
-        <div class="shade-card" style="min-width: 280px; background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 0 24px rgba(137, 137, 137, 0.1); position: relative;">
+        <div class="shade-card" style="scroll-snap-align: start; flex-shrink: 0; width: 280px; background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 0 24px rgba(137, 137, 137, 0.1); position: relative;">
           {% if block.settings.image %}
             <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.shade_name }}" style="width: 100%; height: auto;">
           {% endif %}
 
-          <div style="background-color: #60362C; color: white; padding: 20px; text-align: left; border-bottom-left-radius: 12px; border-bottom-right-radius: 12px; position: relative; min-height: 120px;">
-            <p style="font-size: 13px; font-weight: 400; margin: 0; max-width: 90%;">
+          <div style="background-color: #60362C; color: white; padding: 20px; text-align: left; border-bottom-left-radius: 12px; border-bottom-right-radius: 12px; position: relative; min-height: 140px;">
+            <p style="font-size: 13px; font-weight: 400; margin: 0; max-width: 80%; word-break: break-word;">
               {{ block.settings.shade_description }}
             </p>
 
             {% if block.settings.shade_badge %}
               <div style="position: absolute; bottom: -10px; right: 10px; width: 110px; height: auto;">
                 <img src="{{ block.settings.shade_badge | image_url }}" alt="badge" style="width: 100%; height: auto; display: block;">
-                <div style="position: absolute; top: 40%; left: 50%; transform: translate(-50%, -50%); color: white; font-size: 10px; text-align: center;">
+                <div style="position: absolute; top: 40%; left: 50%; transform: translate(-50%, -50%); color: white; font-size: 10px; text-align: center; white-space: nowrap;">
                   <div style="font-weight: 700; text-transform: uppercase;">SHADE {{ block.settings.shade_number }}</div>
                   <div style="font-weight: 600; font-size: 13px;">{{ block.settings.shade_name }}</div>
                 </div>
@@ -89,22 +89,23 @@
       {% endfor %}
     </div>
 
-    <!-- Arrows -->
-    <div style="position: absolute; top: 50%; left: 20px; transform: translateY(-50%); cursor: pointer;" onclick="scrollCarousel(-1)">
-      <svg width="24" height="24" fill="#000"><path d="M15.41 7.41 14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg>
+    <!-- Arrows repositioned below carousel -->
+    <div style="margin-top: 30px; display: flex; justify-content: center; gap: 20px;">
+      <button onclick="scrollCarousel(-1)" aria-label="Previous" style="background: none; border: none; cursor: pointer;">
+        <svg width="32" height="32" fill="#000"><path d="M15.41 7.41 14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg>
+      </button>
+      <button onclick="scrollCarousel(1)" aria-label="Next" style="background: none; border: none; cursor: pointer;">
+        <svg width="32" height="32" fill="#000"><path d="M8.59 16.59 10 18l6-6-6-6-1.41 1.41L13.17 12z"/></svg>
+      </button>
     </div>
-    <div style="position: absolute; top: 50%; right: 20px; transform: translateY(-50%); cursor: pointer;" onclick="scrollCarousel(1)">
-      <svg width="24" height="24" fill="#000"><path d="M8.59 16.59 10 18l6-6-6-6-1.41 1.41L13.17 12z"/></svg>
-    </div>
-
   </div>
 </section>
 
 <script>
+  const carousel = document.getElementById('shade-carousel');
   function scrollCarousel(direction) {
-    const container = document.getElementById('shade-carousel');
-    const scrollAmount = 300;
-    container.scrollBy({ left: direction * scrollAmount, behavior: 'smooth' });
+    const cardWidth = carousel.querySelector('.shade-card').offsetWidth + 20; // card + gap
+    carousel.scrollBy({ left: direction * cardWidth, behavior: 'smooth' });
   }
 </script>
 
@@ -123,5 +124,10 @@
   .shade-carousel-wrapper {
     -ms-overflow-style: none;
     scrollbar-width: none;
+  }
+  @media (max-width: 768px) {
+    .shade-card {
+      width: 220px !important;
+    }
   }
 </style>
