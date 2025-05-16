@@ -218,11 +218,11 @@
     "sectionfinale_7NAU7K": {
       "type": "sectionfinale",
       "blocks": {
-        "feature_Hq7N38": {
+        "feature_gAzRMT": {
           "type": "feature",
           "settings": {
-            "icon": "shopify://shop_images/gempages_534627086933951483-043139a2-dcb8-4f87-984f-95545c927095_1.webp",
-            "text": "Evens skin tone seamlessly"
+            "icon": "shopify://shop_images/icon1.svg",
+            "text": "Instantly blurs dark spots"
           }
         },
         "feature_ycFqim": {
@@ -232,45 +232,42 @@
             "text": "Hydrates & locks in moisture"
           }
         },
-        "feature_gAzRMT": {
+        "feature_Hq7N38": {
           "type": "feature",
           "settings": {
-            "text": ""
+            "icon": "shopify://shop_images/gempages_534627086933951483-043139a2-dcb8-4f87-984f-95545c927095_1.webp",
+            "text": "Evens skin tone seamlessly"
           }
         },
         "feature_JbJEzd": {
           "type": "feature",
           "settings": {
-            "text": ""
+            "icon": "shopify://shop_images/icon3.svg",
+            "text": "Plumps & smooths fine lines"
           }
         },
         "feature_tjYnzC": {
           "type": "feature",
           "settings": {
-            "text": ""
+            "icon": "shopify://shop_images/icon4.svg",
+            "text": "Blends effortlessly for a natural finish"
           }
         },
         "feature_3mUKwJ": {
           "type": "feature",
           "settings": {
-            "text": ""
-          }
-        },
-        "feature_fzWFBN": {
-          "type": "feature",
-          "settings": {
-            "text": ""
+            "icon": "shopify://shop_images/icon5.svg",
+            "text": "Skincare-infused for healthier skin"
           }
         }
       },
       "block_order": [
-        "feature_Hq7N38",
-        "feature_ycFqim",
         "feature_gAzRMT",
+        "feature_ycFqim",
+        "feature_Hq7N38",
         "feature_JbJEzd",
         "feature_tjYnzC",
-        "feature_3mUKwJ",
-        "feature_fzWFBN"
+        "feature_3mUKwJ"
       ],
       "name": "Goodbye Tags Section",
       "settings": {
