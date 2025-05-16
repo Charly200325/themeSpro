@@ -68,11 +68,12 @@
     {% endif %}
   </picture>
 
+  <div class="elvynor-caption">
+    <p>With Elvynor</p>
+    <h2>Your Skin Looks Like Skin,<br><span style="font-weight: 600;">But Better</span></h2>
+  </div>
+
   <div class="skin-feature-overlay">
-    <div class="elvynor-caption">
-      <p>With Elvynor</p>
-      <h2>Your Skin Looks Like Skin,<br><span style="font-weight: 600;">But Better</span></h2>
-    </div>
     {% for block in section.blocks %}
       <div class="skin-feature-card">
         {% if block.settings.icon %}
@@ -97,10 +98,13 @@
   display: block;
 }
 .elvynor-caption {
+  position: absolute;
+  top: 9.5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   text-align: center;
   color: #60362C;
   font-family: 'Hanken Grotesk', sans-serif;
-  margin-bottom: 20px;
 }
 .elvynor-caption p {
   font-size: 18px;
@@ -150,9 +154,6 @@
     padding: 40px 20px;
     background-color: #907B6E;
     flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
   }
   .skin-feature-card {
     width: 45%;
@@ -164,8 +165,11 @@
     filter: brightness(0) invert(1);
   }
   .elvynor-caption {
-    color: white;
+    position: static;
+    transform: none;
+    margin-top: 20px;
     margin-bottom: 20px;
+    color: #60362C;
   }
   .elvynor-caption h2 {
     font-size: 24px;
