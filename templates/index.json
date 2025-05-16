@@ -221,13 +221,15 @@
         "feature_Hq7N38": {
           "type": "feature",
           "settings": {
-            "text": ""
+            "icon": "shopify://shop_images/gempages_534627086933951483-043139a2-dcb8-4f87-984f-95545c927095_1.webp",
+            "text": "Evens skin tone seamlessly"
           }
         },
         "feature_ycFqim": {
           "type": "feature",
           "settings": {
-            "text": ""
+            "icon": "shopify://shop_images/icon2.svg",
+            "text": "Hydrates & locks in moisture"
           }
         },
         "feature_gAzRMT": {
