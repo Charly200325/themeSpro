@@ -1,6 +1,71 @@
 {% schema %}
-  {
-    "name": "Section name",
-    "settings": []
-  }
+{
+  "name": "Skincare Benefits Block",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "background_image",
+      "label": "Background Image"
+    },
+    {
+      "type": "text",
+      "id": "subheading",
+      "label": "Subheading",
+      "default": "With Splendor"
+    },
+    {
+      "type": "text",
+      "id": "main_heading",
+      "label": "Main Heading",
+      "default": "Your Skin Looks Like Skin, But Better"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "benefit",
+      "name": "Benefit Item",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "icon",
+          "label": "Icon"
+        },
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Description",
+          "default": "Instantly blurs dark spots"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Skincare Benefit Section",
+      "category": "Custom"
+    }
+  ]
+}
 {% endschema %}
+
+<section class="benefits-section" style="position: relative; padding: 100px 0; background-color: #f5e9e3;">
+  {% if section.settings.background_image %}
+    <div style="background-image: url('{{ section.settings.background_image | image_url }}'); background-size: cover; background-position: center; position: absolute; inset: 0; z-index: 0;"></div>
+  {% endif %}
+
+  <div class="benefits-wrapper" style="position: relative; z-index: 1; max-width: 1200px; margin: auto; text-align: center; color: #fff;">
+    <p style="font-weight: 600; margin-bottom: 10px;">{{ section.settings.subheading }}</p>
+    <h2 style="font-size: 34px; font-weight: 500; margin-bottom: 50px;">{{ section.settings.main_heading }}</h2>
+
+    <div class="benefits-grid" style="display: flex; flex-wrap: wrap; gap: 30px; justify-content: center;">
+      {% for block in section.blocks %}
+        <div style="width: 150px; text-align: center;">
+          {% if block.settings.icon %}
+            <img src="{{ block.settings.icon | image_url }}" alt="" style="width: 40px; margin-bottom: 15px;">
+          {% endif %}
+          <p style="font-size: 14px; line-height: 1.4; color: #fff;">{{ block.settings.text }}</p>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
