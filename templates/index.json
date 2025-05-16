@@ -296,12 +296,72 @@
         "subheading": "We’ve all been there—foundation that feels heavy, shades that don’t match, and coverage that fades too fast.",
         "tag_intro": "IT’S TIME TO SAY GOODBYE TO:"
       }
+    },
+    "skinfeature_f8hjPg": {
+      "type": "skinfeature",
+      "blocks": {
+        "feature_VgUDFr": {
+          "type": "feature",
+          "settings": {
+            "icon": "shopify://shop_images/icon1.svg",
+            "text": "Instantly blurs dark spots"
+          }
+        },
+        "feature_E98gcc": {
+          "type": "feature",
+          "settings": {
+            "icon": "shopify://shop_images/icon2.svg",
+            "text": "Hydrates & locks in moisture"
+          }
+        },
+        "feature_KVtW4K": {
+          "type": "feature",
+          "settings": {
+            "icon": "shopify://shop_images/gempages_534627086933951483-043139a2-dcb8-4f87-984f-95545c927095_1.webp",
+            "text": "Evens skin tone seamlessly"
+          }
+        },
+        "feature_hEd7nK": {
+          "type": "feature",
+          "settings": {
+            "icon": "shopify://shop_images/icon3.svg",
+            "text": "Plumps & smooths fine lines"
+          }
+        },
+        "feature_cUcgWW": {
+          "type": "feature",
+          "settings": {
+            "icon": "shopify://shop_images/icon4.svg",
+            "text": "Blends effortlessly for a natural finish"
+          }
+        },
+        "feature_4nEHBk": {
+          "type": "feature",
+          "settings": {
+            "icon": "shopify://shop_images/icon5.svg",
+            "text": "Skincare-infused for healthier skin"
+          }
+        }
+      },
+      "block_order": [
+        "feature_VgUDFr",
+        "feature_E98gcc",
+        "feature_KVtW4K",
+        "feature_hEd7nK",
+        "feature_cUcgWW",
+        "feature_4nEHBk"
+      ],
+      "name": "Skin Feature Banner",
+      "settings": {
+        "desktop_image": "shopify://shop_images/ok_1.png"
+      }
     }
   },
   "order": [
     "image_banner_6gMCeT",
     "featured_product_RP9LeE",
     "section_divider_P7McPh",
-    "ff_GMqJ9B"
+    "ff_GMqJ9B",
+    "skinfeature_f8hjPg"
   ]
 }
