@@ -1,6 +1,125 @@
 {% schema %}
-  {
-    "name": "Section name",
-    "settings": []
-  }
+{
+  "name": "Skin Feature Banner",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "desktop_image",
+      "label": "Desktop Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "mobile_image",
+      "label": "Mobile Image"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "feature",
+      "name": "Feature",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "icon",
+          "label": "Icon"
+        },
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Feature Text"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Skin Feature Banner",
+      "category": "Custom"
+    }
+  ]
+}
 {% endschema %}
+
+<style>
+.skin-feature-section {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background-color: #fdf2e8;
+}
+.skin-feature-image {
+  width: 100%;
+  display: block;
+}
+.skin-feature-overlay {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 20px;
+  background-color: transparent;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+  max-width: 1200px;
+  width: 100%;
+}
+.skin-feature-card {
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 12px;
+  padding: 20px;
+  width: 180px;
+  text-align: center;
+  font-size: 14px;
+  color: #60362C;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+.skin-feature-card img {
+  width: 40px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .skin-feature-overlay {
+    position: static;
+    transform: none;
+    padding: 40px 20px;
+    background-color: #7f6757;
+  }
+  .skin-feature-card {
+    width: 45%;
+    color: white;
+    background-color: transparent;
+    box-shadow: none;
+  }
+  .skin-feature-card img {
+    filter: brightness(0) invert(1);
+  }
+}
+</style>
+
+<section class="skin-feature-section">
+  {% if section.settings.desktop_image or section.settings.mobile_image %}
+    <picture>
+      {% if section.settings.mobile_image %}
+        <source media="(max-width: 768px)" srcset="{{ section.settings.mobile_image | image_url }}">
+      {% endif %}
+      {% if section.settings.desktop_image %}
+        <img src="{{ section.settings.desktop_image | image_url }}" alt="Skin Feature Image" class="skin-feature-image">
+      {% endif %}
+    </picture>
+  {% endif %}
+
+  <div class="skin-feature-overlay">
+    {% for block in section.blocks %}
+      <div class="skin-feature-card">
+        {% if block.settings.icon %}
+          <img src="{{ block.settings.icon | image_url }}" alt="Icon">
+        {% endif %}
+        <div>{{ block.settings.text }}</div>
+      </div>
+    {% endfor %}
+  </div>
+</section>
