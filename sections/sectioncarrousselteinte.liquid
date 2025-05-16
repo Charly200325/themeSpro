@@ -101,16 +101,16 @@
           </div>
         {% endfor %}
       </div>
-    </div>
 
-    <!-- Arrows BELOW the carousel -->
-    <div class="swiper-controls" style="margin-top: 30px; display: flex; justify-content: center; gap: 20px;">
-      <button class="swiper-button-prev" aria-label="Previous" style="background: white; border: 1px solid #bfb2a3; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
-        <svg width="16" height="16" fill="#7d6d5e" viewBox="0 0 24 24"><path d="M15.41 7.41 14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg>
-      </button>
-      <button class="swiper-button-next" aria-label="Next" style="background: white; border: 1px solid #bfb2a3; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
-        <svg width="16" height="16" fill="#7d6d5e" viewBox="0 0 24 24"><path d="M8.59 16.59 10 18l6-6-6-6-1.41 1.41L13.17 12z"/></svg>
-      </button>
+      <!-- Arrows BELOW the carousel inside swiper -->
+      <div class="swiper-controls">
+        <button class="swiper-button-prev" aria-label="Previous">
+          <svg width="16" height="16" fill="#7d6d5e" viewBox="0 0 24 24"><path d="M15.41 7.41 14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg>
+        </button>
+        <button class="swiper-button-next" aria-label="Next">
+          <svg width="16" height="16" fill="#7d6d5e" viewBox="0 0 24 24"><path d="M8.59 16.59 10 18l6-6-6-6-1.41 1.41L13.17 12z"/></svg>
+        </button>
+      </div>
     </div>
   </div>
 </section>
@@ -146,7 +146,8 @@
     font-family: 'Hanken Grotesk', sans-serif;
   }
   .swiper {
-    padding-bottom: 20px;
+    padding-bottom: 40px;
+    position: relative;
   }
   .swiper-wrapper {
     display: flex;
@@ -156,6 +157,24 @@
     width: auto !important;
     display: flex;
     justify-content: center;
+  }
+  .swiper-controls {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  .swiper-button-next,
+  .swiper-button-prev {
+    background: white;
+    border: 1px solid #bfb2a3;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: static;
   }
   .swiper-button-next:after,
   .swiper-button-prev:after {
