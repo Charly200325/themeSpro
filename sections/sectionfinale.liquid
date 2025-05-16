@@ -1,3 +1,90 @@
+{% schema %}
+{
+  "name": "Goodbye Tags Section",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "desktop_image",
+      "label": "Desktop Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "mobile_image",
+      "label": "Mobile Image"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "feature",
+      "name": "Feature",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "icon",
+          "label": "Icon"
+        },
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Feature Text"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Goodbye Tags Section",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}
+
+<section class="goodbye-skin-section" style="position: relative; padding: 60px 20px 30px; text-align: center; background-color: #f9eee7;">
+  <div style="position: relative; z-index: 1; max-width: 900px; margin: auto;">
+    <h2 style="font-size: 32px; color: #2d1c13; margin-bottom: 20px;">Tired of Makeup That Doesn’t Work With Your Skin?</h2>
+    <p style="font-size: 16px; color: #000; margin-bottom: 30px;">We’ve all been there—foundation that feels heavy, shades that don’t match, and coverage that fades too fast.</p>
+    <p style="font-weight: bold; text-transform: uppercase; font-size: 14px; color: #796555; margin-bottom: 20px;">IT’S TIME TO SAY GOODBYE TO:</p>
+    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 10px;">
+      <span style="background-color: #B3A194; color: white; font-size: 14px; padding: 8px 14px; border-radius: 8px; text-decoration: line-through;">Hyperpigmentation</span>
+      <span style="background-color: #B3A194; color: white; font-size: 14px; padding: 8px 14px; border-radius: 8px; text-decoration: line-through;">Dark Spots</span>
+      <span style="background-color: #B3A194; color: white; font-size: 14px; padding: 8px 14px; border-radius: 8px; text-decoration: line-through;">Uneven Skin Tone</span>
+      <span style="background-color: #B3A194; color: white; font-size: 14px; padding: 8px 14px; border-radius: 8px; text-decoration: line-through;">Cakey, Heavy Foundation</span>
+      <span style="background-color: #B3A194; color: white; font-size: 14px; padding: 8px 14px; border-radius: 8px; text-decoration: line-through;">Coverage That Fades Too Fast</span>
+      <span style="background-color: #B3A194; color: white; font-size: 14px; padding: 8px 14px; border-radius: 8px; text-decoration: line-through;">Dull Complexion</span>
+      <span style="background-color: #B3A194; color: white; font-size: 14px; padding: 8px 14px; border-radius: 8px; text-decoration: line-through;">Patchy, Dry Spots</span>
+      <span style="background-color: #B3A194; color: white; font-size: 14px; padding: 8px 14px; border-radius: 8px; text-decoration: line-through;">Clogged Pores & Breakouts</span>
+    </div>
+  </div>
+</section>
+
+<section class="skin-feature-section">
+  <picture>
+    {% if section.settings.mobile_image %}
+      <source media="(max-width: 768px)" srcset="{{ section.settings.mobile_image | image_url }}">
+    {% endif %}
+    {% if section.settings.desktop_image %}
+      <img src="{{ section.settings.desktop_image | image_url }}" alt="Skin Feature Image" class="skin-feature-image">
+    {% endif %}
+  </picture>
+
+  <div class="elvynor-caption">
+    <p>With Elvynor</p>
+    <h2>Your Skin Looks Like Skin, But Better</h2>
+  </div>
+
+  <div class="skin-feature-overlay">
+    {% for block in section.blocks %}
+      <div class="skin-feature-card">
+        {% if block.settings.icon %}
+          <img src="{{ block.settings.icon | image_url }}" alt="Icon">
+        {% endif %}
+        <div>{{ block.settings.text }}</div>
+      </div>
+    {% endfor %}
+  </div>
+</section>
+
 <style>
 .skin-feature-section {
   position: relative;
