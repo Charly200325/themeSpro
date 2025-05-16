@@ -11,53 +11,6 @@
   "name": "t:sections.footer.name",
   "type": "footer",
   "sections": {
-    "horizontal_ticker_jT8U3K": {
-      "type": "horizontal-ticker",
-      "blocks": {
-        "text_VicaFU": {
-          "type": "text",
-          "settings": {
-            "title": "Shrine Theme"
-          }
-        },
-        "text_GKUU9t": {
-          "type": "text",
-          "settings": {
-            "title": "Shrine Theme"
-          }
-        },
-        "text_LdaUFr": {
-          "type": "text",
-          "settings": {
-            "title": "Shrine Theme"
-          }
-        }
-      },
-      "block_order": [
-        "text_VicaFU",
-        "text_GKUU9t",
-        "text_LdaUFr"
-      ],
-      "name": "Horizontal Ticker",
-      "settings": {
-        "visibility": "always-display",
-        "speed": 3,
-        "mobile_spacing": 60,
-        "desktop_spacing": 100,
-        "color_scheme": "accent-1",
-        "mobile_text_size": 16,
-        "desktop_text_size": 18,
-        "italic_text": false,
-        "uppercase_text": false,
-        "bold_text": false,
-        "mobile_image_height": 26,
-        "desktop_image_height": 40,
-        "mobile_padding_top": 12,
-        "mobile_padding_bottom": 12,
-        "desktop_padding_top": 16,
-        "desktop_padding_bottom": 16
-      }
-    },
     "footer": {
       "type": "footer",
       "blocks": {
@@ -104,7 +57,6 @@
     }
   },
   "order": [
-    "horizontal_ticker_jT8U3K",
     "footer"
   ]
 }
