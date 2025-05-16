@@ -47,7 +47,7 @@
       "settings": {
         "display_id": false,
         "visibility": "mobile-hidden",
-        "image": "shopify://shop_images/BAN1_3.webp",
+        "image": "shopify://shop_images/gempages_566608300599149477-1f045ff9-c84c-4fc1-9887-c457dfc79534.webp",
         "image_1_visibility": "always-display",
         "image_2_visibility": "always-display",
         "image_overlay_opacity": 0,
@@ -60,6 +60,159 @@
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": true,
         "show_text_below": true
+      }
+    },
+    "featured_product_RP9LeE": {
+      "type": "featured-product",
+      "blocks": {
+        "title_QBNDgi": {
+          "type": "title",
+          "settings": {
+            "text_size": "h2",
+            "title_alignment": "center",
+            "uppercase_title": false,
+            "margin_top": 0,
+            "margin_bottom": 15
+          }
+        },
+        "rating_stars_fpWWKW": {
+          "type": "rating_stars",
+          "settings": {
+            "rating": 4.9,
+            "star_color": "#c39f83",
+            "bg_stars_style": "full",
+            "bg_star_color": "#ececec",
+            "label": " <strong>Over 50,000+ Happy Customers</strong>",
+            "size": 11,
+            "alignment": "center",
+            "scroll_id": "",
+            "margin_top": 0,
+            "margin_bottom": 0
+          }
+        },
+        "custom_liquid_FwXD4F": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<div class=\"product__text-container product__text-container--left product__text-container--vertical product__text-container--100% product__text-container--multiple\" style=\"--item-count:3;--mobile-text-size: 1.4rem;--desktop-text-size: 1.6rem;--icon-scale:1.2;--column-gap:1.5em;--row-gap:0.6em;--padding:0.42857142857142855em;--bg-color:#f3f3f3;--corner-radius:0.4em;--border-size:0px;--border-color:#b7b7b7;--margin-top: 1.5rem;--margin-bottom: 1.5rem;\">\n  \n    <p class=\"product__text product__text-left\" style=\"--text-color:#121212;--icon-color:#c39f83;\">\n      \n        <span class=\"material-icon material-symbols-outlined filled\">\n  check_circle\n</span>\n      \n      <span>Smooths Fine Lines &amp; Wrinkles</span>\n    </p>\n  \n  \n    <p class=\"product__text product__text-left\" style=\"--text-color:#121212;--icon-color:#c39f83;\">\n      \n        <span class=\"material-icon material-symbols-outlined filled\">\n  check_circle\n</span>\n      \n      <span>Hides Dark Spots &amp; Hyperpigmentation</span>\n    </p>\n  \n  \n    <p class=\"product__text product__text-left\" style=\"--text-color:#121212;--icon-color:#c39f83;\">\n      \n        <span class=\"material-icon material-symbols-outlined filled\">\n  check_circle\n</span>\n      \n      <span>Skincare + Makeup All in One</span>\n    </p>\n  \n</div>"
+          }
+        },
+        "custom_liquid_8APzPk": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<variant-selects id=\"variant-selects-template--18948294672601__featured_product_Ex4BqM\" class=\"no-js-hidden\" data-section=\"template--18948294672601__featured_product_Ex4BqM\" data-url=\"/products/splendor-serum-boosted-skin-tint\" data-skip-non-existent=\"true\" data-skip-unavailable=\"\" data-update-url=\"false\" style=\"--margin-top: 1.5rem;--margin-bottom: 1.5rem;\">\n      <div class=\"product-form__input product-form__input--swatches\">\n        <div class=\"visually-hidden product-form__input__type\" data-type=\"swatches\">&nbsp;</div>\n        \n          <div class=\"product-form__label-container\" id=\"SizeChartAppend-template--18948294672601__featured_product_Ex4BqM-option_1_label_container\">\n            <label class=\"form__label\" for=\"Option-template--18948294672601__featured_product_Ex4BqM-0\">\n              \n                <span id=\"custom-label-template--18948294672601__featured_product_Ex4BqM-1\">\n                  \n                  \n                  Color - Shade 1 - Deep\n                </span>\n              \n            </label>\n            \n            \n          </div>\n        \n        \n            <div class=\"color-swatches-container color-swatches-container--size-medium\">\n              \n\n      <div class=\"color-swatch \">\n        <input type=\"radio\" id=\"template--18948294672601__featured_product_Ex4BqM-1-0\" name=\"Color\" value=\"Shade 1 - Deep\" form=\"product-form-template--18948294672601__featured_product_Ex4BqM\" data-swatch=\"true\" checked=\"\" class=\"\">\n        <div class=\"color-swatch__image\">\n          \n\n\n            \n              \n                \n                <div class=\"color-swatch__custom-color\" style=\"--bg-color: #60362c\">&nbsp;</div>\n              \n              \n        </div>\n        <label class=\"color-swatch_hidden-label\" for=\"template--18948294672601__featured_product_Ex4BqM-1-0\">\n        </label>\n        <span class=\"color-swatch__label\">Shade 1 - Deep</span>\n      </div>\n\n      <div class=\"color-swatch \">\n        <input type=\"radio\" id=\"template--18948294672601__featured_product_Ex4BqM-1-1\" name=\"Color\" value=\"Shade 2 - Medium Deep\" form=\"product-form-template--18948294672601__featured_product_Ex4BqM\" data-swatch=\"true\" class=\"\">\n        <div class=\"color-swatch__image\">\n          \n\n\n            \n          \n\n\n            \n              \n                \n                <div class=\"color-swatch__custom-color\" style=\"--bg-color:  #764534\">&nbsp;</div>\n              \n              \n        </div>\n        <label class=\"color-swatch_hidden-label\" for=\"template--18948294672601__featured_product_Ex4BqM-1-1\">\n        </label>\n        <span class=\"color-swatch__label\">Shade 2 - Medium Deep</span>\n      </div>\n\n      <div class=\"color-swatch \">\n        <input type=\"radio\" id=\"template--18948294672601__featured_product_Ex4BqM-1-2\" name=\"Color\" value=\"Shade 3 - Medium\" form=\"product-form-template--18948294672601__featured_product_Ex4BqM\" data-swatch=\"true\" class=\"\">\n        <div class=\"color-swatch__image\">\n          \n\n\n            \n          \n\n\n            \n          \n\n\n            \n              \n                \n                <div class=\"color-swatch__custom-color\" style=\"--bg-color:  #965a3b\">&nbsp;</div>\n              \n              \n        </div>\n        <label class=\"color-swatch_hidden-label\" for=\"template--18948294672601__featured_product_Ex4BqM-1-2\">\n        </label>\n        <span class=\"color-swatch__label\">Shade 3 - Medium</span>\n      </div>\n\n      <div class=\"color-swatch \">\n        <input type=\"radio\" id=\"template--18948294672601__featured_product_Ex4BqM-1-3\" name=\"Color\" value=\"Shade 4 - Light\" form=\"product-form-template--18948294672601__featured_product_Ex4BqM\" data-swatch=\"true\" class=\"\">\n        <div class=\"color-swatch__image\">\n          \n\n\n            \n          \n\n\n            \n          \n\n\n            \n          \n\n\n            \n              \n                \n                <div class=\"color-swatch__custom-color\" style=\"--bg-color:  #e8bc9c\">&nbsp;</div>\n              \n              \n        </div>\n        <label class=\"color-swatch_hidden-label\" for=\"template--18948294672601__featured_product_Ex4BqM-1-3\">\n        </label>\n        <span class=\"color-swatch__label\">Shade 4 - Light</span>\n      </div>\n\n      <div class=\"color-swatch \">\n        <input type=\"radio\" id=\"template--18948294672601__featured_product_Ex4BqM-1-4\" name=\"Color\" value=\"Shade 5 - Fair\" form=\"product-form-template--18948294672601__featured_product_Ex4BqM\" data-swatch=\"true\" class=\"\">\n        <div class=\"color-swatch__image\">\n          \n\n\n            \n          \n\n\n            \n          \n\n\n            \n          \n\n\n            \n          \n\n\n            \n              \n                \n                <div class=\"color-swatch__custom-color\" style=\"--bg-color:  #e2b59e\">&nbsp;</div>\n              \n              \n        </div>\n        <label class=\"color-swatch_hidden-label\" for=\"template--18948294672601__featured_product_Ex4BqM-1-4\">\n        </label>\n        <span class=\"color-swatch__label\">Shade 5 - Fair</span>\n      </div>\n\n      <div class=\"color-swatch \">\n        <input type=\"radio\" id=\"template--18948294672601__featured_product_Ex4BqM-1-5\" name=\"Color\" value=\"Shade 6 - Light Medium\" form=\"product-form-template--18948294672601__featured_product_Ex4BqM\" data-swatch=\"true\" class=\"\">\n        <div class=\"color-swatch__image\">\n          \n\n\n            \n          \n\n\n            \n          \n\n\n            \n          \n\n\n            \n          \n\n\n            \n          \n\n\n            \n              \n                \n                <div class=\"color-swatch__custom-color\" style=\"--bg-color:  #ac775e\">&nbsp;</div>\n              \n              \n        </div>\n        <label class=\"color-swatch_hidden-label\" for=\"template--18948294672601__featured_product_Ex4BqM-1-5\">\n        </label>\n        <span class=\"color-swatch__label\">Shade 6 - Light Medium</span>\n      </div>\n\n            </div>\n          \n        \n        <div class=\"product-form__under-container\"></div>\n      </div><script type=\"application/json\">\n      [{\"id\":46347707842777,\"title\":\"Shade 1 - Deep\",\"option1\":\"Shade 1 - Deep\",\"option2\":null,\"option3\":null,\"sku\":\"200001176:200004889#Color  1\",\"requires_shipping\":true,\"taxable\":false,\"featured_image\":{\"id\":44533708292313,\"product_id\":9106226118873,\"position\":6,\"created_at\":\"2025-02-11T01:23:53-08:00\",\"updated_at\":\"2025-04-14T09:12:16-07:00\",\"alt\":null,\"width\":1080,\"height\":1080,\"src\":\"\\/\\/splendorintl.com\\/cdn\\/shop\\/files\\/6_ecb7b3c2-8746-4685-88ad-163bb54c0ed4.png?v=1744647136\",\"variant_ids\":[46347707842777]},\"available\":true,\"name\":\"Splendor Serum Boosted Skin Tint Balm - Shade 1 - Deep\",\"public_title\":\"Shade 1 - Deep\",\"options\":[\"Shade 1 - Deep\"],\"price\":3695,\"weight\":0,\"compare_at_price\":null,\"inventory_management\":\"dsers-fulfillment-service\",\"barcode\":\"\",\"featured_media\":{\"alt\":null,\"id\":36688809328857,\"position\":6,\"preview_image\":{\"aspect_ratio\":1.0,\"height\":1080,\"width\":1080,\"src\":\"\\/\\/splendorintl.com\\/cdn\\/shop\\/files\\/6_ecb7b3c2-8746-4685-88ad-163bb54c0ed4.png?v=1744647136\"}},\"requires_selling_plan\":false,\"selling_plan_allocations\":[]},{\"id\":46347707810009,\"title\":\"Shade 2 - Medium Deep\",\"option1\":\"Shade 2 - Medium Deep\",\"option2\":null,\"option3\":null,\"sku\":\"200001176:1254#Color 2\",\"requires_shipping\":true,\"taxable\":false,\"featured_image\":{\"id\":44533708259545,\"product_id\":9106226118873,\"position\":7,\"created_at\":\"2025-02-11T01:23:53-08:00\",\"updated_at\":\"2025-04-14T09:12:16-07:00\",\"alt\":null,\"width\":1080,\"height\":1080,\"src\":\"\\/\\/splendorintl.com\\/cdn\\/shop\\/files\\/7_e6584976-1d3e-4e6d-b9fb-e2bbee6aeeac.png?v=1744647136\",\"variant_ids\":[46347707810009]},\"available\":true,\"name\":\"Splendor Serum Boosted Skin Tint Balm - Shade 2 - Medium Deep\",\"public_title\":\"Shade 2 - Medium Deep\",\"options\":[\"Shade 2 - Medium Deep\"],\"price\":3695,\"weight\":0,\"compare_at_price\":null,\"inventory_management\":\"dsers-fulfillment-service\",\"barcode\":\"\",\"featured_media\":{\"alt\":null,\"id\":36688809296089,\"position\":7,\"preview_image\":{\"aspect_ratio\":1.0,\"height\":1080,\"width\":1080,\"src\":\"\\/\\/splendorintl.com\\/cdn\\/shop\\/files\\/7_e6584976-1d3e-4e6d-b9fb-e2bbee6aeeac.png?v=1744647136\"}},\"requires_selling_plan\":false,\"selling_plan_allocations\":[]},{\"id\":46347707777241,\"title\":\"Shade 3 - Medium\",\"option1\":\"Shade 3 - Medium\",\"option2\":null,\"option3\":null,\"sku\":\"200001176:200000195#Color 3\",\"requires_shipping\":true,\"taxable\":false,\"featured_image\":{\"id\":44533708226777,\"product_id\":9106226118873,\"position\":8,\"created_at\":\"2025-02-11T01:23:52-08:00\",\"updated_at\":\"2025-04-14T09:12:16-07:00\",\"alt\":null,\"width\":1080,\"height\":1080,\"src\":\"\\/\\/splendorintl.com\\/cdn\\/shop\\/files\\/8.png?v=1744647136\",\"variant_ids\":[46347707777241]},\"available\":true,\"name\":\"Splendor Serum Boosted Skin Tint Balm - Shade 3 - Medium\",\"public_title\":\"Shade 3 - Medium\",\"options\":[\"Shade 3 - Medium\"],\"price\":3695,\"weight\":0,\"compare_at_price\":null,\"inventory_management\":\"dsers-fulfillment-service\",\"barcode\":\"\",\"featured_media\":{\"alt\":null,\"id\":36688809263321,\"position\":8,\"preview_image\":{\"aspect_ratio\":1.0,\"height\":1080,\"width\":1080,\"src\":\"\\/\\/splendorintl.com\\/cdn\\/shop\\/files\\/8.png?v=1744647136\"}},\"requires_selling_plan\":false,\"selling_plan_allocations\":[]},{\"id\":46347707941081,\"title\":\"Shade 4 - Light\",\"option1\":\"Shade 4 - Light\",\"option2\":null,\"option3\":null,\"sku\":\"200001176:200005536#Color 4\",\"requires_shipping\":true,\"taxable\":false,\"featured_image\":{\"id\":44533708423385,\"product_id\":9106226118873,\"position\":9,\"created_at\":\"2025-02-11T01:23:52-08:00\",\"updated_at\":\"2025-04-14T09:12:16-07:00\",\"alt\":null,\"width\":1080,\"height\":1080,\"src\":\"\\/\\/splendorintl.com\\/cdn\\/shop\\/files\\/9.png?v=1744647136\",\"variant_ids\":[46347707941081]},\"available\":true,\"name\":\"Splendor Serum Boosted Skin Tint Balm - Shade 4 - Light\",\"public_title\":\"Shade 4 - Light\",\"options\":[\"Shade 4 - Light\"],\"price\":3695,\"weight\":0,\"compare_at_price\":null,\"inventory_management\":\"dsers-fulfillment-service\",\"barcode\":\"\",\"featured_media\":{\"alt\":null,\"id\":36688809197785,\"position\":9,\"preview_image\":{\"aspect_ratio\":1.0,\"height\":1080,\"width\":1080,\"src\":\"\\/\\/splendorintl.com\\/cdn\\/shop\\/files\\/9.png?v=1744647136\"}},\"requires_selling_plan\":false,\"selling_plan_allocations\":[]},{\"id\":46347707908313,\"title\":\"Shade 5 - Fair\",\"option1\":\"Shade 5 - Fair\",\"option2\":null,\"option3\":null,\"sku\":\"200001176:200006151#Color 5\",\"requires_shipping\":true,\"taxable\":false,\"featured_image\":{\"id\":44533708194009,\"product_id\":9106226118873,\"position\":10,\"created_at\":\"2025-02-11T01:23:52-08:00\",\"updated_at\":\"2025-04-14T09:12:16-07:00\",\"alt\":null,\"width\":1080,\"height\":1080,\"src\":\"\\/\\/splendorintl.com\\/cdn\\/shop\\/files\\/10.png?v=1744647136\",\"variant_ids\":[46347707908313]},\"available\":true,\"name\":\"Splendor Serum Boosted Skin Tint Balm - Shade 5 - Fair\",\"public_title\":\"Shade 5 - Fair\",\"options\":[\"Shade 5 - Fair\"],\"price\":3695,\"weight\":0,\"compare_at_price\":null,\"inventory_management\":\"dsers-fulfillment-service\",\"barcode\":\"\",\"featured_media\":{\"alt\":null,\"id\":36688809230553,\"position\":10,\"preview_image\":{\"aspect_ratio\":1.0,\"height\":1080,\"width\":1080,\"src\":\"\\/\\/splendorintl.com\\/cdn\\/shop\\/files\\/10.png?v=1744647136\"}},\"requires_selling_plan\":false,\"selling_plan_allocations\":[]},{\"id\":46347707875545,\"title\":\"Shade 6 - Light Medium\",\"option1\":\"Shade 6 - Light Medium\",\"option2\":null,\"option3\":null,\"sku\":\"200001176:200006152#Color 6\",\"requires_shipping\":true,\"taxable\":false,\"featured_image\":{\"id\":44533708325081,\"product_id\":9106226118873,\"position\":11,\"created_at\":\"2025-02-11T01:23:53-08:00\",\"updated_at\":\"2025-04-14T09:12:16-07:00\",\"alt\":null,\"width\":1080,\"height\":1080,\"src\":\"\\/\\/splendorintl.com\\/cdn\\/shop\\/files\\/11.png?v=1744647136\",\"variant_ids\":[46347707875545]},\"available\":true,\"name\":\"Splendor Serum Boosted Skin Tint Balm - Shade 6 - Light Medium\",\"public_title\":\"Shade 6 - Light Medium\",\"options\":[\"Shade 6 - Light Medium\"],\"price\":3695,\"weight\":0,\"compare_at_price\":null,\"inventory_management\":\"dsers-fulfillment-service\",\"barcode\":\"\",\"featured_media\":{\"alt\":null,\"id\":36688809361625,\"position\":11,\"preview_image\":{\"aspect_ratio\":1.0,\"height\":1080,\"width\":1080,\"src\":\"\\/\\/splendorintl.com\\/cdn\\/shop\\/files\\/11.png?v=1744647136\"}},\"requires_selling_plan\":false,\"selling_plan_allocations\":[]}]\n    </script>\n  </variant-selects>"
+          }
+        },
+        "quantity_selector_qpygxw": {
+          "type": "quantity_selector",
+          "settings": {
+            "enable_quantity_discounts": false,
+            "style": "normal",
+            "headline": "BUNDLE & SAVE",
+            "preselected": "option_1",
+            "enable_variant_selectors": true,
+            "enable_variant_selectors_on_quantity_of_1": false,
+            "hide_pickers_overlay": true,
+            "image_width": 70,
+            "space_images": true,
+            "color_scheme": "accent-1",
+            "option_1_quantity": 1,
+            "option_1_badge": "",
+            "option_1_label": "Buy [quantity]",
+            "option_1_benefit": "",
+            "option_1_caption": "You save [amount_saved]",
+            "option_1_percentage_off": "0",
+            "option_1_fixed_amount_off": "0",
+            "option_1_price_text": "[price]",
+            "option_1_compare_price": "compare_price",
+            "option_1_compare_price_text": "[compare_price]",
+            "option_2_quantity": 2,
+            "option_2_badge": "",
+            "option_2_label": "Buy [quantity]",
+            "option_2_benefit": "",
+            "option_2_caption": "You save [amount_saved]",
+            "option_2_percentage_off": "0",
+            "option_2_fixed_amount_off": "0",
+            "option_2_price_text": "[price]",
+            "option_2_compare_price": "compare_price",
+            "option_2_compare_price_text": "[compare_price]",
+            "option_3_quantity": 3,
+            "option_3_badge": "",
+            "option_3_label": "Buy [quantity]",
+            "option_3_benefit": "",
+            "option_3_caption": "You save [amount_saved]",
+            "option_3_percentage_off": "0",
+            "option_3_fixed_amount_off": "0",
+            "option_3_price_text": "[price]",
+            "option_3_compare_price": "compare_price",
+            "option_3_compare_price_text": "[compare_price]",
+            "option_4_quantity": 4,
+            "option_4_badge": "",
+            "option_4_label": "Buy [quantity]",
+            "option_4_benefit": "",
+            "option_4_caption": "You save [amount_saved]",
+            "option_4_percentage_off": "0",
+            "option_4_fixed_amount_off": "0",
+            "option_4_price_text": "[price]",
+            "option_4_compare_price": "compare_price",
+            "option_4_compare_price_text": "[compare_price]",
+            "margin_top": 15,
+            "margin_bottom": 15
+          }
+        },
+        "kaching_bundles_app_block_3RkmCL": {
+          "type": "shopify://apps/kaching-bundles/blocks/app-block/6c637362-a106-4a32-94ac-94dcfd68cdb8",
+          "settings": {
+            "product": "{{section.settings.product}}"
+          }
+        },
+        "buy_buttons_cMKL3a": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false,
+            "skip_cart": false,
+            "uppercase_text": true,
+            "display_price": false,
+            "enable_custom_color": false,
+            "custom_color": "#dd1d1d",
+            "margin_top": 24,
+            "margin_bottom": 24
+          }
+        },
+        "custom_liquid_wR8cRX": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<div class=\"product__accordion accordion accordion--medium accordion--top-border quick-add-hidden\" style=\"--margin-top: 2.4rem;--margin-bottom: 0.0rem;\">\n                  <details class=\"accordion__details\">\n                    <summary class=\"accordion__summary\">\n                      <div class=\"summary__title\">\n                        \n                          <img src=\"//splendorintl.com/cdn/shop/files/ask.png?v=1738915542\" role=\"presentation\" height=\"auto\" width=\"auto\" loading=\"lazy\" style=\"pointer-events: all !important;\">\n                        \n                        <h2 class=\"h4 accordion__title\">\n                          Find Your Shade\n                        </h2>\n                      </div>\n                      \n                        <svg xmlns=\"http://www.w3.org/2000/svg\" aria-hidden=\"true\" focusable=\"false\" class=\"icon icon-plus\" fill=\"none\" viewBox=\"0 0 10 10\">\n  <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M1 4.51a.5.5 0 000 1h3.5l.01 3.5a.5.5 0 001-.01V5.5l3.5-.01a.5.5 0 00-.01-1H5.5L5.49.99a.5.5 0 00-1 .01v3.5l-3.5.01H1z\" fill=\"currentColor\">\n</path></svg>\n\n                      \n                    </summary>\n                  </details>\n                  <div class=\"accordion__content-wrapper\">\n                    <div class=\"accordion__content rte\" id=\"ProductAccordion-collapsible_tab_KNaVni-template--18948294672601__featured_product_Ex4BqM\">\n                      \n                      <div style=\"text-align: left;\"><img style=\"float: none; pointer-events: all !important;\" alt=\"\" src=\"https://cdn.shopify.com/s/files/1/0715/5151/6889/files/Find_Your_Shade_2_eb50400a-5739-44fd-a1d2-c6117ebba50e_2048x2048.png?v=1739270285\"></div>\n                    </div>\n                  </div>\n                </div>\n\n\n\n<div class=\"product__accordion accordion accordion--medium accordion--top-border quick-add-hidden\" style=\"--margin-top: 2.4rem;--margin-bottom: 0.0rem;\">\n                  <details class=\"accordion__details\">\n                    <summary class=\"accordion__summary\">\n                      <div class=\"summary__title\">\n                        \n                          <img src=\"//splendorintl.com/cdn/shop/files/info.png?v=1738128909\" role=\"presentation\" height=\"auto\" width=\"auto\" loading=\"lazy\" style=\"pointer-events: all !important;\">\n                        \n                        <h2 class=\"h4 accordion__title\">\n                          Description\n                        </h2>\n                      </div>\n                      \n                        <svg xmlns=\"http://www.w3.org/2000/svg\" aria-hidden=\"true\" focusable=\"false\" class=\"icon icon-plus\" fill=\"none\" viewBox=\"0 0 10 10\">\n  <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M1 4.51a.5.5 0 000 1h3.5l.01 3.5a.5.5 0 001-.01V5.5l3.5-.01a.5.5 0 00-.01-1H5.5L5.49.99a.5.5 0 00-1 .01v3.5l-3.5.01H1z\" fill=\"currentColor\">\n</path></svg>\n\n                      \n                    </summary>\n                  </details>\n                  <div class=\"accordion__content-wrapper\">\n                    <div class=\"accordion__content rte\" id=\"ProductAccordion-collapsible_tab_ra94KM-template--18948294672601__featured_product_Ex4BqM\">\n                      <p>The <strong>Elvynor Serum Boosted Skin Tint Balm</strong> has a hybrid formula that combines skincare and makeup for a natural, radiant finish. Packed with 8 skin-loving ingredients and HA+ technology, it provides sheer-to-light coverage, evens skin tone, and plumps fine lines while keeping your skin healthy and glowing. Easy to apply and suitable for all skin types.</p><p><strong>Features:</strong></p><ul><li><strong>Hybrid formula</strong>&nbsp;– Fuses skincare and makeup for a natural finish.</li><li><strong>Sheer-to-light coverage</strong>&nbsp;– Evens skin tone with a lightweight feel.</li><li><strong>8 skincare ingredients</strong>&nbsp;– Promotes a healthy, glowing complexion.</li><li><strong>HA+ technology</strong>&nbsp;– Plumps fine lines and wrinkles for smoother skin.</li><li><strong>Easy application</strong>&nbsp;– Blends seamlessly with fingertips, no brush needed.</li><li><strong>Multi-use shades</strong>&nbsp;– Brighten, bronze, and sculpt with 6 flexible shades.</li><li><strong>Vegan &amp; cruelty-free</strong>&nbsp;– Ethically made for all skin types.</li><li><strong>Dermatologist-tested</strong>&nbsp;– Free of fragrance, phthalates, mineral oil, talc, sulfates, and parabens.</li></ul>\n                      \n                    </div>\n                  </div>\n                </div>\n\n\n\n<div class=\"product__accordion accordion accordion--medium accordion--top-border quick-add-hidden\" style=\"--margin-top: 2.4rem;--margin-bottom: 0.0rem;\">\n                  <details class=\"accordion__details\">\n                    <summary class=\"accordion__summary\">\n                      <div class=\"summary__title\">\n                        \n                          <img src=\"//splendorintl.com/cdn/shop/files/natural-ingredients.png?v=1738128819\" role=\"presentation\" height=\"auto\" width=\"auto\" loading=\"lazy\" style=\"pointer-events: all !important;\">\n                        \n                        <h2 class=\"h4 accordion__title\">\n                          Ingredients\n                        </h2>\n                      </div>\n                      \n                        <svg xmlns=\"http://www.w3.org/2000/svg\" aria-hidden=\"true\" focusable=\"false\" class=\"icon icon-plus\" fill=\"none\" viewBox=\"0 0 10 10\">\n  <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M1 4.51a.5.5 0 000 1h3.5l.01 3.5a.5.5 0 001-.01V5.5l3.5-.01a.5.5 0 00-.01-1H5.5L5.49.99a.5.5 0 00-1 .01v3.5l-3.5.01H1z\" fill=\"currentColor\">\n</path></svg>\n\n                      \n                    </summary>\n                  </details>\n                  <div class=\"accordion__content-wrapper\">\n                    <div class=\"accordion__content rte\" id=\"ProductAccordion-collapsible_tab_f4RXni-template--18948294672601__featured_product_Ex4BqM\">\n                      <ul><li><strong>Shea Butter (Butyrospermum Parkii Butter)</strong> – Deeply nourishes and hydrates the skin for a soft, smooth feel.</li><li><strong>Jojoba Seed Oil (Simmondsia Chinensis Seed Oil)</strong> – Mimics skin’s natural oils, providing lasting moisture and balance.</li><li><strong>Coconut Oil (Cocos Nucifera Oil)</strong> – Helps lock in hydration while delivering a natural, healthy glow.</li><li><strong>Marula Seed Oil (Sclerocarya Birrea Seed Oil)</strong> – Packed with antioxidants and fatty acids to restore and protect skin.</li><li><strong>Sunflower Seed Oil (Helianthus Annuus Seed Oil)</strong> – Rich in vitamins and nutrients that help soothe and strengthen the skin barrier.</li><li><strong>Murumuru Seed Butter (Astrocaryum Murumuru Seed Butter)</strong> – Conditions and softens the skin while enhancing elasticity.</li><li><strong>Sodium Hyaluronate</strong> – A form of hyaluronic acid that deeply hydrates and plumps for a fresh, youthful appearance.</li><li><strong>Palmitoyl Tripeptide-1</strong> – A powerful peptide that supports skin firmness and smoothness over time.</li></ul>\n                      \n                    </div>\n                  </div>\n                </div>\n\n\n<div class=\"product__accordion accordion accordion--medium accordion--top-border quick-add-hidden\" style=\"--margin-top: 2.4rem;--margin-bottom: 0.0rem;\">\n                  <details class=\"accordion__details\">\n                    <summary class=\"accordion__summary\">\n                      <div class=\"summary__title\">\n                        \n                          <img src=\"//splendorintl.com/cdn/shop/files/icons8-truck-100.png?v=1736813888\" role=\"presentation\" height=\"auto\" width=\"auto\" loading=\"lazy\" style=\"pointer-events: all !important;\">\n                        \n                        <h2 class=\"h4 accordion__title\">\n                          Shipping &amp; Delivery\n                        </h2>\n                      </div>\n                      \n                        <svg xmlns=\"http://www.w3.org/2000/svg\" aria-hidden=\"true\" focusable=\"false\" class=\"icon icon-plus\" fill=\"none\" viewBox=\"0 0 10 10\">\n  <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M1 4.51a.5.5 0 000 1h3.5l.01 3.5a.5.5 0 001-.01V5.5l3.5-.01a.5.5 0 00-.01-1H5.5L5.49.99a.5.5 0 00-1 .01v3.5l-3.5.01H1z\" fill=\"currentColor\">\n</path></svg>\n\n                      \n                    </summary>\n                  </details>\n                  <div class=\"accordion__content-wrapper\">\n                    <div class=\"accordion__content rte\" id=\"ProductAccordion-collapsible_tab_Ciqngf-template--18948294672601__featured_product_Ex4BqM\">\n                      <p>Elvynor's top priority is the&nbsp;<strong>satisfaction of our customers.</strong></p><p>The delivery time slightly increased due to the currently high demand. Therefore, our current fulfillment time could be increased by up to 4 days for certain orders. Our average delivery time is currently&nbsp;<strong>5-8 business days.</strong></p><p>You will receive a&nbsp;<strong>tracking number</strong>&nbsp;with each order so you can track your package at any time.</p><p>We are working on&nbsp;<strong>reducing our delivery time to 2-3 days </strong>in the near future&nbsp;again. Thank you for your support!!</p><p>Please contact our customer service team @ <strong>contact@elvynor.com</strong> for assistance if you have any questions or concerns about your shipment.</p>\n                      \n                    </div>\n                  </div>\n                </div>\n\n\n<div class=\"product__accordion accordion accordion--medium accordion--top-border quick-add-hidden\" style=\"--margin-top: 2.4rem;--margin-bottom: 0.0rem;\">\n                  <details class=\"accordion__details\">\n                    <summary class=\"accordion__summary\">\n                      <div class=\"summary__title\">\n                        \n                          <img src=\"//splendorintl.com/cdn/shop/files/icons8-return-100.png?v=1736813901\" role=\"presentation\" height=\"auto\" width=\"auto\" loading=\"lazy\" style=\"pointer-events: all !important;\">\n                        \n                        <h2 class=\"h4 accordion__title\">\n                          Money Back Guarantee\n                        </h2>\n                      </div>\n                      \n                        <svg xmlns=\"http://www.w3.org/2000/svg\" aria-hidden=\"true\" focusable=\"false\" class=\"icon icon-plus\" fill=\"none\" viewBox=\"0 0 10 10\">\n  <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M1 4.51a.5.5 0 000 1h3.5l.01 3.5a.5.5 0 001-.01V5.5l3.5-.01a.5.5 0 00-.01-1H5.5L5.49.99a.5.5 0 00-1 .01v3.5l-3.5.01H1z\" fill=\"currentColor\">\n</path></svg>\n\n                      \n                    </summary>\n                  </details>\n                  <div class=\"accordion__content-wrapper\">\n                    <div class=\"accordion__content rte\" id=\"ProductAccordion-collapsible_tab_PhhReF-template--18948294672601__featured_product_Ex4BqM\">\n                      <p>We want you to be completely satisfied with your purchase. We offer returns or exchanges within 30 days of delivery for the following reasons:</p><ul><li><strong>Dissatisfied:</strong>&nbsp;If the beauty balm does not meet your expectations.</li><li><strong>Damaged Items:</strong>&nbsp;If the item arrives damaged or defective.</li></ul><p>To initiate a return or exchange, please contact our customer service team&nbsp;<a href=\"/pages/contact\" title=\"Contact\">here</a>&nbsp;within 30 days of receiving your order. Provide your order number and details of the issue. We will guide you through the process and ensure your request is handled promptly.</p><p>Thank you for choosing our set. We are committed to providing high-quality products and excellent customer service!</p><p>Contact Us @ contact@elvynor.com</p>\n                      \n                    </div>\n                  </div>\n                </div>"
+          }
+        }
+      },
+      "block_order": [
+        "title_QBNDgi",
+        "rating_stars_fpWWKW",
+        "custom_liquid_FwXD4F",
+        "custom_liquid_8APzPk",
+        "quantity_selector_qpygxw",
+        "kaching_bundles_app_block_3RkmCL",
+        "buy_buttons_cMKL3a",
+        "custom_liquid_wR8cRX"
+      ],
+      "name": "t:sections.featured-product.presets.name",
+      "settings": {
+        "display_id": false,
+        "visibility": "always-display",
+        "product": "stick-foundation-balm-serum-boosted-skin-tint-foundation-stick-smooth-plumper-hight-coverage-travel-bronze-foundation-stick-make-109131039058-hvi5h",
+        "color_scheme": "background-1",
+        "secondary_background": false,
+        "media_size": "medium",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "media_position": "left",
+        "image_zoom": "none",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "mobile_media_corner_radius": 12,
+        "full_media_width": false,
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "section_divider_P7McPh": {
@@ -78,6 +231,7 @@
   },
   "order": [
     "image_banner_6gMCeT",
+    "featured_product_RP9LeE",
     "section_divider_P7McPh"
   ]
 }
