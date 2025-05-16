@@ -70,7 +70,7 @@
 
   <div class="elvynor-caption">
     <p>With Elvynor</p>
-    <h2>Your Skin Looks Like Skin, But Better</h2>
+    <h2>Your Skin Looks Like Skin,<br><span style="font-weight: 600;">But Better</span></h2>
   </div>
 
   <div class="skin-feature-overlay">
@@ -91,7 +91,7 @@
   width: 100%;
   overflow: hidden;
   background-color: #fdf2e8;
-  margin-top: -30px; /* supprime l'espace vide */
+  margin-top: -40px;
 }
 .skin-feature-image {
   width: 100%;
@@ -99,7 +99,7 @@
 }
 .elvynor-caption {
   position: absolute;
-  top: 45%;
+  top: 38%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
@@ -114,11 +114,6 @@
   font-size: 32px;
   font-weight: 600;
   margin: 0;
-  line-height: 1.2;
-}
-.elvynor-caption h2::after {
-  content: "But Better";
-  display: block;
 }
 .skin-feature-overlay {
   position: absolute;
@@ -155,7 +150,7 @@
     transform: none;
     padding: 40px 20px;
     background-color: #907B6E;
-    flex-wrap: wrap; /* restore wrap on mobile */
+    flex-wrap: wrap;
   }
   .skin-feature-card {
     width: 45%;
@@ -176,9 +171,8 @@
   .elvynor-caption h2 {
     font-size: 24px;
   }
-  .elvynor-caption h2::after {
-    content: "But Better";
-    display: block;
+  .elvynor-caption p {
+    font-size: 16px;
   }
 }
 </style>
