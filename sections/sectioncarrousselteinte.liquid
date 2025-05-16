@@ -1,6 +1,123 @@
 {% schema %}
-  {
-    "name": "Section name",
-    "settings": []
-  }
+{
+  "name": "Full Shade Carousel",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Section Title",
+      "default": "Discover Your Best Match"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "shade",
+      "name": "Shade Card",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Shade Image"
+        },
+        {
+          "type": "text",
+          "id": "shade_name",
+          "label": "Shade Name"
+        },
+        {
+          "type": "text",
+          "id": "shade_description",
+          "label": "Shade Description"
+        },
+        {
+          "type": "image_picker",
+          "id": "shade_badge",
+          "label": "Shade Badge Image"
+        },
+        {
+          "type": "text",
+          "id": "shade_number",
+          "label": "Shade Number"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Full Shade Carousel",
+      "category": "Custom"
+    }
+  ]
+}
 {% endschema %}
+
+<section class="shade-carousel-section" style="background-color: #FBF1E8; padding: 100px 0; position: relative; overflow: hidden;">
+  <div class="container">
+    <h2 style="text-align: center; font-size: 35px; color: #27201A; margin-bottom: 40px;">
+      {{ section.settings.title }}
+    </h2>
+
+    <div class="shade-carousel-tags" style="display: flex; justify-content: center; gap: 15px; margin-bottom: 40px;">
+      <span class="tag">Seamless</span>
+      <span class="tag">Effortless</span>
+      <span class="tag">Flawless</span>
+    </div>
+
+    <div class="shade-carousel-wrapper" id="shade-carousel" style="display: flex; gap: 20px; overflow-x: auto; scroll-behavior: smooth; padding: 0 40px;">
+      {% for block in section.blocks %}
+        <div class="shade-card" style="min-width: 280px; background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 0 24px rgba(137, 137, 137, 0.1);">
+          {% if block.settings.image %}
+            <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.shade_name }}" style="width: 100%; height: auto;">
+          {% endif %}
+          <div style="background-color: #60362C; color: white; padding: 20px; text-align: center;">
+            <p style="font-size: 13px; font-weight: 400; margin: 0;">{{ block.settings.shade_description }}</p>
+            <div style="position: relative; margin-top: 20px;">
+              {% if block.settings.shade_badge %}
+                <img src="{{ block.settings.shade_badge | image_url }}" alt="badge" style="width: 100px; height: auto; display: block; margin: 0 auto;">
+              {% endif %}
+              <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: #60362C; font-size: 11px; text-align: center;">
+                <div style="font-weight: 700; text-transform: uppercase;">SHADE {{ block.settings.shade_number }}</div>
+                <div style="font-weight: 600; font-size: 13px;">{{ block.settings.shade_name }}</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+
+    <!-- Arrows -->
+    <div style="position: absolute; top: 50%; left: 20px; transform: translateY(-50%); cursor: pointer;" onclick="scrollCarousel(-1)">
+      <svg width="24" height="24" fill="#000"><path d="M15.41 7.41 14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg>
+    </div>
+    <div style="position: absolute; top: 50%; right: 20px; transform: translateY(-50%); cursor: pointer;" onclick="scrollCarousel(1)">
+      <svg width="24" height="24" fill="#000"><path d="M8.59 16.59 10 18l6-6-6-6-1.41 1.41L13.17 12z"/></svg>
+    </div>
+
+  </div>
+</section>
+
+<script>
+  function scrollCarousel(direction) {
+    const container = document.getElementById('shade-carousel');
+    const scrollAmount = 300;
+    container.scrollBy({ left: direction * scrollAmount, behavior: 'smooth' });
+  }
+</script>
+
+<style>
+  .tag {
+    background: white;
+    padding: 6px 20px;
+    border-radius: 999px;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-family: 'Hanken Grotesk', sans-serif;
+  }
+  .shade-carousel-wrapper::-webkit-scrollbar {
+    display: none;
+  }
+  .shade-carousel-wrapper {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+</style>
