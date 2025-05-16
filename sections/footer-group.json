@@ -94,26 +94,6 @@
         "title": "Discover Your Best Match"
       }
     },
-    "section22_z6ijtq": {
-      "type": "section22",
-      "blocks": {
-        "benefit_KQhMka": {
-          "type": "benefit",
-          "settings": {
-            "text": "Instantly blurs dark spots"
-          }
-        }
-      },
-      "block_order": [
-        "benefit_KQhMka"
-      ],
-      "name": "Skincare Benefit Section",
-      "settings": {
-        "background_image": "shopify://shop_images/gempages_566608300599149477-16489190-e916-4663-81ee-fd2989f8e486.webp",
-        "subheading": "With Splendor",
-        "main_heading": "Your Skin Looks Like Skin, But Better"
-      }
-    },
     "footer": {
       "type": "footer",
       "blocks": {
@@ -161,7 +141,6 @@
   },
   "order": [
     "sectioncarrousselteinte_VT3xtP",
-    "section22_z6ijtq",
     "footer"
   ]
 }
