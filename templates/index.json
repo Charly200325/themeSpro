@@ -459,6 +459,33 @@
         "ingredient_z9wJtM": {
           "type": "ingredient",
           "settings": {
+            "image": "shopify://shop_images/gempages_534627086933951483-2f938e74-a142-4764-b0aa-277b4ba26d31.webp",
+            "badge": "",
+            "title": "",
+            "description": ""
+          }
+        },
+        "ingredient_b8EbXn": {
+          "type": "ingredient",
+          "settings": {
+            "image": "shopify://shop_images/gempages_534627086933951483-cbed5bbb-3724-4aa6-9460-d9bb9c3dcd41.webp",
+            "badge": "",
+            "title": "",
+            "description": ""
+          }
+        },
+        "ingredient_pGej8J": {
+          "type": "ingredient",
+          "settings": {
+            "image": "shopify://shop_images/gempages_534627086933951483-41ebc681-85ec-4d35-b652-9296405644db.webp",
+            "badge": "",
+            "title": "",
+            "description": ""
+          }
+        },
+        "ingredient_megVEd": {
+          "type": "ingredient",
+          "settings": {
             "badge": "",
             "title": "",
             "description": ""
@@ -468,7 +495,10 @@
       "block_order": [
         "ingredient_rN7QCV",
         "ingredient_DFjPgy",
-        "ingredient_z9wJtM"
+        "ingredient_z9wJtM",
+        "ingredient_b8EbXn",
+        "ingredient_pGej8J",
+        "ingredient_megVEd"
       ],
       "name": "Skin Boosting Ingredients",
       "settings": {}
