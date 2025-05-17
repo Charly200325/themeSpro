@@ -48,6 +48,7 @@
   background-color: #fff;
   padding: 60px 20px;
   text-align: center;
+  position: relative;
 }
 
 .ingredients-section h2 {
@@ -71,6 +72,7 @@
   -webkit-overflow-scrolling: touch;
   gap: 20px;
   padding: 10px 20px 40px;
+  scroll-behavior: smooth;
 }
 
 .swiper-slide {
@@ -126,6 +128,27 @@
   line-height: 1.4;
 }
 
+.arrow-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: -20px;
+  margin-bottom: 40px;
+}
+
+.arrow-buttons button {
+  background: white;
+  border: 1px solid #bfb2a3;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  cursor: pointer;
+}
+
 @media (max-width: 768px) {
   .swiper-slide {
     width: 80%;
@@ -137,7 +160,12 @@
   <h2>8</h2>
   <h3>Skin-Boosting Ingredients</h3>
 
-  <div class="swiper-container-ingredients">
+  <div class="arrow-buttons">
+    <button onclick="scrollIngredients(-1)">&larr;</button>
+    <button onclick="scrollIngredients(1)">&rarr;</button>
+  </div>
+
+  <div class="swiper-container-ingredients" id="ingredient-scroll">
     {% for block in section.blocks %}
       <div class="swiper-slide">
         <div class="ingredient-image">
@@ -156,3 +184,11 @@
     {% endfor %}
   </div>
 </div>
+
+<script>
+  function scrollIngredients(direction) {
+    const container = document.getElementById('ingredient-scroll');
+    const scrollAmount = 300;
+    container.scrollBy({ left: direction * scrollAmount, behavior: 'smooth' });
+  }
+</script>
