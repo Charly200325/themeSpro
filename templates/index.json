@@ -353,8 +353,8 @@
         "title": "",
         "heading_size": "h2",
         "color_scheme": "accent-1",
-        "type": "loop",
-        "drag": "free",
+        "type": "slide",
+        "drag": "enabled",
         "autoplay": false,
         "autoplay_speed": 5,
         "center_mode": false,
@@ -384,6 +384,77 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "comparison_slider_ncm788": {
+      "type": "comparison-slider",
+      "name": "Before & After slider",
+      "settings": {
+        "display_id": false,
+        "visibility": "always-display",
+        "title": "This Is NOT Just Another Skin Tint",
+        "heading_size": "h1",
+        "text": "<p>It’s the skincare-infused beauty balm that gives you flawless, second-skin coverage in one effortless swipe.<br/><br/></p>",
+        "button_label": "",
+        "link": "",
+        "button_style_secondary": false,
+        "atc_button_label": "",
+        "atc_product": "",
+        "color_scheme": "accent-1",
+        "layout": "slider_second",
+        "before_label": "Before",
+        "after_label": "After",
+        "labels_color_scheme": "accent-2",
+        "line_color": "accent-1",
+        "arrows_style": "circle",
+        "before_image": "shopify://shop_images/gempages_534627086933951483-8667cc12-7109-4ed7-8291-fc0441e86a22.webp",
+        "after_image": "shopify://shop_images/gempages_534627086933951483-1952e8f3-31e9-426b-9fb3-e2f9f49722fe.webp",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "results_kYC84t": {
+      "type": "results",
+      "blocks": {
+        "row_ikaHJa": {
+          "type": "row",
+          "settings": {
+            "percentage": 90,
+            "row_text": "<p>Noticed that this product has significantly improved their life.</p>"
+          }
+        },
+        "row_y4QzwE": {
+          "type": "row",
+          "settings": {
+            "percentage": 90,
+            "row_text": "<p>Noticed that this product has significantly improved their life.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "row_ikaHJa",
+        "row_y4QzwE"
+      ],
+      "name": "Results",
+      "settings": {
+        "display_id": false,
+        "visibility": "always-display",
+        "title": "",
+        "heading_size": "h1",
+        "text": "",
+        "color_scheme": "accent-1",
+        "layout": "results_second",
+        "results_headline": "",
+        "results_headline_size": "h2",
+        "results_headline_alignment": "left",
+        "caption": "",
+        "button_label": "",
+        "link": "",
+        "button_style_secondary": false,
+        "atc_button_label": "",
+        "atc_product": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -391,6 +462,8 @@
     "featured_product_RP9LeE",
     "sectionfinale_7NAU7K",
     "seeit_EXkgUg",
-    "image_slider_fE4pKb"
+    "image_slider_fE4pKb",
+    "comparison_slider_ncm788",
+    "results_kYC84t"
   ]
 }
