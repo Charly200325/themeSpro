@@ -1,17 +1,3 @@
-{% schema %}
-{
-  "name": "pourcentage",
-  "tag": "section",
-  "class": "pourcentage-section",
-  "settings": [],
-  "presets": [
-    {
-      "name": "pourcentage"
-    }
-  ]
-}
-{% endschema %}
-
 {% style %}
 .pourcentage-section {
   font-family: 'Hanken Grotesk', sans-serif;
@@ -42,25 +28,26 @@
   gap: 20px;
 }
 
+/* Box styles */
 .pourcentage-box {
   background: white;
-  padding: 30px 20px;
+  padding: 25px 15px;
   border-radius: 20px;
-  max-width: 300px;
+  max-width: 280px;
   text-align: center;
   flex: 1;
 }
 
 .pourcentage-box img.percent {
-  max-width: 120px;
-  margin: 0 auto 15px;
+  max-width: 110px;
+  margin: 0 auto 10px;
 }
 
 .pourcentage-box h3 {
   font-size: 15px;
   color: #8F6C4F;
   text-transform: uppercase;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
   font-weight: bold;
 }
 
@@ -76,6 +63,7 @@
   color: #3D2C24;
 }
 
+/* SLIDER */
 .slider-wrapper {
   position: relative;
   max-width: 320px;
@@ -84,57 +72,63 @@
   overflow: hidden;
 }
 
-.slider-wrapper .comparison-slider {
+.comparison-slider {
   position: relative;
   width: 100%;
-  overflow: hidden;
+  height: auto;
 }
 
-.slider-wrapper .comparison-slider img {
+.comparison-slider img {
   width: 100%;
   display: block;
   border-radius: 20px;
 }
 
-.slider-wrapper input[type="range"] {
+.comparison-slider .after-image {
   position: absolute;
-  top: 50%;
+  top: 0;
   left: 0;
-  width: 100%;
-  z-index: 3;
-  appearance: none;
-  background: transparent;
-  transform: translateY(-50%);
+  clip-path: inset(0 50% 0 0);
+  z-index: 2;
 }
 
-.slider-wrapper input[type="range"]::-webkit-slider-thumb {
-  appearance: none;
-  width: 20px;
-  height: 20px;
-  background-color: white;
-  border-radius: 50%;
-  cursor: pointer;
-  z-index: 4;
-}
-
-.slider-wrapper input[type="range"]::-moz-range-thumb {
-  width: 20px;
-  height: 20px;
-  background-color: white;
-  border-radius: 50%;
-  cursor: pointer;
-  z-index: 4;
-}
-
-.slider-wrapper .slider-bar {
+.slider-bar {
   position: absolute;
   top: 0;
   bottom: 0;
   left: 50%;
   width: 2px;
   background-color: white;
+  z-index: 4;
   transform: translateX(-50%);
-  z-index: 2;
+}
+
+input[type="range"] {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  z-index: 5;
+  transform: translateY(-50%);
+  appearance: none;
+  background: transparent;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  appearance: none;
+  width: 24px;
+  height: 24px;
+  background-color: white;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+input[type="range"]::-moz-range-thumb {
+  width: 24px;
+  height: 24px;
+  background-color: white;
+  border-radius: 50%;
+  cursor: pointer;
 }
 
 .badge {
@@ -146,57 +140,51 @@
   font-size: 12px;
   font-weight: bold;
   border-radius: 10px;
-  z-index: 4;
+  z-index: 6;
 }
 
-.badge-left {
-  left: 10px;
-}
+.badge-left { left: 10px; }
+.badge-right { right: 10px; }
 
-.badge-right {
-  right: 10px;
-}
-
+/* Responsive */
 @media (max-width: 768px) {
-  .pourcentage-wrapper {
-    flex-direction: column;
-  }
-
-  .slider-wrapper {
-    max-width: 100%;
-    margin-bottom: 10px;
-    order: 1;
-  }
-
-  .pourcentage-box {
-    background: transparent;
-    padding: 10px;
-  }
-
-  .pourcentage-box img.percent {
-    max-width: 110px;
-  }
-
   .pourcentage-section {
     background-color: #FBF1E8;
   }
 
-  .pourcentage-wrapper .pourcentage-box:first-child {
-    order: 2;
-    margin-bottom: 10px;
+  .pourcentage-wrapper {
+    flex-direction: column;
+    gap: 0;
   }
 
-  .pourcentage-wrapper .pourcentage-box:last-child {
-    order: 3;
-    margin-top: 0;
+  .slider-wrapper {
+    max-width: 100%;
+    margin-bottom: 30px;
+    order: 1;
+  }
+
+  .pourcentage-wrapper .pourcentage-box:first-child { order: 2; }
+  .pourcentage-wrapper .pourcentage-box:last-child { order: 3; }
+
+  .pourcentage-box {
+    background: transparent;
+    padding: 15px 10px;
+  }
+
+  .pourcentage-box img.percent {
+    max-width: 130px;
+    margin-bottom: 5px;
+  }
+
+  .pourcentage-box h3 {
+    margin-bottom: 5px;
   }
 }
 {% endstyle %}
 
 {% javascript %}
 document.addEventListener("DOMContentLoaded", function () {
-  const sliders = document.querySelectorAll(".slider-wrapper input[type='range']");
-  sliders.forEach(slider => {
+  document.querySelectorAll(".slider-wrapper input[type='range']").forEach(slider => {
     const afterImg = slider.closest(".slider-wrapper").querySelector(".after-image");
     slider.addEventListener("input", function () {
       afterImg.style.clipPath = `inset(0 ${100 - this.value}% 0 0)`;
@@ -210,18 +198,18 @@ document.addEventListener("DOMContentLoaded", function () {
   <p class="subtitle">It’s the skincare-infused beauty balm that gives you flawless, second-skin coverage in one effortless swipe.</p>
 
   <div class="pourcentage-wrapper">
-    <!-- Box 1 (94%) -->
+    <!-- Box 94% -->
     <div class="pourcentage-box">
       <img class="percent" src="https://cdn.shopify.com/s/files/1/0964/4130/3378/files/gempages_534627086933951483-5dca7f85-6cd3-4e9e-87c1-b4f8ad45d096.webp?v=1747519864" alt="94%">
       <h3>Instant Coverage</h3>
       <p>94% of women agreed it instantly <strong>blurred dark spots and hyperpigmentation</strong>, creating a more even skin tone.</p>
     </div>
 
-    <!-- Slider Center -->
+    <!-- Slider -->
     <div class="slider-wrapper">
       <div class="comparison-slider">
-        <img class="before-image" src="https://cdn.shopify.com/s/files/1/0964/4130/3378/files/gempages_534627086933951483-1952e8f3-31e9-426b-9fb3-e2f9f49722fe.webp?v=1747443210" alt="Before">
-        <img class="after-image" style="position:absolute;top:0;left:0;clip-path:inset(0 50% 0 0);z-index:2;" src="https://cdn.shopify.com/s/files/1/0964/4130/3378/files/gempages_534627086933951483-8667cc12-7109-4ed7-8291-fc0441e86a22.webp?v=1747443210" alt="After">
+        <img class="before-image" src="https://cdn.shopify.com/s/files/1/0964/4130/3378/files/gempages_534627086933951483-8667cc12-7109-4ed7-8291-fc0441e86a22.webp?v=1747443210" alt="Before">
+        <img class="after-image" src="https://cdn.shopify.com/s/files/1/0964/4130/3378/files/gempages_534627086933951483-1952e8f3-31e9-426b-9fb3-e2f9f49722fe.webp?v=1747443210" alt="After">
         <div class="slider-bar"></div>
         <div class="badge badge-left">BEFORE</div>
         <div class="badge badge-right">AFTER</div>
@@ -229,7 +217,7 @@ document.addEventListener("DOMContentLoaded", function () {
       </div>
     </div>
 
-    <!-- Box 2 (97%) -->
+    <!-- Box 97% -->
     <div class="pourcentage-box">
       <img class="percent" src="https://cdn.shopify.com/s/files/1/0964/4130/3378/files/gempages_534627086933951483-a1b1a9e2-34f6-43c9-96c4-5203b907c2f5.webp?v=1747519865" alt="97%">
       <h3>Second-Skin Feel</h3>
