@@ -42,6 +42,7 @@
   gap: 30px;
 }
 
+/* Desktop boxes */
 .pourcentage-box {
   background: white;
   padding: 30px 20px;
@@ -76,6 +77,7 @@
   color: #3D2C24;
 }
 
+/* SLIDER */
 .slider-wrapper {
   position: relative;
   max-width: 320px;
@@ -98,55 +100,66 @@
 
 .slider-wrapper input[type="range"] {
   position: absolute;
-  top: 50%;
+  bottom: 15px;
   left: 0;
   width: 100%;
   z-index: 3;
-  -webkit-appearance: none;
-  height: 0;
-  background: none;
-  pointer-events: all;
+  appearance: none;
+  background: transparent;
 }
 
 .slider-wrapper input[type="range"]::-webkit-slider-thumb {
-  -webkit-appearance: none;
   appearance: none;
-  height: 26px;
-  width: 26px;
-  background: white;
+  width: 20px;
+  height: 20px;
+  background-color: white;
   border-radius: 50%;
   cursor: pointer;
-  box-shadow: 0 0 3px rgba(0,0,0,0.3);
+  margin-top: -8px;
+  z-index: 3;
 }
 
 .slider-wrapper input[type="range"]::-moz-range-thumb {
-  height: 26px;
-  width: 26px;
-  background: white;
+  width: 20px;
+  height: 20px;
+  background-color: white;
   border-radius: 50%;
   cursor: pointer;
-  box-shadow: 0 0 3px rgba(0,0,0,0.3);
+  z-index: 3;
 }
 
-.label-before,
-.label-after {
+.slider-wrapper .slider-bar {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 2px;
+  background-color: white;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+
+.badge {
   position: absolute;
   bottom: 10px;
   background-color: #C39F83;
   color: white;
-  font-size: 12px;
   padding: 4px 10px;
-  border-radius: 8px;
+  font-size: 12px;
   font-weight: bold;
+  border-radius: 10px;
   z-index: 4;
 }
-.label-before {
+
+.badge-left {
   left: 10px;
 }
-.label-after {
+
+.badge-right {
   right: 10px;
 }
 
+/* Mobile styles */
 @media (max-width: 768px) {
   .pourcentage-wrapper {
     flex-direction: column;
@@ -169,6 +182,18 @@
   .pourcentage-section {
     background-color: #FBF1E8;
   }
+
+  .pourcentage-wrapper .pourcentage-box:first-child {
+    order: 2;
+  }
+
+  .pourcentage-wrapper .pourcentage-box:last-child {
+    order: 3;
+  }
+
+  .slider-wrapper {
+    order: 1;
+  }
 }
 {% endstyle %}
 
@@ -189,22 +214,26 @@ document.addEventListener("DOMContentLoaded", function () {
   <p class="subtitle">It’s the skincare-infused beauty balm that gives you flawless, second-skin coverage in one effortless swipe.</p>
 
   <div class="pourcentage-wrapper">
+    <!-- Box 1 (94%) -->
     <div class="pourcentage-box">
       <img class="percent" src="https://cdn.shopify.com/s/files/1/0964/4130/3378/files/gempages_534627086933951483-5dca7f85-6cd3-4e9e-87c1-b4f8ad45d096.webp?v=1747519864" alt="94%">
       <h3>Instant Coverage</h3>
       <p>94% of women agreed it instantly <strong>blurred dark spots and hyperpigmentation</strong>, creating a more even skin tone.</p>
     </div>
 
+    <!-- Slider Center -->
     <div class="slider-wrapper">
       <div class="comparison-slider">
-        <img class="after-image" style="position:absolute;top:0;left:0;clip-path:inset(0 50% 0 0);z-index:2;" src="https://cdn.shopify.com/s/files/1/0964/4130/3378/files/gempages_534627086933951483-1952e8f3-31e9-426b-9fb3-e2f9f49722fe.webp?v=1747443210" alt="After">
         <img class="before-image" src="https://cdn.shopify.com/s/files/1/0964/4130/3378/files/gempages_534627086933951483-8667cc12-7109-4ed7-8291-fc0441e86a22.webp?v=1747443210" alt="Before">
+        <img class="after-image" style="position:absolute;top:0;left:0;clip-path:inset(0 50% 0 0);z-index:2;" src="https://cdn.shopify.com/s/files/1/0964/4130/3378/files/gempages_534627086933951483-1952e8f3-31e9-426b-9fb3-e2f9f49722fe.webp?v=1747443210" alt="After">
+        <div class="slider-bar"></div>
+        <div class="badge badge-left">BEFORE</div>
+        <div class="badge badge-right">AFTER</div>
         <input type="range" min="0" max="100" value="50">
-        <div class="label-before">BEFORE</div>
-        <div class="label-after">AFTER</div>
       </div>
     </div>
 
+    <!-- Box 2 (97%) -->
     <div class="pourcentage-box">
       <img class="percent" src="https://cdn.shopify.com/s/files/1/0964/4130/3378/files/gempages_534627086933951483-a1b1a9e2-34f6-43c9-96c4-5203b907c2f5.webp?v=1747519865" alt="97%">
       <h3>Second-Skin Feel</h3>
