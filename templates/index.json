@@ -293,7 +293,7 @@
             "timeline_color": "accent-1",
             "description": "<p><em>Finally, a skin tint that truly blends in with my skin!</em></p>",
             "desc_alignment": "center",
-            "desc_color_scheme": "background-2"
+            "desc_color_scheme": "background-1"
           }
         },
         "video_slide_FqfVVH": {
@@ -304,14 +304,14 @@
             "muted_autoplay": true,
             "display_play_btn": true,
             "btn_animation": false,
-            "btn_color_scheme": "accent-1",
+            "btn_color_scheme": "background-1",
             "display_sound_btn": false,
             "sound_btn_color_scheme": "inverse",
             "display_timeline": false,
             "timeline_color": "accent-1",
             "description": "<p><em>Gives me that no-makeup makeup look!</em></p>",
             "desc_alignment": "center",
-            "desc_color_scheme": "background-2"
+            "desc_color_scheme": "background-1"
           }
         },
         "video_slide_HRNemN": {
@@ -329,7 +329,7 @@
             "timeline_color": "accent-1",
             "description": "<p>So lightweight that I forget I’m even wearing makeup.</p>",
             "desc_alignment": "center",
-            "desc_color_scheme": "background-2"
+            "desc_color_scheme": "background-1"
           }
         }
       },
