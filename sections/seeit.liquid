@@ -1,19 +1,22 @@
 <section class="see-it-section">
   <div class="container">
+
     <!-- ÉTOILES -->
     <div class="stars-wrapper">
       <img
-        class="stars-img-fixed stars-spacing"
+        class="stars-img-fixed"
         src="//splendorintl.com/cdn/shop/files/gempages_534627086933951483-ea424bf2-b1fd-4103-bffe-8dc79661842b.webp?v=9863142413917065072"
         alt="Stars"
       >
     </div>
 
-    <!-- TITRE & SOUS-TITRE -->
+    <!-- TITRE -->
     <h2 class="title">{{ section.settings.title }}</h2>
+
+    <!-- SOUS-TITRE -->
     <p class="subtitle">{{ section.settings.subtitle }}</p>
 
-    <!-- SLIDER -->
+    <!-- SLIDER VIDÉOS -->
     <div class="video-slider">
       {% for block in section.blocks %}
         <div class="slide">
@@ -37,8 +40,11 @@
   font-family: 'Hanken Grotesk', sans-serif;
 }
 
+/* Centrage et marge des étoiles */
 .stars-wrapper {
-  margin-bottom: 6px;
+  margin: 0 auto 8px auto;
+  display: flex;
+  justify-content: center;
 }
 
 .stars-img-fixed {
@@ -54,12 +60,6 @@
   .stars-img-fixed {
     width: 73px !important;
   }
-}
-
-/* 👇 Centrage + marge réduite */
-.stars-spacing {
-  margin: 0 auto 6px auto !important;
-  display: block;
 }
 
 .title {
