@@ -1,6 +1,140 @@
 {% schema %}
-  {
-    "name": "Section name",
-    "settings": []
-  }
+{
+  "name": "pourcentage",
+  "tag": "section",
+  "class": "pourcentage-section",
+  "settings": [],
+  "presets": [
+    {
+      "name": "pourcentage"
+    }
+  ]
+}
 {% endschema %}
+
+{% style %}
+.skin-tint-section {
+  background-color: #FAF0E7;
+  padding: 60px 20px;
+  text-align: center;
+  font-family: 'Hanken Grotesk', sans-serif;
+}
+
+.skin-tint-section h2 {
+  font-size: 34px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  color: #27201A;
+}
+
+.skin-tint-section p.subtitle {
+  font-size: 17px;
+  color: #27201A;
+  max-width: 600px;
+  margin: 0 auto 40px;
+}
+
+.skin-tint-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.skin-tint-box {
+  background: white;
+  padding: 30px 20px;
+  border-radius: 20px;
+  max-width: 300px;
+  text-align: center;
+  flex: 1;
+}
+
+.skin-tint-box img.percent {
+  max-width: 100px;
+  margin: 0 auto 15px;
+}
+
+.skin-tint-box h3 {
+  font-size: 15px;
+  color: #8F6C4F;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.skin-tint-box p {
+  font-size: 15px;
+  color: #27201A;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.skin-tint-box p strong {
+  font-weight: 700;
+  color: #3D2C24;
+}
+
+.skin-tint-image {
+  max-width: 300px;
+  border-radius: 20px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.skin-tint-image img {
+  width: 100%;
+  display: block;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .skin-tint-wrapper {
+    flex-direction: column;
+  }
+
+  .skin-tint-section h2 {
+    font-size: 28px;
+  }
+
+  .skin-tint-section p.subtitle {
+    font-size: 16px;
+  }
+
+  .skin-tint-box {
+    max-width: 100%;
+    padding: 25px 20px;
+  }
+
+  .skin-tint-image {
+    max-width: 100%;
+  }
+}
+{% endstyle %}
+
+<div class="skin-tint-section">
+  <h2>This Is NOT Just Another Skin Tint</h2>
+  <p class="subtitle">It’s the skincare-infused beauty balm that gives you flawless, second-skin coverage in one effortless swipe.</p>
+
+  <div class="skin-tint-wrapper">
+    <!-- Box 1 -->
+    <div class="skin-tint-box">
+      <img class="percent" src="https://cdn.shopify.com/s/files/1/0964/4130/3378/files/94.png?v=1747263553" alt="94%">
+      <h3>Instant Coverage</h3>
+      <p>94% of women agreed it instantly <strong>blurred dark spots and hyperpigmentation</strong>, creating a more even skin tone.</p>
+    </div>
+
+    <!-- Image center -->
+    <div class="skin-tint-image">
+      <img src="https://cdn.shopify.com/s/files/1/0964/4130/3378/files/halfhalfface.png?v=1747263553" alt="Before After">
+    </div>
+
+    <!-- Box 2 -->
+    <div class="skin-tint-box">
+      <img class="percent" src="https://cdn.shopify.com/s/files/1/0964/4130/3378/files/97.png?v=1747263553" alt="97%">
+      <h3>Second-Skin Feel</h3>
+      <p>97% said it felt breathable and weightless, <strong>blending seamlessly</strong> into their natural complexion.</p>
+    </div>
+  </div>
+</div>
