@@ -435,8 +435,41 @@
       "name": "Skin Tint Comparison",
       "settings": {}
     },
-    "ingredients_MyJmqV": {
-      "type": "ingredients",
+    "ingre_JwDzGi": {
+      "type": "ingre",
+      "blocks": {
+        "ingredient_rN7QCV": {
+          "type": "ingredient",
+          "settings": {
+            "image": "shopify://shop_images/gempages_534627086933951483-3cdf2275-fbb6-418a-b24c-9794293bc9f8.webp",
+            "badge": "fgff",
+            "title": "fgfgff",
+            "description": "fgfgfgfg"
+          }
+        },
+        "ingredient_DFjPgy": {
+          "type": "ingredient",
+          "settings": {
+            "image": "shopify://shop_images/gempages_534627086933951483-cbed5bbb-3724-4aa6-9460-d9bb9c3dcd41.webp",
+            "badge": "ggfg",
+            "title": "fggf",
+            "description": "fgfg"
+          }
+        },
+        "ingredient_z9wJtM": {
+          "type": "ingredient",
+          "settings": {
+            "badge": "",
+            "title": "",
+            "description": ""
+          }
+        }
+      },
+      "block_order": [
+        "ingredient_rN7QCV",
+        "ingredient_DFjPgy",
+        "ingredient_z9wJtM"
+      ],
       "name": "Skin Boosting Ingredients",
       "settings": {}
     }
@@ -449,6 +482,6 @@
     "image_slider_fE4pKb",
     "beautiful_benefits_xnCBaV",
     "skin_tint_comparison_gdB7Hq",
-    "ingredients_MyJmqV"
+    "ingre_JwDzGi"
   ]
 }
