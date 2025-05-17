@@ -483,6 +483,15 @@
             "description": "ffgfg"
           }
         },
+        "ingredient_YhEgwJ": {
+          "type": "ingredient",
+          "settings": {
+            "image": "shopify://shop_images/gempages_534627086933951483-347d8cac-16dc-4441-93d9-a1f13ccd6187.webp",
+            "badge": "",
+            "title": "",
+            "description": ""
+          }
+        },
         "ingredient_megVEd": {
           "type": "ingredient",
           "settings": {
@@ -499,6 +508,7 @@
         "ingredient_z9wJtM",
         "ingredient_b8EbXn",
         "ingredient_pGej8J",
+        "ingredient_YhEgwJ",
         "ingredient_megVEd"
       ],
       "name": "Skin Boosting Ingredients",
