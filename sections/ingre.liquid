@@ -52,7 +52,7 @@
 }
 
 .ingredients-section h2 {
-  font-size: 72px;
+  font-size: 60px;
   color: #27201A;
   font-weight: 600;
   margin: 0 0 4px;
@@ -60,7 +60,7 @@
 
 .ingredients-section h3 {
   font-size: 36px;
-  color: #27201A;
+  color: #C7A68C;
   font-weight: 600;
   margin-bottom: 30px;
   margin-top: 0;
@@ -93,7 +93,7 @@
   overflow: hidden;
   text-align: left;
   flex-shrink: 0;
-  width: 420px;
+  width: 380px;
   scroll-snap-align: start;
 }
 
@@ -107,7 +107,7 @@
   display: block;
 }
 
-.badge {
+.ingredient-badge {
   position: absolute;
   bottom: 10px;
   left: 10px;
@@ -120,6 +120,7 @@
   box-shadow: 0 1px 4px rgba(0,0,0,0.1);
   white-space: nowrap;
 }
+
 
 .ingredient-content {
   padding: 20px;
@@ -179,7 +180,7 @@
               <img src="{{ block.settings.image | image_url: width: 500 }}" alt="{{ block.settings.title }}">
             {% endif %}
             {% if block.settings.badge %}
-              <div class="badge">{{ block.settings.badge }}</div>
+              <div class="ingredient-badge">{{ block.settings.badge }}</div>
             {% endif %}
           </div>
           <div class="ingredient-content">
@@ -195,7 +196,7 @@
               <img src="{{ block.settings.image | image_url: width: 500 }}" alt="{{ block.settings.title }}">
             {% endif %}
             {% if block.settings.badge %}
-              <div class="badge">{{ block.settings.badge }}</div>
+              <div class="ingredient-badge">{{ block.settings.badge }}</div>
             {% endif %}
           </div>
           <div class="ingredient-content">
