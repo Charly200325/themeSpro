@@ -385,6 +385,51 @@
         "padding_bottom": 36
       }
     },
+    "beautiful_benefits_xnCBaV": {
+      "type": "beautiful-benefits",
+      "blocks": {
+        "benefit_BP6zwt": {
+          "type": "benefit",
+          "settings": {
+            "icon": "shopify://shop_images/gempages_534627086933951483-be4b92cf-3674-43f2-9754-e3cf3d30fb4f.webp",
+            "title": "Matches Your Skin Effortlessly",
+            "description": "Our skin tint adapts to your complexion, blending seamlessly for a natural, second-skin finish."
+          }
+        },
+        "benefit_gPYUFb": {
+          "type": "benefit",
+          "settings": {
+            "icon": "shopify://shop_images/gempages_534627086933951483-3d3f58a9-00df-4693-aa1f-1e4d3f8bf9b2.webp",
+            "title": "naturally Hides Imperfections",
+            "description": "Lightweight yet buildable, it instantly softens the look of dark spots, hyperpigmentation, and uneven tone."
+          }
+        },
+        "benefit_ExV763": {
+          "type": "benefit",
+          "settings": {
+            "icon": "shopify://shop_images/gempages_534627086933951483-9e7e10ed-8723-417a-9e8d-8416caa57383.webp",
+            "title": "Effortless Application, Anytime",
+            "description": "Designed for easy, on-the-go use, our formula melts into your skin with just your fingertips—no tools needed."
+          }
+        },
+        "benefit_KjFa64": {
+          "type": "benefit",
+          "settings": {
+            "icon": "shopify://shop_images/gempages_534627086933951483-285424f1-f322-410f-af4f-a472e4c814fc.webp",
+            "title": "Long-Lasting, Hydrating Wear",
+            "description": "Infused with HA+ Technology, it hydrates while you wear it, keeping skin plump and fresh all day without drying or creasing."
+          }
+        }
+      },
+      "block_order": [
+        "benefit_BP6zwt",
+        "benefit_gPYUFb",
+        "benefit_ExV763",
+        "benefit_KjFa64"
+      ],
+      "name": "Beautiful Benefits",
+      "settings": {}
+    },
     "comparison_slider_ncm788": {
       "type": "comparison-slider",
       "name": "Before & After slider",
@@ -463,6 +508,7 @@
     "sectionfinale_7NAU7K",
     "seeit_EXkgUg",
     "image_slider_fE4pKb",
+    "beautiful_benefits_xnCBaV",
     "comparison_slider_ncm788",
     "results_kYC84t"
   ]
