@@ -1,7 +1,7 @@
 <section class="see-it-section">
   <div class="container">
 
-    <!-- ÉTOILES -->
+    <!-- Étoiles centrées -->
     <div class="stars-wrapper">
       <img
         class="stars-img-fixed"
@@ -10,13 +10,11 @@
       >
     </div>
 
-    <!-- TITRE -->
+    <!-- Titre + Sous-titre -->
     <h2 class="title">{{ section.settings.title }}</h2>
-
-    <!-- SOUS-TITRE -->
     <p class="subtitle">{{ section.settings.subtitle }}</p>
 
-    <!-- SLIDER VIDÉOS -->
+    <!-- Slider vidéo -->
     <div class="video-slider">
       {% for block in section.blocks %}
         <div class="slide">
@@ -29,6 +27,7 @@
         </div>
       {% endfor %}
     </div>
+
   </div>
 </section>
 
@@ -40,13 +39,12 @@
   font-family: 'Hanken Grotesk', sans-serif;
 }
 
-/* Centrage et marge des étoiles */
+/* Étoiles centrées */
 .stars-wrapper {
-  margin: 0 auto 8px auto;
   display: flex;
   justify-content: center;
+  margin-bottom: 6px;
 }
-
 .stars-img-fixed {
   width: 113px !important;
   height: auto;
@@ -62,17 +60,21 @@
   }
 }
 
-.title {
+/* Titre */
+.see-it-section .title {
   font-size: 26px;
+  margin-top: 0;
   margin-bottom: 6px;
 }
 
-.subtitle {
+/* Sous-titre */
+.see-it-section .subtitle {
   font-size: 15px;
   color: #5a463d;
   margin-bottom: 20px;
 }
 
+/* Slider vidéo */
 .video-slider {
   display: flex;
   gap: 20px;
@@ -80,7 +82,6 @@
   scroll-snap-type: x mandatory;
   -webkit-overflow-scrolling: touch;
 }
-
 .slide {
   background: white;
   border-radius: 12px;
@@ -90,25 +91,23 @@
   scroll-snap-align: start;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
 }
-
 .video-wrapper {
   border-radius: 8px;
   overflow: hidden;
   margin-bottom: 10px;
 }
-
 .video-wrapper video {
   width: 100%;
   height: auto;
   display: block;
 }
-
 .quote {
   font-style: italic;
   font-size: 14px;
   color: #5a463d;
 }
 
+/* Responsive */
 @media (max-width: 768px) {
   .video-slider {
     padding-bottom: 10px;
