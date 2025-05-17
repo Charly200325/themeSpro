@@ -82,23 +82,36 @@
   text-align: center;
   font-family: 'Hanken Grotesk', sans-serif;
 }
+
+.see-it-section > .container {
+  padding-top: 0 !important;
+  margin-top: 0 !important;
+}
+
 .see-it-section .title {
   font-size: 26px;
   margin-top: 0;
   margin-bottom: 6px;
 }
+
 .see-it-section .subtitle {
   font-size: 15px;
   color: #5a463d;
-  margin-bottom: 0px;
+  margin-bottom: 0; /* plus de marge en bas */
 }
+
 .video-slider {
   display: flex;
   gap: 20px;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   -webkit-overflow-scrolling: touch;
-   margin-top: 0; /* <-- AJOUTÉ */
+  margin-top: 0 !important;  /* suppression de marge en haut */
+  padding-top: 0 !important; /* suppression de padding en haut */
+}
+
+/* Le reste de ton CSS inchangé */
+
 }
 .slide {
   background: white;
