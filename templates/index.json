@@ -478,14 +478,15 @@
           "type": "ingredient",
           "settings": {
             "image": "shopify://shop_images/gempages_534627086933951483-41ebc681-85ec-4d35-b652-9296405644db.webp",
-            "badge": "",
-            "title": "",
-            "description": ""
+            "badge": "fgf",
+            "title": "fg",
+            "description": "ffgfg"
           }
         },
         "ingredient_megVEd": {
           "type": "ingredient",
           "settings": {
+            "image": "shopify://shop_images/gempages_534627086933951483-cbed5bbb-3724-4aa6-9460-d9bb9c3dcd41.webp",
             "badge": "",
             "title": "",
             "description": ""
