@@ -4,44 +4,13 @@
   "tag": "section",
   "class": "ingredients-section",
   "settings": [],
-  "blocks": [
-    {
-      "type": "ingredient",
-      "name": "Ingredient",
-      "settings": [
-        {
-          "type": "image_picker",
-          "id": "image",
-          "label": "Ingredient Image"
-        },
-        {
-          "type": "text",
-          "id": "badge",
-          "label": "Badge Text (e.g. ✓ Hydration)"
-        },
-        {
-          "type": "text",
-          "id": "title",
-          "label": "Ingredient Title"
-        },
-        {
-          "type": "textarea",
-          "id": "description",
-          "label": "Ingredient Description"
-        }
-      ]
-    }
-  ],
-  "max_blocks": 8,
   "presets": [
     {
-      "name": "Skin Boosting Ingredients",
-      "blocks": []
+      "name": "Skin Boosting Ingredients"
     }
   ]
 }
 {% endschema %}
-
 
 {% style %}
 .ingredients-section {
@@ -165,36 +134,27 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 {% endjavascript %}
 
-<div class="swiper swiper-container-ingredients">
-  <div class="swiper-wrapper">
-    {% for block in section.blocks %}
+<div class="ingredients-section">
+  <h2>8</h2>
+  <h3>Skin-Boosting Ingredients</h3>
+
+  <div class="swiper swiper-container-ingredients">
+    <div class="swiper-wrapper">
+      <!-- SLIDE START -->
       <div class="swiper-slide">
         <div class="ingredient-image">
-          {% if block.settings.image %}
-            <img src="{{ block.settings.image | image_url: width: 500 }}" alt="{{ block.settings.title }}">
-          {% endif %}
-          {% if block.settings.badge != blank %}
-            <div class="badge">{{ block.settings.badge }}</div>
-          {% endif %}
+          <img src="https://cdn.shopify.com/s/files/1/0964/4130/3378/files/your-image.jpg" alt="Ingredient">
+          <div class="badge">✓ Hydration</div>
         </div>
         <div class="ingredient-content">
-          {% if block.settings.title != blank %}
-            <h4>{{ block.settings.title }}</h4>
-          {% endif %}
-          {% if block.settings.description != blank %}
-            <p>{{ block.settings.description }}</p>
-          {% endif %}
+          <h4>Murumuru Seed Butter</h4>
+          <p>Delivers intense hydration while keeping skin breathable and lightweight.</p>
         </div>
       </div>
-    {% endfor %}
-  </div>
+      <!-- SLIDE END -->
 
-  <!-- Arrows -->
-  <div class="swiper-button-prev">←</div>
-  <div class="swiper-button-next">→</div>
-  <div class="swiper-pagination"></div>
-</div>
-
+      <!-- Duplique ce bloc ci-dessus pour ajouter d'autres ingrédients -->
+    </div>
 
     <!-- Arrows -->
     <div class="swiper-button-prev">←</div>
