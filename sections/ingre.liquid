@@ -46,23 +46,24 @@
 .ingredients-section {
   font-family: 'Hanken Grotesk', sans-serif;
   background-color: #fff;
-  padding: 20px 20px 60px;
+  padding: 10px 20px 60px;
   text-align: center;
   position: relative;
 }
 
 .ingredients-section h2 {
-  font-size: 48px;
+  font-size: 60px;
   color: #27201A;
   font-weight: 600;
-  margin: 0 0 10px;
+  margin: 0 0 4px;
 }
 
 .ingredients-section h3 {
   font-size: 36px;
-  color: #27201A;
+  color: #C7A68C;
   font-weight: 600;
   margin-bottom: 30px;
+  margin-top: 0;
 }
 
 .ingredient-scroll-wrapper {
@@ -73,7 +74,7 @@
 .swiper-container-ingredients {
   display: flex;
   gap: 24px;
-  overflow-x: scroll;
+  overflow-x: auto;
   scroll-behavior: smooth;
   padding-bottom: 10px;
   margin: 0 auto;
@@ -92,7 +93,7 @@
   overflow: hidden;
   text-align: left;
   flex-shrink: 0;
-  width: 340px;
+  width: 380px;
   scroll-snap-align: start;
 }
 
@@ -217,7 +218,7 @@
     const container = document.getElementById('ingredient-scroll');
     const slide = container.querySelector('.swiper-slide');
     if (slide) {
-      const slideWidth = slide.offsetWidth + 24; // includes gap
+      const slideWidth = slide.offsetWidth + 24;
       container.scrollBy({ left: direction * slideWidth, behavior: 'smooth' });
     }
   }
