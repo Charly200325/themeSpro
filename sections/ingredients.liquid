@@ -1,6 +1,164 @@
 {% schema %}
-  {
-    "name": "Section name",
-    "settings": []
-  }
+{
+  "name": "Skin Boosting Ingredients",
+  "tag": "section",
+  "class": "ingredients-section",
+  "settings": [],
+  "presets": [
+    {
+      "name": "Skin Boosting Ingredients"
+    }
+  ]
+}
 {% endschema %}
+
+{% style %}
+.ingredients-section {
+  font-family: 'Hanken Grotesk', sans-serif;
+  background-color: #fff;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.ingredients-section h2 {
+  font-size: 18px;
+  color: #27201A;
+  font-weight: 500;
+  margin: 0;
+}
+
+.ingredients-section h3 {
+  font-size: 32px;
+  color: #27201A;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+
+.swiper {
+  padding-bottom: 50px;
+}
+
+.swiper-slide {
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  text-align: left;
+  max-width: 340px;
+}
+
+.ingredient-image {
+  position: relative;
+}
+
+.ingredient-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.badge {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background: white;
+  color: #27201A;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 999px;
+  padding: 4px 12px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+}
+
+.ingredient-content {
+  padding: 20px;
+}
+
+.ingredient-content h4 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #AB9381;
+  margin: 0 0 8px;
+}
+
+.ingredient-content p {
+  font-size: 14px;
+  color: #555;
+  margin: 0;
+  line-height: 1.4;
+}
+
+/* Swiper Navigation */
+.swiper-button-prev,
+.swiper-button-next {
+  color: #C39F83;
+  top: auto;
+  bottom: 0;
+  transform: translateY(50%);
+  width: auto;
+}
+
+.swiper-pagination {
+  bottom: 0 !important;
+}
+
+@media (min-width: 768px) {
+  .swiper-slide {
+    max-width: 280px;
+  }
+}
+{% endstyle %}
+
+{% javascript %}
+document.addEventListener('DOMContentLoaded', function () {
+  if (window.Swiper) {
+    new Swiper('.swiper-container-ingredients', {
+      slidesPerView: 'auto',
+      spaceBetween: 20,
+      loop: false,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev'
+      },
+      breakpoints: {
+        768: {
+          slidesPerView: 3
+        }
+      }
+    });
+  }
+});
+{% endjavascript %}
+
+<div class="ingredients-section">
+  <h2>8</h2>
+  <h3>Skin-Boosting Ingredients</h3>
+
+  <div class="swiper swiper-container-ingredients">
+    <div class="swiper-wrapper">
+      <!-- SLIDE START -->
+      <div class="swiper-slide">
+        <div class="ingredient-image">
+          <img src="https://cdn.shopify.com/s/files/1/0964/4130/3378/files/your-image.jpg" alt="Ingredient">
+          <div class="badge">✓ Hydration</div>
+        </div>
+        <div class="ingredient-content">
+          <h4>Murumuru Seed Butter</h4>
+          <p>Delivers intense hydration while keeping skin breathable and lightweight.</p>
+        </div>
+      </div>
+      <!-- SLIDE END -->
+
+      <!-- Duplique ce bloc ci-dessus pour ajouter d'autres ingrédients -->
+    </div>
+
+    <!-- Arrows -->
+    <div class="swiper-button-prev">←</div>
+    <div class="swiper-button-next">→</div>
+    <div class="swiper-pagination"></div>
+  </div>
+</div>
