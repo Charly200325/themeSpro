@@ -1,6 +1,109 @@
 {% schema %}
-  {
-    "name": "Section name",
-    "settings": []
-  }
+{
+  "name": "Satisfaction Guarantee",
+  "tag": "section",
+  "class": "guarantee-section",
+  "settings": [],
+  "presets": [
+    {
+      "name": "Satisfaction Guarantee"
+    }
+  ]
+}
 {% endschema %}
+
+{% style %}
+.guarantee-section {
+  font-family: 'Hanken Grotesk', sans-serif;
+  background-color: #8F6C4F;
+  padding: 60px 20px;
+  color: white;
+  overflow: hidden;
+}
+
+.guarantee-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1400px;
+  margin: 0 auto;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.guarantee-text-box {
+  background: white;
+  color: #6C574E;
+  border-radius: 12px;
+  padding: 40px 30px;
+  max-width: 450px;
+  text-align: center;
+  flex: 1 1 400px;
+}
+
+.guarantee-text-box img.icon {
+  width: 60px;
+  margin-bottom: 25px;
+}
+
+.guarantee-text-box h3 {
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #8F6C4F;
+}
+
+.guarantee-text-box p {
+  font-size: 16px;
+  color: #6C574E;
+  line-height: 1.5;
+  margin-bottom: 12px;
+}
+
+.guarantee-text-box p strong {
+  color: #3D2C24;
+}
+
+.guarantee-image img {
+  max-width: 550px;
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 0;
+}
+
+@media (max-width: 768px) {
+  .guarantee-container {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .guarantee-text-box {
+    padding: 30px 20px;
+    max-width: 100%;
+  }
+
+  .guarantee-image img {
+    max-width: 400px;
+  }
+}
+{% endstyle %}
+
+<div class="guarantee-section">
+  <div class="guarantee-container">
+    <div class="guarantee-text-box">
+      <img class="icon" src="https://cdn.shopify.com/s/files/1/0964/4130/3378/files/gempages_534627086933951483-961ff672-1376-4ee6-a070-5ae573953abe.webp?v=1747525594" alt="Guarantee Icon">
+      <h3>100% Satisfaction Guarantee</h3>
+      <p>We get it—finding the perfect skin tint can be tricky. That’s why we make it effortless.</p>
+      <p><strong>Try it, wear it, love it</strong>—and if it’s not the perfect match, we’ve got you covered with our <strong>30-Day Money-Back Guarantee.</strong></p>
+    </div>
+    <div class="guarantee-image">
+      <picture>
+        <source media="(max-width: 767px)" srcset="https://cdn.shopify.com/s/files/1/0964/4130/3378/files/gempages_534627086933951483-689224f4-c416-4378-bda6-0504af85d89e_768x.webp?v=1747525581">
+        <source media="(max-width: 1024px)" srcset="https://cdn.shopify.com/s/files/1/0964/4130/3378/files/gempages_534627086933951483-1f2932c0-3d4e-435b-8ffd-90a7cdd12713_1024x_6d594f0d-d19e-43c2-b4be-a679837000d4.webp?v=1747525583">
+        <img src="https://cdn.shopify.com/s/files/1/0964/4130/3378/files/gempages_534627086933951483-1f2932c0-3d4e-435b-8ffd-90a7cdd12713_1024x_6d594f0d-d19e-43c2-b4be-a679837000d4.webp?v=1747525583" alt="Guarantee Models">
+      </picture>
+    </div>
+  </div>
+</div>
