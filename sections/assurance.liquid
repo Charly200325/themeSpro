@@ -16,7 +16,7 @@
 .guarantee-section {
   font-family: 'Hanken Grotesk', sans-serif;
   background-color: #896E5D;
-  padding: 60px 20px;
+  padding: 20px 20px 0;
   color: white;
   overflow: hidden;
 }
@@ -28,12 +28,14 @@
   max-width: 1400px;
   margin: 0 auto;
   gap: 60px;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  padding-bottom: 0;
 }
 
 .guarantee-text {
   text-align: center;
   flex: 1;
+  padding: 40px 0;
 }
 
 .guarantee-text img.icon {
@@ -63,6 +65,7 @@
 .guarantee-image {
   flex-shrink: 0;
   margin: 0;
+  align-self: flex-end;
 }
 
 .guarantee-image img {
@@ -79,7 +82,10 @@
     gap: 30px;
   }
   .guarantee-image {
-    display: none;
+    display: block;
+  }
+  .guarantee-image picture source {
+    content: url('https://cdn.shopify.com/s/files/1/0964/4130/3378/files/gempages_534627086933951483-689224f4-c416-4378-bda6-0504af85d89e_768x_de9dfc92-26a1-45cd-bd13-584c2103e3c7.webp?v=1747525581');
   }
 }
 {% endstyle %}
@@ -94,7 +100,7 @@
     </div>
     <div class="guarantee-image">
       <picture>
-        <source media="(max-width: 767px)" srcset="">
+        <source media="(max-width: 767px)" srcset="https://cdn.shopify.com/s/files/1/0964/4130/3378/files/gempages_534627086933951483-689224f4-c416-4378-bda6-0504af85d89e_768x_de9dfc92-26a1-45cd-bd13-584c2103e3c7.webp?v=1747525581">
         <img src="https://cdn.shopify.com/s/files/1/0964/4130/3378/files/gempages_534627086933951483-1f2932c0-3d4e-435b-8ffd-90a7cdd12713_1024x_6d594f0d-d19e-43c2-b4be-a679837000d4.webp?v=1747525583" alt="Guarantee Models">
       </picture>
     </div>
