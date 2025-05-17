@@ -125,12 +125,26 @@
 @media (max-width: 768px) {
   .beautiful-benefits-section {
     background-color: #FAF0E7;
+    position: relative;
   }
 
   .benefits-title {
     font-size: 26px;
     line-height: 1.2;
     padding: 20px 20px 10px;
+    text-align: center;
+  }
+
+  .benefits-title .line-1 {
+    font-size: 38px;
+    font-weight: 700;
+    display: block;
+    margin-bottom: 5px;
+  }
+  .benefits-title .line-2,
+  .benefits-title .line-3 {
+    display: block;
+    font-size: 24px;
   }
 
   .benefits-wrapper {
@@ -142,6 +156,7 @@
     order: -1;
     width: 100%;
     margin: 0;
+    z-index: 1;
   }
 
   .benefits-image img {
@@ -153,12 +168,14 @@
   .benefits-cards {
     width: 100%;
     background-color: #8F7C6D;
-    padding: 30px 20px;
-    gap: 16px;
+    padding: 40px 20px 60px;
+    margin-top: -40px; /* pour coller sous la main */
+    z-index: 0;
+    position: relative;
   }
 
   .benefit-card {
-    background-color: #BA7A51;
+    background-color: #AB9381;
     border-radius: 16px;
     padding: 20px;
     text-align: center;
@@ -173,15 +190,23 @@
     right: 15px;
     top: 10px;
   }
+
+  .benefit-card h3,
+  .benefit-card p {
+    color: white;
+  }
 }
+
 {% endstyle %}
 
 
 <div class="beautiful-benefits-section">
   <h2 class="benefits-title">
-    <span>4 Beautiful Benefits</span><br>
-    <span>You’ll Love</span>
-  </h2>
+  <span class="line-1">4</span>
+  <span class="line-2">Beautiful Benefits</span>
+  <span class="line-3">You’ll Love</span>
+</h2>
+
   <div class="benefits-wrapper">
     <div class="benefits-image">
       <img src="https://cdn.shopify.com/s/files/1/0964/4130/3378/files/8fb9a7b0-b082-4582-b5d9-de206b56aa3e_preview_rev_1_1.png?v=1747257752" alt="Benefits Image">
