@@ -412,6 +412,51 @@
         "padding_bottom": 36
       }
     },
+    "beautiful_benefits_z6pdVe": {
+      "type": "beautiful-benefits",
+      "blocks": {
+        "benefit_NrRc3G": {
+          "type": "benefit",
+          "settings": {
+            "icon": "shopify://shop_images/gempages_534627086933951483-be4b92cf-3674-43f2-9754-e3cf3d30fb4f.webp",
+            "title": "Matches Your Skin Effortlessly",
+            "description": "Our skin tint adapts to your complexion, blending seamlessly for a natural, second-skin finish."
+          }
+        },
+        "benefit_iAEMzj": {
+          "type": "benefit",
+          "settings": {
+            "icon": "shopify://shop_images/gempages_534627086933951483-9e7e10ed-8723-417a-9e8d-8416caa57383.webp",
+            "title": "na",
+            "description": "naturally Hides Imperfections Lightweight yet buildable, it instantly softens the look of dark spots, hyperpigmentation, and uneven tone."
+          }
+        },
+        "benefit_6jWbRg": {
+          "type": "benefit",
+          "settings": {
+            "icon": "shopify://shop_images/gempages_534627086933951483-9e7e10ed-8723-417a-9e8d-8416caa57383.webp",
+            "title": "naturally Hides Imperfections",
+            "description": "Lightweight yet buildable, it instantly softens the look of dark spots, hyperpigmentation, and uneven tone."
+          }
+        },
+        "benefit_J43bJX": {
+          "type": "benefit",
+          "settings": {
+            "icon": "shopify://shop_images/gempages_534627086933951483-9e7e10ed-8723-417a-9e8d-8416caa57383.webp",
+            "title": "",
+            "description": "Lightweight yet buildable, it instantly softens the look of dark spots, hyperpigmentation, and uneven tone."
+          }
+        }
+      },
+      "block_order": [
+        "benefit_NrRc3G",
+        "benefit_iAEMzj",
+        "benefit_6jWbRg",
+        "benefit_J43bJX"
+      ],
+      "name": "Beautiful Benefits",
+      "settings": {}
+    },
     "results_kYC84t": {
       "type": "results",
       "blocks": {
@@ -464,6 +509,7 @@
     "seeit_EXkgUg",
     "image_slider_fE4pKb",
     "comparison_slider_ncm788",
+    "beautiful_benefits_z6pdVe",
     "results_kYC84t"
   ]
 }
