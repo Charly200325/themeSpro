@@ -430,9 +430,9 @@
       "name": "Beautiful Benefits",
       "settings": {}
     },
-    "pourcentage_R6XLn8": {
-      "type": "pourcentage",
-      "name": "pourcentage",
+    "skin_tint_comparison_gdB7Hq": {
+      "type": "Skin-Tint-Comparison",
+      "name": "Skin Tint Comparison",
       "settings": {}
     },
     "comparison_slider_ncm788": {
@@ -514,7 +514,7 @@
     "seeit_EXkgUg",
     "image_slider_fE4pKb",
     "beautiful_benefits_xnCBaV",
-    "pourcentage_R6XLn8",
+    "skin_tint_comparison_gdB7Hq",
     "comparison_slider_ncm788",
     "results_kYC84t"
   ]

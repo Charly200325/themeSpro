@@ -1,60 +1,63 @@
 {% schema %}
 {
-  "name": "Skin Tint Comparison",
+  "name": "pourcentage",
   "tag": "section",
-  "class": "skin-tint-comparison",
+  "class": "pourcentage-section",
   "settings": [],
   "presets": [
     {
-      "name": "Skin Tint Comparison"
+      "name": "pourcentage"
     }
   ]
 }
 {% endschema %}
 
 {% style %}
-.skin-tint-comparison {
+.pourcentage-section {
+  font-family: 'Hanken Grotesk', sans-serif;
   background-color: #FAF0E7;
   padding: 60px 20px;
-  font-family: 'Hanken Grotesk', sans-serif;
   text-align: center;
 }
 
-.skin-tint-comparison h2 {
+.pourcentage-section h2 {
   font-size: 34px;
-  color: #27201A;
+  font-weight: 500;
   margin-bottom: 10px;
+  color: #27201A;
 }
 
-.skin-tint-comparison p.subtitle {
+.pourcentage-section p.subtitle {
   font-size: 17px;
   color: #27201A;
   max-width: 600px;
   margin: 0 auto 40px;
 }
 
-.comparison-wrapper {
+.pourcentage-wrapper {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 30px;
 }
 
-.comparison-box {
+/* Desktop boxes */
+.pourcentage-box {
   background: white;
   padding: 30px 20px;
   border-radius: 20px;
   max-width: 300px;
+  text-align: center;
   flex: 1;
 }
 
-.comparison-box img.percent {
+.pourcentage-box img.percent {
   max-width: 100px;
-  margin-bottom: 15px;
+  margin: 0 auto 15px;
 }
 
-.comparison-box h3 {
+.pourcentage-box h3 {
   font-size: 15px;
   color: #8F6C4F;
   text-transform: uppercase;
@@ -62,109 +65,78 @@
   font-weight: bold;
 }
 
-.comparison-box p {
+.pourcentage-box p {
   font-size: 15px;
   color: #27201A;
   line-height: 1.5;
   margin: 0;
 }
 
-.comparison-image {
+.pourcentage-box p strong {
+  font-weight: 700;
+  color: #3D2C24;
+}
+
+/* SLIDER */
+.slider-wrapper {
   position: relative;
   max-width: 320px;
   flex-shrink: 0;
+  border-radius: 20px;
+  overflow: hidden;
 }
 
-.comparison-image img {
+.slider-wrapper .comparison-slider {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.slider-wrapper .comparison-slider img {
   width: 100%;
   display: block;
   border-radius: 20px;
+}
+
+.slider-wrapper input[type="range"] {
   position: absolute;
-  top: 0;
+  bottom: 15px;
   left: 0;
-  transition: clip-path 0.3s ease;
-}
-
-.comparison-image .after {
-  z-index: 2;
-  clip-path: inset(0 50% 0 0);
-}
-
-.comparison-image .before {
-  z-index: 1;
-}
-
-.comparison-image input[type="range"] {
-  -webkit-appearance: none;
   width: 100%;
-  position: absolute;
-  bottom: -30px;
-  left: 0;
   z-index: 3;
 }
 
-.comparison-image input[type="range"]::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  height: 30px;
-  width: 30px;
-  background: #ccc;
-  border-radius: 50%;
-  cursor: pointer;
-}
-
+/* Mobile styles */
 @media (max-width: 768px) {
-  .comparison-wrapper {
+  .pourcentage-wrapper {
     flex-direction: column;
   }
 
-  .comparison-image {
-    width: 100%;
+  .slider-wrapper {
     max-width: 100%;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
   }
 
-  .comparison-box {
-    background: none;
-    padding: 0;
-    border-radius: 0;
-    max-width: 100%;
+  .pourcentage-box {
+    background: transparent;
+    padding: 20px 10px;
+  }
+
+  .pourcentage-box img.percent {
+    max-width: 90px;
+  }
+
+  .pourcentage-section {
     background-color: #FBF1E8;
-  }
-
-  .skin-tint-comparison {
-    background-color: #FBF1E8;
-  }
-
-  .comparison-box img.percent {
-    margin-bottom: 10px;
-  }
-
-  .comparison-box h3 {
-    font-size: 16px;
-    color: #8F6C4F;
-  }
-
-  .comparison-box p {
-    color: #27201A;
-  }
-
-  .comparison-box + .comparison-box {
-    margin-top: 30px;
-  }
-
-  .comparison-image input[type="range"] {
-    display: block;
-    top: auto;
-    bottom: -20px;
   }
 }
 {% endstyle %}
 
 {% javascript %}
 document.addEventListener("DOMContentLoaded", function () {
-  const sliders = document.querySelectorAll(".comparison-image input[type='range']");
+  const sliders = document.querySelectorAll(".slider-wrapper input[type='range']");
   sliders.forEach(slider => {
-    const afterImg = slider.closest(".comparison-image").querySelector(".after");
+    const afterImg = slider.closest(".slider-wrapper").querySelector(".after-image");
     slider.addEventListener("input", function () {
       afterImg.style.clipPath = `inset(0 ${100 - this.value}% 0 0)`;
     });
@@ -172,27 +144,29 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 {% endjavascript %}
 
-<div class="skin-tint-comparison">
+<div class="pourcentage-section">
   <h2>This Is NOT Just Another Skin Tint</h2>
   <p class="subtitle">It’s the skincare-infused beauty balm that gives you flawless, second-skin coverage in one effortless swipe.</p>
 
-  <div class="comparison-wrapper">
-    <!-- 94% -->
-    <div class="comparison-box">
+  <div class="pourcentage-wrapper">
+    <!-- Box 1 (94%) -->
+    <div class="pourcentage-box">
       <img class="percent" src="https://cdn.shopify.com/s/files/1/0964/4130/3378/files/gempages_534627086933951483-5dca7f85-6cd3-4e9e-87c1-b4f8ad45d096.webp?v=1747519864" alt="94%">
       <h3>Instant Coverage</h3>
       <p>94% of women agreed it instantly <strong>blurred dark spots and hyperpigmentation</strong>, creating a more even skin tone.</p>
     </div>
 
-    <!-- Image slide -->
-    <div class="comparison-image">
-      <img class="before" src="https://cdn.shopify.com/s/files/1/0964/4130/3378/files/gempages_534627086933951483-8667cc12-7109-4ed7-8291-fc0441e86a22.webp?v=1747443210" alt="Before">
-      <img class="after" src="https://cdn.shopify.com/s/files/1/0964/4130/3378/files/gempages_534627086933951483-1952e8f3-31e9-426b-9fb3-e2f9f49722fe.webp?v=1747443210" alt="After">
-      <input type="range" min="0" max="100" value="50">
+    <!-- Slider Center -->
+    <div class="slider-wrapper">
+      <div class="comparison-slider">
+        <img class="before-image" src="https://cdn.shopify.com/s/files/1/0964/4130/3378/files/gempages_534627086933951483-8667cc12-7109-4ed7-8291-fc0441e86a22.webp?v=1747443210" alt="Before">
+        <img class="after-image" style="position:absolute;top:0;left:0;clip-path:inset(0 50% 0 0);z-index:2;" src="https://cdn.shopify.com/s/files/1/0964/4130/3378/files/gempages_534627086933951483-1952e8f3-31e9-426b-9fb3-e2f9f49722fe.webp?v=1747443210" alt="After">
+        <input type="range" min="0" max="100" value="50">
+      </div>
     </div>
 
-    <!-- 97% -->
-    <div class="comparison-box">
+    <!-- Box 2 (97%) -->
+    <div class="pourcentage-box">
       <img class="percent" src="https://cdn.shopify.com/s/files/1/0964/4130/3378/files/gempages_534627086933951483-a1b1a9e2-34f6-43c9-96c4-5203b907c2f5.webp?v=1747519865" alt="97%">
       <h3>Second-Skin Feel</h3>
       <p>97% said it felt breathable and weightless, <strong>blending seamlessly</strong> into their natural complexion.</p>
