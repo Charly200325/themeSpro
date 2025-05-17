@@ -275,14 +275,6 @@
         "mobile_image": "shopify://shop_images/gempages_566608300599149477-36854eb6-0eb2-402c-8514-3a9603c42b2a_dcbdd80d-456b-4d11-a6ef-6e63be7f9755.png"
       }
     },
-    "themed_zdAkFL": {
-      "type": "themed",
-      "name": "See It In Action",
-      "settings": {
-        "title": "See It In Action",
-        "subtitle": "No filters, no heavy layers—just natural coverage that lets your skin shine through."
-      }
-    },
     "image_slider_fE4pKb": {
       "type": "image-slider",
       "blocks": {
@@ -390,7 +382,6 @@
     "image_banner_6gMCeT",
     "featured_product_RP9LeE",
     "sectionfinale_7NAU7K",
-    "themed_zdAkFL",
     "image_slider_fE4pKb"
   ]
 }
