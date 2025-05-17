@@ -15,7 +15,7 @@
 {% style %}
 .guarantee-section {
   font-family: 'Hanken Grotesk', sans-serif;
-  background-color: #8F6C4F;
+  background-color: #896E5D;
   padding: 60px 20px;
   color: white;
   overflow: hidden;
@@ -24,75 +24,69 @@
 .guarantee-container {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   max-width: 1400px;
   margin: 0 auto;
   gap: 60px;
   flex-wrap: wrap;
 }
 
-.guarantee-text-box {
-  background: white;
-  color: #6C574E;
-  border-radius: 12px;
-  padding: 40px 30px;
-  max-width: 450px;
+.guarantee-text {
   text-align: center;
-  flex: 1 1 400px;
+  flex: 1;
 }
 
-.guarantee-text-box img.icon {
+.guarantee-text img.icon {
   width: 60px;
   margin-bottom: 25px;
 }
 
-.guarantee-text-box h3 {
+.guarantee-text h3 {
   font-size: 18px;
   text-transform: uppercase;
   font-weight: bold;
   margin-bottom: 15px;
-  color: #8F6C4F;
+  color: white;
 }
 
-.guarantee-text-box p {
+.guarantee-text p {
   font-size: 16px;
-  color: #6C574E;
+  color: white;
   line-height: 1.5;
   margin-bottom: 12px;
 }
 
-.guarantee-text-box p strong {
-  color: #3D2C24;
+.guarantee-text p strong {
+  color: white;
+}
+
+.guarantee-image {
+  flex-shrink: 0;
+  margin: 0;
 }
 
 .guarantee-image img {
-  max-width: 550px;
   width: 100%;
-  height: auto;
+  max-width: 600px;
   display: block;
-  border-radius: 0;
+  margin: 0;
 }
 
 @media (max-width: 768px) {
   .guarantee-container {
     flex-direction: column;
+    text-align: center;
     gap: 30px;
   }
-
-  .guarantee-text-box {
-    padding: 30px 20px;
-    max-width: 100%;
-  }
-
-  .guarantee-image img {
-    max-width: 400px;
+  .guarantee-image {
+    display: none;
   }
 }
 {% endstyle %}
 
 <div class="guarantee-section">
   <div class="guarantee-container">
-    <div class="guarantee-text-box">
+    <div class="guarantee-text">
       <img class="icon" src="https://cdn.shopify.com/s/files/1/0964/4130/3378/files/gempages_534627086933951483-961ff672-1376-4ee6-a070-5ae573953abe.webp?v=1747525594" alt="Guarantee Icon">
       <h3>100% Satisfaction Guarantee</h3>
       <p>We get it—finding the perfect skin tint can be tricky. That’s why we make it effortless.</p>
@@ -100,8 +94,7 @@
     </div>
     <div class="guarantee-image">
       <picture>
-        <source media="(max-width: 767px)" srcset="https://cdn.shopify.com/s/files/1/0964/4130/3378/files/gempages_534627086933951483-689224f4-c416-4378-bda6-0504af85d89e_768x.webp?v=1747525581">
-        <source media="(max-width: 1024px)" srcset="https://cdn.shopify.com/s/files/1/0964/4130/3378/files/gempages_534627086933951483-1f2932c0-3d4e-435b-8ffd-90a7cdd12713_1024x_6d594f0d-d19e-43c2-b4be-a679837000d4.webp?v=1747525583">
+        <source media="(max-width: 767px)" srcset="">
         <img src="https://cdn.shopify.com/s/files/1/0964/4130/3378/files/gempages_534627086933951483-1f2932c0-3d4e-435b-8ffd-90a7cdd12713_1024x_6d594f0d-d19e-43c2-b4be-a679837000d4.webp?v=1747525583" alt="Guarantee Models">
       </picture>
     </div>
