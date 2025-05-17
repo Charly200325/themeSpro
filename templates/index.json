@@ -451,54 +451,63 @@
           "type": "ingredient",
           "settings": {
             "image": "shopify://shop_images/gempages_534627086933951483-cbed5bbb-3724-4aa6-9460-d9bb9c3dcd41.webp",
-            "badge": "ggfg",
-            "title": "fggf",
-            "description": "fgfg"
+            "badge": "✓ Radiance",
+            "title": "Coconut Oil",
+            "description": "Restores elasticity and locks in moisture, leaving skin fresh and radiant."
           }
         },
         "ingredient_z9wJtM": {
           "type": "ingredient",
           "settings": {
-            "image": "shopify://shop_images/gempages_534627086933951483-2f938e74-a142-4764-b0aa-277b4ba26d31.webp",
-            "badge": "",
-            "title": "",
-            "description": ""
+            "image": "shopify://shop_images/gempages_534627086933951483-d55908e6-0570-4612-9d1a-1d0fe2e80f2f.webp",
+            "badge": "✓ Protection",
+            "title": "Marula Seed Oil",
+            "description": "Packed with antioxidants, it soothes and shields skin from environmental stressors."
           }
         },
         "ingredient_b8EbXn": {
           "type": "ingredient",
           "settings": {
-            "image": "shopify://shop_images/gempages_534627086933951483-cbed5bbb-3724-4aa6-9460-d9bb9c3dcd41.webp",
-            "badge": "",
-            "title": "",
-            "description": ""
+            "image": "shopify://shop_images/gempages_534627086933951483-41ebc681-85ec-4d35-b652-9296405644db.webp",
+            "badge": "✓ Hydration",
+            "title": "Murumuru Seed Butter",
+            "description": "Delivers intense hydration while keeping skin breathable and lightweight."
           }
         },
         "ingredient_pGej8J": {
           "type": "ingredient",
           "settings": {
-            "image": "shopify://shop_images/gempages_534627086933951483-41ebc681-85ec-4d35-b652-9296405644db.webp",
-            "badge": "fgf",
-            "title": "fg",
-            "description": "ffgfg"
+            "image": "shopify://shop_images/gempages_534627086933951483-347d8cac-16dc-4441-93d9-a1f13ccd6187.webp",
+            "badge": "✓ Barrier Support",
+            "title": "Sunflower Oil",
+            "description": "Lightweight yet hydrating, it strengthens the skin barrier and seals in moisture."
           }
         },
         "ingredient_YhEgwJ": {
           "type": "ingredient",
           "settings": {
-            "image": "shopify://shop_images/gempages_534627086933951483-347d8cac-16dc-4441-93d9-a1f13ccd6187.webp",
-            "badge": "",
-            "title": "",
-            "description": ""
+            "image": "shopify://shop_images/gempages_534627086933951483-2f938e74-a142-4764-b0aa-277b4ba26d31.webp",
+            "badge": "✓ Moisture Lock",
+            "title": "Sodium Hyaluronate",
+            "description": "A powerful hyaluronic acid that plumps and smooths for a naturally dewy glow."
           }
         },
         "ingredient_megVEd": {
           "type": "ingredient",
           "settings": {
-            "image": "shopify://shop_images/gempages_534627086933951483-cbed5bbb-3724-4aa6-9460-d9bb9c3dcd41.webp",
-            "badge": "",
-            "title": "",
-            "description": ""
+            "image": "shopify://shop_images/gempages_534627086933951483-fe38d197-f949-47d1-a797-35b2760b25d8.webp",
+            "badge": "✓ Firming",
+            "title": "Shea Butter",
+            "description": "Deeply nourishes and softens skin for a smooth, supple feel—never greasy."
+          }
+        },
+        "ingredient_pUVXdc": {
+          "type": "ingredient",
+          "settings": {
+            "image": "shopify://shop_images/gempages_534627086933951483-b2a8d1b0-99ee-4867-bb65-9bf2820d4dbe.webp",
+            "badge": "✓ Moisture Lock",
+            "title": "Shea Butter",
+            "description": "Deeply nourishes and softens skin for a smooth, supple feel—never greasy."
           }
         }
       },
@@ -509,7 +518,8 @@
         "ingredient_b8EbXn",
         "ingredient_pGej8J",
         "ingredient_YhEgwJ",
-        "ingredient_megVEd"
+        "ingredient_megVEd",
+        "ingredient_pUVXdc"
       ],
       "name": "Skin Boosting Ingredients",
       "settings": {}
