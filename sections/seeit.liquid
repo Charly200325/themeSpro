@@ -1,62 +1,19 @@
-{% schema %}
-{
-  "name": "See It In Action",
-  "settings": [
-    {
-      "type": "text",
-      "id": "title",
-      "label": "Section Title",
-      "default": "See It In Action"
-    },
-    {
-      "type": "textarea",
-      "id": "subtitle",
-      "label": "Section Subtitle",
-      "default": "No filters, no heavy layers—just natural coverage that lets your skin shine through."
-    }
-  ],
-  "blocks": [
-    {
-      "type": "video_slide",
-      "name": "Video Slide",
-      "settings": [
-        {
-          "type": "url",
-          "id": "video_url",
-          "label": "Video URL"
-        },
-        {
-          "type": "text",
-          "id": "quote",
-          "label": "Quote"
-        }
-      ]
-    }
-  ],
-  "presets": [
-    {
-      "name": "See It In Action",
-      "category": "Custom"
-    }
-  ]
-}
-{% endschema %}
-
 <section class="see-it-section">
   <div class="container">
-    <div data-id="gqvrfLD0cN" role="presentation" class="gp-group/image gqvrfLD0cN gp-flex-none gp-h-auto mobile:gp-flex-none mobile:gp-h-auto tablet:gp-flex-none tablet:gp-h-auto" style="--mb:7px;--d:block;--d-tablet:block;--d-mobile:block;--bs:none;--bw:1px 1px 1px 1px;--bc:#121212;--shadow:none;--op:100%;--ta:center">
-      <div class="pointer-events-auto gp-h-full gp-flex" style="--shadow:none;border-radius:inherit;--jc:center">
-        <picture style="border-radius: inherit" class="gp-contents">
-          <source media="(max-width: 767px)" srcset="//splendorintl.com/cdn/shop/files/gempages_534627086933951483-ea424bf2-b1fd-4103-bffe-8dc79661842b.webp?v=9863142413917065072">
-          <source media="(max-width: 1024px)" srcset="//splendorintl.com/cdn/shop/files/gempages_534627086933951483-ea424bf2-b1fd-4103-bffe-8dc79661842b.webp?v=9863142413917065072">
-          <img class="gp-h-full gp-max-w-full gp-flex stars-img-fixed stars-spacing" src="//splendorintl.com/cdn/shop/files/gempages_534627086933951483-ea424bf2-b1fd-4103-bffe-8dc79661842b.webp?v=9863142413917065072" width="100%" alt="">
-        </picture>
-      </div>
+    <!-- ÉTOILES -->
+    <div class="stars-wrapper">
+      <img
+        class="stars-img-fixed stars-spacing"
+        src="//splendorintl.com/cdn/shop/files/gempages_534627086933951483-ea424bf2-b1fd-4103-bffe-8dc79661842b.webp?v=9863142413917065072"
+        alt="Stars"
+      >
     </div>
 
+    <!-- TITRE & SOUS-TITRE -->
     <h2 class="title">{{ section.settings.title }}</h2>
     <p class="subtitle">{{ section.settings.subtitle }}</p>
 
+    <!-- SLIDER -->
     <div class="video-slider">
       {% for block in section.blocks %}
         <div class="slide">
@@ -79,60 +36,11 @@
   text-align: center;
   font-family: 'Hanken Grotesk', sans-serif;
 }
-.see-it-section .title {
-  font-size: 26px;
-  margin-top: 0; /* <-- évite tout espace au-dessus */
+
+.stars-wrapper {
   margin-bottom: 6px;
 }
-.see-it-section .subtitle {
-  font-size: 15px;
-  color: #5a463d;
-  margin-bottom: 20px;
-}
-.video-slider {
-  display: flex;
-  gap: 20px;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  -webkit-overflow-scrolling: touch;
-}
-.slide {
-  background: white;
-  border-radius: 12px;
-  padding: 15px;
-  width: 280px;
-  flex: 0 0 auto;
-  scroll-snap-align: start;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-}
-.video-wrapper {
-  border-radius: 8px;
-  overflow: hidden;
-  margin-bottom: 10px;
-}
-.video-wrapper video {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-.quote {
-  font-style: italic;
-  font-size: 14px;
-  color: #5a463d;
-}
 
-/* Responsive */
-@media (max-width: 768px) {
-  .video-slider {
-    padding-bottom: 10px;
-  }
-  .slide {
-    width: 75%;
-    margin-right: 10px;
-  }
-}
-
-/* Taille responsive des étoiles */
 .stars-img-fixed {
   width: 113px !important;
   height: auto;
@@ -148,9 +56,66 @@
   }
 }
 
-/* Espacement réduit sous les étoiles */
+/* 👇 Centrage + marge réduite */
 .stars-spacing {
-  margin-bottom: 6px !important;
+  margin: 0 auto 6px auto !important;
   display: block;
+}
+
+.title {
+  font-size: 26px;
+  margin-bottom: 6px;
+}
+
+.subtitle {
+  font-size: 15px;
+  color: #5a463d;
+  margin-bottom: 20px;
+}
+
+.video-slider {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+
+.slide {
+  background: white;
+  border-radius: 12px;
+  padding: 15px;
+  width: 280px;
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.video-wrapper {
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.video-wrapper video {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.quote {
+  font-style: italic;
+  font-size: 14px;
+  color: #5a463d;
+}
+
+@media (max-width: 768px) {
+  .video-slider {
+    padding-bottom: 10px;
+  }
+  .slide {
+    width: 75%;
+    margin-right: 10px;
+  }
 }
 </style>
