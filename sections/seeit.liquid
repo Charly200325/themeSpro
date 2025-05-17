@@ -1,6 +1,122 @@
 {% schema %}
-  {
-    "name": "Section name",
-    "settings": []
-  }
+{
+  "name": "See It In Action",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Section Title",
+      "default": "See It In Action"
+    },
+    {
+      "type": "textarea",
+      "id": "subtitle",
+      "label": "Section Subtitle",
+      "default": "No filters, no heavy layers—just natural coverage that lets your skin shine through."
+    }
+  ],
+  "blocks": [
+    {
+      "type": "video_slide",
+      "name": "Video Slide",
+      "settings": [
+        {
+          "type": "url",
+          "id": "video_url",
+          "label": "Video URL"
+        },
+        {
+          "type": "text",
+          "id": "quote",
+          "label": "Quote"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "See It In Action",
+      "category": "Custom"
+    }
+  ]
+}
 {% endschema %}
+
+<section class="see-it-section">
+  <div class="container">
+    <h2 class="title">{{ section.settings.title }}</h2>
+    <p class="subtitle">{{ section.settings.subtitle }}</p>
+
+    <div class="video-slider">
+      {% for block in section.blocks %}
+        <div class="slide">
+          <div class="video-wrapper">
+            <video controls muted playsinline>
+              <source src="{{ block.settings.video_url }}" type="video/mp4">
+            </video>
+          </div>
+          <p class="quote">&ldquo;{{ block.settings.quote }}&rdquo;</p>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<style>
+.see-it-section {
+  background-color: #fdf2e8;
+  padding: 60px 20px;
+  text-align: center;
+  font-family: 'Hanken Grotesk', sans-serif;
+}
+.see-it-section .title {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+.see-it-section .subtitle {
+  font-size: 16px;
+  color: #5a463d;
+  margin-bottom: 30px;
+}
+.video-slider {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+.slide {
+  background: white;
+  border-radius: 12px;
+  padding: 15px;
+  width: 280px;
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+.video-wrapper {
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+.video-wrapper video {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.quote {
+  font-style: italic;
+  font-size: 14px;
+  color: #5a463d;
+}
+
+@media (max-width: 768px) {
+  .video-slider {
+    padding-bottom: 10px;
+  }
+  .slide {
+    width: 75%;
+    margin-right: 10px;
+  }
+}
+</style>
