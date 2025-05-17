@@ -430,6 +430,11 @@
       "name": "Beautiful Benefits",
       "settings": {}
     },
+    "pourcentage_R6XLn8": {
+      "type": "pourcentage",
+      "name": "pourcentage",
+      "settings": {}
+    },
     "comparison_slider_ncm788": {
       "type": "comparison-slider",
       "name": "Before & After slider",
@@ -509,6 +514,7 @@
     "seeit_EXkgUg",
     "image_slider_fE4pKb",
     "beautiful_benefits_xnCBaV",
+    "pourcentage_R6XLn8",
     "comparison_slider_ncm788",
     "results_kYC84t"
   ]
