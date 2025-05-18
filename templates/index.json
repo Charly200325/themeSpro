@@ -537,24 +537,15 @@
     "avissss_VzCUpR": {
       "type": "avissss",
       "blocks": {
-        "review_GLXfCY": {
+        "review_N48yDM": {
           "type": "review",
           "settings": {
             "image": "shopify://shop_images/gempages_534627086933951483-c90f9fbe-8d12-46fc-85f1-42994d00d74d.webp",
             "text": "",
             "name": "",
             "location": "",
-            "shade": ""
-          }
-        },
-        "review_44nqKE": {
-          "type": "review",
-          "settings": {
-            "image": "shopify://shop_images/gempages_534627086933951483-c90f9fbe-8d12-46fc-85f1-42994d00d74d.webp",
-            "text": "dfgfgfgfg",
-            "name": "fggf",
-            "location": "fggf",
-            "shade": "fgfgfg"
+            "shade": "",
+            "shade_image": "shopify://shop_images/gempages_534627086933951483-6be69171-8ddf-4563-a917-b394c9671f17.webp"
           }
         },
         "review_AUtcte": {
@@ -568,8 +559,7 @@
         }
       },
       "block_order": [
-        "review_GLXfCY",
-        "review_44nqKE",
+        "review_N48yDM",
         "review_AUtcte"
       ],
       "name": "Reviews Carousel",
