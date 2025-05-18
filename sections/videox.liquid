@@ -1,24 +1,10 @@
-{% schema %}
-{
-  "name": "Mission Video Section",
-  "tag": "section",
-  "class": "mission-section",
-  "settings": [],
-  "presets": [
-    {
-      "name": "Mission Video Section"
-    }
-  ]
-}
-{% endschema %}
-
 {% style %}
 .mission-section {
   font-family: 'Hanken Grotesk', sans-serif;
   background-color: #F9F0E7;
   padding: 60px 20px;
   text-align: left;
-  overflow-x: hidden; /* éviter débordement mobile */
+  overflow-x: hidden;
 }
 
 .mission-container {
@@ -28,7 +14,6 @@
   gap: 60px;
   max-width: 1400px;
   margin: 0 auto;
-  flex-wrap: wrap-reverse;
 }
 
 .mission-video {
@@ -104,13 +89,13 @@
 @media (max-width: 768px) {
   .mission-section {
     text-align: center;
-    padding: 40px 20px;
+    padding: 20px 16px; /* réduit les marges top/bottom */
     overflow-x: hidden;
     width: 100%;
   }
 
   .mission-container {
-    flex-direction: column;
+    flex-direction: column-reverse; /* texte en haut, vidéo en bas */
     align-items: center;
     gap: 30px;
     width: 100%;
@@ -143,7 +128,7 @@
 
   .mission-icons {
     flex-direction: row;
-    flex-wrap: wrap; /* changé de nowrap à wrap */
+    flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
     margin-top: 20px;
@@ -161,35 +146,4 @@
     font-size: 13px;
   }
 }
-
 {% endstyle %}
-
-<div class="mission-section">
-  <div class="mission-container">
-    <div class="mission-content">
-      <h2>Enhancing Beauty,<br>Embracing All Skin Types</h2>
-      <p>At Elvynor, we believe confidence starts with your skin.<br><br>Thats why our mission is to :</p>
-      <div class="mission-highlight">CREATE MAKEUP THAT ACTS LIKE SKINCARE</div>
-      <div class="mission-highlight">FOR A FLAWLESS, SECOND-SKIN FINISH.</div>
-      <div class="mission-icons">
-        <div class="mission-icon">
-          <img src="https://cdn.shopify.com/s/files/1/0964/4130/3378/files/gempages_534627086933951483-4ea8af70-9756-46fd-9942-67e39ebc87f7_768x_8735bf14-1d9a-40c3-bfca-e8704f1f4161.webp?v=1747531858" alt="Icon 1">
-          <span>SKIN-ADAPTIVE<br>TECHNOLOGY</span>
-        </div>
-        <div class="mission-icon">
-          <img src="https://cdn.shopify.com/s/files/1/0964/4130/3378/files/gempages_534627086933951483-be0455a6-45f0-4e68-bdad-6ba37ff3e23b_768x_e942f079-b475-4b45-a6d4-847ee2d1e6b5.webp?v=1747531858" alt="Icon 2">
-          <span>MESS-FREE,<br>TRAVEL-FRIENDLY</span>
-        </div>
-        <div class="mission-icon">
-          <img src="https://cdn.shopify.com/s/files/1/0964/4130/3378/files/gempages_534627086933951483-22d36cba-6dc2-4c46-a554-8f565e1b0e31_768x_f704c52e-22fe-47f2-adc5-24016bfe9f6f.webp?v=1747531776" alt="Icon 3">
-          <span>BREATHABLE &<br>BUILDABLE</span>
-        </div>
-      </div>
-    </div>
-    <div class="mission-video">
-      <video autoplay muted loop playsinline>
-        <source src="https://cdn.shopify.com/videos/c/o/v/896e9eda7ebf47c7959bfa747f785ff8.mp4" type="video/mp4">
-      </video>
-    </div>
-  </div>
-</div>
