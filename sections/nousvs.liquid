@@ -1,6 +1,168 @@
 {% schema %}
-  {
-    "name": "Section name",
-    "settings": []
-  }
+{
+  "name": "How We Are Different",
+  "tag": "section",
+  "class": "difference-section",
+  "settings": [],
+  "presets": [
+    {
+      "name": "How We Are Different"
+    }
+  ]
+}
 {% endschema %}
+
+{% style %}
+.difference-section {
+  background: linear-gradient(135deg, #966A52, #7E5B45);
+  color: #fff;
+  padding: 60px 20px;
+  font-family: 'Hanken Grotesk', sans-serif;
+  text-align: center;
+}
+
+.difference-title {
+  font-size: 32px;
+  margin-bottom: 40px;
+  color: #fff;
+}
+
+.difference-wrapper {
+  display: flex;
+  gap: 60px;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.difference-benefits {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  flex: 1;
+  min-width: 300px;
+}
+
+.difference-benefit-box {
+  background-color: #B08566;
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+  color: #fff;
+}
+
+.difference-benefit-box h4 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.difference-benefit-box p {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.difference-table {
+  flex: 1;
+  min-width: 300px;
+  background-color: white;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.difference-table .row {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+  border-bottom: 1px solid #ddd;
+  align-items: center;
+  text-align: left;
+}
+
+.difference-table .row.highlight {
+  background-color: #E8D5C6;
+  font-weight: bold;
+}
+
+.difference-table .col {
+  flex: 1;
+  font-size: 14px;
+  color: #333;
+}
+
+.difference-table .col.small {
+  text-align: center;
+  flex: 0 0 40px;
+}
+
+.difference-table .logo {
+  text-align: center;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .difference-wrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .difference-table .row {
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+
+  .difference-title {
+    font-size: 24px;
+  }
+}
+{% endstyle %}
+
+<div class="difference-section">
+  <h2 class="difference-title">Here’s How We Are Different</h2>
+  <div class="difference-wrapper">
+    <div class="difference-benefits">
+      <div class="difference-benefit-box">
+        <h4>FREE SHIPPING OVER $50</h4>
+        <p>Enjoy complimentary shipping on all orders over $50—delivered right to your doorstep.</p>
+      </div>
+      <div class="difference-benefit-box">
+        <h4>EASY RETURNS</h4>
+        <p>Not satisfied? Our easy returns ensure you’re covered, shop with confidence.</p>
+      </div>
+      <div class="difference-benefit-box">
+        <h4>OVER 50,000+ UNITS SOLD</h4>
+        <p>Join thousands who have chosen Splendor for flawless, natural coverage.</p>
+      </div>
+    </div>
+    <div class="difference-table">
+      <div class="row highlight">
+        <div class="col"> </div>
+        <div class="col small logo">Splendor</div>
+        <div class="col small">Other Brands</div>
+      </div>
+      {% assign items = 
+        "SEAMLESS FINISH|Invisible coverage,
+         DEEP HYDRATION|HA+ Technology,
+         ETHICAL BEAUTY|Ethically sourced,
+         NON-COMEDOGENIC|Won’t clog pores,
+         ENDURING WEAR|Stays flawless all day,
+         CRUELTY-FREE & VEGAN|No animal testing,
+         NO HARSH CHEMICALS|Free from parabens" | split: ',' %}
+      {% for item in items %}
+        {% assign parts = item | strip | split: "|" %}
+        <div class="row">
+          <div class="col">
+            <strong>{{ parts[0] }}</strong><br>
+            <span style="font-style: italic; color: #6B4D3C;">{{ parts[1] }}</span>
+          </div>
+          <div class="col small">✔️</div>
+          <div class="col small">✖️</div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
