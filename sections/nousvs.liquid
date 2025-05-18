@@ -1,144 +1,141 @@
 {% schema %}
 {
-  "name": "Comparison Table",
+  "name": "Comparisonlone",
   "tag": "section",
-  "class": "comparison-section",
+  "class": "comparison-clone",
   "settings": [],
   "presets": [
     {
-      "name": "Comparison Table"
+      "name": "Comparison Table Exact Clone"
     }
   ]
 }
 {% endschema %}
 
 {% style %}
-.comparison-section {
-  font-family: 'Hanken Grotesk', sans-serif;
+.comparison-clone {
   background-color: #F9F0E7;
   padding: 60px 20px;
+  font-family: 'Hanken Grotesk', sans-serif;
 }
-
-.comparison-table {
+.comparison-wrapper {
+  max-width: 728px;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: minmax(0, 6fr) minmax(0, 3.2fr) minmax(0, 2.8fr);
-  max-width: 800px;
-  margin: 0 auto;
   border-radius: 13px;
   overflow: hidden;
-  box-shadow: 0 0 13px rgba(187, 187, 187, 0.25);
+  background: #fff;
+  box-shadow: 0px 0px 13px rgba(187, 187, 187, 0.25);
 }
-
 .comparison-row {
   display: contents;
 }
-
 .comparison-cell {
-  background-color: white;
-  padding: 18px 16px;
   border-bottom: 1px solid #D5C3B5;
+  padding: 18px 16px;
   display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-
-.comparison-cell.logo {
+  flex-direction: column;
   justify-content: center;
-  padding: 14px 0;
-  background-color: transparent;
 }
-
-.comparison-cell.logo img {
-  width: 85px;
-  border-radius: 9999px;
-}
-
-.comparison-cell h6 {
-  margin: 0;
+.comparison-title {
+  font-weight: 800;
   font-size: 15px;
   color: #8F7C6D;
-  font-weight: 800;
   text-transform: uppercase;
+  margin: 0 0 5px;
 }
-
-.comparison-cell p {
-  margin: 0;
-  font-size: 16px;
+.comparison-sub {
   color: #756E67;
+  font-size: 16px;
+  margin: 0;
+  line-height: 130%;
 }
-
-.comparison-icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.comparison-icon img {
+.comparison-check,
+.comparison-cross {
   width: 30px;
+  height: 30px;
+  border-radius: 9999px;
+  object-fit: cover;
+  margin: auto;
+}
+.comparison-logo {
+  width: 85px;
   height: auto;
   border-radius: 9999px;
+  margin: auto;
+}
+.comparison-header {
+  padding: 14px 0;
+  background: transparent;
+  text-align: center;
+}
+.comparison-header h6 {
+  font-size: 13px;
+  color: #fff;
+  font-weight: 400;
+  text-align: center;
 }
 
-@media (max-width: 768px) {
-  .comparison-table {
+@media screen and (max-width: 768px) {
+  .comparison-wrapper {
+    width: 100%;
     grid-template-columns: minmax(0, 6fr) minmax(0, 3fr) minmax(0, 3fr);
   }
-
-  .comparison-cell h6 {
-    font-size: 12px;
+  .comparison-title {
+    font-size: 13px;
   }
-
-  .comparison-cell p {
+  .comparison-sub {
     font-size: 14px;
   }
-
-  .comparison-icon img {
+  .comparison-check,
+  .comparison-cross {
     width: 26px;
+    height: 26px;
   }
-
-  .comparison-cell.logo img {
+  .comparison-logo {
     width: 74px;
   }
 }
 {% endstyle %}
 
-<div class="comparison-section">
-  <div class="comparison-table">
-    <!-- Header row -->
-    <div class="comparison-cell logo">
-      <img src="https://cdn.shopify.com/s/files/1/0964/4130/3378/files/a6e1083b-fde6-4333-a241-15b664c8c320_removalai_preview.png?v=1747258252" alt="Logo Elvynor">
+<div class="comparison-clone">
+  <div class="comparison-wrapper">
+    <!-- Header Row -->
+    <div class="comparison-cell comparison-header">
+      <img src="https://cdn.shopify.com/s/files/1/0964/4130/3378/files/a6e1083b-fde6-4333-a241-15b664c8c320_removalai_preview.png?v=1747258252" alt="Elvynor" class="comparison-logo">
     </div>
-    <div class="comparison-cell logo">
-      <img src="//splendorintl.com/cdn/shop/files/gempages_534627086933951483-35be2a13-a018-44ca-99c4-2225c702a13e.svg?v=16953864016253292162" alt="Check">
+    <div class="comparison-cell comparison-header">
+      <img src="//splendorintl.com/cdn/shop/files/gempages_534627086933951483-35be2a13-a018-44ca-99c4-2225c702a13e.svg" class="comparison-check" alt="Check">
     </div>
-    <div class="comparison-cell logo">
-      <h6>Other<br>Brands</h6>
+    <div class="comparison-cell comparison-header">
+      <h6>Other Brands</h6>
     </div>
 
     <!-- Row 1 -->
     <div class="comparison-cell">
-      <h6>Seamless finish</h6>
-      <p>Invisible coverage</p>
+      <h6 class="comparison-title">Seamless finish</h6>
+      <p class="comparison-sub">Invisible coverage</p>
     </div>
-    <div class="comparison-cell comparison-icon">
-      <img src="//splendorintl.com/cdn/shop/files/gempages_534627086933951483-35be2a13-a018-44ca-99c4-2225c702a13e.svg" alt="Check">
+    <div class="comparison-cell">
+      <img src="//splendorintl.com/cdn/shop/files/gempages_534627086933951483-35be2a13-a018-44ca-99c4-2225c702a13e.svg" alt="Check" class="comparison-check">
     </div>
-    <div class="comparison-cell comparison-icon">
-      <img src="//splendorintl.com/cdn/shop/files/gempages_534627086933951483-431703d0-e46f-4b10-83aa-3ba8f5c2de12.svg" alt="Cross">
+    <div class="comparison-cell">
+      <img src="//splendorintl.com/cdn/shop/files/gempages_534627086933951483-431703d0-e46f-4b10-83aa-3ba8f5c2de12.svg" alt="Cross" class="comparison-cross">
     </div>
 
     <!-- Row 2 -->
     <div class="comparison-cell">
-      <h6>Deep Hydration</h6>
-      <p>HA+ Technology</p>
+      <h6 class="comparison-title">Deep Hydration</h6>
+      <p class="comparison-sub">HA+ Technology</p>
     </div>
-    <div class="comparison-cell comparison-icon">
-      <img src="//splendorintl.com/cdn/shop/files/gempages_534627086933951483-35be2a13-a018-44ca-99c4-2225c702a13e.svg" alt="Check">
+    <div class="comparison-cell">
+      <img src="//splendorintl.com/cdn/shop/files/gempages_534627086933951483-35be2a13-a018-44ca-99c4-2225c702a13e.svg" alt="Check" class="comparison-check">
     </div>
-    <div class="comparison-cell comparison-icon">
-      <img src="//splendorintl.com/cdn/shop/files/gempages_534627086933951483-431703d0-e46f-4b10-83aa-3ba8f5c2de12.svg" alt="Cross">
+    <div class="comparison-cell">
+      <img src="//splendorintl.com/cdn/shop/files/gempages_534627086933951483-431703d0-e46f-4b10-83aa-3ba8f5c2de12.svg" alt="Cross" class="comparison-cross">
     </div>
 
-    <!-- Add more rows below as needed -->
+    <!-- Ajoute d'autres lignes ici si nécessaire -->
   </div>
 </div>
