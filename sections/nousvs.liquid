@@ -1,12 +1,12 @@
 {% schema %}
 {
-  "name": "How We Are Different",
+  "name": "How We're Different",
   "tag": "section",
   "class": "difference-section",
   "settings": [],
   "presets": [
     {
-      "name": "How We Are Different"
+      "name": "How We're Different"
     }
   ]
 }
@@ -15,154 +15,203 @@
 {% style %}
 .difference-section {
   background: linear-gradient(135deg, #966A52, #7E5B45);
-  color: #fff;
+  color: white;
   padding: 60px 20px;
   font-family: 'Hanken Grotesk', sans-serif;
   text-align: center;
 }
 
-.difference-title {
+.difference-section h2 {
   font-size: 32px;
   margin-bottom: 40px;
-  color: #fff;
+  font-weight: 500;
 }
 
-.difference-wrapper {
+.difference-grid {
   display: flex;
-  gap: 60px;
   justify-content: center;
-  align-items: flex-start;
+  gap: 40px;
   flex-wrap: wrap;
   max-width: 1200px;
   margin: 0 auto;
 }
 
-.difference-benefits {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-  flex: 1;
-  min-width: 300px;
-}
-
-.difference-benefit-box {
-  background-color: #B08566;
-  padding: 30px;
-  border-radius: 12px;
+.benefit-card {
+  background-color: rgba(255, 255, 255, 0.15);
+  border-radius: 10px;
+  padding: 24px;
+  width: 320px;
   text-align: center;
-  color: #fff;
 }
 
-.difference-benefit-box h4 {
-  font-size: 16px;
-  font-weight: bold;
-  margin-bottom: 10px;
-  text-transform: uppercase;
-}
-
-.difference-benefit-box p {
+.benefit-card h4 {
   font-size: 14px;
-  line-height: 1.5;
+  font-weight: 700;
+  margin-bottom: 8px;
 }
 
-.difference-table {
-  flex: 1;
-  min-width: 300px;
-  background-color: white;
+.benefit-card p {
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.comparison-table {
+  width: 100%;
+  max-width: 900px;
+  margin: 50px auto 0;
+  border-collapse: collapse;
+  background: white;
   border-radius: 12px;
   overflow: hidden;
-}
-
-.difference-table .row {
-  display: flex;
-  justify-content: space-between;
-  padding: 16px;
-  border-bottom: 1px solid #ddd;
-  align-items: center;
   text-align: left;
 }
 
-.difference-table .row.highlight {
-  background-color: #E8D5C6;
-  font-weight: bold;
+.comparison-table thead th {
+  background: transparent;
+  color: #fff;
+  padding: 16px;
+  font-weight: 600;
+  text-align: center;
+  font-size: 14px;
 }
 
-.difference-table .col {
-  flex: 1;
+.comparison-table td,
+.comparison-table th {
+  padding: 16px;
+  border-bottom: 1px solid #eee;
   font-size: 14px;
   color: #333;
 }
 
-.difference-table .col.small {
-  text-align: center;
-  flex: 0 0 40px;
+.comparison-table tbody td:first-child {
+  font-weight: 700;
+  color: #5C4536;
+  width: 40%;
 }
 
-.difference-table .logo {
+.comparison-table tbody td span {
+  font-weight: 400;
+  display: block;
+  font-style: italic;
+  color: #666;
+}
+
+.comparison-table .brand-column {
+  background-color: #F1E3D6;
   text-align: center;
-  font-weight: bold;
+  vertical-align: middle;
+  width: 110px;
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+}
+
+.comparison-table img.logo {
+  max-height: 36px;
+}
+
+.checkmark {
+  color: #5C4536;
+  font-size: 20px;
+}
+
+.crossmark {
+  color: #bbb;
+  font-size: 20px;
 }
 
 @media (max-width: 768px) {
-  .difference-wrapper {
+  .difference-grid {
     flex-direction: column;
     align-items: center;
-    gap: 40px;
   }
 
-  .difference-table .row {
-    flex-direction: row;
-    flex-wrap: nowrap;
+  .comparison-table thead {
+    display: none;
   }
 
-  .difference-title {
-    font-size: 24px;
+  .comparison-table, .comparison-table tbody, .comparison-table tr, .comparison-table td {
+    display: block;
+    width: 100%;
+  }
+
+  .comparison-table td {
+    text-align: center;
+    padding: 12px 16px;
+    border-bottom: 1px solid #eee;
+  }
+
+  .comparison-table td:first-child {
+    background: #fdfaf8;
+  }
+
+  .comparison-table .brand-column {
+    border: none;
   }
 }
 {% endstyle %}
 
 <div class="difference-section">
-  <h2 class="difference-title">Here’s How We Are Different</h2>
-  <div class="difference-wrapper">
-    <div class="difference-benefits">
-      <div class="difference-benefit-box">
-        <h4>FREE SHIPPING OVER $50</h4>
-        <p>Enjoy complimentary shipping on all orders over $50—delivered right to your doorstep.</p>
-      </div>
-      <div class="difference-benefit-box">
-        <h4>EASY RETURNS</h4>
-        <p>Not satisfied? Our easy returns ensure you’re covered, shop with confidence.</p>
-      </div>
-      <div class="difference-benefit-box">
-        <h4>OVER 50,000+ UNITS SOLD</h4>
-        <p>Join thousands who have chosen Splendor for flawless, natural coverage.</p>
-      </div>
+  <h2>Here’s How We Are Different</h2>
+
+  <div class="difference-grid">
+    <div class="benefit-card">
+      <h4>FREE SHIPPING OVER $50</h4>
+      <p>Enjoy complimentary shipping on all orders over $50—delivered right to your doorstep.</p>
     </div>
-    <div class="difference-table">
-      <div class="row highlight">
-        <div class="col"> </div>
-        <div class="col small logo">Splendor</div>
-        <div class="col small">Other Brands</div>
-      </div>
-      {% assign items = 
-        "SEAMLESS FINISH|Invisible coverage,
-         DEEP HYDRATION|HA+ Technology,
-         ETHICAL BEAUTY|Ethically sourced,
-         NON-COMEDOGENIC|Won’t clog pores,
-         ENDURING WEAR|Stays flawless all day,
-         CRUELTY-FREE & VEGAN|No animal testing,
-         NO HARSH CHEMICALS|Free from parabens" | split: ',' %}
-      {% for item in items %}
-        {% assign parts = item | strip | split: "|" %}
-        <div class="row">
-          <div class="col">
-            <strong>{{ parts[0] }}</strong><br>
-            <span style="font-style: italic; color: #6B4D3C;">{{ parts[1] }}</span>
-          </div>
-          <div class="col small">✔️</div>
-          <div class="col small">✖️</div>
-        </div>
-      {% endfor %}
+    <div class="benefit-card">
+      <h4>EASY RETURNS</h4>
+      <p>Not satisfied? Our easy returns ensure you’re covered, shop with confidence.</p>
+    </div>
+    <div class="benefit-card">
+      <h4>OVER 50,000+ UNITS SOLD</h4>
+      <p>Join thousands who have chosen Splendor for flawless, natural coverage.</p>
     </div>
   </div>
+
+  <table class="comparison-table">
+    <thead>
+      <tr>
+        <th></th>
+        <th><img class="logo" src="https://cdn.shopify.com/s/files/1/0964/4130/3378/files/a6e1083b-fde6-4333-a241-15b664c8c320_removalai_preview.png?v=1747258252" alt="Splendor Logo" /></th>
+        <th>Other Brands</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>SEAMLESS FINISH <span>Invisible coverage</span></td>
+        <td class="brand-column"><span class="checkmark">✔</span></td>
+        <td class="brand-column"><span class="crossmark">✘</span></td>
+      </tr>
+      <tr>
+        <td>DEEP HYDRATION <span>HA+ Technology</span></td>
+        <td class="brand-column"><span class="checkmark">✔</span></td>
+        <td class="brand-column"><span class="crossmark">✘</span></td>
+      </tr>
+      <tr>
+        <td>ETHICAL BEAUTY <span>Ethically sourced</span></td>
+        <td class="brand-column"><span class="checkmark">✔</span></td>
+        <td class="brand-column"><span class="crossmark">✘</span></td>
+      </tr>
+      <tr>
+        <td>NON-COMEDOGENIC <span>Won’t clog pores</span></td>
+        <td class="brand-column"><span class="checkmark">✔</span></td>
+        <td class="brand-column"><span class="crossmark">✘</span></td>
+      </tr>
+      <tr>
+        <td>ENDURING WEAR <span>Stays flawless all day</span></td>
+        <td class="brand-column"><span class="checkmark">✔</span></td>
+        <td class="brand-column"><span class="crossmark">✘</span></td>
+      </tr>
+      <tr>
+        <td>CRUELTY-FREE & VEGAN <span>No animal testing</span></td>
+        <td class="brand-column"><span class="checkmark">✔</span></td>
+        <td class="brand-column"><span class="crossmark">✘</span></td>
+      </tr>
+      <tr>
+        <td>NO HARSH CHEMICALS <span>Free from parabens</span></td>
+        <td class="brand-column"><span class="checkmark">✔</span></td>
+        <td class="brand-column"><span class="crossmark">✘</span></td>
+      </tr>
+    </tbody>
+  </table>
 </div>
