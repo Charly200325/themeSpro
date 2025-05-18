@@ -16,18 +16,18 @@
 .guarantee-section {
   font-family: 'Hanken Grotesk', sans-serif;
   background-color: #896E5D;
-  padding: 40px 0 0;
+  padding: 20px 0 0;
   color: white;
   overflow: hidden;
 }
 
 .guarantee-container {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
   max-width: 1400px;
   margin: 0 auto;
-  gap: 40px;
+  gap: 60px;
   flex-wrap: nowrap;
   padding: 0 20px;
   position: relative;
@@ -72,13 +72,12 @@
   flex-shrink: 0;
   margin: 0;
   align-self: flex-end;
-  margin-right: -100px;
+  margin-right: -60px;
 }
 
 .guarantee-image img {
-  width: auto;
-  max-width: none;
-  height: auto;
+  width: 100%;
+  max-width: 600px;
   display: block;
   margin: 0;
 }
@@ -87,21 +86,17 @@
   .guarantee-container {
     flex-direction: column;
     text-align: center;
-    gap: 0;
+    gap: 30px;
     padding: 20px;
   }
 
   .guarantee-image {
     display: block;
-    text-align: center;
-    margin: 0 auto 20px;
+    margin: 0 auto;
   }
 
-  .guarantee-image img {
+  .guarantee-image picture source {
     content: url('https://cdn.shopify.com/s/files/1/0964/4130/3378/files/gempages_534627086933951483-1f2932c0-3d4e-435b-8ffd-90a7cdd12713_1024x_1.webp?v=1747526271');
-    width: 100%;
-    max-width: 300px;
-    height: auto;
   }
 
   .guarantee-text {
@@ -120,7 +115,6 @@
 
   .guarantee-text img.icon {
     margin-bottom: 20px;
-    display: block;
   }
 }
 {% endstyle %}
@@ -134,7 +128,7 @@
       <p><strong>Try it, wear it, love it</strong>—and if it’s not the perfect match, we’ve got you covered with our <strong>30-Day Money-Back Guarantee.</strong></p>
     </div>
     <div class="guarantee-image">
-      <img src="https://cdn.shopify.com/s/files/1/0964/4130/3378/files/gempages_534627086933951483-1f2932c0-3d4e-435b-8ffd-90a7cdd12713_1024x_6d594f0d-d19e-43c2-b4be-a679837000d4.webp?v=1747525583" alt="Guarantee Models">
-    </div>
-  </div>
-</div>
+      <picture>
+        <source media="(max-width: 767px)" srcset="https://cdn.shopify.com/s/files/1/0964/4130/3378/files/gempages_534627086933951483-1f2932c0-3d4e-435b-8ffd-90a7cdd12713_1024x_1.webp?v=1747526271">
+        <img src="https://cdn.shopify.com/s/files/1/0964/4130/3378/files/gempages_534627086933951483-1f2932c0-3d4e-435b-8ffd-90a7cdd12713_1024x_6d594f0d-d19e-43c2-b4be-a679837000d4.webp?v=1747525583" alt="Guarantee Models">
+      </picture>
