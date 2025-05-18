@@ -1,4 +1,6 @@
-{% stylesheet %}
+<style>
+@import url('https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css');
+
 .reviews-carousel {
   background-color: #FBF1E8;
   padding: 86px 0;
@@ -15,6 +17,10 @@
   background: white;
   border-radius: 12px;
   overflow: hidden;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .review-image {
   width: 100%;
@@ -28,6 +34,7 @@
   font-family: 'Hanken Grotesk', sans-serif;
   color: #665E5B;
   line-height: 1.5;
+  flex-grow: 1;
 }
 .review-name {
   font-style: italic;
@@ -63,7 +70,7 @@
   background: #AE9F96;
   opacity: 1;
 }
-{% endstylesheet %}
+</style>
 
 <div class="reviews-carousel">
   <h2>The Reviews Speak For Themselves</h2>
@@ -103,29 +110,32 @@
   </div>
 </div>
 
-{% javascript %}
-const swiper = new Swiper('.reviews-swiper', {
-  slidesPerView: 1.2,
-  spaceBetween: 16,
-  loop: true,
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev'
-  },
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true
-  },
-  breakpoints: {
-    768: {
-      slidesPerView: 2.5,
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  new Swiper('.reviews-swiper', {
+    slidesPerView: 1.2,
+    spaceBetween: 16,
+    loop: true,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev'
     },
-    1024: {
-      slidesPerView: 5,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true
+    },
+    breakpoints: {
+      768: {
+        slidesPerView: 2.5
+      },
+      1024: {
+        slidesPerView: 5
+      }
     }
-  }
+  });
 });
-{% endjavascript %}
+</script>
 
 {% schema %}
 {
