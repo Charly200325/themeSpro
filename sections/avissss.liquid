@@ -1,146 +1,14 @@
-<style>
-@import url('https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css');
-
-.reviews-carousel {
-  background-color: #FBF1E8;
-  padding: 86px 0;
-}
-.reviews-carousel h2 {
-  text-align: center;
-  font-size: 35px;
-  font-family: 'Minerva Modern', serif;
-  color: #27201A;
-  margin-bottom: 40px;
-  letter-spacing: 0.98px;
-}
-.review-card {
-  background: white;
-  border-radius: 12px;
-  overflow: hidden;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-.review-image {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  border-radius: 12px 12px 0 0;
-}
-.review-content {
-  padding: 16px;
-  font-size: 16px;
-  font-family: 'Hanken Grotesk', sans-serif;
-  color: #665E5B;
-  line-height: 1.5;
-  flex-grow: 1;
-}
-.review-name {
-  font-style: italic;
-  color: #544843;
-  margin-top: 8px;
-  font-size: 14px;
-}
-.shade-box {
-  background-color: #EFE4D4;
-  padding: 10px 16px;
-  font-size: 13px;
-  color: #665E5B;
-  font-family: 'Hanken Grotesk', sans-serif;
-  font-weight: 400;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  border-radius: 0 0 12px 12px;
-}
-.shade-box strong {
-  font-weight: 800;
-  display: block;
-}
-.swiper-button-next,
-.swiper-button-prev {
-  color: #AE9F96;
-}
-.swiper-pagination-bullet {
-  background: #AE9F96;
-  opacity: 0.4;
-}
-.swiper-pagination-bullet-active {
-  background: #AE9F96;
-  opacity: 1;
-}
-</style>
-
-<div class="reviews-carousel">
-  <h2>The Reviews Speak For Themselves</h2>
-
-  <div class="swiper reviews-swiper">
-    <div class="swiper-wrapper">
-      {% for block in section.blocks %}
-        {% if block.type == 'review' %}
-          <div class="swiper-slide">
-            <div class="review-card">
-              {% if block.settings.image %}
-                <img src="{{ block.settings.image | image_url: width: 600 }}" alt="Review" class="review-image">
-              {% endif %}
-
-              <div class="review-content">
-                <p>“{{ block.settings.text }}”</p>
-                <div class="review-name">{{ block.settings.name }} - {{ block.settings.location }}</div>
-              </div>
-
-              <div class="shade-box">
-                {% if block.settings.shade_image %}
-                  <img src="{{ block.settings.shade_image | image_url: width: 32 }}" alt="Shade" style="width: 32px; height: auto;">
-                {% endif %}
-                <div>
-                  USED<br><strong>{{ block.settings.shade }}</strong>
-                </div>
-              </div>
-            </div>
-          </div>
-        {% endif %}
-      {% endfor %}
-    </div>
-
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
-    <div class="swiper-pagination"></div>
-  </div>
-</div>
-
-<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-<script>
-document.addEventListener('DOMContentLoaded', function () {
-  new Swiper('.reviews-swiper', {
-    slidesPerView: 1.2,
-    spaceBetween: 16,
-    loop: true,
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev'
-    },
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true
-    },
-    breakpoints: {
-      768: {
-        slidesPerView: 2.5
-      },
-      1024: {
-        slidesPerView: 5
-      }
-    }
-  });
-});
-</script>
-
 {% schema %}
 {
   "name": "Reviews Carousel",
-  "settings": [],
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Section Title",
+      "default": "The Reviews Speak For Themselves"
+    }
+  ],
   "blocks": [
     {
       "type": "review",
@@ -187,3 +55,94 @@ document.addEventListener('DOMContentLoaded', function () {
   ]
 }
 {% endschema %}
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+<section class="reviews-carousel" style="background-color: #FBF1E8; padding: 100px 0; overflow: hidden;">
+  <div class="container">
+    <h2 style="text-align: center; font-size: 35px; color: #27201A; margin-bottom: 40px; letter-spacing: 0.98px;">
+      {{ section.settings.title }}
+    </h2>
+
+    <div class="swiper reviews-swiper">
+      <div class="swiper-wrapper">
+        {% for block in section.blocks %}
+          {% if block.type == 'review' %}
+            <div class="swiper-slide" style="width: auto; display: flex; justify-content: center;">
+              <div class="review-card" style="width: 280px; background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 0 24px rgba(137, 137, 137, 0.1); display: flex; flex-direction: column; justify-content: space-between;">
+                {% if block.settings.image %}
+                  <img src="{{ block.settings.image | image_url }}" alt="Review" style="width: 100%; height: auto;">
+                {% endif %}
+
+                <div style="padding: 16px; font-size: 16px; font-family: 'Hanken Grotesk', sans-serif; color: #665E5B; line-height: 1.5;">
+                  <p>“{{ block.settings.text }}”</p>
+                  <div style="font-style: italic; color: #544843; margin-top: 8px; font-size: 14px;">
+                    {{ block.settings.name }} - {{ block.settings.location }}
+                  </div>
+                </div>
+
+                <div style="background-color: #EFE4D4; padding: 10px 16px; font-size: 13px; color: #665E5B; font-family: 'Hanken Grotesk', sans-serif; font-weight: 400; display: flex; align-items: center; gap: 8px; border-radius: 0 0 12px 12px;">
+                  {% if block.settings.shade_image %}
+                    <img src="{{ block.settings.shade_image | image_url: width: 32 }}" alt="Shade" style="width: 32px; height: auto;">
+                  {% endif %}
+                  <div>
+                    USED<br><strong style="font-weight: 800; display: block;">{{ block.settings.shade }}</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+          {% endif %}
+        {% endfor %}
+      </div>
+
+      <div class="swiper-controls" style="margin-top: 30px; display: flex; justify-content: center; gap: 20px;">
+        <button class="swiper-button-prev" aria-label="Previous" style="background: white; border: 1px solid #bfb2a3; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+          <svg width="16" height="16" fill="#7d6d5e" viewBox="0 0 24 24"><path d="M15.41 7.41 14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg>
+        </button>
+        <button class="swiper-button-next" aria-label="Next" style="background: white; border: 1px solid #bfb2a3; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+          <svg width="16" height="16" fill="#7d6d5e" viewBox="0 0 24 24"><path d="M8.59 16.59 10 18l6-6-6-6-1.41 1.41L13.17 12z"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    new Swiper('.reviews-swiper', {
+      loop: true,
+      slidesPerView: 'auto',
+      spaceBetween: 20,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev'
+      },
+      breakpoints: {
+        768: {
+          slidesPerView: 2
+        },
+        1024: {
+          slidesPerView: 3
+        }
+      }
+    });
+  });
+</script>
+
+<style>
+  .swiper-wrapper {
+    display: flex;
+    align-items: stretch;
+  }
+  .swiper-slide {
+    width: auto !important;
+    display: flex;
+    justify-content: center;
+  }
+  @media (max-width: 768px) {
+    .swiper-slide .review-card {
+      width: 220px !important;
+    }
+  }
+</style>
