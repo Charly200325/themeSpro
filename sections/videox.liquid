@@ -18,17 +18,17 @@
   background-color: #F9F0E7;
   padding: 60px 20px;
   text-align: left;
-  overflow-x: hidden; /* éviter débordement mobile */
+  overflow-x: hidden;
 }
 
 .mission-container {
   display: flex;
+  flex-direction: row-reverse; /* Vidéo à gauche sur desktop */
   align-items: center;
   justify-content: center;
   gap: 60px;
   max-width: 1400px;
   margin: 0 auto;
-  flex-wrap: wrap-reverse;
 }
 
 .mission-video {
@@ -104,32 +104,30 @@
 @media (max-width: 768px) {
   .mission-section {
     text-align: center;
-    padding: 40px 20px;
+    padding: 20px 16px; /* moins de marge */
     overflow-x: hidden;
+    width: 100%;
   }
 
   .mission-container {
-    flex-direction: column;
+    flex-direction: column; /* Vidéo en bas */
     align-items: center;
     gap: 30px;
+    width: 100%;
   }
 
+  .mission-content,
   .mission-video {
     width: 100%;
     box-sizing: border-box;
-    padding: 0 10px;
+    padding: 0 16px;
   }
 
   .mission-video video {
     width: 100%;
     height: auto;
-    max-width: 100%;
     border-radius: 10px;
     display: block;
-  }
-
-  .mission-content {
-    padding: 0 10px;
   }
 
   .mission-content h2 {
@@ -145,17 +143,18 @@
 
   .mission-icons {
     flex-direction: row;
-    flex-wrap: nowrap;
-    overflow-x: auto;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
-    padding: 10px 0;
     margin-top: 20px;
+    overflow: visible;
+    width: 100%;
   }
 
   .mission-icon {
     flex: 0 0 auto;
-    width: 110px;
+    width: 100px;
+    text-align: center;
   }
 
   .mission-icon span {
@@ -163,6 +162,8 @@
   }
 }
 {% endstyle %}
+
+
 
 <div class="mission-section">
   <div class="mission-container">
