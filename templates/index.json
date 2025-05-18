@@ -533,11 +533,6 @@
       "type": "videox",
       "name": "Dur Benefits Video",
       "settings": {}
-    },
-    "nousvs_nXJYtN": {
-      "type": "nousvs",
-      "name": "How We Are Different",
-      "settings": {}
     }
   },
   "order": [
@@ -550,7 +545,6 @@
     "skin_tint_comparison_gdB7Hq",
     "ingre_JwDzGi",
     "assurance_AKrh9z",
-    "videox_iCnPfa",
-    "nousvs_nXJYtN"
+    "videox_iCnPfa"
   ]
 }
