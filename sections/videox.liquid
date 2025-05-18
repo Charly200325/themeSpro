@@ -23,6 +23,7 @@
 
 .mission-container {
   display: flex;
+  flex-direction: row-reverse; /* Vidéo à gauche sur desktop */
   align-items: center;
   justify-content: center;
   gap: 60px;
@@ -103,13 +104,13 @@
 @media (max-width: 768px) {
   .mission-section {
     text-align: center;
-    padding: 20px 16px; /* réduit les marges top/bottom */
+    padding: 20px 16px; /* moins de marge */
     overflow-x: hidden;
     width: 100%;
   }
 
   .mission-container {
-    flex-direction: column-reverse; /* texte en haut, vidéo en bas */
+    flex-direction: column; /* Vidéo en bas */
     align-items: center;
     gap: 30px;
     width: 100%;
@@ -161,6 +162,7 @@
   }
 }
 {% endstyle %}
+
 
 
 <div class="mission-section">
