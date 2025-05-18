@@ -1,6 +1,6 @@
 {% schema %}
 {
-  "name": "ComparisonSection",
+  "name": "Comparison + ion",
   "tag": "section",
   "class": "comparison-section",
   "settings": [],
@@ -22,7 +22,7 @@
 .comparison-wrapper {
   display: flex;
   flex-wrap: wrap;
-  gap: 40px;
+  gap: 60px;
   justify-content: center;
   max-width: 1400px;
   margin: 0 auto;
@@ -33,7 +33,7 @@
   display: flex;
   flex-direction: column;
   gap: 24px;
-  max-width: 320px;
+  max-width: 360px;
 }
 
 .reassurance-box {
@@ -64,23 +64,17 @@
 .comparison-col {
   flex: 2;
   min-width: 600px;
+  max-width: 720px;
+  position: relative;
 }
 
 .comparison-table {
   display: grid;
-  grid-template-columns: minmax(0, 6fr) minmax(0, 3.2fr) minmax(0, 2.8fr);
+  grid-template-columns: 1.8fr 1fr 1fr;
   background-color: white;
-  border-radius: 13px;
+  border-radius: 16px;
   overflow: hidden;
-  box-shadow: 0 0 13px rgba(187, 187, 187, 0.25);
-}
-
-.comparison-cell {
-  padding: 18px 16px;
-  border-bottom: 1px solid #D5C3B5;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  position: relative;
 }
 
 .comparison-title {
@@ -99,24 +93,38 @@
 }
 
 .comparison-header {
-  padding: 14px 0;
+  padding: 18px 0;
   text-align: center;
+  background: #F3E6DC;
+  border-right: 1px solid #e3d6cd;
+  border-left: 1px solid #e3d6cd;
 }
 
 .comparison-logo {
-  width: 85px;
+  width: 90px;
   height: auto;
   border-radius: 9999px;
   margin: auto;
 }
 
+.comparison-cell {
+  padding: 18px 16px;
+  border-bottom: 1px solid #D5C3B5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
 .check-icon,
 .cross-icon {
-  width: 30px;
-  height: 30px;
+  width: 28px;
+  height: 28px;
   object-fit: contain;
-  border-radius: 9999px;
-  margin: auto;
+  border-radius: 50%;
+  background-color: #F3E6DC;
+  padding: 4px;
 }
 
 @media (max-width: 768px) {
@@ -126,9 +134,13 @@
   }
   .comparison-col {
     min-width: 100%;
+    max-width: 100%;
   }
   .comparison-table {
     grid-template-columns: 1fr 1fr 1fr;
+  }
+  .comparison-title {
+    font-size: 22px;
   }
 }
 {% endstyle %}
@@ -170,12 +182,11 @@
           <h6 style="font-size: 13px; color: #8F7C6D; font-weight: 800; text-transform: uppercase; margin: 0;">Other Brands</h6>
         </div>
 
-        <!-- Repeatable rows -->
         {% assign items = "Seamless finish|Invisible coverage,Deep Hydration|HA+ Technology,Ethical Beauty|Ethically sourced,Non-comedogenic|Won’t clog pores,Enduring Wear|Stays flawless all day,Cruelty-Free & Vegan|No animal testing,No Harsh Chemicals|Free from parabens" | split: "," %}
         {% for item in items %}
           {% assign parts = item | split: "|" %}
           <div class="comparison-cell">
-            <h6 class="comparison-title">{{ parts[0] }}</h6>
+            <h6 style="font-size: 14px; font-weight: 700; color: #6E655E; margin: 0 0 6px;">{{ parts[0] }}</h6>
             <p class="comparison-sub">{{ parts[1] }}</p>
           </div>
           <div class="comparison-cell">
