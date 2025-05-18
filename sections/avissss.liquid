@@ -1,6 +1,180 @@
-{% schema %}
-  {
-    "name": "Section name",
-    "settings": []
+{% stylesheet %}
+  .reviews-carousel {
+    background-color: #FBF1E8;
+    padding-top: 86px;
+    padding-bottom: 56px;
   }
+
+  .reviews-carousel h2 {
+    font-family: 'Minerva Modern', serif;
+    font-size: 35px;
+    text-align: center;
+    color: #27201A;
+    margin-bottom: 40px;
+    letter-spacing: 0.98px;
+  }
+
+  .review-card {
+    background: #fff;
+    border-radius: 12px;
+    padding-bottom: 20px;
+    overflow: hidden;
+  }
+
+  .review-image {
+    border-radius: 12px 12px 0 0;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .review-content {
+    padding: 0 16px;
+    color: #665E5B;
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-top: 14px;
+  }
+
+  .review-name {
+    font-style: italic;
+    font-size: 14px;
+    color: #544843;
+    margin-top: 10px;
+  }
+
+  .shade-box {
+    background-color: #EFE4D4;
+    border-radius: 0 0 12px 12px;
+    padding: 10px 20px;
+    font-size: 13px;
+    color: #665E5B;
+    font-weight: 400;
+  }
+
+  .shade-box strong {
+    font-weight: 800;
+    display: block;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    color: #AE9F96;
+  }
+
+  .swiper-pagination-bullet {
+    background: #AE9F96;
+    opacity: 0.4;
+  }
+
+  .swiper-pagination-bullet-active {
+    background: #AE9F96;
+    opacity: 1;
+  }
+{% endstylesheet %}
+
+<div class="reviews-carousel">
+  <h2>The Reviews Speak For Themselves</h2>
+
+  <div class="swiper reviews-swiper">
+    <div class="swiper-wrapper">
+     {% for block in section.blocks %}
+  {% if block.type == 'review' %}
+    <div class="swiper-slide">
+      <div class="review-card">
+        {% if block.settings.image %}
+          <img src="{{ block.settings.image | image_url: width: 600 }}" alt="Review" class="review-image">
+        {% endif %}
+        <div class="review-content">
+          <p>“{{ block.settings.text }}”</p>
+          <div class="review-name">{{ block.settings.name }} - {{ block.settings.location }}</div>
+        </div>
+        <div class="shade-box">
+          USED <strong>{{ block.settings.shade }}</strong>
+        </div>
+      </div>
+    </div>
+  {% endif %}
+{% endfor %}
+
+    </div>
+
+    <!-- Arrows -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+
+    <!-- Dots -->
+    <div class="swiper-pagination"></div>
+  </div>
+</div>
+
+{% javascript %}
+  const swiper = new Swiper('.reviews-swiper', {
+    slidesPerView: 1.2,
+    spaceBetween: 16,
+    loop: true,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    breakpoints: {
+      768: {
+        slidesPerView: 2.5,
+      },
+      1024: {
+        slidesPerView: 5,
+      }
+    }
+  });
+{% endjavascript %}
+
+{% schema %}
+{
+  "name": "Reviews Carousel",
+  "settings": [],
+  "blocks": [
+    {
+      "type": "review",
+      "name": "Review Slide",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Customer Image"
+        },
+        {
+          "type": "textarea",
+          "id": "text",
+          "label": "Review Text"
+        },
+        {
+          "type": "text",
+          "id": "name",
+          "label": "Customer Name"
+        },
+        {
+          "type": "text",
+          "id": "location",
+          "label": "Location"
+        },
+        {
+          "type": "text",
+          "id": "shade",
+          "label": "Shade Used"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Reviews Carousel",
+      "category": "Testimonials"
+    }
+  ]
+}
 {% endschema %}
