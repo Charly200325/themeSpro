@@ -106,30 +106,28 @@
     text-align: center;
     padding: 40px 20px;
     overflow-x: hidden;
+    width: 100%;
   }
 
   .mission-container {
     flex-direction: column;
     align-items: center;
     gap: 30px;
+    width: 100%;
   }
 
+  .mission-content,
   .mission-video {
     width: 100%;
     box-sizing: border-box;
-    padding: 0 10px;
+    padding: 0 16px;
   }
 
   .mission-video video {
     width: 100%;
     height: auto;
-    max-width: 100%;
     border-radius: 10px;
     display: block;
-  }
-
-  .mission-content {
-    padding: 0 10px;
   }
 
   .mission-content h2 {
@@ -145,23 +143,25 @@
 
   .mission-icons {
     flex-direction: row;
-    flex-wrap: nowrap;
-    overflow-x: auto;
+    flex-wrap: wrap; /* changé de nowrap à wrap */
     justify-content: center;
     gap: 20px;
-    padding: 10px 0;
     margin-top: 20px;
+    overflow: visible;
+    width: 100%;
   }
 
   .mission-icon {
     flex: 0 0 auto;
-    width: 110px;
+    width: 100px;
+    text-align: center;
   }
 
   .mission-icon span {
     font-size: 13px;
   }
 }
+
 {% endstyle %}
 
 <div class="mission-section">
