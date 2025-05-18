@@ -1,128 +1,131 @@
-{% schema %}
-{
-  "name": "Comparison Table",
-  "tag": "section",
-  "class": "comparison-section",
-  "settings": [],
-  "presets": [
-    {
-      "name": "Comparison Table"
+{% stylesheet %}
+  .comparison-table-wrapper {
+    background: #AB9381;
+    padding: 40px 0;
+    font-family: 'Hanken Grotesk', sans-serif;
+  }
+  .comparison-table {
+    display: grid;
+    grid-template-columns: 6fr 3fr 3fr;
+    max-width: 1200px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .comparison-table .label-col {
+    background: #fff;
+    padding: 20px;
+    border-bottom: 1px solid #D5C3B5;
+  }
+
+  .comparison-table .splendor-col {
+    background: #E7D9CD;
+    padding: 20px;
+    border-left: 2.6px solid #D6C0AF;
+    border-right: 2.6px solid #D6C0AF;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+  }
+
+  .comparison-table .other-col {
+    background: #fff;
+    padding: 20px;
+    border-bottom: 1px solid #D5C3B5;
+    text-align: center;
+  }
+
+  .comparison-table .row:first-child .splendor-col {
+    border-top: 2.6px solid #D6C0AF;
+    border-top-left-radius: 13px;
+    border-top-right-radius: 13px;
+  }
+
+  .comparison-table .row:last-child .splendor-col {
+    border-bottom: 2.6px solid #D6C0AF;
+    border-bottom-left-radius: 13px;
+    border-bottom-right-radius: 13px;
+  }
+
+  .check-icon, .cross-icon {
+    width: 34px;
+    height: 34px;
+    border-radius: 9999px;
+    border: 1px solid #000;
+    display: inline-block;
+    line-height: 34px;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  .check-icon {
+    background-color: #fff;
+    color: #000;
+  }
+
+  .cross-icon {
+    background-color: #fff;
+    color: #000;
+  }
+
+  .splendor-logo {
+    position: absolute;
+    top: -34px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #E7D9CD;
+    border: 2.6px solid #D6C0AF;
+    border-radius: 13px;
+    padding: 10px 20px;
+    z-index: 3;
+  }
+
+  @media screen and (max-width: 768px) {
+    .comparison-table {
+      grid-template-columns: 6fr 3fr 3fr;
     }
-  ]
-}
-{% endschema %}
+    .comparison-table .label-col,
+    .comparison-table .splendor-col,
+    .comparison-table .other-col {
+      padding: 12px;
+    }
+    .splendor-logo {
+      top: -20px;
+      padding: 6px 12px;
+    }
+  }
+{% endstylesheet %}
 
-<style>
-.comparison-table-wrapper {
-  background: #AB9381;
-  padding: 40px 20px;
-  font-family: 'Hanken Grotesk', sans-serif;
-}
-.comparison-title {
-  text-align: center;
-  color: #fff;
-  font-size: 28px;
-  font-weight: 400;
-  margin-bottom: 40px;
-}
-.comparison-grid {
-  display: grid;
-  grid-template-columns: minmax(0, 6fr) minmax(0, 3.2fr) minmax(0, 2.8fr);
-  background: #fff;
-  border-radius: 13px;
-  overflow: hidden;
-}
-.comparison-row {
-  display: contents;
-}
-.comparison-cell {
-  padding: 20px;
-  border-bottom: 1px solid #D5C3B5;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: left;
-  font-size: 15px;
-  line-height: 1.4;
-}
-.comparison-cell.left {
-  text-align: left;
-  align-items: flex-start;
-  flex-direction: column;
-}
-.comparison-cell span {
-  display: block;
-}
-.comparison-cell strong {
-  font-weight: 700;
-}
-.comparison-check,
-.comparison-cross {
-  font-size: 20px;
-}
-.comparison-check {
-  color: #6C5B4C;
-}
-.comparison-cross {
-  color: #BBB;
-}
-.comparison-brand-logo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.comparison-brand-logo img {
-  width: 90px;
-  margin-bottom: 10px;
-}
-@media (max-width: 768px) {
-  .comparison-grid {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-  .comparison-title {
-    font-size: 22px;
-  }
-  .comparison-cell {
-    padding: 14px;
-    font-size: 13px;
-  }
-}
-</style>
-
-<div class="comparison-table-wrapper">
-  <h2 class="comparison-title">Here’s How We Are Different</h2>
-  <div class="comparison-grid">
-    <div class="comparison-row">
-      <div class="comparison-cell left">
-        <strong>SEAMLESS FINISH</strong>
-        <span>Invisible coverage</span>
-      </div>
-      <div class="comparison-cell comparison-brand-logo">
-        <img src="https://cdn.shopify.com/s/files/1/0964/4130/3378/files/a6e1083b-fde6-4333-a241-15b664c8c320_removalai_preview.png?v=1747258252" alt="Splendor logo">
-        <div class="comparison-check">✓</div>
-      </div>
-      <div class="comparison-cell"><span class="comparison-cross">✗</span></div>
+<section class="comparison-table-wrapper">
+  <div class="comparison-table">
+    <div class="splendor-logo">
+      <img src="https://cdn.shopify.com/s/files/1/0964/4130/3378/files/a6e1083b-fde6-4333-a241-15b664c8c320_removalai_preview.png?v=1747258252" alt="Splendor Logo" style="height: 40px;">
     </div>
 
-    {% assign rows = 
-      "DEEP HYDRATION|HA+ Technology,
+    {% assign benefits = 
+      "SEAMLESS FINISH|Invisible coverage,
+       DEEP HYDRATION|HA+ Technology,
        ETHICAL BEAUTY|Ethically sourced,
        NON-COMEDOGENIC|Won’t clog pores,
        ENDURING WEAR|Stays flawless all day,
        CRUELTY-FREE & VEGAN|No animal testing,
-       NO HARSH CHEMICALS|Free from parabens" | split: "," %}
+       NO HARSH CHEMICALS|Free from parabens" | split: ',' %}
 
-    {% for row in rows %}
-      {% assign parts = row | split: "|" %}
-      <div class="comparison-row">
-        <div class="comparison-cell left">
-          <strong>{{ parts[0] }}</strong>
-          <span>{{ parts[1] }}</span>
-        </div>
-        <div class="comparison-cell"><span class="comparison-check">✓</span></div>
-        <div class="comparison-cell"><span class="comparison-cross">✗</span></div>
+    {% for benefit in benefits %}
+      {% assign parts = benefit | split: '|' %}
+      <div class="label-col">
+        <h6 style="margin: 0; color: #8F7C6D; font-size: 14px; font-weight: 800; text-transform: uppercase;">{{ parts[0] }}</h6>
+        <p style="margin: 4px 0 0; color: #756E67; font-size: 14px;">{{ parts[1] }}</p>
+      </div>
+      <div class="splendor-col">
+        <span class="check-icon">✓</span>
+      </div>
+      <div class="other-col">
+        <span class="cross-icon">✕</span>
       </div>
     {% endfor %}
   </div>
-</div>
+</section>
