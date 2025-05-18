@@ -18,6 +18,7 @@
   background-color: #F9F0E7;
   padding: 60px 20px;
   text-align: left;
+  overflow-x: hidden; /* éviter débordement mobile */
 }
 
 .mission-container {
@@ -99,21 +100,24 @@
   color: #AD9E92;
 }
 
+/* MOBILE */
 @media (max-width: 768px) {
   .mission-section {
     text-align: center;
     padding: 40px 20px;
+    overflow-x: hidden;
   }
 
   .mission-container {
-    flex-direction: column-reverse;
+    flex-direction: column;
     align-items: center;
-    text-align: center;
     gap: 30px;
   }
 
   .mission-video {
     width: 100%;
+    box-sizing: border-box;
+    padding: 0 10px;
   }
 
   .mission-video video {
@@ -121,6 +125,11 @@
     height: auto;
     max-width: 100%;
     border-radius: 10px;
+    display: block;
+  }
+
+  .mission-content {
+    padding: 0 10px;
   }
 
   .mission-content h2 {
