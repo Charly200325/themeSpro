@@ -1,227 +1,144 @@
 {% schema %}
 {
-  "name": "How We're Different",
+  "name": "Comparison Table",
   "tag": "section",
-  "class": "difference-section",
+  "class": "comparison-section",
   "settings": [],
   "presets": [
     {
-      "name": "How We're Different"
+      "name": "Comparison Table"
     }
   ]
 }
 {% endschema %}
 
 {% style %}
-.difference-section {
-  background: linear-gradient(45deg, #9b6b50, #805f4e);
-  padding: 60px 20px;
-  color: white;
+.comparison-section {
   font-family: 'Hanken Grotesk', sans-serif;
-}
-
-.difference-wrapper {
-  max-width: 1300px;
-  margin: 0 auto;
-  display: flex;
-  gap: 40px;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-.reassurance {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-}
-
-.reassurance-box {
-  background-color: #b78c6a;
-  border-radius: 10px;
-  padding: 20px;
-  text-align: center;
-  color: white;
-}
-
-.reassurance-box img {
-  width: 54px;
-  margin-bottom: 10px;
-}
-
-.reassurance-box h4 {
-  font-weight: bold;
-  font-size: 14px;
-  margin-bottom: 8px;
-  text-transform: uppercase;
-}
-
-.reassurance-box p {
-  font-size: 14px;
-  color: #fefefe;
-}
-
-.comparison {
-  flex: 2;
-  background: white;
-  border-radius: 12px;
-  overflow: hidden;
-  font-size: 14px;
-  color: #4e4e4e;
-}
-
-.comparison-title {
-  text-align: center;
-  font-size: 28px;
-  margin-bottom: 40px;
-  font-weight: 500;
-  color: white;
+  background-color: #F9F0E7;
+  padding: 60px 20px;
 }
 
 .comparison-table {
-  width: 100%;
-  border-collapse: collapse;
-}
-
-.comparison-table td, .comparison-table th {
-  border-bottom: 1px solid #e0e0e0;
-  padding: 20px;
-  vertical-align: middle;
-  text-align: center;
-}
-
-.comparison-table td:first-child {
-  text-align: left;
-  font-weight: bold;
-  color: #333;
-}
-
-.comparison-table td:first-child span {
-  display: block;
-  font-weight: normal;
-  color: #777;
-  font-style: italic;
-  margin-top: 4px;
-}
-
-.comparison-brand {
-  background-color: #e6d5c8;
-  border-radius: 12px 12px 0 0;
-  font-weight: bold;
-}
-
-.comparison-logo {
-  background-color: #e6d5c8;
-  border-radius: 0 0 12px 12px;
-  padding: 10px 0;
-}
-
-.comparison-logo img {
-  width: 80px;
-  height: auto;
-  display: block;
+  display: grid;
+  grid-template-columns: minmax(0, 6fr) minmax(0, 3.2fr) minmax(0, 2.8fr);
+  max-width: 800px;
   margin: 0 auto;
+  border-radius: 13px;
+  overflow: hidden;
+  box-shadow: 0 0 13px rgba(187, 187, 187, 0.25);
 }
 
-.check-icon, .cross-icon {
-  font-size: 18px;
-  display: inline-block;
-  width: 28px;
-  height: 28px;
-  line-height: 28px;
-  border-radius: 50%;
-  background-color: #eee;
-  color: #333;
+.comparison-row {
+  display: contents;
 }
 
-.check-icon {
-  background-color: #d6c0ae;
+.comparison-cell {
+  background-color: white;
+  padding: 18px 16px;
+  border-bottom: 1px solid #D5C3B5;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }
 
-.cross-icon {
-  background-color: #f0f0f0;
+.comparison-cell.logo {
+  justify-content: center;
+  padding: 14px 0;
+  background-color: transparent;
+}
+
+.comparison-cell.logo img {
+  width: 85px;
+  border-radius: 9999px;
+}
+
+.comparison-cell h6 {
+  margin: 0;
+  font-size: 15px;
+  color: #8F7C6D;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.comparison-cell p {
+  margin: 0;
+  font-size: 16px;
+  color: #756E67;
+}
+
+.comparison-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.comparison-icon img {
+  width: 30px;
+  height: auto;
+  border-radius: 9999px;
 }
 
 @media (max-width: 768px) {
-  .difference-wrapper {
-    flex-direction: column;
-    align-items: center;
+  .comparison-table {
+    grid-template-columns: minmax(0, 6fr) minmax(0, 3fr) minmax(0, 3fr);
   }
 
-  .comparison-title {
-    font-size: 24px;
+  .comparison-cell h6 {
+    font-size: 12px;
   }
 
-  .comparison-table td, .comparison-table th {
-    font-size: 13px;
-    padding: 12px;
+  .comparison-cell p {
+    font-size: 14px;
+  }
+
+  .comparison-icon img {
+    width: 26px;
+  }
+
+  .comparison-cell.logo img {
+    width: 74px;
   }
 }
 {% endstyle %}
 
-<div class="difference-section">
-  <h2 class="comparison-title">Here’s How We Are Different</h2>
-  <div class="difference-wrapper">
-    <div class="reassurance">
-      <div class="reassurance-box">
-        <img src="//splendorintl.com/cdn/shop/files/gempages_534627086933951483-48f6d3ae-3f82-4dac-9538-71c5dd6a802a.svg?v=8838321780117697469" alt="Shipping icon">
-        <h4>FREE SHIPPING OVER $50</h4>
-        <p>Enjoy complimentary shipping on all orders over $50—delivered right to your doorstep.</p>
-      </div>
-      <div class="reassurance-box">
-        <img src="//splendorintl.com/cdn/shop/files/gempages_534627086933951483-5bea7db5-d6f0-4422-a4d2-91cbf8f2c54c.svg?v=3622031243082332424" alt="Returns icon">
-        <h4>EASY RETURNS</h4>
-        <p>Not satisfied? Our easy returns ensure you’re covered, shop with confidence.</p>
-      </div>
-      <div class="reassurance-box">
-        <img src="//splendorintl.com/cdn/shop/files/gempages_534627086933951483-a14f4d1a-8ac9-47b7-bb03-760b65f35293.svg?v=5691638286014522176" alt="Units sold icon">
-        <h4>OVER 50,000+ UNITS SOLD</h4>
-        <p>Join thousands who have chosen Splendor for flawless, natural coverage.</p>
-      </div>
+<div class="comparison-section">
+  <div class="comparison-table">
+    <!-- Header row -->
+    <div class="comparison-cell logo">
+      <img src="https://cdn.shopify.com/s/files/1/0964/4130/3378/files/a6e1083b-fde6-4333-a241-15b664c8c320_removalai_preview.png?v=1747258252" alt="Logo Elvynor">
     </div>
-    <div class="comparison">
-      <table class="comparison-table">
-        <tr class="comparison-brand">
-          <th></th>
-          <th><img src="https://cdn.shopify.com/s/files/1/0964/4130/3378/files/a6e1083b-fde6-4333-a241-15b664c8c320_removalai_preview.png?v=1747258252" alt="Splendor" width="80"></th>
-          <th>Other Brands</th>
-        </tr>
-        <tr>
-          <td>SEAMLESS FINISH <span>Invisible coverage</span></td>
-          <td><span class="check-icon">✓</span></td>
-          <td><span class="cross-icon">✕</span></td>
-        </tr>
-        <tr>
-          <td>DEEP HYDRATION <span>HA+ Technology</span></td>
-          <td><span class="check-icon">✓</span></td>
-          <td><span class="cross-icon">✕</span></td>
-        </tr>
-        <tr>
-          <td>ETHICAL BEAUTY <span>Ethically sourced</span></td>
-          <td><span class="check-icon">✓</span></td>
-          <td><span class="cross-icon">✕</span></td>
-        </tr>
-        <tr>
-          <td>NON-COMEDOGENIC <span>Won’t clog pores</span></td>
-          <td><span class="check-icon">✓</span></td>
-          <td><span class="cross-icon">✕</span></td>
-        </tr>
-        <tr>
-          <td>ENDURING WEAR <span>Stays flawless all day</span></td>
-          <td><span class="check-icon">✓</span></td>
-          <td><span class="cross-icon">✕</span></td>
-        </tr>
-        <tr>
-          <td>CRUELTY-FREE & VEGAN <span>No animal testing</span></td>
-          <td><span class="check-icon">✓</span></td>
-          <td><span class="cross-icon">✕</span></td>
-        </tr>
-        <tr>
-          <td>NO HARSH CHEMICALS <span>Free from parabens</span></td>
-          <td><span class="check-icon">✓</span></td>
-          <td><span class="cross-icon">✕</span></td>
-        </tr>
-      </table>
+    <div class="comparison-cell logo">
+      <img src="//splendorintl.com/cdn/shop/files/gempages_534627086933951483-35be2a13-a018-44ca-99c4-2225c702a13e.svg?v=16953864016253292162" alt="Check">
     </div>
+    <div class="comparison-cell logo">
+      <h6>Other<br>Brands</h6>
+    </div>
+
+    <!-- Row 1 -->
+    <div class="comparison-cell">
+      <h6>Seamless finish</h6>
+      <p>Invisible coverage</p>
+    </div>
+    <div class="comparison-cell comparison-icon">
+      <img src="//splendorintl.com/cdn/shop/files/gempages_534627086933951483-35be2a13-a018-44ca-99c4-2225c702a13e.svg" alt="Check">
+    </div>
+    <div class="comparison-cell comparison-icon">
+      <img src="//splendorintl.com/cdn/shop/files/gempages_534627086933951483-431703d0-e46f-4b10-83aa-3ba8f5c2de12.svg" alt="Cross">
+    </div>
+
+    <!-- Row 2 -->
+    <div class="comparison-cell">
+      <h6>Deep Hydration</h6>
+      <p>HA+ Technology</p>
+    </div>
+    <div class="comparison-cell comparison-icon">
+      <img src="//splendorintl.com/cdn/shop/files/gempages_534627086933951483-35be2a13-a018-44ca-99c4-2225c702a13e.svg" alt="Check">
+    </div>
+    <div class="comparison-cell comparison-icon">
+      <img src="//splendorintl.com/cdn/shop/files/gempages_534627086933951483-431703d0-e46f-4b10-83aa-3ba8f5c2de12.svg" alt="Cross">
+    </div>
+
+    <!-- Add more rows below as needed -->
   </div>
 </div>
