@@ -528,6 +528,11 @@
       "type": "assurance",
       "name": "Satisfaction Guarantee",
       "settings": {}
+    },
+    "videox_iCnPfa": {
+      "type": "videox",
+      "name": "Dur Benefits Video",
+      "settings": {}
     }
   },
   "order": [
@@ -539,6 +544,7 @@
     "beautiful_benefits_xnCBaV",
     "skin_tint_comparison_gdB7Hq",
     "ingre_JwDzGi",
-    "assurance_AKrh9z"
+    "assurance_AKrh9z",
+    "videox_iCnPfa"
   ]
 }

@@ -1,107 +1,149 @@
 {% schema %}
 {
-  "name": "Dur Benefits Video",
+  "name": "Mission Video Section",
   "tag": "section",
-  "class": "dur-benefits-video",
+  "class": "mission-section",
   "settings": [],
   "presets": [
     {
-      "name": "Dur Benefits Video"
+      "name": "Mission Video Section"
     }
   ]
 }
 {% endschema %}
 
 {% style %}
-.dur-benefits-video {
+.mission-section {
   background-color: #FBF1E8;
-  padding: 60px 20px;
+  padding: 80px 20px;
   font-family: 'Hanken Grotesk', sans-serif;
-  color: #27201A;
-  text-align: center;
 }
 
-.dur-benefits-video h2 {
-  font-size: 34px;
-  margin-bottom: 20px;
-  font-weight: 600;
-}
-
-.dur-benefits-video video {
-  width: 100%;
-  max-width: 720px;
-  height: auto;
-  border-radius: 12px;
-  margin: 0 auto 40px;
-  display: block;
-}
-
-.dur-benefits-grid {
+.mission-container {
   display: flex;
+  align-items: center;
   justify-content: center;
-  gap: 30px;
-  flex-wrap: wrap;
-  max-width: 1000px;
+  max-width: 1400px;
   margin: 0 auto;
+  flex-direction: row;
+  gap: 60px;
 }
 
-.dur-benefits-item {
-  background: white;
-  border-radius: 16px;
-  padding: 30px 20px;
-  max-width: 280px;
-  text-align: center;
-  box-shadow: 0 6px 16px rgba(0,0,0,0.05);
+.mission-video {
+  flex: 1;
 }
 
-.dur-benefits-item img {
-  width: 60px;
+.mission-video video {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.mission-text {
+  flex: 1;
+  text-align: left;
+  color: #000;
+}
+
+.mission-text h2 {
+  font-size: 36px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.mission-text p {
+  font-size: 16px;
   margin-bottom: 20px;
 }
 
-.dur-benefits-item p {
-  font-size: 15px;
-  color: #27201A;
-  margin: 0;
-  line-height: 1.6;
+.mission-highlight {
+  font-weight: bold;
+  background-color: #8F7C6D;
+  color: white;
+  padding: 8px 12px;
+  display: inline-block;
+  margin-bottom: 25px;
+}
+
+.mission-icons {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.mission-icon {
+  text-align: center;
+  flex: 1;
+  min-width: 100px;
+}
+
+.mission-icon img {
+  width: 40px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.mission-icon span {
+  font-size: 14px;
+  font-weight: 500;
+  color: #000;
 }
 
 @media (max-width: 768px) {
-  .dur-benefits-video h2 {
+  .mission-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .mission-text h2 {
     font-size: 28px;
   }
 
-  .dur-benefits-grid {
-    flex-direction: column;
-    gap: 20px;
+  .mission-text p,
+  .mission-icon span {
+    font-size: 14px;
   }
 
-  .dur-benefits-item {
-    max-width: 100%;
+  .mission-icons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .mission-icon {
+    margin-bottom: 20px;
   }
 }
 {% endstyle %}
 
-<div class="dur-benefits-video">
-  <h2>Real Results, Real Confidence</h2>
-
-  <video autoplay muted playsinline loop>
-    <source src="https://cdn.shopify.com/videos/c/o/v/896e9eda7ebf47c7959bfa747f785ff8.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
-
-  <div class="dur-benefits-grid">
-    <div class="dur-benefits-item">
-      <img src="https://cdn.shopify.com/s/files/1/0964/4130/3378/files/gempages_534627086933951483-4ea8af70-9756-46fd-9942-67e39ebc87f7_768x_8735bf14-1d9a-40c3-bfca-e8704f1f4161.webp?v=1747531858" alt="Icon 1">
-      <p>Buildable light-to-medium coverage with a radiant finish</p>
+<div class="mission-section">
+  <div class="mission-container">
+    <div class="mission-video">
+      <video autoplay muted playsinline loop>
+        <source src="https://cdn.shopify.com/videos/c/o/v/896e9eda7ebf47c7959bfa747f785ff8.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
     </div>
-    <div class="dur-benefits-item">
-      <img src="https://cdn.shopify.com/s/files/1/0964/4130/3378/files/gempages_534627086933951483-be0455a6-45f0-4e68-bdad-6ba37ff3e23b_768x_e942f079-b475-4b45-a6d4-847ee2d1e6b5.webp?v=1747531858" alt="Icon 2">
-      <p>Blurs imperfections + dark spots</p>
-    </div>
-    <div class="dur-benefits-item">
-      <img src="https://cdn.shopify.com/s/files/1/0964/4130/3378/files/gempages_534627086933951483-22d36cba-6dc2-4c46-a554-8f565e1b0e31_768x_f704c52e-22fe-47f2-adc5-24016bfe9f6f.webp?v=1747531776" alt="Icon 3">
-      <p>Leaves skin looking like skin — just better</p>
+    <div class="mission-text">
+      <h2>Enhancing Beauty, Embracing All Skin Types</h2>
+      <p>At Splendor, we believe confidence starts with your skin.</p>
+      <p>Thats why our mission is to:</p>
+      <div class="mission-highlight">
+        CREATE MAKEUP THAT ACTS LIKE SKINCARE FOR A FLAWLESS, SECOND-SKIN FINISH.
+      </div>
+      <div class="mission-icons">
+        <div class="mission-icon">
+          <img src="https://cdn.shopify.com/s/files/1/0964/4130/3378/files/gempages_534627086933951483-4ea8af70-9756-46fd-9942-67e39ebc87f7_768x_8735bf14-1d9a-40c3-bfca-e8704f1f4161.webp?v=1747531858" alt="Icon 1">
+          <span>SKIN-ADAPTIVE TECHNOLOGY</span>
+        </div>
+        <div class="mission-icon">
+          <img src="https://cdn.shopify.com/s/files/1/0964/4130/3378/files/gempages_534627086933951483-be0455a6-45f0-4e68-bdad-6ba37ff3e23b_768x_e942f079-b475-4b45-a6d4-847ee2d1e6b5.webp?v=1747531858" alt="Icon 2">
+          <span>MESS-FREE, TRAVEL-FRIENDLY</span>
+        </div>
+        <div class="mission-icon">
+          <img src="https://cdn.shopify.com/s/files/1/0964/4130/3378/files/gempages_534627086933951483-22d36cba-6dc2-4c46-a554-8f565e1b0e31_768x_f704c52e-22fe-47f2-adc5-24016bfe9f6f.webp?v=1747531776" alt="Icon 3">
+          <span>BREATHABLE & BUILDABLE</span>
+        </div>
+      </div>
     </div>
   </div>
 </div>
