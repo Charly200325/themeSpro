@@ -1,12 +1,12 @@
 {% schema %}
 {
-  "name": "GemPages Comparison Table",
+  "name": "ComparisonSection",
   "tag": "section",
   "class": "comparison-section",
   "settings": [],
   "presets": [
     {
-      "name": "GemPages Comparison Table"
+      "name": "Comparison with Benefits"
     }
   ]
 }
@@ -20,14 +20,59 @@
 }
 
 .comparison-wrapper {
-  max-width: 850px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+  max-width: 1400px;
   margin: 0 auto;
+}
+
+.reassurance-col {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  max-width: 320px;
+}
+
+.reassurance-box {
+  background: #E7D9CD;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  color: #6E655E;
+}
+
+.reassurance-box img {
+  width: 54px;
+  margin-bottom: 10px;
+}
+
+.reassurance-box h4 {
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 6px;
+  text-transform: uppercase;
+}
+
+.reassurance-box p {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.comparison-col {
+  flex: 2;
+  min-width: 600px;
+}
+
+.comparison-table {
   display: grid;
   grid-template-columns: minmax(0, 6fr) minmax(0, 3.2fr) minmax(0, 2.8fr);
+  background-color: white;
   border-radius: 13px;
   overflow: hidden;
-  background-color: #fff;
-  box-shadow: 0px 0px 13px rgba(187, 187, 187, 0.25);
+  box-shadow: 0 0 13px rgba(187, 187, 187, 0.25);
 }
 
 .comparison-cell {
@@ -39,27 +84,23 @@
 }
 
 .comparison-title {
-  font-weight: 800;
-  font-size: 15px;
-  color: #8F7C6D;
-  text-transform: uppercase;
-  margin: 0 0 5px;
+  font-size: 30px;
+  font-weight: 500;
+  color: #6E655E;
+  text-align: center;
+  margin-bottom: 40px;
 }
 
 .comparison-sub {
-  color: #756E67;
   font-size: 16px;
+  color: #756E67;
   margin: 0;
   line-height: 130%;
 }
 
-.comparison-check,
-.comparison-cross {
-  width: 30px;
-  height: 30px;
-  border-radius: 9999px;
-  object-fit: cover;
-  margin: auto;
+.comparison-header {
+  padding: 14px 0;
+  text-align: center;
 }
 
 .comparison-logo {
@@ -69,71 +110,83 @@
   margin: auto;
 }
 
-.comparison-header {
-  padding: 14px 0;
-  background: transparent;
-  text-align: center;
+.check-icon,
+.cross-icon {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+  border-radius: 9999px;
+  margin: auto;
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
   .comparison-wrapper {
-    width: 100%;
-    grid-template-columns: minmax(0, 6fr) minmax(0, 3fr) minmax(0, 3fr);
+    flex-direction: column;
+    align-items: center;
   }
-  .comparison-title {
-    font-size: 13px;
+  .comparison-col {
+    min-width: 100%;
   }
-  .comparison-sub {
-    font-size: 14px;
-  }
-  .comparison-check,
-  .comparison-cross {
-    width: 26px;
-    height: 26px;
-  }
-  .comparison-logo {
-    width: 74px;
+  .comparison-table {
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 {% endstyle %}
 
 <div class="comparison-section">
+  <h2 class="comparison-title">Here’s How We Are Different</h2>
   <div class="comparison-wrapper">
-    <!-- Header Row -->
-    <div class="comparison-cell comparison-header">
-      <img src="https://cdn.shopify.com/s/files/1/0964/4130/3378/files/a6e1083b-fde6-4333-a241-15b664c8c320_removalai_preview.png?v=1747258252" alt="Elvynor" class="comparison-logo">
-    </div>
-    <div class="comparison-cell comparison-header">
-      <img src="//splendorintl.com/cdn/shop/files/gempages_534627086933951483-35be2a13-a018-44ca-99c4-2225c702a13e.svg" class="comparison-check" alt="Check">
-    </div>
-    <div class="comparison-cell comparison-header">
-      <h6 style="font-size: 13px; color: #8F7C6D; font-weight: 800; text-transform: uppercase; margin: 0;">Other Brands</h6>
+
+    <!-- LEFT COLUMN - REASSURANCE -->
+    <div class="reassurance-col">
+      <div class="reassurance-box">
+        <img src="//splendorintl.com/cdn/shop/files/gempages_534627086933951483-48f6d3ae-3f82-4dac-9538-71c5dd6a802a.svg" alt="Shipping icon">
+        <h4>FREE SHIPPING OVER $50</h4>
+        <p>Enjoy complimentary shipping on all orders over $50—delivered right to your doorstep.</p>
+      </div>
+      <div class="reassurance-box">
+        <img src="//splendorintl.com/cdn/shop/files/gempages_534627086933951483-5bea7db5-d6f0-4422-a4d2-91cbf8f2c54c.svg" alt="Returns icon">
+        <h4>EASY RETURNS</h4>
+        <p>Not satisfied? Our easy returns ensure you’re covered, shop with confidence.</p>
+      </div>
+      <div class="reassurance-box">
+        <img src="//splendorintl.com/cdn/shop/files/gempages_534627086933951483-a14f4d1a-8ac9-47b7-bb03-760b65f35293.svg" alt="Units sold icon">
+        <h4>OVER 50,000+ UNITS SOLD</h4>
+        <p>Join thousands who have chosen Elvynor for flawless, natural coverage.</p>
+      </div>
     </div>
 
-    <!-- Row 1 -->
-    <div class="comparison-cell">
-      <h6 class="comparison-title">Seamless finish</h6>
-      <p class="comparison-sub">Invisible coverage</p>
-    </div>
-    <div class="comparison-cell">
-      <img src="//splendorintl.com/cdn/shop/files/gempages_534627086933951483-35be2a13-a018-44ca-99c4-2225c702a13e.svg" alt="Check" class="comparison-check">
-    </div>
-    <div class="comparison-cell">
-      <img src="//splendorintl.com/cdn/shop/files/gempages_534627086933951483-431703d0-e46f-4b10-83aa-3ba8f5c2de12.svg" alt="Cross" class="comparison-cross">
-    </div>
+    <!-- RIGHT COLUMN - COMPARISON TABLE -->
+    <div class="comparison-col">
+      <div class="comparison-table">
+        <!-- Header Row -->
+        <div class="comparison-cell comparison-header">
+          <img src="https://cdn.shopify.com/s/files/1/0964/4130/3378/files/a6e1083b-fde6-4333-a241-15b664c8c320_removalai_preview.png?v=1747258252" alt="Elvynor" class="comparison-logo">
+        </div>
+        <div class="comparison-cell comparison-header">
+          <img src="//splendorintl.com/cdn/shop/files/gempages_534627086933951483-35be2a13-a018-44ca-99c4-2225c702a13e.svg" class="check-icon" alt="Check">
+        </div>
+        <div class="comparison-cell comparison-header">
+          <h6 style="font-size: 13px; color: #8F7C6D; font-weight: 800; text-transform: uppercase; margin: 0;">Other Brands</h6>
+        </div>
 
-    <!-- Row 2 -->
-    <div class="comparison-cell">
-      <h6 class="comparison-title">Deep Hydration</h6>
-      <p class="comparison-sub">HA+ Technology</p>
-    </div>
-    <div class="comparison-cell">
-      <img src="//splendorintl.com/cdn/shop/files/gempages_534627086933951483-35be2a13-a018-44ca-99c4-2225c702a13e.svg" alt="Check" class="comparison-check">
-    </div>
-    <div class="comparison-cell">
-      <img src="//splendorintl.com/cdn/shop/files/gempages_534627086933951483-431703d0-e46f-4b10-83aa-3ba8f5c2de12.svg" alt="Cross" class="comparison-cross">
-    </div>
+        <!-- Repeatable rows -->
+        {% assign items = "Seamless finish|Invisible coverage,Deep Hydration|HA+ Technology,Ethical Beauty|Ethically sourced,Non-comedogenic|Won’t clog pores,Enduring Wear|Stays flawless all day,Cruelty-Free & Vegan|No animal testing,No Harsh Chemicals|Free from parabens" | split: "," %}
+        {% for item in items %}
+          {% assign parts = item | split: "|" %}
+          <div class="comparison-cell">
+            <h6 class="comparison-title">{{ parts[0] }}</h6>
+            <p class="comparison-sub">{{ parts[1] }}</p>
+          </div>
+          <div class="comparison-cell">
+            <img src="//splendorintl.com/cdn/shop/files/gempages_534627086933951483-35be2a13-a018-44ca-99c4-2225c702a13e.svg" alt="Check" class="check-icon">
+          </div>
+          <div class="comparison-cell">
+            <img src="//splendorintl.com/cdn/shop/files/gempages_534627086933951483-431703d0-e46f-4b10-83aa-3ba8f5c2de12.svg" alt="Cross" class="cross-icon">
+          </div>
+        {% endfor %}
 
-    <!-- Add more rows here -->
+      </div>
+    </div>
   </div>
 </div>
