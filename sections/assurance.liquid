@@ -36,7 +36,7 @@
 .guarantee-text {
   text-align: center;
   flex: 1;
-  padding: 80px 0; /* ajusté pour centrer verticalement */
+  padding: 80px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -87,39 +87,43 @@
     flex-direction: column;
     text-align: center;
     gap: 0;
-    padding: 20px;
+    padding: 0;
   }
 
   .guarantee-image {
     display: block;
     text-align: center;
-    margin: 0 auto 20px;
+    margin: 0 auto;
   }
 
   .guarantee-image img {
     content: url('https://cdn.shopify.com/s/files/1/0964/4130/3378/files/gempages_534627086933951483-1f2932c0-3d4e-435b-8ffd-90a7cdd12713_1024x_1.webp?v=1747526271');
     width: 100%;
-    max-width: 300px;
+    max-width: none;
     height: auto;
   }
 
   .guarantee-text {
     background: white;
-    color: #27201A;
+    color: #A1A09D;
     border-radius: 12px;
     padding: 30px 20px;
-    margin: 0;
+    margin: 0 10px 0;
   }
 
-  .guarantee-text h3,
+  .guarantee-text h3 {
+    color: #8F7C6D;
+  }
+
   .guarantee-text p,
   .guarantee-text p strong {
-    color: #27201A;
+    color: #A1A09D;
   }
 
   .guarantee-text img.icon {
-    margin-bottom: 20px;
     display: block;
+    margin-bottom: 20px;
+    width: 60px;
   }
 }
 {% endstyle %}
