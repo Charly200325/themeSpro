@@ -59,7 +59,7 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
 <section class="reviews-carousel" style="background-color: #FBF1E8; padding: 0; overflow: hidden;">
-  <div class="container" style="padding: 0 0 70px; margin-top: 20;">
+  <div class="container" style="padding: 0 0 70px; margin-top: 20px;">
 
     <!-- Stars above title -->
     <div style="text-align: center; margin: 0;">
@@ -272,4 +272,19 @@
     padding: 12px 12px 4px;
   }
 }
+  .reviews-carousel {
+  position: relative;
+}
+
+.swiper-controls {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 20px;
+  z-index: 2;
+  margin-top: 0; /* annule l'ancien */
+}
+
 </style>
