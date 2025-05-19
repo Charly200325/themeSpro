@@ -58,7 +58,7 @@
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
-<section class="reviews-carousel" style="background-color: #FBF1E8; padding: 0; overflow: hidden;">
+<section class="reviews-carousel" style="background-color: #FBF1E8; padding: 0 0 100px; overflow: hidden;">
   <div class="container" style="padding: 0 0 70px; margin-top: 20px;">
 
     <!-- Stars above title -->
@@ -69,9 +69,6 @@
     <h2 style="text-align: center; font-size: 35px; color: #27201A; margin: 4px 0 32px; letter-spacing: 0.98px;">
       {{ section.settings.title }}
     </h2>
-
-
-
 
     <div class="swiper reviews-swiper-{{ section.id }}">
       <div class="swiper-wrapper">
@@ -134,8 +131,9 @@
       slidesPerView: 1.2,
       spaceBetween: 20,
       navigation: {
-        nextEl: '.swiper-button-next-{{ section.id }}',
-        prevEl: '.swiper-button-prev-{{ section.id }}'
+        // 🔁 Flèches inversées ici
+        nextEl: '.swiper-button-prev-{{ section.id }}',
+        prevEl: '.swiper-button-next-{{ section.id }}'
       },
       breakpoints: {
         768: {
@@ -272,19 +270,4 @@
     padding: 12px 12px 4px;
   }
 }
-  .reviews-carousel {
-  position: relative;
-}
-
-.swiper-controls {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  gap: 20px;
-  z-index: 2;
-  margin-top: 0; /* annule l'ancien */
-}
-
 </style>
