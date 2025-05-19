@@ -119,8 +119,8 @@
   document.addEventListener('DOMContentLoaded', function () {
     new Swiper('.reviews-swiper-{{ section.id }}', {
       loop: true,
-      centeredSlides: false,
-      slidesPerView: 1.3,
+      centeredSlides: true,
+      slidesPerView: 1.2,
       spaceBetween: 20,
       navigation: {
         nextEl: '.swiper-button-next-{{ section.id }}',
@@ -128,10 +128,10 @@
       },
       breakpoints: {
         768: {
-          slidesPerView: 2.5,
+          slidesPerView: 3.5,
         },
-        1024: {
-          slidesPerView: 3,
+        1280: {
+          slidesPerView: 4.5,
         }
       }
     });
@@ -140,7 +140,7 @@
 
 <style>
   .review-card {
-    max-width: 245px;
+    max-width: 240px;
     width: 100%;
     background: white;
     border-radius: 12px;
