@@ -60,6 +60,12 @@
 
 <section class="reviews-carousel" style="background-color: #FBF1E8; padding: 100px 0; overflow: hidden;">
   <div class="container">
+
+    <!-- Stars above title -->
+    <div style="text-align: center; margin-bottom: 10px;">
+      <img src="https://cdn.shopify.com/s/files/1/0964/4130/3378/files/gempages_534627086933951483-ea424bf2-b1fd-4103-bffe-8dc79661842b.webp?v=1747647989" alt="Stars" style="width: 100px; height: auto;">
+    </div>
+
     <h2 style="text-align: center; font-size: 35px; color: #27201A; margin-bottom: 40px; letter-spacing: 0.98px;">
       {{ section.settings.title }}
     </h2>
@@ -103,6 +109,7 @@
       </div>
     </div>
 
+    <!-- Navigation Arrows Below Carousel -->
     <div class="swiper-controls">
       <button class="swiper-button-prev swiper-button-prev-{{ section.id }}" aria-label="Previous">
         <svg width="16" height="16" fill="#7d6d5e" viewBox="0 0 24 24"><path d="M15.41 7.41 14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg>
@@ -111,6 +118,7 @@
         <svg width="16" height="16" fill="#7d6d5e" viewBox="0 0 24 24"><path d="M8.59 16.59 10 18l6-6-6-6-1.41 1.41L13.17 12z"/></svg>
       </button>
     </div>
+
   </div>
 </section>
 
@@ -202,7 +210,6 @@
   align-items: center;
   gap: 12px;
   border-radius: 0 0 12px 12px;
-  /* margin-top: auto; */ /* supprimé pour remonter le bloc beige */
 }
 
 .shade-box span {
@@ -262,5 +269,4 @@
     padding: 12px 12px 4px;
   }
 }
-
 </style>
