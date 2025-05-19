@@ -659,6 +659,49 @@
       "settings": {
         "title": "The Reviews Speak For Themselves"
       }
+    },
+    "faq_FjmgKx": {
+      "type": "FAQ",
+      "blocks": {
+        "faq_item_PQRAAV": {
+          "type": "faq_item",
+          "settings": {
+            "question": "What skin types is this product suitable for?",
+            "answer": "The Beauty Balm is designed for all skin types, including sensitive, dry, oily, and combination skin. Its lightweight, non-comedogenic formula works to hydrate and balance your skin without clogging pores."
+          }
+        },
+        "faq_item_nGNRQ7": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Does this product provide enough coverage for blemishes or redness?",
+            "answer": "This product offers sheer-to-light coverage, perfect for evening out skin tone and providing a natural finish. For heavier coverage, you can layer it."
+          }
+        },
+        "faq_item_xtCiie": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Is this product cruelty-free and vegan?",
+            "answer": "Yes! The Beauty Balm is 100% cruelty-free and vegan, making it a great choice for ethically conscious beauty lovers."
+          }
+        },
+        "faq_item_aRi8kQ": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Does this product contain fragrance or harsh chemicals?",
+            "answer": "No, the Beauty Balm is fragrance-free and free of harsh chemicals like parabens, sulfates, phthalates, mineral oil, and talc."
+          }
+        }
+      },
+      "block_order": [
+        "faq_item_PQRAAV",
+        "faq_item_nGNRQ7",
+        "faq_item_xtCiie",
+        "faq_item_aRi8kQ"
+      ],
+      "name": "FAQ Accordion",
+      "settings": {
+        "heading": "FAQ"
+      }
     }
   },
   "order": [
@@ -674,6 +717,7 @@
     "videox_iCnPfa",
     "custom_liquid_LBHjjM",
     "tableaucom_84Gf4q",
-    "avissss_VzCUpR"
+    "avissss_VzCUpR",
+    "faq_FjmgKx"
   ]
 }
