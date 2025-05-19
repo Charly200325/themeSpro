@@ -43,6 +43,7 @@
         "heading_Dpah43",
         "buttons_yDinbr"
       ],
+      "disabled": true,
       "name": "t:sections.image-banner.presets.name",
       "settings": {
         "display_id": false,
