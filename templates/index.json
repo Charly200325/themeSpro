@@ -216,6 +216,67 @@
         "padding_bottom": 36
       }
     },
+    "sectioncarrousselteinte_mAF7R6": {
+      "type": "sectioncarrousselteinte",
+      "blocks": {
+        "shade_AHGFd4": {
+          "type": "shade",
+          "settings": {
+            "shade_name": "",
+            "shade_description": "",
+            "shade_number": "",
+            "shade_background": "#60362C"
+          }
+        },
+        "shade_xmMdB4": {
+          "type": "shade",
+          "settings": {
+            "shade_name": "",
+            "shade_description": "",
+            "shade_number": "",
+            "shade_background": "#60362C"
+          }
+        },
+        "shade_9JVkfD": {
+          "type": "shade",
+          "settings": {
+            "shade_name": "",
+            "shade_description": "",
+            "shade_number": "",
+            "shade_background": "#60362C"
+          }
+        },
+        "shade_YfpfaN": {
+          "type": "shade",
+          "settings": {
+            "shade_name": "",
+            "shade_description": "",
+            "shade_number": "",
+            "shade_background": "#60362C"
+          }
+        },
+        "shade_yENNWf": {
+          "type": "shade",
+          "settings": {
+            "shade_name": "",
+            "shade_description": "",
+            "shade_number": "",
+            "shade_background": "#60362C"
+          }
+        }
+      },
+      "block_order": [
+        "shade_AHGFd4",
+        "shade_xmMdB4",
+        "shade_9JVkfD",
+        "shade_YfpfaN",
+        "shade_yENNWf"
+      ],
+      "name": "Full Shade Carousel",
+      "settings": {
+        "title": "Discover Your Best Match"
+      }
+    },
     "sectionfinale_7NAU7K": {
       "type": "sectionfinale",
       "blocks": {
@@ -715,6 +776,7 @@
   "order": [
     "image_banner_6gMCeT",
     "featured_product_RP9LeE",
+    "sectioncarrousselteinte_mAF7R6",
     "sectionfinale_7NAU7K",
     "seeit_EXkgUg",
     "image_slider_fE4pKb",
