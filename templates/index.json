@@ -244,27 +244,43 @@
         "shade_9JVkfD": {
           "type": "shade",
           "settings": {
-            "shade_name": "",
-            "shade_description": "",
-            "shade_number": "",
-            "shade_background": "#60362c"
+            "image": "shopify://shop_images/gempages_534627086933951483-d831cb1b-4e76-40b9-baf1-02b3a6be700f.webp",
+            "shade_name": "MEDIUM",
+            "shade_description": "For medium skin tones with neutral undertones.",
+            "shade_badge": "shopify://shop_images/gempages_534627086933951483-438c482a-ab4f-4edd-b5d8-5e45f07accf3_1.webp",
+            "shade_number": "3",
+            "shade_background": "#965a3b"
           }
         },
         "shade_YfpfaN": {
           "type": "shade",
           "settings": {
-            "shade_name": "",
-            "shade_description": "",
-            "shade_number": "",
-            "shade_background": "#60362c"
+            "image": "shopify://shop_images/gempages_534627086933951483-0eff0a11-b29b-46f0-af7c-f2427621df7c.webp",
+            "shade_name": "LIGHT",
+            "shade_description": "For light skin tones with peachy or neutral undertones.",
+            "shade_badge": "shopify://shop_images/gempages_534627086933951483-a6f15167-c587-44e7-9324-a072c31d4a95_2.webp",
+            "shade_number": "4",
+            "shade_background": "#e8bc9c"
           }
         },
         "shade_yENNWf": {
           "type": "shade",
           "settings": {
-            "shade_name": "",
-            "shade_description": "",
-            "shade_number": "",
+            "image": "shopify://shop_images/gempages_534627086933951483-cecbbe6a-2a34-4f56-b075-88b6c4ebfc7f.webp",
+            "shade_name": "FAIR",
+            "shade_description": "For fair skin tones with cool or pink undertones.",
+            "shade_badge": "shopify://shop_images/gempages_534627086933951483-da618916-88f7-4b4c-a2e4-ed4c21e7f279_2.webp",
+            "shade_number": "5",
+            "shade_background": "#e2b59e"
+          }
+        },
+        "shade_rCf99j": {
+          "type": "shade",
+          "settings": {
+            "image": "shopify://shop_images/gempages_534627086933951483-f9f7af4d-7498-485e-9d10-aeb9b92eed1e.webp",
+            "shade_name": "LIGHT MEDIUM",
+            "shade_description": "For deep skin tones with warm or neutral undertones.",
+            "shade_number": "6",
             "shade_background": "#60362c"
           }
         }
@@ -274,7 +290,8 @@
         "shade_xmMdB4",
         "shade_9JVkfD",
         "shade_YfpfaN",
-        "shade_yENNWf"
+        "shade_yENNWf",
+        "shade_rCf99j"
       ],
       "name": "Full Shade Carousel",
       "settings": {
