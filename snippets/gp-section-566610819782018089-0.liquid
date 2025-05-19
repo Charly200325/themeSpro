@@ -345,8 +345,9 @@
   <div style="position: relative; background: white; padding: 20px; border-radius: 8px; max-width: 90%; max-height: 90%;">
     <button onclick="closeShadeFinderPopup()" style="position: absolute; top: 10px; right: 10px; background: transparent; border: none; font-size: 24px; cursor: pointer;">&times;</button>
     <img src="https://cdn.shopify.com/s/files/1/0964/4130/3378/files/gempages_534627086933951483-27ffa9f3-1caa-4751-a746-061dab90b8b1.webp?v=1747679957"
-         alt="Shade Finder"
-         style="max-width: 100%; height: auto;">
+     alt="Shade Finder"
+     style="max-width: 500px; width: 100%; height: auto;">
+
   </div>
 </div>
 
@@ -627,7 +628,28 @@
       
       
 
-     
+     <script>
+  const shadeImageMap = {
+    "Shade 1 - Deep": "https://t50y81-0v.myshopify.com/cdn/shop/files/6_ecb7b3c2-8746-4685-88ad-163bb54c0ed4_1440x1440_1_768x768.webp?v=1747255128",
+    "Shade 2 - Medium Deep": "https://t50y81-0v.myshopify.com/cdn/shop/files/7_e6584976-1d3e-4e6d-b9fb-e2bbee6aeeac_1440x1440_1_768x768.webp?v=1747255128",
+    "Shade 3 - Medium": "https://t50y81-0v.myshopify.com/cdn/shop/files/8_1440x1440_1.webp?v=1747255128",
+    "Shade 4 - Light": "https://t50y81-0v.myshopify.com/cdn/shop/files/9_1440x1440_1.webp?v=1747255128",
+    "Shade 5 - Fair": "https://t50y81-0v.myshopify.com/cdn/shop/files/10_1440x1440_1_768x768.webp?v=1747255128",
+    "Shade 6 - Light Medium": "https://t50y81-0v.myshopify.com/cdn/shop/files/11_1440x1440_1.webp?v=1747255128"
+  };
+
+  document.querySelectorAll("input[name='9106226118873-options-Color']").forEach(radio => {
+    radio.addEventListener("change", function () {
+      const selectedShade = this.value;
+      const newUrl = shadeImageMap[selectedShade];
+      const img = document.querySelector(".gSQLr00qke");
+      if (img && newUrl) {
+        img.src = newUrl;
+      }
+    });
+  });
+</script>
+
     
     
   </div>
