@@ -58,8 +58,8 @@
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
-<section class="reviews-carousel" style="background-color: #FBF1E8; padding: 0; overflow: hidden;">
-  <div class="container" style="padding: 0 0 70px; margin-top: 0;">
+<section class="reviews-carousel" style="background-color: #FBF1E8; padding: 0 0 100px; overflow: hidden;">
+  <div class="container" style="padding: 0; margin-top: 0;">
 
     <!-- Stars above title -->
     <div style="text-align: center; margin: 0;">
@@ -69,9 +69,6 @@
     <h2 style="text-align: center; font-size: 35px; color: #27201A; margin: 4px 0 32px; letter-spacing: 0.98px;">
       {{ section.settings.title }}
     </h2>
-
-
-
 
     <div class="swiper reviews-swiper-{{ section.id }}">
       <div class="swiper-wrapper">
@@ -111,17 +108,16 @@
         {% endfor %}
       </div>
     </div>
+  </div>
 
-    <!-- Navigation Arrows Below Carousel -->
-    <div class="swiper-controls">
-      <button class="swiper-button-prev swiper-button-prev-{{ section.id }}" aria-label="Previous">
-        <svg width="16" height="16" fill="#7d6d5e" viewBox="0 0 24 24"><path d="M15.41 7.41 14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg>
-      </button>
-      <button class="swiper-button-next swiper-button-next-{{ section.id }}" aria-label="Next">
-        <svg width="16" height="16" fill="#7d6d5e" viewBox="0 0 24 24"><path d="M8.59 16.59 10 18l6-6-6-6-1.41 1.41L13.17 12z"/></svg>
-      </button>
-    </div>
-
+  <!-- Navigation Arrows Below Carousel, centered -->
+  <div class="swiper-controls">
+    <button class="swiper-button-prev swiper-button-prev-{{ section.id }}" aria-label="Previous">
+      <svg width="16" height="16" fill="#7d6d5e" viewBox="0 0 24 24"><path d="M15.41 7.41 14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg>
+    </button>
+    <button class="swiper-button-next swiper-button-next-{{ section.id }}" aria-label="Next">
+      <svg width="16" height="16" fill="#7d6d5e" viewBox="0 0 24 24"><path d="M8.59 16.59 10 18l6-6-6-6-1.41 1.41L13.17 12z"/></svg>
+    </button>
   </div>
 </section>
 
@@ -182,9 +178,9 @@
 }
 
 .stars img {
-  width: 96px;
+  width: 108px;
   height: auto;
-  margin-bottom: 10px;
+  margin-bottom: 6px;
 }
 
 .review-name {
@@ -237,7 +233,7 @@
 }
 
 .swiper-controls {
-  margin-top: 30px;
+  margin-top: -20px;
   display: flex;
   justify-content: center;
   gap: 20px;
@@ -271,5 +267,10 @@
   .review-content {
     padding: 12px 12px 4px;
   }
+
+  .swiper-controls {
+    margin-top: 10px;
+  }
 }
 </style>
+
