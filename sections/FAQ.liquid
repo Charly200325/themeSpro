@@ -132,17 +132,21 @@
 
 <script>
   document.addEventListener('DOMContentLoaded', function () {
+    const plusIcon = `{% raw %}{{ plus_icon }}{% endraw %}`;
+    const minusIcon = `{% raw %}{{ minus_icon }}{% endraw %}`;
+
     document.querySelectorAll('.faq-item').forEach(item => {
       const iconSpan = item.querySelector('.faq-icon');
-      iconSpan.innerHTML = `{{ plus_icon | escape }}`;
+      iconSpan.innerHTML = plusIcon;
 
       item.querySelector('.faq-question').addEventListener('click', () => {
         const isOpen = item.classList.toggle('open');
-        iconSpan.innerHTML = isOpen ? `{{ minus_icon | escape }}` : `{{ plus_icon | escape }}`;
+        iconSpan.innerHTML = isOpen ? minusIcon : plusIcon;
       });
     });
   });
 </script>
+
 
 <div class="faq-accordion-section">
   <h2>{{ section.settings.heading }}</h2>
