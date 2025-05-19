@@ -59,7 +59,7 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
 <section class="reviews-carousel" style="background-color: #FBF1E8; padding: 0 0 40px; overflow: hidden;">
-  <div class="container" style="padding: 0 0 30px; margin-top: 30px;">
+  <div class="container" style="padding: 0 16px 30px; margin-top: 30px;">
 
     <!-- Stars above title -->
     <div style="text-align: center; margin: 0;">
@@ -122,10 +122,10 @@
       spaceBetween: 20,
       breakpoints: {
         768: {
-          slidesPerView: 3.5,
+          slidesPerView: 2.5,
         },
         1280: {
-          slidesPerView: 4.5,
+          slidesPerView: 2.7,
         }
       }
     });
@@ -229,5 +229,31 @@
   .review-content {
     padding: 12px 12px 4px;
   }
+}
+
+/* Dégradé gauche/droite pour effet visuel swipe */
+.reviews-carousel::before,
+.reviews-carousel::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 60px;
+  z-index: 10;
+  pointer-events: none;
+}
+
+.reviews-carousel::before {
+  left: 0;
+  background: linear-gradient(to right, #FBF1E8, rgba(251, 241, 232, 0));
+}
+
+.reviews-carousel::after {
+  right: 0;
+  background: linear-gradient(to left, #FBF1E8, rgba(251, 241, 232, 0));
+}
+
+.reviews-carousel {
+  position: relative;
 }
 </style>
