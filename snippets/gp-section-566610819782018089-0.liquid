@@ -624,7 +624,6 @@
     
     <div class="gp-relative gp-flex gp-cursor-pointer gp-items-center gp-justify-center gp-text-center option-value-wrapper gp-overflow-hidden gp-w-full gp-h-full data-[disabled='disabled']:gp-pointer-events-none data-[disabled='disabled']:!gp-cursor-not-allowed data-[hidden='false']:gp-flex active:gp-bg-g-bg-3 hover:gp-bg-g-bg-3 active:gp-text-g-text-2 hover:gp-text-g-text-2 gp-bg-g-bg-3 gp-text-g-text-2" style="--hvr-bg: var(--g-c-bg-3, bg-3); --bg: var(--g-c-bg-3, bg-3); --ff: var(--g-font-Hanken-Grotesk, 'Hanken Grotesk'), var(--g-font-body); --weight: 800; --size: 18px; --size-tablet: 14px; --size-mobile: 12px; --lh: 130%; --lh-tablet: 180%; --lh-mobile: 180%; --bblr: 999999px; --bbrr: 999999px; --btlr: 999999px; --btrr: 999999px; --hvr-bblr: 999999px; --hvr-bbrr: 999999px; --hvr-btlr: 999999px; --hvr-btrr: 999999px; --hvr-shadow: none; --shadow: none; --bs: solid; --hvr-bs: solid; --bw: 1.4px 1.4px 1.4px 1.4px; --hvr-bw: 1.4px 1.4px 1.4px 1.4px; --bc: #F3ECE6; --hvr-bc: #F3ECE6; --w: 100%; --h: Auto;" id="value-wrapper-Color-Shade 6 - Light Medium" option-data="Color" option-value="Shade 6 - Light Medium" option-position="1" data-gp-option-available="true" option-type="image" data-hidden="false"><img style="width: 100%; height: 100%; pointer-events: all !important;" class="gp-object-cover gp-rounded-none" src="https://cdn.shopify.com/s/files/1/0715/5151/6889/files/gempages_534627086933951483-4660150d-e3eb-49fa-8975-6aac3cd3afca.webp" alt="">
      </div>
-  
       
       
 
@@ -639,16 +638,16 @@
   };
 
   document.querySelectorAll("input[name='9106226118873-options-Color']").forEach(input => {
-    input.addEventListener("change", () => {
-      const selectedShade = input.value;
-      const newUrl = shadeImageMap[selectedShade];
-      const mainImg = document.querySelector(".gp-image-wrapper img");
-      if (mainImg && newUrl) {
-        mainImg.src = newUrl;
+    input.addEventListener("change", function () {
+      const newUrl = shadeImageMap[this.value];
+      const image = document.getElementById("shadeImageDynamic");
+      if (image && newUrl) {
+        image.src = newUrl;
       }
     });
   });
 </script>
+
 
 
     
