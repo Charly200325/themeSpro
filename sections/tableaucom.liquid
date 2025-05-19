@@ -45,107 +45,168 @@
         </div>
       </div>
 
-      <!-- RIGHT TABLE REPLACEMENT -->
-      <div class="comparison-gempages">
-        <div class="gempages-table">
-          <div class="gempages-table-header">
-            <div></div>
-            <div class="logo-splendor">
-              <img src="https://cdn.shopify.com/s/files/1/0964/4130/3378/files/a6e1083b-fde6-4333-a241-15b664c8c320_removalai_preview.png?v=1747258252" alt="Splendor logo">
-            </div>
-            <div class="other-brands-title">
-              <div>Other<br>Brands</div>
-            </div>
-          </div>
-
-          <div class="gempages-table-row">
-            <div class="feature-title">
-              <strong>Seamless finish</strong>
-              <p>Invisible coverage</p>
-            </div>
-            <div class="icon-check">
-              <img src="//splendorintl.com/cdn/shop/files/gempages_534627086933951483-35be2a13-a018-44ca-99c4-2225c702a13e.svg?v=16953864016253292162" alt="check icon">
-            </div>
-            <div class="icon-cross">
-              <img src="//splendorintl.com/cdn/shop/files/gempages_534627086933951483-431703d0-e46f-4b10-83aa-3ba8f5c2de12.svg?v=6959227727079031771" alt="cross icon">
-            </div>
-          </div>
-
-          <div class="gempages-table-row">
-            <div class="feature-title">
-              <strong>Deep hydration</strong>
-              <p>HA+ Technology</p>
-            </div>
-            <div class="icon-check">
-              <img src="//splendorintl.com/cdn/shop/files/gempages_534627086933951483-35be2a13-a018-44ca-99c4-2225c702a13e.svg?v=16953864016253292162" alt="check icon">
-            </div>
-            <div class="icon-cross">
-              <img src="//splendorintl.com/cdn/shop/files/gempages_534627086933951483-431703d0-e46f-4b10-83aa-3ba8f5c2de12.svg?v=6959227727079031771" alt="cross icon">
-            </div>
-          </div>
-
-          <!-- Ajoute ici d'autres lignes identiques selon les données GemPages -->
+      <!-- RIGHT TABLE -->
+      <div class="comparison-table">
+        <div class="table-header">
+          <span></span>
+          <span class="brand splendor">Splendor</span>
+          <span class="brand other">Other Brands</span>
         </div>
+
+        {% assign features = 
+          "SEAMLESS FINISH|Invisible coverage,
+          DEEP HYDRATION|HA+ Technology,
+          ETHICAL BEAUTY|Ethically sourced,
+          NON-COMEDOGENIC|Won’t clog pores,
+          ENDURING WEAR|Stays flawless all day,
+          CRUELTY-FREE & VEGAN|No animal testing,
+          NO HARSH CHEMICALS|Free from parabens" | split: "," %}
+
+        {% for feature in features %}
+          {% assign parts = feature | strip | split: "|" %}
+          <div class="table-row">
+            <div class="feature-info">
+              <strong>{{ parts[0] }}</strong>
+              <p>{{ parts[1] }}</p>
+            </div>
+            <div class="icon check"></div>
+            <div class="icon cross"></div>
+          </div>
+        {% endfor %}
       </div>
     </div>
   </div>
 </section>
 
 <style>
-.comparison-gempages {
-  background: white;
-  border-radius: 16px;
-  padding: 20px;
-  flex: 1 1 480px;
-  color: #544843;
+.different-section {
+  background: #805F4C;
+  color: white;
+  padding: 80px 20px;
   font-family: 'Hanken Grotesk', sans-serif;
 }
-.gempages-table-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 20px;
+.container-different {
+  max-width: 1200px;
+  margin: 0 auto;
 }
-.gempages-table-header .logo-splendor img {
-  max-width: 100px;
-}
-.gempages-table-header .other-brands-title {
-  font-weight: bold;
+.different-title {
   text-align: center;
+  font-size: 32px;
+  margin-bottom: 40px;
+  color: #FFF6EF;
 }
-.gempages-table-row {
+.different-grid {
   display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
   justify-content: space-between;
-  align-items: center;
-  padding: 18px 0;
-  border-top: 1px solid #ddd;
 }
-.gempages-table-row .feature-title {
-  width: 33%;
+.left-features {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  flex: 1 1 320px;
 }
-.gempages-table-row .feature-title strong {
+.feature-card {
+  background: #B78E76;
+  border-radius: 12px;
+  padding: 24px;
+  color: white;
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+.feature-card img {
+  width: 48px;
+  flex-shrink: 0;
+}
+.feature-card strong {
+  display: block;
   font-size: 14px;
-  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 4px;
 }
-.gempages-table-row .feature-title p {
-  font-size: 13px;
-  font-style: italic;
-  margin: 4px 0 0;
+.feature-card p {
+  font-size: 14px;
+  margin: 0;
 }
-.gempages-table-row .icon-check,
-.gempages-table-row .icon-cross {
+
+.comparison-table {
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  flex: 1 1 480px;
+}
+.table-header {
+  display: flex;
+  background: white;
+  padding: 20px;
+  font-weight: bold;
+  justify-content: space-between;
+  text-align: center;
+  color: #544843;
+}
+.table-header .brand.splendor {
+  background: #E9D6C8;
+  border-radius: 12px 12px 0 0;
+  padding: 8px 0;
   width: 33%;
+  font-family: 'Hanken Grotesk', sans-serif;
+}
+.table-header .brand.other {
+  width: 33%;
+  padding-top: 8px;
+}
+.table-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  border-top: 1px solid #eee;
   text-align: center;
 }
-.gempages-table-row img {
+.table-row .feature-info {
+  width: 33%;
+  text-align: left;
+  color: #544843;
+}
+.table-row .feature-info strong {
+  font-size: 14px;
+}
+.table-row .feature-info p {
+  font-size: 13px;
+  margin: 4px 0 0;
+  font-style: italic;
+  color: #544843;
+}
+.table-row .icon {
+  width: 33%;
+}
+.table-row .check::before,
+.table-row .cross::before {
+  content: '';
+  display: inline-block;
   width: 20px;
   height: 20px;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
+.table-row .check::before {
+  background-image: url('https://cdn.shopify.com/s/files/1/0964/4130/3378/files/check-circle-splendor.webp');
+}
+.table-row .cross::before {
+  background-image: url('https://cdn.shopify.com/s/files/1/0964/4130/3378/files/x-circle-splendor.webp');
+}
+
 @media (max-width: 768px) {
   .different-grid {
     flex-direction: column;
   }
-  .comparison-gempages {
+  .feature-card {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  .comparison-table {
     margin-top: 40px;
   }
 }
