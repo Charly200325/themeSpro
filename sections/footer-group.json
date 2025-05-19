@@ -114,7 +114,7 @@
             "subtext": "<p>Get exclusive access to our new collections, special discounts and more.</p>",
             "button_type": "solid",
             "button_label": "Sign up",
-            "button_style_secondary": false,
+            "button_style_secondary": true,
             "width_desktop": 4,
             "width_mobile": "2"
           }
