@@ -102,7 +102,7 @@
           "type": "link_list",
           "settings": {
             "heading": "Quick links",
-            "menu": "footer",
+            "menu": "menu-pied-de-page",
             "width_desktop": 4,
             "width_mobile": "1"
           }
@@ -110,8 +110,8 @@
         "24f208fd-0898-43eb-af23-d74f8420ab37": {
           "type": "email_signup",
           "settings": {
-            "heading": "Subscribe to our emails",
-            "subtext": "<p>Stay up to date on all new releases!</p>",
+            "heading": "Join the Elvynor Community",
+            "subtext": "<p>Get exclusive access to our new collections, special discounts and more.</p>",
             "button_type": "solid",
             "button_label": "Sign up",
             "button_style_secondary": false,
