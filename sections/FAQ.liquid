@@ -33,7 +33,15 @@
     {
       "name": "FAQ Accordion",
       "category": "Custom",
-      "blocks": []
+      "blocks": [
+        {
+          "type": "faq_item",
+          "settings": {
+            "question": "Can I use this product as a base under other makeup?",
+            "answer": "Absolutely! The Beauty Balm works beautifully as a lightweight base under other makeup products. Its hydrating formula helps create a smooth canvas for foundation, concealer, or powder, while still allowing your skin to breathe."
+          }
+        }
+      ]
     }
   ]
 }
@@ -57,13 +65,13 @@
   margin: 0 auto;
 }
 .faq-item {
-  background-color: #FBF1E8;
   margin-bottom: 16px;
   border-radius: 12px;
   overflow: hidden;
   transition: all 0.3s ease;
 }
 .faq-question {
+  background-color: #FBF1E8;
   display: flex;
   align-items: center;
   gap: 16px;
@@ -74,20 +82,23 @@
   text-transform: uppercase;
   cursor: pointer;
   color: #273534;
+  border-radius: 12px 12px 0 0;
+}
+.faq-answer {
+  display: none;
+  background-color: #ffffff;
+  padding: 25px 32px 32px;
+  font-size: 16px;
+  color: #695A5A;
+  border-radius: 0 0 12px 12px;
+}
+.faq-item.open .faq-answer {
+  display: block;
 }
 .faq-icon {
   width: 27px;
   height: 28px;
   flex-shrink: 0;
-}
-.faq-answer {
-  display: none;
-  padding: 25px 32px 32px;
-  font-size: 16px;
-  color: #695A5A;
-}
-.faq-item.open .faq-answer {
-  display: block;
 }
 {% endstyle %}
 
@@ -98,12 +109,12 @@
       <div class="faq-item">
         <div class="faq-question" onclick="this.parentElement.classList.toggle('open'); toggleIcon(this)">
           <div class="faq-icon">
-            <!-- Plus icon by default -->
+            <!-- Plus icon (default) -->
             <svg class="icon-plus" xmlns="http://www.w3.org/2000/svg" width="27" height="28" viewBox="0 0 27 28" fill="none">
               <circle cx="13.624" cy="13.8516" r="12.9466" fill="white" stroke="#2D2E31" stroke-width="0.438867"/>
               <path d="M19.2018 14.2903H14.9739V18.556H13.7416V14.2903H9.53268V13.1527H13.7416V8.88692H14.9739V13.1527H19.2018V14.2903Z" fill="#5A5151"/>
             </svg>
-            <!-- Minus icon, hidden by default -->
+            <!-- Minus icon (hidden initially) -->
             <svg class="icon-minus" style="display: none;" xmlns="http://www.w3.org/2000/svg" width="27" height="28" viewBox="0 0 27 28" fill="none">
               <circle cx="13.624" cy="13.8516" r="12.9466" fill="white" stroke="#2D2E31" stroke-width="0.438867"/>
               <path d="M16.8885 13.1527V14.2713H9.51347V13.1527H16.8885Z" fill="#5A5151"/>
