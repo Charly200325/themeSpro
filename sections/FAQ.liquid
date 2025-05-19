@@ -29,6 +29,7 @@
       ]
     }
   ],
+  "max_blocks": 10,
   "presets": [
     {
       "name": "FAQ Accordion",
@@ -61,13 +62,6 @@
             "question": "Does this product contain fragrance or harsh chemicals?",
             "answer": "No, the Beauty Balm is fragrance-free and free of harsh chemicals like parabens, sulfates, phthalates, mineral oil, and talc."
           }
-        },
-        {
-          "type": "faq_item",
-          "settings": {
-            "question": "Can I use this product as a base under other makeup?",
-            "answer": "Absolutely! The Beauty Balm works beautifully as a lightweight base under other makeup products. Its hydrating formula helps create a smooth canvas for foundation, concealer, or powder, while still allowing your skin to breathe."
-          }
         }
       ]
     }
@@ -88,17 +82,15 @@
   text-transform: uppercase;
 }
 .faq-item {
-  background-color: #896E5C;
+  background-color: #FBF1E8;
   margin-bottom: 16px;
   border-radius: 12px;
   overflow: hidden;
-  transition: all 0.3s ease;
 }
 .faq-question {
   display: flex;
   align-items: center;
-  gap: 16px;
-  justify-content: flex-start;
+  justify-content: space-between;
   padding: 20px 14px;
   font-size: 14px;
   font-weight: 500;
@@ -110,54 +102,25 @@
   display: none;
   padding: 25px 32px 32px;
   font-size: 16px;
-  color: #fff;
+  color: #695A5A;
 }
 .faq-item.open .faq-answer {
   display: block;
 }
-.faq-icon svg {
+.faq-icon {
   width: 27px;
-  height: 28px;
-  flex-shrink: 0;
+  height: 27px;
 }
 {% endstyle %}
-
-<script>
-  document.addEventListener('DOMContentLoaded', function () {
-    document.querySelectorAll('.faq-item').forEach(item => {
-      item.addEventListener('click', () => {
-        item.classList.toggle('open');
-        const iconSpan = item.querySelector('.faq-icon');
-        iconSpan.innerHTML = item.classList.contains('open') ? `{{ 'minus-icon' | raw }}` : `{{ 'plus-icon' | raw }}`;
-      });
-    });
-  });
-</script>
-
-{% assign plus_icon = '
-<svg xmlns="http://www.w3.org/2000/svg" width="27" height="28" viewBox="0 0 27 28" fill="none">
-<circle cx="13.624" cy="13.8516" r="12.9466" fill="white" stroke="#2D2E31" stroke-width="0.438867"/>
-<path d="M19.2018 14.2903H14.9739V18.556H13.7416V14.2903H9.53268V13.1527H13.7416V8.88692H14.9739V13.1527H19.2018V14.2903Z" fill="#5A5151"/>
-</svg>
-' %}
-
-{% assign minus_icon = '
-<svg xmlns="http://www.w3.org/2000/svg" width="27" height="28" viewBox="0 0 27 28" fill="none">
-<circle cx="13.624" cy="13.8516" r="12.9466" fill="white" stroke="#2D2E31" stroke-width="0.438867"/>
-<path d="M16.8885 13.1527V14.2713H9.51347V13.1527H16.8885Z" fill="#5A5151"/>
-</svg>
-' %}
 
 <div class="faq-accordion-section">
   <h2>{{ section.settings.heading }}</h2>
   <div class="faq-list">
     {% for block in section.blocks %}
-      <div class="faq-item">
+      <div class="faq-item" onclick="this.classList.toggle('open')">
         <div class="faq-question">
-          <span class="faq-icon">
-            {{ plus_icon }}
-          </span>
           <span>{{ block.settings.question }}</span>
+          <span class="faq-icon">+</span>
         </div>
         <div class="faq-answer">
           {{ block.settings.answer }}
