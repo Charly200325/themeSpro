@@ -690,13 +690,21 @@
             "question": "Does this product contain fragrance or harsh chemicals?",
             "answer": "No, the Beauty Balm is fragrance-free and free of harsh chemicals like parabens, sulfates, phthalates, mineral oil, and talc."
           }
+        },
+        "faq_item_QRLq6N": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Can I use this product as a base under other makeup?",
+            "answer": "Absolutely! The Beauty Balm works beautifully as a lightweight base under other makeup products. Its hydrating formula helps create a smooth canvas for foundation, concealer, or powder, while still allowing your skin to breathe."
+          }
         }
       },
       "block_order": [
         "faq_item_PQRAAV",
         "faq_item_nGNRQ7",
         "faq_item_xtCiie",
-        "faq_item_aRi8kQ"
+        "faq_item_aRi8kQ",
+        "faq_item_QRLq6N"
       ],
       "name": "FAQ Accordion",
       "settings": {
