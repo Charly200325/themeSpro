@@ -46,7 +46,7 @@
 .ingredients-section {
   font-family: 'Hanken Grotesk', sans-serif;
   background-color: #fff;
-  padding: 10px 20px 20px; /* Réduit ici */
+  padding: 10px 20px 20px;
   text-align: center;
   position: relative;
 }
@@ -60,7 +60,7 @@
 
 .ingredients-section h3 {
   font-size: 36px;
-  color: #27201A; /* changé de #C7A68C à noir */
+  color: #27201A;
   font-weight: 600;
   margin-bottom: 30px;
   margin-top: 0;
@@ -71,7 +71,7 @@
   position: relative;
 }
 
-.swiper-container-ingredients {
+.ingredient-carousel {
   display: flex;
   gap: 24px;
   overflow-x: auto;
@@ -82,11 +82,11 @@
   scrollbar-width: none;
 }
 
-.swiper-container-ingredients::-webkit-scrollbar {
+.ingredient-carousel::-webkit-scrollbar {
   display: none;
 }
 
-.swiper-slide {
+.ingredient-slide {
   background: white;
   border-radius: 20px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
@@ -120,7 +120,6 @@
   box-shadow: 0 1px 4px rgba(0,0,0,0.1);
   white-space: nowrap;
 }
-
 
 .ingredient-content {
   padding: 20px;
@@ -161,20 +160,21 @@
 }
 
 @media (max-width: 768px) {
-  .swiper-slide {
+  .ingredient-slide {
     width: 85%;
   }
 }
 {% endstyle %}
+
 
 <div class="ingredients-section">
   <h2>8</h2>
   <h3>Skin-Boosting Ingredients</h3>
 
   <div class="ingredient-scroll-wrapper">
-    <div class="swiper-container-ingredients" id="ingredient-scroll">
+    <div class="ingredient-carousel" id="ingredient-carousel">
       {% for block in section.blocks %}
-        <div class="swiper-slide">
+        <div class="ingredient-slide">
           <div class="ingredient-image">
             {% if block.settings.image %}
               <img src="{{ block.settings.image | image_url: width: 500 }}" alt="{{ block.settings.title }}">
@@ -190,7 +190,7 @@
         </div>
       {% endfor %}
       {% for block in section.blocks %}
-        <div class="swiper-slide">
+        <div class="ingredient-slide">
           <div class="ingredient-image">
             {% if block.settings.image %}
               <img src="{{ block.settings.image | image_url: width: 500 }}" alt="{{ block.settings.title }}">
@@ -209,15 +209,16 @@
   </div>
 
   <div class="arrow-buttons">
-    <button onclick="scrollIngredients(-1)" aria-label="Scroll left">&larr;</button>
-    <button onclick="scrollIngredients(1)" aria-label="Scroll right">&rarr;</button>
+    <button onclick="scrollIngredientCarousel(-1)" aria-label="Scroll left">&larr;</button>
+    <button onclick="scrollIngredientCarousel(1)" aria-label="Scroll right">&rarr;</button>
   </div>
 </div>
 
+
 <script>
-  function scrollIngredients(direction) {
-    const container = document.getElementById('ingredient-scroll');
-    const slide = container.querySelector('.swiper-slide');
+  function scrollIngredientCarousel(direction) {
+    const container = document.getElementById('ingredient-carousel');
+    const slide = container.querySelector('.ingredient-slide');
     if (slide) {
       const slideWidth = slide.offsetWidth + 24;
       container.scrollBy({ left: direction * slideWidth, behavior: 'smooth' });
