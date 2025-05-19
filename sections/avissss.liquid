@@ -58,17 +58,18 @@
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
-<section class="reviews-carousel" style="background-color: #FBF1E8; padding: 60px 0 70px; overflow: hidden;">
-  <div class="container">
+<section class="reviews-carousel" style="background-color: #FBF1E8; padding: 0; overflow: hidden;">
+  <div class="container" style="padding: 60px 0 70px;"> <!-- padding seulement ici -->
 
     <!-- Stars above title -->
-<div style="text-align: center; margin-bottom: 6px;">
-  <img src="https://cdn.shopify.com/s/files/1/0964/4130/3378/files/gempages_534627086933951483-ea424bf2-b1fd-4103-bffe-8dc79661842b.webp?v=1747647989" alt="Stars" style="width: 120px; height: auto;">
-</div>
+    <div style="text-align: center; margin-bottom: 0;">
+      <img src="https://cdn.shopify.com/s/files/1/0964/4130/3378/files/gempages_534627086933951483-ea424bf2-b1fd-4103-bffe-8dc79661842b.webp?v=1747647989" alt="Stars" style="width: 120px; height: auto;">
+    </div>
 
-<h2 style="text-align: center; font-size: 35px; color: #27201A; margin-bottom: 32px; letter-spacing: 0.98px;">
-  {{ section.settings.title }}
-</h2>
+    <h2 style="text-align: center; font-size: 35px; color: #27201A; margin: 8px 0 32px; letter-spacing: 0.98px;">
+      {{ section.settings.title }}
+    </h2>
+
 
 
     <div class="swiper reviews-swiper-{{ section.id }}">
