@@ -45,169 +45,48 @@
         </div>
       </div>
 
-      <!-- RIGHT TABLE -->
-      <div class="comparison-table">
-        <div class="table-header">
-          <span></span>
-          <span class="brand splendor">Splendor</span>
-          <span class="brand other">Other Brands</span>
+      <!-- REPLACED TABLE HERE -->
+      <div class="comparison-table-template custom-comparison" style="background: white; border-radius: 16px; padding: 16px;">
+        <div class="comparison-heading" style="text-align: center; font-size: 28px; font-family: 'ITC Galliard', serif; margin-bottom: 24px;">
+          <h3 style="font-weight: bold;">Pourquoi nous faire confiance ?</h3>
         </div>
 
-        {% assign features = 
-          "SEAMLESS FINISH|Invisible coverage,
-          DEEP HYDRATION|HA+ Technology,
-          ETHICAL BEAUTY|Ethically sourced,
-          NON-COMEDOGENIC|Won’t clog pores,
-          ENDURING WEAR|Stays flawless all day,
-          CRUELTY-FREE & VEGAN|No animal testing,
-          NO HARSH CHEMICALS|Free from parabens" | split: "," %}
+        <div class="comparison-grid" style="display: grid; grid-template-columns: 40% 30% 30%; gap: 12px;">
+          <!-- Header -->
+          <div></div>
+          <div style="text-align: center;"><img src="https://cdn.shopify.com/s/files/1/0964/4130/3378/files/a6e1083b-fde6-4333-a241-15b664c8c320_removalai_preview.png?v=1747258252" alt="" style="max-width: 100px;"></div>
+          <div style="text-align: center; font-weight: bold;">Other brands</div>
 
-        {% for feature in features %}
-          {% assign parts = feature | strip | split: "|" %}
-          <div class="table-row">
-            <div class="feature-info">
-              <strong>{{ parts[0] }}</strong>
-              <p>{{ parts[1] }}</p>
-            </div>
-            <div class="icon check"></div>
-            <div class="icon cross"></div>
-          </div>
-        {% endfor %}
+          <!-- Row 1 -->
+          <div><strong>Lavable</strong></div>
+          <div>{% render 'icon-check' %}</div>
+          <div>{% render 'icon-cross' %}</div>
+
+          <!-- Row 2 -->
+          <div><strong>Éco-logique et Éco-nomique</strong></div>
+          <div>{% render 'icon-check' %}</div>
+          <div>{% render 'icon-cross' %}</div>
+
+          <!-- Row 3 -->
+          <div><strong>Ne colle pas</strong></div>
+          <div>{% render 'icon-check' %}</div>
+          <div>{% render 'icon-cross' %}</div>
+
+          <!-- Row 4 -->
+          <div><strong>Pratique et facile à nettoyer</strong></div>
+          <div>{% render 'icon-check' %}</div>
+          <div>{% render 'icon-cross' %}</div>
+
+          <!-- Row 5 -->
+          <div><strong>Conçu pour durer</strong></div>
+          <div>{% render 'icon-check' %}</div>
+          <div>{% render 'icon-cross' %}</div>
+        </div>
+
+        <div style="text-align: center; margin-top: 32px;">
+          <a href="#" class="comparison-button" style="background: #d0e5d5; border-radius: 100px; padding: 16px 32px; font-weight: bold; color: #000; text-decoration: none;">ACHETER MAINTENANT</a>
+        </div>
       </div>
     </div>
   </div>
 </section>
-
-<style>
-.different-section {
-  background: #805F4C;
-  color: white;
-  padding: 80px 20px;
-  font-family: 'Hanken Grotesk', sans-serif;
-}
-.container-different {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-.different-title {
-  text-align: center;
-  font-size: 32px;
-  margin-bottom: 40px;
-  color: #FFF6EF;
-}
-.different-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 40px;
-  justify-content: space-between;
-}
-.left-features {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-  flex: 1 1 320px;
-}
-.feature-card {
-  background: #B78E76;
-  border-radius: 12px;
-  padding: 24px;
-  color: white;
-  display: flex;
-  align-items: flex-start;
-  gap: 16px;
-}
-.feature-card img {
-  width: 48px;
-  flex-shrink: 0;
-}
-.feature-card strong {
-  display: block;
-  font-size: 14px;
-  font-weight: 700;
-  margin-bottom: 4px;
-}
-.feature-card p {
-  font-size: 14px;
-  margin: 0;
-}
-
-.comparison-table {
-  background: white;
-  border-radius: 16px;
-  overflow: hidden;
-  flex: 1 1 480px;
-}
-.table-header {
-  display: flex;
-  background: white;
-  padding: 20px;
-  font-weight: bold;
-  justify-content: space-between;
-  text-align: center;
-  color: #544843;
-}
-.table-header .brand.splendor {
-  background: #E9D6C8;
-  border-radius: 12px 12px 0 0;
-  padding: 8px 0;
-  width: 33%;
-  font-family: 'Hanken Grotesk', sans-serif;
-}
-.table-header .brand.other {
-  width: 33%;
-  padding-top: 8px;
-}
-.table-row {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 20px;
-  border-top: 1px solid #eee;
-  text-align: center;
-}
-.table-row .feature-info {
-  width: 33%;
-  text-align: left;
-  color: #544843;
-}
-.table-row .feature-info strong {
-  font-size: 14px;
-}
-.table-row .feature-info p {
-  font-size: 13px;
-  margin: 4px 0 0;
-  font-style: italic;
-  color: #544843;
-}
-.table-row .icon {
-  width: 33%;
-}
-.table-row .check::before,
-.table-row .cross::before {
-  content: '';
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-.table-row .check::before {
-  background-image: url('https://cdn.shopify.com/s/files/1/0964/4130/3378/files/check-circle-splendor.webp');
-}
-.table-row .cross::before {
-  background-image: url('https://cdn.shopify.com/s/files/1/0964/4130/3378/files/x-circle-splendor.webp');
-}
-
-@media (max-width: 768px) {
-  .different-grid {
-    flex-direction: column;
-  }
-  .feature-card {
-    flex-direction: row;
-    align-items: flex-start;
-  }
-  .comparison-table {
-    margin-top: 40px;
-  }
-}
-</style>
