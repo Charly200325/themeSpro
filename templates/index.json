@@ -233,10 +233,12 @@
         "shade_xmMdB4": {
           "type": "shade",
           "settings": {
-            "shade_name": "",
-            "shade_description": "",
-            "shade_number": "",
-            "shade_background": "#60362c"
+            "image": "shopify://shop_images/gempages_534627086933951483-0a8f5143-6012-413b-9c99-ec880c353e2c.webp",
+            "shade_name": "MEDIUM DEEP",
+            "shade_description": "For medium-deep skin with golden or warm undertones.",
+            "shade_badge": "shopify://shop_images/gempages_534627086933951483-fefd2ef6-23a3-4502-8986-419f1a04d79c.webp",
+            "shade_number": "2",
+            "shade_background": "#764534"
           }
         },
         "shade_9JVkfD": {
