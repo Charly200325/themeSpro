@@ -84,7 +84,9 @@
   padding: 24px;
   color: white;
   display: flex;
-  align-items: flex-start;
+  flex-direction: column;
+  align-items: center; /* centre l’icône + texte */
+  text-align: center; /* centre le texte */
   gap: 16px;
 }
 .feature-card img {
@@ -181,20 +183,6 @@
     margin-top: 40px;
   }
 }
-  }
-}
-.left-features {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-  flex: 1 1 320px;
-  margin: 0 auto; /* centré sur desktop */
-  align-items: center; /* centre les cartes à l'intérieur */
-}
-@media (max-width: 768px) {
-  .left-features {
-    margin: 0; /* annule le centrage */
-    align-items: flex-start; /* réaligne à gauche */
   }
 }
 
