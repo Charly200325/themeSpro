@@ -64,7 +64,7 @@
       {{ section.settings.title }}
     </h2>
 
-    <div class="swiper reviews-swiper">
+    <div class="swiper reviews-swiper-{{ section.id }}">
       <div class="swiper-wrapper">
         {% for block in section.blocks %}
           {% if block.type == 'review' %}
@@ -97,10 +97,10 @@
       </div>
 
       <div class="swiper-controls" style="margin-top: 30px; display: flex; justify-content: center; gap: 20px;">
-        <button class="swiper-button-prev" aria-label="Previous" style="background: white; border: 1px solid #bfb2a3; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+        <button class="swiper-button-prev swiper-button-prev-{{ section.id }}" aria-label="Previous" style="background: white; border: 1px solid #bfb2a3; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
           <svg width="16" height="16" fill="#7d6d5e" viewBox="0 0 24 24"><path d="M15.41 7.41 14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg>
         </button>
-        <button class="swiper-button-next" aria-label="Next" style="background: white; border: 1px solid #bfb2a3; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+        <button class="swiper-button-next swiper-button-next-{{ section.id }}" aria-label="Next" style="background: white; border: 1px solid #bfb2a3; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
           <svg width="16" height="16" fill="#7d6d5e" viewBox="0 0 24 24"><path d="M8.59 16.59 10 18l6-6-6-6-1.41 1.41L13.17 12z"/></svg>
         </button>
       </div>
@@ -111,13 +111,13 @@
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script>
   document.addEventListener('DOMContentLoaded', function () {
-    new Swiper('.reviews-swiper', {
+    new Swiper('.reviews-swiper-{{ section.id }}', {
       loop: true,
       slidesPerView: 'auto',
       spaceBetween: 20,
       navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev'
+        nextEl: '.swiper-button-next-{{ section.id }}',
+        prevEl: '.swiper-button-prev-{{ section.id }}'
       },
       breakpoints: {
         768: {
