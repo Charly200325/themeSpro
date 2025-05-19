@@ -436,7 +436,7 @@
         "visibility": "always-display",
         "title": "",
         "heading_size": "h2",
-        "color_scheme": "accent-1",
+        "color_scheme": "background-2",
         "type": "slide",
         "drag": "enabled",
         "autoplay": false,
