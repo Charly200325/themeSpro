@@ -84,9 +84,7 @@
   padding: 24px;
   color: white;
   display: flex;
-  flex-direction: column;
-  align-items: center; /* centre l’icône + texte */
-  text-align: center; /* centre le texte */
+  align-items: flex-start;
   gap: 16px;
 }
 .feature-card img {
@@ -183,8 +181,26 @@
     margin-top: 40px;
   }
 }
+.feature-card {
+  background: #AB9381;
+  border-radius: 12px;
+  padding: 24px;
+  color: white;
+  display: flex;
+  flex-direction: column; /* icône au-dessus du texte */
+  align-items: center;     /* centre icône + texte */
+  text-align: center;      /* texte centré */
+  gap: 16px;
+}
+
+@media (max-width: 768px) {
+  .feature-card {
+    flex-direction: row;     /* icône à gauche du texte */
+    align-items: flex-start;
+    text-align: left;        /* texte aligné à gauche */
   }
 }
+
 
 </style>
 
