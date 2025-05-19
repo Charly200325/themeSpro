@@ -534,6 +534,11 @@
       "name": "Dur Benefits Video",
       "settings": {}
     },
+    "tableaucom_nmxQ4d": {
+      "type": "tableaucom",
+      "name": "How We Are Different",
+      "settings": {}
+    },
     "avissss_VzCUpR": {
       "type": "avissss",
       "blocks": {
@@ -665,6 +670,7 @@
     "ingre_JwDzGi",
     "assurance_AKrh9z",
     "videox_iCnPfa",
+    "tableaucom_nmxQ4d",
     "avissss_VzCUpR",
     "custom_liquid_LBHjjM"
   ]
