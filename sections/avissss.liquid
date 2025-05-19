@@ -58,10 +58,8 @@
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
-<section class="reviews-carousel" style="background-color: #FBF1E8; padding: 0 0 40px; overflow: hidden;">
-  <div class="container" style="padding: 0 0 30px; margin-top: 30px;">
-
-    <!-- Stars above title -->
+<section class="review-carousel" style="background-color: #FBF1E8; padding: 0 0 40px; overflow: hidden;">
+  <div class="review-carousel__container" style="padding: 0 0 30px; margin-top: 30px;">
     <div style="text-align: center; margin: 0;">
       <img src="https://cdn.shopify.com/s/files/1/0964/4130/3378/files/gempages_534627086933951483-ea424bf2-b1fd-4103-bffe-8dc79661842b.webp?v=1747647989" alt="Stars" style="width: 120px; height: auto; margin: 0;">
     </div>
@@ -70,30 +68,30 @@
       {{ section.settings.title }}
     </h2>
 
-    <div class="swiper reviews-swiper-{{ section.id }}">
+    <div class="swiper review-carousel__swiper" id="review-carousel-{{ section.id }}">
       <div class="swiper-wrapper">
         {% for block in section.blocks %}
           {% if block.type == 'review' %}
             <div class="swiper-slide">
-              <div class="review-card">
+              <div class="review-carousel__card">
                 {% if block.settings.image %}
-                  <img src="{{ block.settings.image | image_url }}" alt="Review" class="review-img">
+                  <img src="{{ block.settings.image | image_url }}" alt="Review" class="review-carousel__img">
                 {% endif %}
 
-                <div class="review-content">
-                  <div class="stars">
+                <div class="review-carousel__content">
+                  <div class="review-carousel__stars">
                     <img src="//splendorintl.com/cdn/shop/files/gempages_534627086933951483-ea424bf2-b1fd-4103-bffe-8dc79661842b.webp?v=9863142413917065072" alt="Stars">
                   </div>
 
                   <p>“{{ block.settings.text }}”</p>
 
-                  <div class="review-name">
-                    <img src="https://cdn.shopify.com/s/files/1/0964/4130/3378/files/gempages_534627086933951483-72ebba2f-97e2-471d-87ab-023e954d1246.webp?v=1747645792" alt="Verified" class="checkmark">
+                  <div class="review-carousel__name">
+                    <img src="https://cdn.shopify.com/s/files/1/0964/4130/3378/files/gempages_534627086933951483-72ebba2f-97e2-471d-87ab-023e954d1246.webp?v=1747645792" alt="Verified" class="review-carousel__checkmark">
                     {{ block.settings.name }} - {{ block.settings.location }}
                   </div>
                 </div>
 
-                <div class="shade-box">
+                <div class="review-carousel__shade-box">
                   {% if block.settings.shade_image %}
                     <img src="{{ block.settings.shade_image | image_url: width: 36 }}" alt="Shade Icon">
                   {% endif %}
@@ -108,14 +106,13 @@
         {% endfor %}
       </div>
     </div>
-
   </div>
 </section>
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script>
-  document.addEventListener('DOMContentLoaded', function () {
-    new Swiper('.reviews-swiper-{{ section.id }}', {
+  setTimeout(function () {
+    new Swiper('#review-carousel-{{ section.id }}', {
       loop: true,
       centeredSlides: true,
       slidesPerView: 1.2,
@@ -129,11 +126,11 @@
         }
       }
     });
-  });
+  }, 200);
 </script>
 
 <style>
-.review-card {
+.review-carousel__card {
   width: 100%;
   background: white;
   border-radius: 12px;
@@ -141,21 +138,19 @@
   box-shadow: 0 0 24px rgba(137, 137, 137, 0.1);
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
   height: auto;
   margin: 0;
 }
 
-.review-img {
+.review-carousel__img {
   width: 100%;
   height: 260px;
   object-fit: cover;
-  display: block;
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
 }
 
-.review-content {
+.review-carousel__content {
   padding: 12px 16px 4px;
   font-size: 16px;
   font-family: 'Hanken Grotesk', sans-serif;
@@ -164,13 +159,13 @@
   flex-grow: 1;
 }
 
-.stars img {
+.review-carousel__stars img {
   width: 96px;
   height: auto;
   margin-bottom: 10px;
 }
 
-.review-name {
+.review-carousel__name {
   font-style: italic;
   color: #544843;
   margin-top: 8px;
@@ -180,12 +175,12 @@
   gap: 6px;
 }
 
-.checkmark {
+.review-carousel__checkmark {
   width: 14px;
   height: 14px;
 }
 
-.shade-box {
+.review-carousel__shade-box {
   background-color: #EFE4D4;
   padding: 10px 16px;
   font-size: 13px;
@@ -198,35 +193,35 @@
   border-radius: 0 0 12px 12px;
 }
 
-.shade-box span {
+.review-carousel__shade-box span {
   font-size: 12px;
 }
 
-.shade-box strong {
+.review-carousel__shade-box strong {
   font-weight: 700;
   font-size: 13px;
   display: block;
 }
 
-.swiper-wrapper {
+.review-carousel .swiper-wrapper {
   display: flex;
   align-items: stretch;
 }
 
-.swiper-slide {
+.review-carousel .swiper-slide {
   display: flex;
   justify-content: center;
   height: auto;
 }
 
 @media (max-width: 768px) {
-  .swiper-slide .review-card {
+  .review-carousel .swiper-slide .review-carousel__card {
     max-width: 240px;
     width: 90%;
     margin: 0 auto;
   }
 
-  .review-content {
+  .review-carousel__content {
     padding: 12px 12px 4px;
   }
 }
