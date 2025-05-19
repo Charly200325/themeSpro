@@ -75,8 +75,15 @@
                 {% endif %}
 
                 <div style="padding: 16px; font-size: 16px; font-family: 'Hanken Grotesk', sans-serif; color: #665E5B; line-height: 1.5;">
+                  <!-- Etoiles au-dessus de l'avis -->
+                  <div style="margin-bottom: 10px;">
+                    <img src="//splendorintl.com/cdn/shop/files/gempages_534627086933951483-ea424bf2-b1fd-4103-bffe-8dc79661842b.webp?v=9863142413917065072" alt="Stars" style="width: 96px; height: auto;">
+                  </div>
+
                   <p>“{{ block.settings.text }}”</p>
-                  <div style="font-style: italic; color: #544843; margin-top: 8px; font-size: 14px;">
+
+                  <div style="font-style: italic; color: #544843; margin-top: 8px; font-size: 14px; display: flex; align-items: center; gap: 6px;">
+                    <img src="https://cdn.shopify.com/s/files/1/0964/4130/3378/files/gempages_534627086933951483-72ebba2f-97e2-471d-87ab-023e954d1246.webp?v=1747645792" alt="Verified" style="width: 14px; height: 14px;">
                     {{ block.settings.name }} - {{ block.settings.location }}
                   </div>
                 </div>
