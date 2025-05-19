@@ -125,8 +125,8 @@
         "24f208fd-0898-43eb-af23-d74f8420ab37"
       ],
       "custom_css": [
-        ".footer-block--menu,.footer-block--mobile-2,.footer-block--menu *,.footer-block--mobile-2 *{text-align:center!important;margin-left:auto!important;margin-right:auto!important;display:block}",
-        "@media(max-width:749px){.footer-block--menu,.footer-block--mobile-2,.footer-block--menu *,.footer-block--mobile-2 *{text-align:center!important;margin-left:auto!important;margin-right:auto!important}}"
+        ".footer-block--menu,.footer-block--mobile-2,.footer-block--menu *,.footer-block--mobile-2 * {text-align: center !important; margin-left: auto !important; margin-right: auto !important; display: block;}",
+        "@media (max-width: 749px) {.footer-block--menu, .footer-block--mobile-2, .footer-block--menu *, .footer-block--mobile-2 * {text-align: center !important; margin-left: auto !important; margin-right: auto !important; }}"
       ],
       "settings": {
         "color_scheme": "accent-1",
@@ -139,7 +139,7 @@
         "show_policy": false,
         "branding_text": "",
         "margin_top": 0,
-        "padding_top": 32,
+        "padding_top": 24,
         "padding_bottom": 20
       }
     }
