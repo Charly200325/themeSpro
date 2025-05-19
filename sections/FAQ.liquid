@@ -29,7 +29,6 @@
       ]
     }
   ],
-  "max_blocks": 10,
   "presets": [
     {
       "name": "FAQ Accordion",
@@ -62,6 +61,13 @@
             "question": "Does this product contain fragrance or harsh chemicals?",
             "answer": "No, the Beauty Balm is fragrance-free and free of harsh chemicals like parabens, sulfates, phthalates, mineral oil, and talc."
           }
+        },
+        {
+          "type": "faq_item",
+          "settings": {
+            "question": "Can I use this product as a base under other makeup?",
+            "answer": "Absolutely! The Beauty Balm works beautifully as a lightweight base under other makeup products. Its hydrating formula helps create a smooth canvas for foundation, concealer, or powder, while still allowing your skin to breathe."
+          }
         }
       ]
     }
@@ -69,9 +75,12 @@
 }
 {% endschema %}
 
+{% assign plus_icon = '<svg xmlns="http://www.w3.org/2000/svg" width="27" height="28" viewBox="0 0 27 28" fill="none"><circle cx="13.624" cy="13.8516" r="12.9466" fill="white" stroke="#2D2E31" stroke-width="0.438867"/><path d="M19.2018 14.2903H14.9739V18.556H13.7416V14.2903H9.53268V13.1527H13.7416V8.88692H14.9739V13.1527H19.2018V14.2903Z" fill="#5A5151"/></svg>' %}
+{% assign minus_icon = '<svg xmlns="http://www.w3.org/2000/svg" width="27" height="28" viewBox="0 0 27 28" fill="none"><circle cx="13.624" cy="13.8516" r="12.9466" fill="white" stroke="#2D2E31" stroke-width="0.438867"/><path d="M16.8885 13.1527V14.2713H9.51347V13.1527H16.8885Z" fill="#5A5151"/></svg>' %}
+
 {% style %}
 .faq-accordion-section {
-  background-color: #F9F9F9;
+  background-color: #896E5C;
   padding: 80px 20px;
 }
 .faq-accordion-section h2 {
@@ -80,17 +89,24 @@
   color: white;
   text-align: center;
   text-transform: uppercase;
+  margin-bottom: 40px;
+}
+.faq-list {
+  max-width: 800px;
+  margin: 0 auto;
 }
 .faq-item {
   background-color: #FBF1E8;
   margin-bottom: 16px;
   border-radius: 12px;
   overflow: hidden;
+  transition: all 0.3s ease;
 }
 .faq-question {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  gap: 16px;
+  justify-content: flex-start;
   padding: 20px 14px;
   font-size: 14px;
   font-weight: 500;
@@ -107,20 +123,35 @@
 .faq-item.open .faq-answer {
   display: block;
 }
-.faq-icon {
+.faq-icon svg {
   width: 27px;
-  height: 27px;
+  height: 28px;
+  flex-shrink: 0;
 }
 {% endstyle %}
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('.faq-item').forEach(item => {
+      const iconSpan = item.querySelector('.faq-icon');
+      iconSpan.innerHTML = `{{ plus_icon | escape }}`;
+
+      item.querySelector('.faq-question').addEventListener('click', () => {
+        const isOpen = item.classList.toggle('open');
+        iconSpan.innerHTML = isOpen ? `{{ minus_icon | escape }}` : `{{ plus_icon | escape }}`;
+      });
+    });
+  });
+</script>
 
 <div class="faq-accordion-section">
   <h2>{{ section.settings.heading }}</h2>
   <div class="faq-list">
     {% for block in section.blocks %}
-      <div class="faq-item" onclick="this.classList.toggle('open')">
+      <div class="faq-item">
         <div class="faq-question">
+          <span class="faq-icon"></span>
           <span>{{ block.settings.question }}</span>
-          <span class="faq-icon">+</span>
         </div>
         <div class="faq-answer">
           {{ block.settings.answer }}
