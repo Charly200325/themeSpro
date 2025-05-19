@@ -33,50 +33,11 @@
     {
       "name": "FAQ Accordion",
       "category": "Custom",
-      "blocks": [
-        {
-          "type": "faq_item",
-          "settings": {
-            "question": "What skin types is this product suitable for?",
-            "answer": "The Beauty Balm is designed for all skin types, including sensitive, dry, oily, and combination skin. Its lightweight, non-comedogenic formula works to hydrate and balance your skin without clogging pores."
-          }
-        },
-        {
-          "type": "faq_item",
-          "settings": {
-            "question": "Does this product provide enough coverage for blemishes or redness?",
-            "answer": "This product offers sheer-to-light coverage, perfect for evening out skin tone and providing a natural finish. For heavier coverage, you can layer it."
-          }
-        },
-        {
-          "type": "faq_item",
-          "settings": {
-            "question": "Is this product cruelty-free and vegan?",
-            "answer": "Yes! The Beauty Balm is 100% cruelty-free and vegan, making it a great choice for ethically conscious beauty lovers."
-          }
-        },
-        {
-          "type": "faq_item",
-          "settings": {
-            "question": "Does this product contain fragrance or harsh chemicals?",
-            "answer": "No, the Beauty Balm is fragrance-free and free of harsh chemicals like parabens, sulfates, phthalates, mineral oil, and talc."
-          }
-        },
-        {
-          "type": "faq_item",
-          "settings": {
-            "question": "Can I use this product as a base under other makeup?",
-            "answer": "Absolutely! The Beauty Balm works beautifully as a lightweight base under other makeup products. Its hydrating formula helps create a smooth canvas for foundation, concealer, or powder, while still allowing your skin to breathe."
-          }
-        }
-      ]
+      "blocks": []
     }
   ]
 }
 {% endschema %}
-
-{% assign plus_icon = '<svg xmlns="http://www.w3.org/2000/svg" width="27" height="28" viewBox="0 0 27 28" fill="none"><circle cx="13.624" cy="13.8516" r="12.9466" fill="white" stroke="#2D2E31" stroke-width="0.438867"/><path d="M19.2018 14.2903H14.9739V18.556H13.7416V14.2903H9.53268V13.1527H13.7416V8.88692H14.9739V13.1527H19.2018V14.2903Z" fill="#5A5151"/></svg>' %}
-{% assign minus_icon = '<svg xmlns="http://www.w3.org/2000/svg" width="27" height="28" viewBox="0 0 27 28" fill="none"><circle cx="13.624" cy="13.8516" r="12.9466" fill="white" stroke="#2D2E31" stroke-width="0.438867"/><path d="M16.8885 13.1527V14.2713H9.51347V13.1527H16.8885Z" fill="#5A5151"/></svg>' %}
 
 {% style %}
 .faq-accordion-section {
@@ -114,6 +75,11 @@
   cursor: pointer;
   color: #273534;
 }
+.faq-icon {
+  width: 27px;
+  height: 28px;
+  flex-shrink: 0;
+}
 .faq-answer {
   display: none;
   padding: 25px 32px 32px;
@@ -123,38 +89,26 @@
 .faq-item.open .faq-answer {
   display: block;
 }
-.faq-icon svg {
-  width: 27px;
-  height: 28px;
-  flex-shrink: 0;
-}
 {% endstyle %}
-
-<script>
-  document.addEventListener('DOMContentLoaded', function () {
-    const plusIcon = `{% raw %}{{ plus_icon }}{% endraw %}`;
-    const minusIcon = `{% raw %}{{ minus_icon }}{% endraw %}`;
-
-    document.querySelectorAll('.faq-item').forEach(item => {
-      const iconSpan = item.querySelector('.faq-icon');
-      iconSpan.innerHTML = plusIcon;
-
-      item.querySelector('.faq-question').addEventListener('click', () => {
-        const isOpen = item.classList.toggle('open');
-        iconSpan.innerHTML = isOpen ? minusIcon : plusIcon;
-      });
-    });
-  });
-</script>
-
 
 <div class="faq-accordion-section">
   <h2>{{ section.settings.heading }}</h2>
   <div class="faq-list">
     {% for block in section.blocks %}
       <div class="faq-item">
-        <div class="faq-question">
-          <span class="faq-icon"></span>
+        <div class="faq-question" onclick="this.parentElement.classList.toggle('open'); toggleIcon(this)">
+          <div class="faq-icon">
+            <!-- Plus icon by default -->
+            <svg class="icon-plus" xmlns="http://www.w3.org/2000/svg" width="27" height="28" viewBox="0 0 27 28" fill="none">
+              <circle cx="13.624" cy="13.8516" r="12.9466" fill="white" stroke="#2D2E31" stroke-width="0.438867"/>
+              <path d="M19.2018 14.2903H14.9739V18.556H13.7416V14.2903H9.53268V13.1527H13.7416V8.88692H14.9739V13.1527H19.2018V14.2903Z" fill="#5A5151"/>
+            </svg>
+            <!-- Minus icon, hidden by default -->
+            <svg class="icon-minus" style="display: none;" xmlns="http://www.w3.org/2000/svg" width="27" height="28" viewBox="0 0 27 28" fill="none">
+              <circle cx="13.624" cy="13.8516" r="12.9466" fill="white" stroke="#2D2E31" stroke-width="0.438867"/>
+              <path d="M16.8885 13.1527V14.2713H9.51347V13.1527H16.8885Z" fill="#5A5151"/>
+            </svg>
+          </div>
           <span>{{ block.settings.question }}</span>
         </div>
         <div class="faq-answer">
@@ -164,3 +118,17 @@
     {% endfor %}
   </div>
 </div>
+
+<script>
+  function toggleIcon(el) {
+    const iconPlus = el.querySelector('.icon-plus');
+    const iconMinus = el.querySelector('.icon-minus');
+    if (el.parentElement.classList.contains('open')) {
+      iconPlus.style.display = "none";
+      iconMinus.style.display = "block";
+    } else {
+      iconPlus.style.display = "block";
+      iconMinus.style.display = "none";
+    }
+  }
+</script>
