@@ -141,7 +141,6 @@
 <style>
 .review-card {
   width: 100%;
-  max-width: 100%;
   background: white;
   border-radius: 12px;
   overflow: hidden;
@@ -151,7 +150,6 @@
   justify-content: flex-start;
   height: auto;
   margin: 0;
-  padding: 0;
 }
 
 .review-img {
@@ -204,6 +202,7 @@
   align-items: center;
   gap: 12px;
   border-radius: 0 0 12px 12px;
+  /* margin-top: auto; */ /* supprimé pour remonter le bloc beige */
 }
 
 .shade-box span {
@@ -224,10 +223,7 @@
 .swiper-slide {
   display: flex;
   justify-content: center;
-  align-items: stretch;
   height: auto;
-  margin: 0 !important;
-  padding: 0 !important;
 }
 
 .swiper-controls {
@@ -257,26 +253,14 @@
 
 @media (max-width: 768px) {
   .swiper-slide .review-card {
-    width: 100%;
-    max-width: 100%;
-    margin: 0;
-    padding: 0;
+    max-width: 240px;
+    width: 90%;
+    margin: 0 auto;
   }
 
   .review-content {
     padding: 12px 12px 4px;
   }
-
-  .swiper-slide {
-    margin: 0 !important;
-    padding: 0 !important;
-  }
-
-  .reviews-swiper-{{ section.id }} {
-    padding-left: 0 !important;
-    padding-right: 0 !important;
-  }
 }
-
 
 </style>
