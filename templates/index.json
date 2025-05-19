@@ -541,29 +541,105 @@
           "type": "review",
           "settings": {
             "image": "shopify://shop_images/gempages_534627086933951483-c90f9fbe-8d12-46fc-85f1-42994d00d74d.webp",
-            "text": "",
-            "name": "",
-            "location": "",
-            "shade": "",
+            "text": "I’ve been on the hunt for a lightweight foundation that doesn’t feel like I’m wearing a mask and this product delivers.",
+            "name": "Janise O.",
+            "location": "United Kingdom",
+            "shade": "SHADE 3 - MEDIUM",
             "shade_image": "shopify://shop_images/gempages_534627086933951483-6be69171-8ddf-4563-a917-b394c9671f17.webp"
           }
         },
         "review_AUtcte": {
           "type": "review",
           "settings": {
-            "text": "",
-            "name": "",
-            "location": "",
-            "shade": ""
+            "image": "shopify://shop_images/gempages_534627086933951483-b906abb4-585c-4737-8bd5-23dc296d95ab.webp",
+            "text": "I’ve always been conscious of my dark spots, but this skin tint has boosted my confidence.",
+            "name": "Amelia F.",
+            "location": "United Kingdom",
+            "shade": "SHADE 4 - LIGHT",
+            "shade_image": "shopify://shop_images/gempages_534627086933951483-57ee84b9-d197-4b44-bec1-ef7d9c990ae1.webp"
+          }
+        },
+        "review_VGghfR": {
+          "type": "review",
+          "settings": {
+            "image": "shopify://shop_images/gempages_534627086933951483-d90364c5-f397-4ebb-9a50-761325909f30.webp",
+            "text": "Love the dewy glow the Splendor Tint Balm gives me. Also, it hasn’t caused any adverse reactions, which is a huge relief.",
+            "name": "Jessica N.",
+            "location": "United Kingdom",
+            "shade": "SHADE 4 - LIGHT",
+            "shade_image": "shopify://shop_images/gempages_534627086933951483-02f1a56a-c6e7-4c10-8bfe-ca32f0c37809.webp"
+          }
+        },
+        "review_HRwpUE": {
+          "type": "review",
+          "settings": {
+            "image": "shopify://shop_images/gempages_534627086933951483-57689e27-1d84-4cf2-af41-97289aa2a95a.webp",
+            "text": "This tint is fantastic—it hydrates while providing coverage and doesn’t accentuate wrinkles. It’s become my beauty essential.",
+            "name": "Chloe N.",
+            "location": "United Kingdom",
+            "shade": "SHADE 1 - DEEP",
+            "shade_image": "shopify://shop_images/gempages_534627086933951483-aa717c90-489b-4b33-8469-6843df97d651.webp"
+          }
+        },
+        "review_RqypUB": {
+          "type": "review",
+          "settings": {
+            "image": "shopify://shop_images/gempages_534627086933951483-097f2d8c-1408-4594-bdb0-cf3fdd90771f.webp",
+            "text": "I was hesitant to try a new skin tint, but I’m glad I did. It covers my sunspots and does not dry out my skin. Plus I’ve gotten so many compliments.",
+            "name": "Penelope J.",
+            "location": "United States",
+            "shade": "SHADE 6 - LIGHT MEDIUM",
+            "shade_image": "shopify://shop_images/gempages_534627086933951483-2c4d90fc-48c5-4d13-b428-d7cb3f80d1a6.webp"
+          }
+        },
+        "review_NiQNFz": {
+          "type": "review",
+          "settings": {
+            "image": "shopify://shop_images/gempages_534627086933951483-d23933c2-4fdb-4a07-8900-8cc0a6e80981.webp",
+            "text": "I travel a lot for work and this skin tint has become my go-to for looking presentable on flights and meetings.",
+            "name": "Carmen L.",
+            "location": "United Kingdom",
+            "shade": "SHADE 2 - MEDIUM DEEP",
+            "shade_image": "shopify://shop_images/gempages_534627086933951483-9dd58d75-baf7-4e75-9dfb-ec9a1ee71c0b.webp"
+          }
+        },
+        "review_VTEnTr": {
+          "type": "review",
+          "settings": {
+            "image": "shopify://shop_images/gempages_534627086933951483-c6d6e3f4-9d47-4d57-a8c1-1e25280cb98f.webp",
+            "text": "Always preferred a minimal makeup look and this skin tint is perfect for that. It’s incredibly lightweight but still covers my redness.",
+            "name": "Sarah P.",
+            "location": "United Kingdom",
+            "shade": "SHADE 5 - FAIR",
+            "shade_image": "shopify://shop_images/gempages_534627086933951483-5c5ce205-7217-4c05-8702-49115f200c5b.webp"
+          }
+        },
+        "review_PqLjxd": {
+          "type": "review",
+          "settings": {
+            "image": "shopify://shop_images/gempages_534627086933951483-4e4481bb-3d4f-435b-b935-e156d0a9b3e5.webp",
+            "text": "I’m truly impressed. The tint blends seamlessly into my skin, providing just the right amount of coverage without feeling heavy.",
+            "name": "Lisa M.",
+            "location": "United States",
+            "shade": "SHADE 5 - FAIR",
+            "shade_image": "shopify://shop_images/gempages_534627086933951483-c28e105b-c39d-44f1-bd24-843b6360ef4d.webp"
           }
         }
       },
       "block_order": [
         "review_N48yDM",
-        "review_AUtcte"
+        "review_AUtcte",
+        "review_VGghfR",
+        "review_HRwpUE",
+        "review_RqypUB",
+        "review_NiQNFz",
+        "review_VTEnTr",
+        "review_PqLjxd"
       ],
       "name": "Reviews Carousel",
-      "settings": {}
+      "settings": {
+        "title": "The Reviews Speak For Themselves"
+      }
     }
   },
   "order": [
