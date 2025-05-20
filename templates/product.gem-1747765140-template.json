@@ -1,0 +1,508 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "gp_shopify_original_section_566610819782018089": {
+      "type": "gp-section-566610819782018089",
+      "settings": {
+        "section_preload": "true",
+        "checksum": ""
+      }
+    },
+    "gp_shopify_original_section_566611588094624705": {
+      "type": "gp-section-566611588094624705",
+      "settings": {
+        "section_preload": "false",
+        "checksum": ""
+      }
+    },
+    "gp_shopify_original_section_566616614028444609": {
+      "type": "gp-section-566616614028444609",
+      "settings": {
+        "section_preload": "false",
+        "checksum": ""
+      }
+    },
+    "gp_shopify_original_section_566613271000384421": {
+      "type": "gp-section-566613271000384421",
+      "settings": {
+        "section_preload": "false",
+        "checksum": ""
+      }
+    },
+    "gp_shopify_original_section_566615858533631057": {
+      "type": "gp-section-566615858533631057",
+      "settings": {
+        "section_preload": "false",
+        "checksum": ""
+      }
+    },
+    "1738959489f6fce048": {
+      "type": "apps",
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "a6eb81db-40e4-43e0-972f-32db010a4a56": {
+          "type": "rating_stars",
+          "settings": {
+            "rating": 5,
+            "star_color": "#c39f83",
+            "bg_stars_style": "full",
+            "bg_star_color": "#ececec",
+            "label": "<strong>(56,923)<\/strong>",
+            "size": 12,
+            "alignment": "flex-start",
+            "scroll_id": "",
+            "margin_top": 0,
+            "margin_bottom": 9
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+            "text_size": "h2",
+            "title_alignment": "left",
+            "uppercase_title": false,
+            "margin_top": 0,
+            "margin_bottom": 6
+          }
+        },
+        "custom_liquid_M78cwX": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<span style=\"display:inline-block;background-color:#f6f0eb;color:#000;padding:6px 12px;border-radius:6px;margin-right:6px;font-size:13px;font-weight:500;\">\n  HA+ TECHNOLOGY\n<\/span>\n<span style=\"display:inline-block;background-color:#f6f0eb;color:#000;padding:6px 12px;border-radius:6px;margin-right:6px;font-size:13px;font-weight:500;\">\n  FOR ALL SKIN TYPES\n<\/span>\n<span style=\"display:inline-block;background-color:#f6f0eb;color:#000;padding:6px 12px;border-radius:6px;font-size:13px;font-weight:500;\">\n  VEGAN\n<\/span>"
+          }
+        },
+        "text_iGah3K": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "mobile_text_size": 14,
+            "desktop_text_size": 16,
+            "alignment": "center",
+            "text_color": "#121212",
+            "text_1": "HA+ TECHNOLOGY",
+            "text_2": "FOR ALL SKIN TYPES",
+            "text_3": "VEGAN",
+            "icon_scale": 120,
+            "icon_color": "#121212",
+            "icon_1": "",
+            "filled_icon_1": false,
+            "icon_2": "",
+            "filled_icon_2": false,
+            "icon_3": "",
+            "filled_icon_3": false,
+            "width": "fit-content",
+            "direction": "horizontal",
+            "column_gap": 1,
+            "enable_bg": true,
+            "bg_color": "#f5eee8",
+            "corner_radius": 40,
+            "padding": 3,
+            "border_size": 0,
+            "border_color": "#f5eee8",
+            "margin_top": 15,
+            "margin_bottom": 15
+          }
+        },
+        "text_Efp7EU": {
+          "type": "text",
+          "settings": {
+            "mobile_text_size": 14,
+            "desktop_text_size": 16,
+            "alignment": "left",
+            "text_color": "#121212",
+            "text_1": "Made to be your beauty shortcut, combining hydration, coverage, and glow in one swipe.",
+            "text_2": "",
+            "text_3": "",
+            "icon_scale": 120,
+            "icon_color": "#121212",
+            "icon_1": "",
+            "filled_icon_1": false,
+            "icon_2": "check_circle",
+            "filled_icon_2": false,
+            "icon_3": "check_circle",
+            "filled_icon_3": false,
+            "width": "100%",
+            "direction": "horizontal",
+            "column_gap": 3,
+            "enable_bg": false,
+            "bg_color": "#f3f3f3",
+            "corner_radius": 40,
+            "padding": 3,
+            "border_size": 0,
+            "border_color": "#b7b7b7",
+            "margin_top": 15,
+            "margin_bottom": 15
+          }
+        },
+        "price": {
+          "type": "price",
+          "disabled": true,
+          "settings": {
+            "layout": "price_first",
+            "price_color": "accent-1",
+            "compare_price_color": "text",
+            "hide_sale_badge": false,
+            "margin_top": 9,
+            "margin_bottom": 15
+          }
+        },
+        "text_k7jx8d": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "mobile_text_size": 14,
+            "desktop_text_size": 16,
+            "alignment": "left",
+            "text_color": "#121212",
+            "text_1": "Smooths Fine Lines & Wrinkles",
+            "text_2": "Hides Dark Spots & Hyperpigmentation",
+            "text_3": "Skincare + Makeup All in One",
+            "icon_scale": 120,
+            "icon_color": "#c39f83",
+            "icon_1": "check_circle",
+            "filled_icon_1": false,
+            "icon_2": "check_circle",
+            "filled_icon_2": false,
+            "icon_3": "check_circle",
+            "filled_icon_3": false,
+            "width": "fit-content",
+            "direction": "vertical",
+            "column_gap": 3,
+            "enable_bg": false,
+            "bg_color": "#f3f3f3",
+            "corner_radius": 40,
+            "padding": 3,
+            "border_size": 0,
+            "border_color": "#b7b7b7",
+            "margin_top": 15,
+            "margin_bottom": 15
+          }
+        },
+        "icon_with_text_Ge44A9": {
+          "type": "icon_with_text",
+          "settings": {
+            "layout": "horizontal",
+            "icon_size": "large",
+            "icon_color": "accent-1",
+            "icon_1": "favorite",
+            "icon_1_fill": false,
+            "heading_1": "COVERS ACNE & DARK SPOTS",
+            "icon_2": "",
+            "icon_2_fill": false,
+            "heading_2": "SMOOTHS  FINE LINES & WRINKLES",
+            "icon_3": "local_shipping",
+            "icon_3_fill": false,
+            "heading_3": "LIGHTWEIGHT & BREATHABLE",
+            "margin_top": 24,
+            "margin_bottom": 24
+          }
+        },
+        "5fcc0428-e768-4cb7-bea3-eb0274198dd1": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_types": "swatches, pills,",
+            "custom_labels": "",
+            "swatches_size": "medium",
+            "swatches_custom_colors": "disabled",
+            "swatches_custom_colors_list": "#000000, #FFFFFF",
+            "full_width_dropdowns": false,
+            "breaks_style": "normal",
+            "breaks_headline": "BUNDLE & SAVE",
+            "breaks_color_scheme": "accent-1",
+            "breaks_badges": "[empty], Most popular, [empty]",
+            "breaks_displayed_images": "variant_images",
+            "breaks_custom_images": "",
+            "breaks_image_width": 70,
+            "breaks_space_images": true,
+            "breaks_labels": "[name], [name], [name]",
+            "breaks_benefits": "[empty], Free Shipping, Free Shipping",
+            "breaks_captions": "Variant 1 caption, Variant 2 caption, Variant 3 caption",
+            "breaks_price_texts": "[price], [price], [price]",
+            "breaks_compare_price_texts": "[compare_price], [compare_price], [compare_price]",
+            "margin_top": 15,
+            "margin_bottom": 15
+          }
+        },
+        "04ba004e-2f54-4936-8b1c-8bcadf6573f6": {
+          "type": "quantity_selector",
+          "settings": {
+            "enable_quantity_discounts": false,
+            "style": "vertical",
+            "headline": "BUNDLE & SAVE",
+            "preselected": "option_1",
+            "enable_variant_selectors": true,
+            "enable_variant_selectors_on_quantity_of_1": true,
+            "hide_pickers_overlay": true,
+            "image_width": 70,
+            "space_images": true,
+            "color_scheme": "accent-1",
+            "option_1_quantity": 1,
+            "option_1_badge": "",
+            "option_1_label": "Buy [quantity]",
+            "option_1_benefit": "",
+            "option_1_caption": "You save [amount_saved]",
+            "option_1_percentage_off": "0",
+            "option_1_fixed_amount_off": "0",
+            "option_1_price_text": "[price]",
+            "option_1_compare_price": "compare_price",
+            "option_1_compare_price_text": "[compare_price]",
+            "option_2_quantity": 2,
+            "option_2_badge": "",
+            "option_2_label": "Buy [quantity]",
+            "option_2_benefit": "",
+            "option_2_caption": "You save [amount_saved]",
+            "option_2_percentage_off": "0",
+            "option_2_fixed_amount_off": "0",
+            "option_2_price_text": "[price]",
+            "option_2_compare_price": "compare_price",
+            "option_2_compare_price_text": "[compare_price]",
+            "option_3_quantity": 3,
+            "option_3_badge": "",
+            "option_3_label": "Buy [quantity]",
+            "option_3_benefit": "",
+            "option_3_caption": "You save [amount_saved]",
+            "option_3_percentage_off": "0",
+            "option_3_fixed_amount_off": "0",
+            "option_3_price_text": "[price]",
+            "option_3_compare_price": "compare_price",
+            "option_3_compare_price_text": "[compare_price]",
+            "option_4_quantity": 4,
+            "option_4_badge": "",
+            "option_4_label": "Buy [quantity]",
+            "option_4_benefit": "",
+            "option_4_caption": "You save [amount_saved]",
+            "option_4_percentage_off": "0",
+            "option_4_fixed_amount_off": "0",
+            "option_4_price_text": "[price]",
+            "option_4_compare_price": "compare_price",
+            "option_4_compare_price_text": "[compare_price]",
+            "margin_top": 15,
+            "margin_bottom": 15
+          }
+        },
+        "custom_add_to_cart_button_VmcQki": {
+          "type": "custom_add_to_cart_button",
+          "disabled": true,
+          "settings": {}
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false,
+            "skip_cart": false,
+            "uppercase_text": true,
+            "display_price": false,
+            "enable_custom_color": false,
+            "custom_color": "#53af01",
+            "margin_top": 24,
+            "margin_bottom": 24
+          }
+        },
+        "e7a28cbe-03cb-4c9d-a2c4-0e3e76ffb3e5": {
+          "type": "sticky_atc",
+          "disabled": true,
+          "settings": {
+            "function": "add_to_cart",
+            "display_when": "after_scroll",
+            "button_label": "Add to cart",
+            "color_scheme": "background-1",
+            "star_color": "#ffcc00",
+            "stars_label": "(xxxx Reviews)",
+            "desktop_show_image": true,
+            "desktop_show_title": true,
+            "desktop_rating_stars": false,
+            "desktop_show_price": true,
+            "desktop_show_sale_badge": true,
+            "desktop_variant_picker": true,
+            "desktop_full_button_width": false,
+            "desktop_show_price_in_button": false,
+            "desktop_transparent_bg": false,
+            "mobile_show_image": false,
+            "mobile_show_title": true,
+            "mobile_rating_stars": false,
+            "mobile_show_price": true,
+            "mobile_show_sale_badge": false,
+            "mobile_variant_picker": true,
+            "mobile_full_button_width": false,
+            "mobile_show_price_in_button": false,
+            "mobile_transparent_bg": false
+          }
+        },
+        "description": {
+          "type": "description",
+          "disabled": true,
+          "settings": {
+            "margin_top": 24,
+            "margin_bottom": 24
+          }
+        },
+        "c43b9f54-e00a-4f9e-b42c-2914dde008a8": {
+          "type": "reviews",
+          "settings": {
+            "display_stars": true,
+            "star_color": "#c39f83",
+            "avatar_alignment": "top",
+            "author_1": "Emily J - London, UK",
+            "text_1": "<p><em>‘’Most products settle into my dark spots, but Elvynor blends perfectly and gives me an airbrushed finish.’’<\/em><\/p>",
+            "author_2": "",
+            "text_2": "",
+            "author_3": "",
+            "text_3": "",
+            "margin_top": 24,
+            "margin_bottom": 24
+          }
+        },
+        "de158e68-5d0d-4819-a625-e2dabdff87d1": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Product Description",
+            "heading_size": "medium",
+            "icon": "check_box",
+            "filled_icon": false,
+            "collapse_icon": "carret",
+            "display_top_border": true,
+            "content": "<h6>SUITABLE FOR:<\/h6><p>All skin types, especially those with acne scars, hyperpigmentation and uneven skin tone.<\/p><h6>FEELS LIKE:<\/h6><p>Lightweight and breathable - never heavy, cakey or greasy.<\/p><h6>LOOKS LIKE:<\/h6><p>Your skin, but smoother. Blurs imperfections while keeping a natural finish.<\/p><h6>COVERAGE:<\/h6><p>Sheer-to-light, buildable coverage that evens out skin tone instantly.<\/p><h6>FREE FROM:<\/h6><p>Parabens, sulfates, fragrance and pore-clogging ingredients.<\/p>",
+            "page": "",
+            "margin_top": 0,
+            "margin_bottom": 0
+          }
+        },
+        "collapsible_tab_gt88fd": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Return Policy",
+            "heading_size": "medium",
+            "icon": "check_box",
+            "filled_icon": false,
+            "collapse_icon": "carret",
+            "display_top_border": true,
+            "content": "<p>Pathos Socks offers a <strong>30-day return policy<\/strong>, giving you 30 days from the date of receipt to request a return. To be eligible, items must be unworn, unused, with tags, and in their original packaging.<br\/><br\/>To initiate a return, contact us at <a><strong>sales@pathossocks.com<\/strong><\/a>. <\/p>",
+            "page": "",
+            "margin_top": 0,
+            "margin_bottom": 0
+          }
+        },
+        "collapsible_tab_R3xtLW": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Shipping Times",
+            "heading_size": "medium",
+            "icon": "check_box",
+            "filled_icon": false,
+            "collapse_icon": "carret",
+            "display_top_border": true,
+            "content": "",
+            "page": "",
+            "margin_top": 0,
+            "margin_bottom": 0
+          }
+        }
+      },
+      "block_order": [
+        "a6eb81db-40e4-43e0-972f-32db010a4a56",
+        "title",
+        "custom_liquid_M78cwX",
+        "text_iGah3K",
+        "text_Efp7EU",
+        "price",
+        "text_k7jx8d",
+        "icon_with_text_Ge44A9",
+        "5fcc0428-e768-4cb7-bea3-eb0274198dd1",
+        "04ba004e-2f54-4936-8b1c-8bcadf6573f6",
+        "custom_add_to_cart_button_VmcQki",
+        "buy_buttons",
+        "e7a28cbe-03cb-4c9d-a2c4-0e3e76ffb3e5",
+        "description",
+        "c43b9f54-e00a-4f9e-b42c-2914dde008a8",
+        "de158e68-5d0d-4819-a625-e2dabdff87d1",
+        "collapsible_tab_gt88fd",
+        "collapsible_tab_R3xtLW"
+      ],
+      "disabled": true,
+      "custom_css": [],
+      "settings": {
+        "enable_sticky_info": false,
+        "display_variant_image_first": false,
+        "media_size": "medium",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "gallery_layout": "thumbnail_slider",
+        "media_position": "left",
+        "image_zoom": "none",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "desktop_thumbnails_count": 5,
+        "mobile_thumbnails": "show",
+        "mobile_media_corner_radius": 4,
+        "mobile_spacing": false,
+        "mobile_preview_media": false,
+        "mobile_thumbnails_count": 5,
+        "mobile_pagination": "numeric",
+        "hide_arrows": true,
+        "dots_color_scheme": "inverse",
+        "trust_badge_position": "top-right",
+        "trust_badge_size": "medium",
+        "mobile_padding_top": 0,
+        "mobile_padding_bottom": 16,
+        "desktop_padding_top": 36,
+        "desktop_padding_bottom": 36
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "disabled": true,
+      "settings": {
+        "display_id": false,
+        "heading": "You may also like",
+        "heading_size": "h2",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "columns_mobile": "2",
+        "padding_top": 36,
+        "padding_bottom": 24
+      }
+    },
+    "section_divider_zAJcej": {
+      "type": "section-divider",
+      "disabled": true,
+      "settings": {
+        "shape": "waves_3",
+        "flip_horizontal": false,
+        "flip_vertical": false,
+        "shape_color": "accent-1",
+        "background_color": "background-1",
+        "padding_top": 0,
+        "padding_bottom": 20
+      }
+    }
+  },
+  "order": [
+    "gp_shopify_original_section_566610819782018089",
+    "gp_shopify_original_section_566611588094624705",
+    "gp_shopify_original_section_566616614028444609",
+    "gp_shopify_original_section_566613271000384421",
+    "gp_shopify_original_section_566615858533631057",
+    "1738959489f6fce048",
+    "main",
+    "related-products",
+    "section_divider_zAJcej"
+  ]
+}
