@@ -110,10 +110,10 @@
         "show_separator": false,
         "color_scheme": "accent-1",
         "slider_mobile": true,
-        "slider_desktop": false,
+        "slider_desktop": true,
         "type": "loop",
-        "autoplay": false,
-        "autoplay_speed": 3,
+        "autoplay": true,
+        "autoplay_speed": 5,
         "padding_top": 10,
         "padding_bottom": 10
       }
