@@ -9,6 +9,12 @@
  */
 {
   "sections": {
+    "1738959489f6fce048": {
+      "type": "apps",
+      "settings": {
+        "include_margins": true
+      }
+    },
     "gp_shopify_original_section_566610819782018089": {
       "type": "gp-section-566610819782018089",
       "settings": {
@@ -19,223 +25,30 @@
     "gp_shopify_original_section_566611588094624705": {
       "type": "gp-section-566611588094624705",
       "settings": {
-        "section_preload": "false",
-        "checksum": ""
-      }
-    },
-    "gp_shopify_original_section_566616614028444609": {
-      "type": "gp-section-566616614028444609",
-      "settings": {
-        "section_preload": "false",
         "checksum": ""
       }
     },
     "gp_shopify_original_section_566613271000384421": {
       "type": "gp-section-566613271000384421",
       "settings": {
-        "section_preload": "false",
         "checksum": ""
       }
     },
     "gp_shopify_original_section_566615858533631057": {
       "type": "gp-section-566615858533631057",
       "settings": {
-        "section_preload": "false",
         "checksum": ""
       }
     },
-    "1738959489f6fce048": {
-      "type": "apps",
+    "gp_shopify_original_section_566616614028444609": {
+      "type": "gp-section-566616614028444609",
       "settings": {
-        "include_margins": true
+        "checksum": ""
       }
     },
     "main": {
       "type": "main-product",
       "blocks": {
-        "a6eb81db-40e4-43e0-972f-32db010a4a56": {
-          "type": "rating_stars",
-          "settings": {
-            "rating": 5,
-            "star_color": "#c39f83",
-            "bg_stars_style": "full",
-            "bg_star_color": "#ececec",
-            "label": "<strong>(56,923)</strong>",
-            "size": 12,
-            "alignment": "flex-start",
-            "scroll_id": "",
-            "margin_top": 0,
-            "margin_bottom": 9
-          }
-        },
-        "title": {
-          "type": "title",
-          "settings": {
-            "text_size": "h2",
-            "title_alignment": "left",
-            "uppercase_title": false,
-            "margin_top": 0,
-            "margin_bottom": 6
-          }
-        },
-        "custom_liquid_M78cwX": {
-          "type": "custom_liquid",
-          "settings": {
-            "custom_liquid": "<span style=\"display:inline-block;background-color:#f6f0eb;color:#000;padding:6px 12px;border-radius:6px;margin-right:6px;font-size:13px;font-weight:500;\">\n  HA+ TECHNOLOGY\n</span>\n<span style=\"display:inline-block;background-color:#f6f0eb;color:#000;padding:6px 12px;border-radius:6px;margin-right:6px;font-size:13px;font-weight:500;\">\n  FOR ALL SKIN TYPES\n</span>\n<span style=\"display:inline-block;background-color:#f6f0eb;color:#000;padding:6px 12px;border-radius:6px;font-size:13px;font-weight:500;\">\n  VEGAN\n</span>"
-          }
-        },
-        "text_iGah3K": {
-          "type": "text",
-          "disabled": true,
-          "settings": {
-            "mobile_text_size": 14,
-            "desktop_text_size": 16,
-            "alignment": "center",
-            "text_color": "#121212",
-            "text_1": "HA+ TECHNOLOGY",
-            "text_2": "FOR ALL SKIN TYPES",
-            "text_3": "VEGAN",
-            "icon_scale": 120,
-            "icon_color": "#121212",
-            "icon_1": "",
-            "filled_icon_1": false,
-            "icon_2": "",
-            "filled_icon_2": false,
-            "icon_3": "",
-            "filled_icon_3": false,
-            "width": "fit-content",
-            "direction": "horizontal",
-            "column_gap": 1,
-            "enable_bg": true,
-            "bg_color": "#f5eee8",
-            "corner_radius": 40,
-            "padding": 3,
-            "border_size": 0,
-            "border_color": "#f5eee8",
-            "margin_top": 15,
-            "margin_bottom": 15
-          }
-        },
-        "text_Efp7EU": {
-          "type": "text",
-          "settings": {
-            "mobile_text_size": 14,
-            "desktop_text_size": 16,
-            "alignment": "left",
-            "text_color": "#121212",
-            "text_1": "Made to be your beauty shortcut, combining hydration, coverage, and glow in one swipe.",
-            "text_2": "",
-            "text_3": "",
-            "icon_scale": 120,
-            "icon_color": "#121212",
-            "icon_1": "",
-            "filled_icon_1": false,
-            "icon_2": "check_circle",
-            "filled_icon_2": false,
-            "icon_3": "check_circle",
-            "filled_icon_3": false,
-            "width": "100%",
-            "direction": "horizontal",
-            "column_gap": 3,
-            "enable_bg": false,
-            "bg_color": "#f3f3f3",
-            "corner_radius": 40,
-            "padding": 3,
-            "border_size": 0,
-            "border_color": "#b7b7b7",
-            "margin_top": 15,
-            "margin_bottom": 15
-          }
-        },
-        "price": {
-          "type": "price",
-          "disabled": true,
-          "settings": {
-            "layout": "price_first",
-            "price_color": "accent-1",
-            "compare_price_color": "text",
-            "hide_sale_badge": false,
-            "margin_top": 9,
-            "margin_bottom": 15
-          }
-        },
-        "text_k7jx8d": {
-          "type": "text",
-          "disabled": true,
-          "settings": {
-            "mobile_text_size": 14,
-            "desktop_text_size": 16,
-            "alignment": "left",
-            "text_color": "#121212",
-            "text_1": "Smooths Fine Lines & Wrinkles",
-            "text_2": "Hides Dark Spots & Hyperpigmentation",
-            "text_3": "Skincare + Makeup All in One",
-            "icon_scale": 120,
-            "icon_color": "#c39f83",
-            "icon_1": "check_circle",
-            "filled_icon_1": false,
-            "icon_2": "check_circle",
-            "filled_icon_2": false,
-            "icon_3": "check_circle",
-            "filled_icon_3": false,
-            "width": "fit-content",
-            "direction": "vertical",
-            "column_gap": 3,
-            "enable_bg": false,
-            "bg_color": "#f3f3f3",
-            "corner_radius": 40,
-            "padding": 3,
-            "border_size": 0,
-            "border_color": "#b7b7b7",
-            "margin_top": 15,
-            "margin_bottom": 15
-          }
-        },
-        "icon_with_text_Ge44A9": {
-          "type": "icon_with_text",
-          "settings": {
-            "layout": "horizontal",
-            "icon_size": "large",
-            "icon_color": "accent-1",
-            "icon_1": "favorite",
-            "icon_1_fill": false,
-            "heading_1": "COVERS ACNE & DARK SPOTS",
-            "icon_2": "",
-            "icon_2_fill": false,
-            "heading_2": "SMOOTHS  FINE LINES & WRINKLES",
-            "icon_3": "local_shipping",
-            "icon_3_fill": false,
-            "heading_3": "LIGHTWEIGHT & BREATHABLE",
-            "margin_top": 24,
-            "margin_bottom": 24
-          }
-        },
-        "5fcc0428-e768-4cb7-bea3-eb0274198dd1": {
-          "type": "variant_picker",
-          "settings": {
-            "picker_types": "swatches, pills,",
-            "custom_labels": "",
-            "swatches_size": "medium",
-            "swatches_custom_colors": "disabled",
-            "swatches_custom_colors_list": "#000000, #FFFFFF",
-            "full_width_dropdowns": false,
-            "breaks_style": "normal",
-            "breaks_headline": "BUNDLE & SAVE",
-            "breaks_color_scheme": "accent-1",
-            "breaks_badges": "[empty], Most popular, [empty]",
-            "breaks_displayed_images": "variant_images",
-            "breaks_custom_images": "",
-            "breaks_image_width": 70,
-            "breaks_space_images": true,
-            "breaks_labels": "[name], [name], [name]",
-            "breaks_benefits": "[empty], Free Shipping, Free Shipping",
-            "breaks_captions": "Variant 1 caption, Variant 2 caption, Variant 3 caption",
-            "breaks_price_texts": "[price], [price], [price]",
-            "breaks_compare_price_texts": "[compare_price], [compare_price], [compare_price]",
-            "margin_top": 15,
-            "margin_bottom": 15
-          }
-        },
         "04ba004e-2f54-4936-8b1c-8bcadf6573f6": {
           "type": "quantity_selector",
           "settings": {
@@ -293,10 +106,46 @@
             "margin_bottom": 15
           }
         },
-        "custom_add_to_cart_button_VmcQki": {
-          "type": "custom_add_to_cart_button",
-          "disabled": true,
-          "settings": {}
+        "5fcc0428-e768-4cb7-bea3-eb0274198dd1": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_types": "swatches, pills,",
+            "custom_labels": "",
+            "swatches_size": "medium",
+            "swatches_custom_colors": "disabled",
+            "swatches_custom_colors_list": "#000000, #FFFFFF",
+            "full_width_dropdowns": false,
+            "breaks_style": "normal",
+            "breaks_headline": "BUNDLE & SAVE",
+            "breaks_color_scheme": "accent-1",
+            "breaks_badges": "[empty], Most popular, [empty]",
+            "breaks_displayed_images": "variant_images",
+            "breaks_custom_images": "",
+            "breaks_image_width": 70,
+            "breaks_space_images": true,
+            "breaks_labels": "[name], [name], [name]",
+            "breaks_benefits": "[empty], Free Shipping, Free Shipping",
+            "breaks_captions": "Variant 1 caption, Variant 2 caption, Variant 3 caption",
+            "breaks_price_texts": "[price], [price], [price]",
+            "breaks_compare_price_texts": "[compare_price], [compare_price], [compare_price]",
+            "margin_top": 15,
+            "margin_bottom": 15
+          }
+        },
+        "a6eb81db-40e4-43e0-972f-32db010a4a56": {
+          "type": "rating_stars",
+          "settings": {
+            "rating": 5,
+            "star_color": "#c39f83",
+            "bg_stars_style": "full",
+            "bg_star_color": "#ececec",
+            "label": "<strong>(56,923)</strong>",
+            "size": 12,
+            "alignment": "flex-start",
+            "scroll_id": "",
+            "margin_top": 0,
+            "margin_bottom": 9
+          }
         },
         "buy_buttons": {
           "type": "buy_buttons",
@@ -307,6 +156,86 @@
             "display_price": false,
             "enable_custom_color": false,
             "custom_color": "#53af01",
+            "margin_top": 24,
+            "margin_bottom": 24
+          }
+        },
+        "c43b9f54-e00a-4f9e-b42c-2914dde008a8": {
+          "type": "reviews",
+          "settings": {
+            "display_stars": true,
+            "star_color": "#c39f83",
+            "avatar_alignment": "top",
+            "author_1": "Emily J - London, UK",
+            "text_1": "<p><em>‘’Most products settle into my dark spots, but Elvynor blends perfectly and gives me an airbrushed finish.’’</em></p>",
+            "author_2": "",
+            "text_2": "",
+            "author_3": "",
+            "text_3": "",
+            "margin_top": 24,
+            "margin_bottom": 24
+          }
+        },
+        "collapsible_tab_R3xtLW": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Shipping Times",
+            "heading_size": "medium",
+            "icon": "check_box",
+            "filled_icon": false,
+            "collapse_icon": "carret",
+            "display_top_border": true,
+            "content": "",
+            "page": "",
+            "margin_top": 0,
+            "margin_bottom": 0
+          }
+        },
+        "collapsible_tab_gt88fd": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Return Policy",
+            "heading_size": "medium",
+            "icon": "check_box",
+            "filled_icon": false,
+            "collapse_icon": "carret",
+            "display_top_border": true,
+            "content": "<p>Pathos Socks offers a <strong>30-day return policy</strong>, giving you 30 days from the date of receipt to request a return. To be eligible, items must be unworn, unused, with tags, and in their original packaging.<br/><br/>To initiate a return, contact us at <a><strong>sales@pathossocks.com</strong></a>. </p>",
+            "page": "",
+            "margin_top": 0,
+            "margin_bottom": 0
+          }
+        },
+        "custom_add_to_cart_button_VmcQki": {
+          "type": "custom_add_to_cart_button",
+          "disabled": true,
+          "settings": {}
+        },
+        "custom_liquid_M78cwX": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<span style=\"display:inline-block;background-color:#f6f0eb;color:#000;padding:6px 12px;border-radius:6px;margin-right:6px;font-size:13px;font-weight:500;\">\n  HA+ TECHNOLOGY\n</span>\n<span style=\"display:inline-block;background-color:#f6f0eb;color:#000;padding:6px 12px;border-radius:6px;margin-right:6px;font-size:13px;font-weight:500;\">\n  FOR ALL SKIN TYPES\n</span>\n<span style=\"display:inline-block;background-color:#f6f0eb;color:#000;padding:6px 12px;border-radius:6px;font-size:13px;font-weight:500;\">\n  VEGAN\n</span>"
+          }
+        },
+        "de158e68-5d0d-4819-a625-e2dabdff87d1": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Product Description",
+            "heading_size": "medium",
+            "icon": "check_box",
+            "filled_icon": false,
+            "collapse_icon": "carret",
+            "display_top_border": true,
+            "content": "<h6>SUITABLE FOR:</h6><p>All skin types, especially those with acne scars, hyperpigmentation and uneven skin tone.</p><h6>FEELS LIKE:</h6><p>Lightweight and breathable - never heavy, cakey or greasy.</p><h6>LOOKS LIKE:</h6><p>Your skin, but smoother. Blurs imperfections while keeping a natural finish.</p><h6>COVERAGE:</h6><p>Sheer-to-light, buildable coverage that evens out skin tone instantly.</p><h6>FREE FROM:</h6><p>Parabens, sulfates, fragrance and pore-clogging ingredients.</p>",
+            "page": "",
+            "margin_top": 0,
+            "margin_bottom": 0
+          }
+        },
+        "description": {
+          "type": "description",
+          "disabled": true,
+          "settings": {
             "margin_top": 24,
             "margin_bottom": 24
           }
@@ -341,73 +270,140 @@
             "mobile_transparent_bg": false
           }
         },
-        "description": {
-          "type": "description",
+        "icon_with_text_Ge44A9": {
+          "type": "icon_with_text",
+          "settings": {
+            "layout": "horizontal",
+            "icon_size": "large",
+            "icon_color": "accent-1",
+            "icon_1": "favorite",
+            "icon_1_fill": false,
+            "heading_1": "COVERS ACNE & DARK SPOTS",
+            "icon_2": "",
+            "icon_2_fill": false,
+            "heading_2": "SMOOTHS  FINE LINES & WRINKLES",
+            "icon_3": "local_shipping",
+            "icon_3_fill": false,
+            "heading_3": "LIGHTWEIGHT & BREATHABLE",
+            "margin_top": 24,
+            "margin_bottom": 24
+          }
+        },
+        "price": {
+          "type": "price",
           "disabled": true,
           "settings": {
-            "margin_top": 24,
-            "margin_bottom": 24
+            "layout": "price_first",
+            "price_color": "accent-1",
+            "compare_price_color": "text",
+            "hide_sale_badge": false,
+            "margin_top": 9,
+            "margin_bottom": 15
           }
         },
-        "c43b9f54-e00a-4f9e-b42c-2914dde008a8": {
-          "type": "reviews",
+        "text_Efp7EU": {
+          "type": "text",
           "settings": {
-            "display_stars": true,
-            "star_color": "#c39f83",
-            "avatar_alignment": "top",
-            "author_1": "Emily J - London, UK",
-            "text_1": "<p><em>‘’Most products settle into my dark spots, but Elvynor blends perfectly and gives me an airbrushed finish.’’</em></p>",
-            "author_2": "",
+            "mobile_text_size": 14,
+            "desktop_text_size": 16,
+            "alignment": "left",
+            "text_color": "#121212",
+            "text_1": "Made to be your beauty shortcut, combining hydration, coverage, and glow in one swipe.",
             "text_2": "",
-            "author_3": "",
             "text_3": "",
-            "margin_top": 24,
-            "margin_bottom": 24
+            "icon_scale": 120,
+            "icon_color": "#121212",
+            "icon_1": "",
+            "filled_icon_1": false,
+            "icon_2": "check_circle",
+            "filled_icon_2": false,
+            "icon_3": "check_circle",
+            "filled_icon_3": false,
+            "width": "100%",
+            "direction": "horizontal",
+            "column_gap": 3,
+            "enable_bg": false,
+            "bg_color": "#f3f3f3",
+            "corner_radius": 40,
+            "padding": 3,
+            "border_size": 0,
+            "border_color": "#b7b7b7",
+            "margin_top": 15,
+            "margin_bottom": 15
           }
         },
-        "de158e68-5d0d-4819-a625-e2dabdff87d1": {
-          "type": "collapsible_tab",
+        "text_iGah3K": {
+          "type": "text",
+          "disabled": true,
           "settings": {
-            "heading": "Product Description",
-            "heading_size": "medium",
-            "icon": "check_box",
-            "filled_icon": false,
-            "collapse_icon": "carret",
-            "display_top_border": true,
-            "content": "<h6>SUITABLE FOR:</h6><p>All skin types, especially those with acne scars, hyperpigmentation and uneven skin tone.</p><h6>FEELS LIKE:</h6><p>Lightweight and breathable - never heavy, cakey or greasy.</p><h6>LOOKS LIKE:</h6><p>Your skin, but smoother. Blurs imperfections while keeping a natural finish.</p><h6>COVERAGE:</h6><p>Sheer-to-light, buildable coverage that evens out skin tone instantly.</p><h6>FREE FROM:</h6><p>Parabens, sulfates, fragrance and pore-clogging ingredients.</p>",
-            "page": "",
-            "margin_top": 0,
-            "margin_bottom": 0
+            "mobile_text_size": 14,
+            "desktop_text_size": 16,
+            "alignment": "center",
+            "text_color": "#121212",
+            "text_1": "HA+ TECHNOLOGY",
+            "text_2": "FOR ALL SKIN TYPES",
+            "text_3": "VEGAN",
+            "icon_scale": 120,
+            "icon_color": "#121212",
+            "icon_1": "",
+            "filled_icon_1": false,
+            "icon_2": "",
+            "filled_icon_2": false,
+            "icon_3": "",
+            "filled_icon_3": false,
+            "width": "fit-content",
+            "direction": "horizontal",
+            "column_gap": 1,
+            "enable_bg": true,
+            "bg_color": "#f5eee8",
+            "corner_radius": 40,
+            "padding": 3,
+            "border_size": 0,
+            "border_color": "#f5eee8",
+            "margin_top": 15,
+            "margin_bottom": 15
           }
         },
-        "collapsible_tab_gt88fd": {
-          "type": "collapsible_tab",
+        "text_k7jx8d": {
+          "type": "text",
+          "disabled": true,
           "settings": {
-            "heading": "Return Policy",
-            "heading_size": "medium",
-            "icon": "check_box",
-            "filled_icon": false,
-            "collapse_icon": "carret",
-            "display_top_border": true,
-            "content": "<p>Pathos Socks offers a <strong>30-day return policy</strong>, giving you 30 days from the date of receipt to request a return. To be eligible, items must be unworn, unused, with tags, and in their original packaging.<br/><br/>To initiate a return, contact us at <a><strong>sales@pathossocks.com</strong></a>. </p>",
-            "page": "",
-            "margin_top": 0,
-            "margin_bottom": 0
+            "mobile_text_size": 14,
+            "desktop_text_size": 16,
+            "alignment": "left",
+            "text_color": "#121212",
+            "text_1": "Smooths Fine Lines & Wrinkles",
+            "text_2": "Hides Dark Spots & Hyperpigmentation",
+            "text_3": "Skincare + Makeup All in One",
+            "icon_scale": 120,
+            "icon_color": "#c39f83",
+            "icon_1": "check_circle",
+            "filled_icon_1": false,
+            "icon_2": "check_circle",
+            "filled_icon_2": false,
+            "icon_3": "check_circle",
+            "filled_icon_3": false,
+            "width": "fit-content",
+            "direction": "vertical",
+            "column_gap": 3,
+            "enable_bg": false,
+            "bg_color": "#f3f3f3",
+            "corner_radius": 40,
+            "padding": 3,
+            "border_size": 0,
+            "border_color": "#b7b7b7",
+            "margin_top": 15,
+            "margin_bottom": 15
           }
         },
-        "collapsible_tab_R3xtLW": {
-          "type": "collapsible_tab",
+        "title": {
+          "type": "title",
           "settings": {
-            "heading": "Shipping Times",
-            "heading_size": "medium",
-            "icon": "check_box",
-            "filled_icon": false,
-            "collapse_icon": "carret",
-            "display_top_border": true,
-            "content": "",
-            "page": "",
+            "text_size": "h2",
+            "title_alignment": "left",
+            "uppercase_title": false,
             "margin_top": 0,
-            "margin_bottom": 0
+            "margin_bottom": 6
           }
         }
       },
