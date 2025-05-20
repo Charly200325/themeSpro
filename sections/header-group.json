@@ -121,6 +121,7 @@
     "header": {
       "type": "header",
       "settings": {
+        "custom_logo_link": "shopify://products/elvynor-serum-boosted-skin-tint-balm",
         "sticky_header_type": "on-scroll-up",
         "show_line_separator": true,
         "color_scheme": "background-1",
