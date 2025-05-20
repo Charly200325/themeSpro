@@ -513,7 +513,7 @@
       {%- if request.page_type == 'index' -%}
         <h1 class="header__heading">
       {%- endif -%}
-          <a href="{{ routes.root_url }}" class="header__heading-link link link--text focus-inset">
+          <a href="{{ section.settings.custom_logo_link | default: routes.root_url }}" class="header__heading-link link link--text focus-inset">
             {%- if settings.logo != blank -%}
               {%- assign logo_alt = settings.logo.alt | default: shop.name | escape -%}
               {%- assign logo_height = settings.logo_width | divided_by: settings.logo.aspect_ratio -%}
@@ -603,7 +603,7 @@
       {%- if request.page_type == 'index' -%}
         <h1 class="header__heading">
       {%- endif -%}
-          <a href="{{ routes.root_url }}" class="header__heading-link link link--text focus-inset">
+          <a href="{{ section.settings.custom_logo_link | default: routes.root_url }}" class="header__heading-link link link--text focus-inset">
             {%- if settings.logo != blank -%}
               {%- assign logo_alt = settings.logo.alt | default: shop.name | escape -%}
               {%- assign logo_height = settings.logo_width | divided_by: settings.logo.aspect_ratio -%}
@@ -924,6 +924,12 @@
     {
       "type": "header",
       "content": "Header"
+    },
+    {
+      "type": "url",
+      "id": "custom_logo_link",
+      "label": "Lien personnalisé du logo",
+      "info": "Laisser vide pour garder le lien vers la page d’accueil"
     },
     {
       "type": "select",
