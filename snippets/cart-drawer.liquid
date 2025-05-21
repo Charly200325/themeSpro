@@ -668,58 +668,72 @@
       </div>
     </div>
   </div>
-               <script>
+                                          
+<script>
 document.addEventListener('DOMContentLoaded', function () {
-  document.querySelectorAll('.quantity__button').forEach(button => {
-    button.addEventListener('click', function () {
-      const input = this.parentNode.querySelector('.quantity__input');
-      const index = input.dataset.index;
-      let quantity = parseInt(input.value);
+  function updateCartUI() {
+    fetch('/?sections=cart-drawer')
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, 'text/html');
+        const newDrawer = doc.querySelector('cart-drawer');
+        const currentDrawer = document.querySelector('cart-drawer');
+        currentDrawer.innerHTML = newDrawer.innerHTML;
+        attachCartEvents(); // Rebind les events sur le nouveau HTML
+      });
+  }
 
-      if (this.name === 'plus') quantity += 1;
-      if (this.name === 'minus' && quantity > 0) quantity -= 1;
+  function attachCartEvents() {
+    document.querySelectorAll('.quantity__button').forEach(button => {
+      button.addEventListener('click', function () {
+        const input = this.parentNode.querySelector('.quantity__input');
+        const index = input.dataset.index;
+        let quantity = parseInt(input.value);
 
-      fetch('/cart/change.js', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          'Accept': 'application/json'
-        },
-        body: JSON.stringify({
-          line: parseInt(index),
-          quantity: quantity
-        })
-      })
-      .then(response => response.json())
-      .then(() => {
-        window.location.reload(); // recharge le panier pour voir les changements
+        if (this.name === 'plus') quantity += 1;
+        if (this.name === 'minus' && quantity > 0) quantity -= 1;
+
+        fetch('/cart/change.js', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+          },
+          body: JSON.stringify({
+            line: parseInt(index),
+            quantity: quantity
+          })
+        }).then(() => {
+          updateCartUI();
+        });
       });
     });
-  });
 
-  document.querySelectorAll('cart-remove-button button').forEach(btn => {
-    btn.addEventListener('click', function () {
-      const index = this.closest('cart-remove-button').dataset.index;
-      fetch('/cart/change.js', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          'Accept': 'application/json'
-        },
-        body: JSON.stringify({
-          line: parseInt(index),
-          quantity: 0
-        })
-      })
-      .then(response => response.json())
-      .then(() => {
-        window.location.reload();
+    document.querySelectorAll('cart-remove-button button').forEach(btn => {
+      btn.addEventListener('click', function () {
+        const index = this.closest('cart-remove-button').dataset.index;
+        fetch('/cart/change.js', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+          },
+          body: JSON.stringify({
+            line: parseInt(index),
+            quantity: 0
+          })
+        }).then(() => {
+          updateCartUI();
+        });
       });
     });
-  });
+  }
+
+  attachCartEvents(); // Lancer au premier chargement
 });
 </script>
-                           
+                 
 </cart-drawer>
 
 <script>
