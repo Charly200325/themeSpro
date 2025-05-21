@@ -672,18 +672,21 @@
           <script>
 document.addEventListener('DOMContentLoaded', function () {
   function updateCartUI() {
-    fetch('/?sections=cartdrawer')  // ← Le nom de ta section ici est bien "cartdrawer"
+    fetch('/?sections=cartdrawer')
       .then(res => res.text())
       .then(html => {
         const parser = new DOMParser();
         const doc = parser.parseFromString(html, 'text/html');
-        const newDrawer = doc.querySelector('cart-drawer');
-        const currentDrawer = document.querySelector('cart-drawer');
+        const newDrawer = doc.querySelector('#cartdrawer'); 
+        const currentDrawer = document.querySelector('#cartdrawer');
         if (newDrawer && currentDrawer) {
           currentDrawer.innerHTML = newDrawer.innerHTML;
-          attachCartEvents(); // Re-lier les événements après remplacement du DOM
+          attachCartEvents();
+        } else {
+          console.warn('Cart drawer not found in DOM');
         }
-      });
+      })
+      .catch(err => console.error('Erreur fetch cartdrawer:', err));
   }
 
   function attachCartEvents() {
@@ -696,6 +699,10 @@ document.addEventListener('DOMContentLoaded', function () {
         if (this.name === 'plus') quantity += 1;
         if (this.name === 'minus' && quantity > 0) quantity -= 1;
 
+        if (quantity < 0) quantity = 0;
+
+        console.log('Changement quantité:', index, quantity);
+
         fetch('/cart/change.js', {
           method: 'POST',
           headers: {
@@ -706,15 +713,20 @@ document.addEventListener('DOMContentLoaded', function () {
             line: parseInt(index),
             quantity: quantity
           })
-        }).then(() => {
-          updateCartUI();
-        });
+        })
+          .then(res => res.json())
+          .then(data => {
+            console.log('Panier mis à jour:', data);
+            setTimeout(updateCartUI, 300);
+          })
+          .catch(err => console.error('Erreur modification panier:', err));
       });
     });
 
-    document.querySelectorAll('cart-remove-button button').forEach(btn => {
+    document.querySelectorAll('.cart-remove-button button').forEach(btn => {
       btn.addEventListener('click', function () {
-        const index = this.closest('cart-remove-button').dataset.index;
+        const index = this.closest('.cart-remove-button').dataset.index;
+        console.log('Suppression ligne:', index);
         fetch('/cart/change.js', {
           method: 'POST',
           headers: {
@@ -725,16 +737,21 @@ document.addEventListener('DOMContentLoaded', function () {
             line: parseInt(index),
             quantity: 0
           })
-        }).then(() => {
-          updateCartUI();
-        });
+        })
+          .then(res => res.json())
+          .then(data => {
+            console.log('Article supprimé:', data);
+            setTimeout(updateCartUI, 300);
+          })
+          .catch(err => console.error('Erreur suppression article:', err));
       });
     });
   }
 
-  attachCartEvents(); // Active les boutons dès le premier chargement
+  attachCartEvents();
 });
 </script>
+
        
 </cart-drawer>
 
