@@ -514,5 +514,62 @@
         });
       </script>
     {% endif %}
+    <script>
+  // Fonction pour modifier la ligne du panier via l'API Shopify
+  async function modifierLigne(line, quantity) {
+    const response = await fetch('/cart/change.js', {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({ line, quantity })
+    });
+    const data = await response.json();
+    if (response.ok) {
+      console.log('✅ Panier mis à jour', data);
+      // Recharge la page pour mettre à jour l'affichage du panier
+      location.reload();
+    } else {
+      console.error('❌ Erreur mise à jour panier', data);
+      alert('Erreur lors de la mise à jour du panier');
+    }
+  }
+
+  // Quand le DOM est prêt
+  document.addEventListener('DOMContentLoaded', () => {
+    // Sélecteurs à adapter selon la structure HTML de ta page panier
+    // Exemple : 
+    // - boutons + avec classe ".btn-qty-plus"
+    // - boutons - avec classe ".btn-qty-minus"
+    // - boutons poubelle avec classe ".btn-remove-item"
+    
+    // Ajouter un listener sur les boutons +
+    document.querySelectorAll('.btn-qty-plus').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const line = parseInt(btn.dataset.line); // ligne dans le panier
+        const currentQty = parseInt(btn.dataset.quantity);
+        modifierLigne(line, currentQty + 1);
+      });
+    });
+
+    // Ajouter un listener sur les boutons -
+    document.querySelectorAll('.btn-qty-minus').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const line = parseInt(btn.dataset.line);
+        const currentQty = parseInt(btn.dataset.quantity);
+        if (currentQty > 1) {
+          modifierLigne(line, currentQty - 1);
+        }
+      });
+    });
+
+    // Ajouter un listener sur les boutons poubelle (suppression)
+    document.querySelectorAll('.btn-remove-item').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const line = parseInt(btn.dataset.line);
+        modifierLigne(line, 0);
+      });
+    });
+  });
+</script>
+
   </body>
 </html>
