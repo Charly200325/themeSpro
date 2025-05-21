@@ -169,7 +169,7 @@
         "buy_buttons_cMKL3a": {
           "type": "buy_buttons",
           "settings": {
-            "show_dynamic_checkout": false,
+            "show_dynamic_checkout": true,
             "skip_cart": false,
             "uppercase_text": true,
             "display_price": false,
