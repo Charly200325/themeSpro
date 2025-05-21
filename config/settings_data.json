@@ -315,7 +315,7 @@
               "title_link": true,
               "displayed_variants": "compact",
               "prices_position": "right",
-              "displayed_compare_prices": "product",
+              "displayed_compare_prices": "automatic",
               "price_color": "accent-1",
               "compare_price_color": "text",
               "display_single_item_prices": true,
@@ -403,7 +403,7 @@
           "68fdc0a0-cd7c-40b9-97b3-a76eb7917a47"
         ],
         "settings": {
-          "test_mode": true,
+          "test_mode": false,
           "heading_text": "Cart • [count] items",
           "heading_alignment": "flex-start",
           "desktop_width": "normal",
