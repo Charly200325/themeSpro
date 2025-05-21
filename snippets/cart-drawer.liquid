@@ -669,7 +669,73 @@
     </div>
   </div>
                                         
-                 
+          <script>
+document.addEventListener('DOMContentLoaded', function () {
+  function updateCartUI() {
+    fetch('/?sections=cartdrawer')  // ← Le nom de ta section ici est bien "cartdrawer"
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, 'text/html');
+        const newDrawer = doc.querySelector('cart-drawer');
+        const currentDrawer = document.querySelector('cart-drawer');
+        if (newDrawer && currentDrawer) {
+          currentDrawer.innerHTML = newDrawer.innerHTML;
+          attachCartEvents(); // Re-lier les événements après remplacement du DOM
+        }
+      });
+  }
+
+  function attachCartEvents() {
+    document.querySelectorAll('.quantity__button').forEach(button => {
+      button.addEventListener('click', function () {
+        const input = this.parentNode.querySelector('.quantity__input');
+        const index = input.dataset.index;
+        let quantity = parseInt(input.value);
+
+        if (this.name === 'plus') quantity += 1;
+        if (this.name === 'minus' && quantity > 0) quantity -= 1;
+
+        fetch('/cart/change.js', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+          },
+          body: JSON.stringify({
+            line: parseInt(index),
+            quantity: quantity
+          })
+        }).then(() => {
+          updateCartUI();
+        });
+      });
+    });
+
+    document.querySelectorAll('cart-remove-button button').forEach(btn => {
+      btn.addEventListener('click', function () {
+        const index = this.closest('cart-remove-button').dataset.index;
+        fetch('/cart/change.js', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+          },
+          body: JSON.stringify({
+            line: parseInt(index),
+            quantity: 0
+          })
+        }).then(() => {
+          updateCartUI();
+        });
+      });
+    });
+  }
+
+  attachCartEvents(); // Active les boutons dès le premier chargement
+});
+</script>
+       
 </cart-drawer>
 
 <script>
